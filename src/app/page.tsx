@@ -6,8 +6,8 @@ import products from "@/data/products.json";
 import faqs from "@/data/faq.json";
 import type { Metadata } from "next";
 
-const PHONE_HREF = "tel:+905000000000";
-const WA_HREF = "https://wa.me/905000000000?text=Merhaba%2C%20tabela%20malzemesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
+const PHONE_HREF = "tel:+905414696966";
+const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20tabela%20malzemesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
 
 export const metadata: Metadata = {
   title: "Nadasled | LED Modül, LED Şerit, Trafo — Tabela Malzemeleri Toptan",
@@ -26,11 +26,19 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Nadasled",
-  url: "https://www.nadasled.com",
+  url: "https://www.nadasled.com.tr",
   description: "Tabela yapımı için LED modül, şerit, trafo ve kablo toptan tedarikçisi",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Çakmak, Yeşilbahar Sokağı No:15/A",
+    addressLocality: "Ümraniye",
+    addressRegion: "İstanbul",
+    postalCode: "34774",
+    addressCountry: "TR",
+  },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+90-500-000-00-00",
+    telephone: "+90-541-469-6966",
     contactType: "customer service",
     areaServed: "TR",
     availableLanguage: "Turkish",

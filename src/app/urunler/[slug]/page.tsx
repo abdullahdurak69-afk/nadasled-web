@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import products from "@/data/products.json";
 import type { Metadata } from "next";
 
-const PHONE_HREF = "tel:+905000000000";
+const PHONE_HREF = "tel:+905414696966";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -34,7 +34,7 @@ export default async function UrunKategoriPage({ params }: Props) {
   if (!product) notFound();
 
   const waMessage = encodeURIComponent(`${product.name} hakkında bilgi almak istiyorum.`);
-  const waHref = `https://wa.me/905000000000?text=${waMessage}`;
+  const waHref = `https://wa.me/905414696966?text=${waMessage}`;
 
   const schema = {
     "@context": "https://schema.org",
@@ -110,7 +110,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                       <p className="text-sm text-gray-500 mt-0.5">{item.specs}</p>
                     </div>
                     <a
-                      href={`https://wa.me/905000000000?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}
+                      href={`https://wa.me/905414696966?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-shrink-0 inline-flex items-center border border-green-600 text-green-700 hover:bg-green-50 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors"

@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { Phone, MessageCircle, Menu, X, Zap } from "lucide-react";
+import { Phone, MessageCircle, Menu, X } from "lucide-react";
 
-const PHONE = "0500 000 00 00";
-const PHONE_HREF = "tel:+905000000000";
-const WA_HREF = "https://wa.me/905000000000?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
+const PHONE = "0541 469 69 66";
+const PHONE_HREF = "tel:+905414696966";
+const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
 
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
@@ -35,9 +36,8 @@ export default function Header() {
         </div>
 
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-blue-900">
-            <Zap className="w-6 h-6 text-yellow-500 fill-yellow-500" />
-            <span>Nadasled</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-10 w-auto" priority />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -85,10 +85,7 @@ export default function Header() {
           <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
           <div className="absolute top-0 right-0 h-full w-72 bg-white shadow-xl p-6 flex flex-col">
             <div className="flex items-center justify-between mb-8">
-              <div className="flex items-center gap-2 font-bold text-xl text-blue-900">
-                <Zap className="w-6 h-6 text-yellow-500 fill-yellow-500" />
-                Nadasled
-              </div>
+              <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-10 w-auto" />
               <button onClick={() => setOpen(false)} className="p-2 rounded-lg hover:bg-gray-100">
                 <X className="w-5 h-5" />
               </button>
