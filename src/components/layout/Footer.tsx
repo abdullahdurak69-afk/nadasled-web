@@ -21,6 +21,8 @@ const categories = [
   { href: "/urunler/led-modul", label: "LED Modül" },
   { href: "/urunler/led-serit", label: "LED Şerit" },
   { href: "/urunler/neon-led", label: "Neon LED" },
+  { href: "/urunler/point-led", label: "Point LED" },
+  { href: "/urunler/light-box-led", label: "Light Box LED" },
   { href: "/urunler/trafo-led-surucu", label: "Trafo / LED Sürücü" },
   { href: "/urunler/kablo", label: "Kablo" },
   { href: "/urunler/aksesuar", label: "Aksesuar & Diğer" },

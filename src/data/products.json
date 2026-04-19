@@ -168,6 +168,69 @@
     ]
   },
   {
+    "slug": "point-led",
+    "name": "Point LED",
+    "shortDesc": "Tabela yüzü ve kutu harf aydınlatması için nokta LED ve pixel LED modüller",
+    "metaTitle": "Point LED Toptan | Nokta LED Fiyatı | Nadasled",
+    "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel LED çeşitleri. 20mm, 30mm, 50mm. Teklif için hemen arayın.",
+    "h1": "Point LED / Nokta LED — Toptan Tedarik",
+    "icon": "🔵",
+    "image": "/images/point-led-nokta.jpg",
+    "color": "from-sky-500 to-blue-600",
+    "features": [
+      "20mm, 30mm ve 50mm çap seçenekleri",
+      "12V ve 24V",
+      "IP65 su geçirmez",
+      "Tek renkli ve RGB",
+      "360° ışık yayılımı",
+      "Tabela yüzü ve light box uyumlu",
+      "Paralel bağlantı kolaylığı"
+    ],
+    "keywords": ["point led", "nokta led", "pixel led", "tabela point led", "point led toptan"],
+    "products": [
+      { "name": "Point LED 20mm Beyaz", "specs": "12V, IP65, 0.5W, beyaz" },
+      { "name": "Point LED 20mm Sarı", "specs": "12V, IP65, 0.5W, 3000K" },
+      { "name": "Point LED 30mm Beyaz", "specs": "12V, IP65, 1W, yüksek parlaklık" },
+      { "name": "Point LED 30mm Sarı", "specs": "12V, IP65, 1W, 3000K" },
+      { "name": "Point LED 30mm RGB", "specs": "12V, IP65, 1W, tam renk" },
+      { "name": "Point LED 50mm Beyaz", "specs": "12V, IP65, 3W, büyük tabela" },
+      { "name": "Point LED 50mm RGB", "specs": "12V, IP65, 3W, DMX kontrolü" },
+      { "name": "Pixel LED WS2811 12mm", "specs": "12V, RGB, dijital adreslenebilir" },
+      { "name": "Pixel LED WS2812B 12mm", "specs": "5V, RGB, bireysel kontrol" }
+    ]
+  },
+  {
+    "slug": "light-box-led",
+    "name": "Light Box LED",
+    "shortDesc": "Işıklı tabela, kutu harf ve light box aydınlatması için yüksek mercekli LED modüller",
+    "metaTitle": "Light Box LED Toptan | Kutu Harf LED | Işıklı Tabela LED | Nadasled",
+    "metaDesc": "Işıklı tabela ve kutu harf yapımı için toptan light box LED modül çeşitleri. Yüksek mercekli, geniş açılı, derin kutu uyumlu. Teknik destek ile satış.",
+    "h1": "Light Box LED — Işıklı Tabela ve Kutu Harf Malzemeleri",
+    "icon": "📦",
+    "image": "/images/kesit-led.jpg",
+    "color": "from-amber-400 to-orange-500",
+    "features": [
+      "Yüksek mercekli lens teknolojisi",
+      "Geniş ışık açısı (120°–160°)",
+      "Derin kutu (10-30cm) aydınlatmaya uygun",
+      "Homojen ışık dağılımı, gölge yok",
+      "12V, IP65",
+      "Tek renkli ve RGB seçenekleri",
+      "Enerji tasarruflu, uzun ömürlü"
+    ],
+    "keywords": ["light box led", "kutu harf led", "ışıklı tabela led", "tabela arka aydınlatma", "kutu harf modülü"],
+    "products": [
+      { "name": "Light Box Modül 1W Tek Lens", "specs": "12V, IP65, 120° açı, beyaz" },
+      { "name": "Light Box Modül 1.5W 3 Lens", "specs": "12V, IP65, 150° açı, beyaz" },
+      { "name": "Light Box Modül 1.5W 3 Lens Sarı", "specs": "12V, IP65, 150° açı, 3000K" },
+      { "name": "Light Box Modül 3W 5 Lens", "specs": "12V, IP65, 160° açı, derin kutu" },
+      { "name": "Light Box Modül 5W Güçlü", "specs": "12V, IP65, büyük ışıklı kutu" },
+      { "name": "Light Box Modül RGB 3 Lens", "specs": "12V, IP65, tam renk, kontrolör uyumlu" },
+      { "name": "COB Light Box Şerit 10W/m", "specs": "24V, IP20, kesintisiz aydınlatma" },
+      { "name": "Light Box LED Seti (Modül + Kablo)", "specs": "12V, 10lu paket, hazır bağlantı" }
+    ]
+  },
+  {
     "slug": "aksesuar",
     "name": "Aksesuar & Diğer",
     "shortDesc": "Bağlantı parçaları, profiller, dimmer ve tabela yapım aksesuarları",
