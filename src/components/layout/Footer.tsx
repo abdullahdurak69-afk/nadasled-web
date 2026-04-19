@@ -2,6 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 
+const PHONE = "0541 469 69 66";
+const PHONE_HREF = "tel:+905414696966";
+const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
+const EMAIL = "nadasled@gmail.com";
+const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul";
+const INSTAGRAM = "https://www.instagram.com/nadasled/";
+
 function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -9,13 +16,6 @@ function InstagramIcon({ className }: { className?: string }) {
     </svg>
   );
 }
-
-const PHONE = "0541 469 69 66";
-const PHONE_HREF = "tel:+905414696966";
-const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
-const EMAIL = "nadasled@gmail.com";
-const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul";
-const INSTAGRAM = "https://www.instagram.com/nadasled/";
 
 const categories = [
   { href: "/urunler/led-modul", label: "LED Modül" },
@@ -28,23 +28,23 @@ const categories = [
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950 text-gray-300">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-zinc-900 text-zinc-400">
+      <div className="container mx-auto px-4 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="mb-4">
+            <div className="mb-5">
               <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-12 w-auto brightness-0 invert" />
             </div>
-            <p className="text-sm leading-relaxed text-gray-400">
-              Tabela yapımında kullanılan LED modül, LED şerit, neon LED, trafo, kablo ve aksesuarların toptan tedarikçisi.
-              Türkiye geneli hızlı kargo.
+            <p className="text-sm leading-relaxed text-zinc-500 mb-5">
+              Tabela yapımında kullanılan LED modül, LED şerit, neon LED, trafo, kablo ve aksesuarların
+              toptan tedarikçisi. Türkiye geneli hızlı kargo.
             </p>
             <a
               href={INSTAGRAM}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 text-sm text-gray-400 hover:text-pink-400 transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-orange-400 transition-colors"
             >
               <InstagramIcon className="w-4 h-4" />
               @nadasled
@@ -53,11 +53,12 @@ export default function Footer() {
 
           {/* Ürünler */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Ürün Kategorileri</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Ürün Kategorileri</h3>
+            <ul className="space-y-2.5">
               {categories.map((c) => (
                 <li key={c.href}>
-                  <Link href={c.href} className="text-sm text-gray-400 hover:text-yellow-400 transition-colors">
+                  <Link href={c.href} className="text-sm text-zinc-500 hover:text-orange-400 transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-orange-600 flex-shrink-0" />
                     {c.label}
                   </Link>
                 </li>
@@ -67,40 +68,40 @@ export default function Footer() {
 
           {/* İletişim */}
           <div>
-            <h3 className="text-white font-semibold mb-4">İletişim</h3>
+            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">İletişim</h3>
             <ul className="space-y-3">
               <li>
-                <a href={PHONE_HREF} className="flex items-center gap-2 text-sm text-gray-400 hover:text-yellow-400 transition-colors">
-                  <Phone className="w-4 h-4 flex-shrink-0" />
+                <a href={PHONE_HREF} className="flex items-center gap-3 text-sm text-zinc-500 hover:text-orange-400 transition-colors">
+                  <Phone className="w-4 h-4 text-orange-600 flex-shrink-0" />
                   {PHONE}
                 </a>
               </li>
               <li>
-                <a href={WA_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-400 hover:text-yellow-400 transition-colors">
-                  <MessageCircle className="w-4 h-4 flex-shrink-0" />
+                <a href={WA_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-zinc-500 hover:text-orange-400 transition-colors">
+                  <MessageCircle className="w-4 h-4 text-orange-600 flex-shrink-0" />
                   WhatsApp
                 </a>
               </li>
               <li>
-                <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 text-sm text-gray-400 hover:text-yellow-400 transition-colors">
-                  <Mail className="w-4 h-4 flex-shrink-0" />
+                <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 text-sm text-zinc-500 hover:text-orange-400 transition-colors">
+                  <Mail className="w-4 h-4 text-orange-600 flex-shrink-0" />
                   {EMAIL}
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-gray-400">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-sm text-zinc-500">
+                <MapPin className="w-4 h-4 text-orange-600 flex-shrink-0 mt-0.5" />
                 <span>{ADDRESS}</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-blue-900 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500">
+        <div className="border-t border-zinc-800 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-600">
           <span>© {new Date().getFullYear()} Nadasled. Tüm hakları saklıdır.</span>
-          <div className="flex gap-4">
-            <Link href="/urunler" className="hover:text-gray-300">Ürünler</Link>
-            <Link href="/hakkimizda" className="hover:text-gray-300">Hakkımızda</Link>
-            <Link href="/iletisim" className="hover:text-gray-300">İletişim</Link>
+          <div className="flex gap-5">
+            <Link href="/urunler" className="hover:text-orange-400 transition-colors">Ürünler</Link>
+            <Link href="/hakkimizda" className="hover:text-orange-400 transition-colors">Hakkımızda</Link>
+            <Link href="/iletisim" className="hover:text-orange-400 transition-colors">İletişim</Link>
           </div>
         </div>
       </div>

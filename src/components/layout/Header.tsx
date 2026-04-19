@@ -27,22 +27,23 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-        <div className="bg-blue-900 text-white py-1.5 px-4 text-center text-sm">
+      <header className="sticky top-0 z-50 bg-white border-b border-zinc-200 shadow-sm">
+        {/* Üst bant */}
+        <div className="bg-zinc-900 text-zinc-300 py-1.5 px-4 text-center text-xs">
           <span className="hidden sm:inline">Toptan LED Malzeme Tedarikçisi · Türkiye Geneli Kargo · </span>
-          <a href={PHONE_HREF} className="font-semibold hover:underline" onClick={() => trackClick("phone_click", "topbar")}>
+          <a href={PHONE_HREF} className="text-orange-400 font-semibold hover:text-orange-300 transition-colors" onClick={() => trackClick("phone_click", "topbar")}>
             {PHONE}
           </a>
         </div>
 
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-10 w-auto" priority />
+            <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-11 w-auto" priority />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-7">
             {navLinks.map((l) => (
-              <Link key={l.href} href={l.href} className="text-gray-700 hover:text-blue-900 font-medium text-sm transition-colors">
+              <Link key={l.href} href={l.href} className="text-zinc-600 hover:text-orange-600 font-medium text-sm transition-colors">
                 {l.label}
               </Link>
             ))}
@@ -52,7 +53,7 @@ export default function Header() {
             <a
               href={PHONE_HREF}
               onClick={() => trackClick("phone_click", "header")}
-              className="inline-flex items-center gap-1.5 border border-blue-900 text-blue-900 hover:bg-blue-50 rounded-lg px-3 py-2 text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-1.5 border border-zinc-300 text-zinc-700 hover:border-orange-500 hover:text-orange-600 rounded-lg px-3 py-2 text-sm font-medium transition-colors"
             >
               <Phone className="w-4 h-4" />
               {PHONE}
@@ -62,7 +63,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackClick("whatsapp_click", "header")}
-              className="inline-flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white rounded-lg px-3 py-2 text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-1.5 bg-orange-600 hover:bg-orange-700 text-white rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               WhatsApp
@@ -70,7 +71,7 @@ export default function Header() {
           </div>
 
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-zinc-100 transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Menüyü aç/kapat"
           >
@@ -79,14 +80,13 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile menu overlay */}
       {open && (
         <div className="fixed inset-0 z-40 md:hidden">
-          <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
-          <div className="absolute top-0 right-0 h-full w-72 bg-white shadow-xl p-6 flex flex-col">
+          <div className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
+          <div className="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6 flex flex-col">
             <div className="flex items-center justify-between mb-8">
               <Image src="/logo.png" alt="Nadasled" width={110} height={75} className="h-10 w-auto" />
-              <button onClick={() => setOpen(false)} className="p-2 rounded-lg hover:bg-gray-100">
+              <button onClick={() => setOpen(false)} className="p-2 rounded-lg hover:bg-zinc-100">
                 <X className="w-5 h-5" />
               </button>
             </div>
@@ -96,18 +96,18 @@ export default function Header() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="text-gray-700 hover:text-blue-900 hover:bg-blue-50 font-medium text-base px-3 py-3 rounded-lg transition-colors"
+                  className="text-zinc-700 hover:text-orange-600 hover:bg-orange-50 font-medium text-base px-3 py-3 rounded-lg transition-colors"
                 >
                   {l.label}
                 </Link>
               ))}
             </nav>
             <div className="flex flex-col gap-3 mt-auto">
-              <a href={PHONE_HREF} className="inline-flex items-center justify-center gap-2 border border-blue-900 text-blue-900 rounded-lg px-4 py-3 font-medium hover:bg-blue-50 transition-colors">
+              <a href={PHONE_HREF} className="inline-flex items-center justify-center gap-2 border border-zinc-300 text-zinc-700 rounded-lg px-4 py-3 font-medium hover:border-orange-500 hover:text-orange-600 transition-colors">
                 <Phone className="w-4 h-4" /> {PHONE}
               </a>
               <a href={WA_HREF} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white rounded-lg px-4 py-3 font-medium transition-colors">
+                className="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg px-4 py-3 font-semibold transition-colors">
                 <MessageCircle className="w-4 h-4" /> WhatsApp ile Yaz
               </a>
             </div>

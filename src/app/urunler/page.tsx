@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import products from "@/data/products.json";
 import type { Metadata } from "next";
 
@@ -12,46 +12,59 @@ export const metadata: Metadata = {
 
 export default function UrunlerPage() {
   return (
-    <div className="py-16 px-4 bg-gray-50 min-h-screen">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-950 mb-3">Ürün Kategorileri</h1>
-          <p className="text-gray-600 text-lg max-w-xl mx-auto">
-            Tabela yapımı için ihtiyacınız olan tüm malzemeleri toptan fiyatlarla temin edin.
+    <div className="min-h-screen bg-zinc-50">
+      {/* Hero */}
+      <section className="bg-zinc-900 text-white py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">Ürün Kategorileri</p>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+            Tabela yapımı için<br /><span className="text-orange-500">ihtiyacınız olan her şey</span>
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-xl">
+            Toptan fiyatlarla LED modül, şerit, trafo, kablo ve aksesuarlar. Türkiye geneli hızlı kargo.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p) => (
-            <Link key={p.slug} href={`/urunler/${p.slug}`} className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-200 border-0 shadow-sm overflow-hidden">
-                <CardContent className="p-0">
-                  <div className={`bg-gradient-to-br ${p.color} p-8 text-center`}>
-                    <span className="text-6xl">{p.icon}</span>
+      </section>
+
+      {/* Grid */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {products.map((p) => (
+              <Link key={p.slug} href={`/urunler/${p.slug}`} className="group bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-zinc-100 hover:border-orange-200">
+                <div className="relative h-48 overflow-hidden bg-zinc-100">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/70 to-transparent" />
+                  <div className="absolute bottom-3 left-4">
+                    <span className="text-white font-bold text-lg">{p.name}</span>
                   </div>
-                  <div className="p-6">
-                    <h2 className="text-xl font-bold text-blue-950 mb-2 group-hover:text-blue-700 transition-colors">
-                      {p.name}
-                    </h2>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{p.shortDesc}</p>
-                    <ul className="space-y-1 mb-5">
-                      {p.features.slice(0, 3).map((f) => (
-                        <li key={f} className="text-xs text-gray-500 flex items-center gap-1.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex items-center text-blue-700 text-sm font-medium">
-                      Detayları Gör{" "}
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-zinc-500 text-sm leading-relaxed mb-4">{p.shortDesc}</p>
+                  <ul className="space-y-1.5 mb-5">
+                    {p.features.slice(0, 3).map((f) => (
+                      <li key={f} className="text-xs text-zinc-500 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex items-center text-orange-600 text-sm font-semibold">
+                    Ürünleri İncele{" "}
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

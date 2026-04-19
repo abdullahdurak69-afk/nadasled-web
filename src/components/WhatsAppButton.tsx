@@ -2,7 +2,7 @@
 
 import { MessageCircle } from "lucide-react";
 
-const WA_HREF = "https://wa.me/905000000000?text=Merhaba%2C%20tabela%20malzemesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
+const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20tabela%20malzemesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
 
 export default function WhatsAppButton() {
   return (

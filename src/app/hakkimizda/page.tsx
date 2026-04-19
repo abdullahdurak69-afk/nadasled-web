@@ -16,29 +16,34 @@ const stats = [
 
 export default function HakkimizdaPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-zinc-50">
       {/* Hero */}
-      <section className="bg-blue-950 text-white py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Hakkımızda</h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
-            Yılların deneyimiyle tabela sektörünün güvenilir malzeme tedarikçisiyiz.
-            LED modülden kabloya kadar ihtiyacınız olan her şey tek adreste.
+      <section className="relative bg-zinc-900 text-white py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(234,88,12,0.15),_transparent_60%)]" />
+        <div className="relative container mx-auto max-w-4xl">
+          <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-4">Hakkımızda</p>
+          <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">
+            Tabela Sektörünün<br />
+            <span className="text-orange-500">Güvenilir</span> Tedarikçisi
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">
+            Yılların deneyimiyle tabelacılara ve reklam ajanslarına LED malzeme tedariki yapıyoruz.
+            Türkiye geneline hızlı kargo, uygun toptan fiyat.
           </p>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
+      <section className="py-16 px-4 bg-white border-b border-zinc-100">
+        <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                  <s.icon className="w-6 h-6 text-blue-700" />
+              <div key={s.label} className="text-center group">
+                <div className="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-600 transition-colors duration-300">
+                  <s.icon className="w-7 h-7 text-orange-600 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <div className="text-3xl font-bold text-blue-950 mb-1">{s.value}</div>
-                <div className="text-sm text-gray-500">{s.label}</div>
+                <div className="text-4xl font-extrabold text-zinc-900 mb-1">{s.value}</div>
+                <div className="text-sm text-zinc-500">{s.label}</div>
               </div>
             ))}
           </div>
@@ -46,22 +51,28 @@ export default function HakkimizdaPage() {
       </section>
 
       {/* İçerik */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
             <div>
-              <h2 className="text-2xl font-bold text-blue-950 mb-4">Biz Kimiz?</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <h2 className="text-2xl font-bold text-zinc-900 mb-5 flex items-center gap-3">
+                <span className="w-1 h-7 rounded-full bg-orange-600 flex-shrink-0" />
+                Biz Kimiz?
+              </h2>
+              <p className="text-zinc-600 leading-relaxed mb-4">
                 Nadasled olarak, Türkiye genelinde tabela yapım sektörüne hizmet veren toptan malzeme tedarikçisiyiz.
-                LED modül, LED şerit, trafo, kablo ve aksesuarlar dahil tüm tabela malzemelerini uygun fiyatlarla temin ediyoruz.
+                LED modül, LED şerit, neon LED, trafo, kablo ve aksesuarlar dahil tüm tabela malzemelerini uygun fiyatlarla temin ediyoruz.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-zinc-600 leading-relaxed">
                 Yıllar içinde edindiğimiz tecrübe ve güvenilir tedarikçi ağımızla, tabelacılar ve reklam ajanslarının
                 kaliteli malzemeye hızlıca ulaşmasını sağlıyoruz.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-blue-950 mb-4">Misyonumuz</h2>
+              <h2 className="text-2xl font-bold text-zinc-900 mb-5 flex items-center gap-3">
+                <span className="w-1 h-7 rounded-full bg-orange-600 flex-shrink-0" />
+                Misyonumuz
+              </h2>
               <ul className="space-y-3">
                 {[
                   "Sektörün ihtiyaçlarına özel ürün yelpazesi sunmak",
@@ -71,13 +82,29 @@ export default function HakkimizdaPage() {
                   "Kaliteli ve sertifikalı ürünlerle güven oluşturmak",
                 ].map((m) => (
                   <li key={m} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">{m}</span>
+                    <CheckCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-zinc-600">{m}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-orange-600 py-16 px-4">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Bizimle Çalışmaya Başlayın</h2>
+          <p className="text-orange-100 mb-8">Toptan fiyat listesi ve teknik destek için hemen iletişime geçin.</p>
+          <a
+            href="https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white text-orange-600 hover:bg-orange-50 font-bold px-8 h-12 rounded-xl transition-colors text-base"
+          >
+            WhatsApp ile İletişime Geç
+          </a>
         </div>
       </section>
     </div>
