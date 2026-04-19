@@ -14,14 +14,22 @@
       "IP65 su geçirmez modeller",
       "Tek renkli (beyaz, sarı) ve RGB",
       "Yüksek parlaklık (>120 lm/modül)",
-      "Uzun ömür (>50.000 saat)"
+      "Uzun ömür (>50.000 saat)",
+      "CE/RoHS sertifikalı",
+      "Seri/paralel bağlantı desteği"
     ],
     "keywords": ["led modül", "tabela led modülü", "led modül toptan", "kutu harf led modülü"],
     "products": [
-      { "name": "LED Modül 0.5W 3LED Beyaz", "specs": "12V, IP65, 3000K-6500K" },
-      { "name": "LED Modül 1W 3LED Beyaz", "specs": "12V, IP65, yüksek lümen" },
+      { "name": "LED Modül 0.5W 3LED Beyaz", "specs": "12V, IP65, 6500K, 60lm" },
+      { "name": "LED Modül 0.5W 3LED Sarı", "specs": "12V, IP65, 3000K, 55lm" },
+      { "name": "LED Modül 1W 3LED Beyaz", "specs": "12V, IP65, 6500K, 120lm" },
+      { "name": "LED Modül 1W 3LED Sarı", "specs": "12V, IP65, 3000K, 110lm" },
+      { "name": "LED Modül 1.5W 5LED Beyaz", "specs": "12V, IP65, süper parlak, 180lm" },
+      { "name": "LED Modül 1.5W 5LED Sarı", "specs": "12V, IP65, 3000K, 165lm" },
       { "name": "LED Modül RGB 3LED", "specs": "12V, IP65, tam renk spektrumu" },
-      { "name": "LED Modül 1.5W 5LED", "specs": "12V, IP65, süper parlak" }
+      { "name": "LED Modül 0.72W İkili (Fortune)", "specs": "12V, SMD 2835, IP65, tabela tipi" },
+      { "name": "LED Modül 3W Daire Lens", "specs": "12V, IP65, 120° açı, ışık topu" },
+      { "name": "LED Modül Kırmızı / Mavi / Yeşil", "specs": "12V, IP65, renk seçenekli" }
     ]
   },
   {
@@ -29,74 +37,33 @@
     "name": "LED Şerit",
     "shortDesc": "Esnek LED şerit — kanal harf, çerçeve ve iç mekan aydınlatma",
     "metaTitle": "LED Şerit Toptan | LED Bant Fiyatı | Nadasled",
-    "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. SMD 2835, 5050, RGB. Metre fiyatıyla toptan satış. WhatsApp ile teklif alın.",
+    "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. SMD 2835, 5050, COB, RGB. Metre fiyatıyla toptan satış. WhatsApp ile teklif alın.",
     "h1": "LED Şerit — Metre Fiyatıyla Toptan Satış",
     "icon": "〰️",
     "image": "/images/led-serit.jpg",
     "color": "from-blue-500 to-cyan-500",
     "features": [
-      "SMD 2835 / 5050 / 3528 seçenekleri",
-      "60 LED/m ve 120 LED/m yoğunluk",
+      "SMD 2835 / 5050 / COB seçenekleri",
+      "60 LED/m, 120 LED/m ve 240 LED/m yoğunluk",
       "IP20 (iç) ve IP65/IP68 (dış mekan)",
       "12V ve 24V",
-      "RGB, RGBW ve tek renkli"
-    ],
-    "keywords": ["led şerit", "led bant", "led şerit toptan", "led şerit fiyatı"],
-    "products": [
-      { "name": "LED Şerit SMD 2835 60LED/m", "specs": "12V, IP20, beyaz/sarı/mavi" },
-      { "name": "LED Şerit SMD 5050 RGB", "specs": "12V, IP65, tam renk" },
-      { "name": "LED Şerit SMD 2835 120LED/m", "specs": "12V, IP20, yüksek yoğunluk" },
-      { "name": "LED Şerit Dış Mekan IP68", "specs": "12V, silikon kaplı, suya dayanıklı" }
-    ]
-  },
-  {
-    "slug": "trafo-led-surucu",
-    "name": "Trafo / LED Sürücü",
-    "shortDesc": "LED aydınlatma sistemleri için güvenilir güç kaynakları ve trafoları",
-    "metaTitle": "LED Trafo Fiyatı | LED Sürücü Toptan | Nadasled",
-    "metaDesc": "Tabela ve LED aydınlatma için toptan trafo ve LED sürücü çeşitleri. 12V-24V, 30W-400W arası güç seçenekleri. Teknik destek ile satış.",
-    "h1": "LED Trafo ve Sürücüler — Toptan Tedarik",
-    "icon": "⚡",
-    "image": "/images/trafo.jpg",
-    "color": "from-purple-500 to-indigo-500",
-    "features": [
-      "12V ve 24V DC çıkış",
-      "30W'dan 400W'a kadar güç seçenekleri",
-      "IP67 dış mekan modelleri",
-      "Kısa devre ve aşırı yük koruması",
-      "CE/RoHS sertifikalı"
-    ],
-    "keywords": ["led trafo", "led sürücü", "led driver", "tabela trafosu", "led güç kaynağı"],
-    "products": [
-      { "name": "LED Trafo 12V 30W", "specs": "220V AC giriş, IP20, iç mekan" },
-      { "name": "LED Trafo 12V 60W", "specs": "220V AC giriş, IP20" },
-      { "name": "LED Trafo 12V 150W", "specs": "220V AC giriş, IP67, dış mekan" },
-      { "name": "LED Trafo 24V 200W", "specs": "220V AC giriş, IP67, endüstriyel" }
-    ]
-  },
-  {
-    "slug": "kablo",
-    "name": "Kablo",
-    "shortDesc": "Tabela elektrik tesisatı için çok damarlı kablo ve bağlantı ekipmanları",
-    "metaTitle": "Tabela Kablosu Toptan | Çok Damarlı Kablo Fiyatı | Nadasled",
-    "metaDesc": "Tabela yapımı ve LED bağlantısı için toptan kablo çeşitleri. 2x0.5'ten 2x2.5'e kadar. Metre fiyatıyla toptan satış, hızlı kargo.",
-    "h1": "Tabela Kabloları — Toptan Metre Fiyatı",
-    "icon": "🔌",
-    "image": "/images/kablo.jpg",
-    "color": "from-red-500 to-rose-500",
-    "features": [
-      "2x0.5mm² — 2x2.5mm² kesit seçenekleri",
-      "YSLY ve NYM tip kablolar",
-      "Halogen free seçenekler",
-      "UV dayanımlı dış mekan tipi",
+      "RGB, RGBW, CCT ayarlı ve tek renkli",
+      "CRI >90 yüksek renk doğruluk indeksi",
       "Makaradan metre satış"
     ],
-    "keywords": ["tabela kablosu", "led kablo", "kablo toptan", "çok damarlı kablo"],
+    "keywords": ["led şerit", "led bant", "led şerit toptan", "led şerit fiyatı", "cob led şerit"],
     "products": [
-      { "name": "YSLY-OZ 2x0.5mm²", "specs": "100m makara, esnek, siyah" },
-      { "name": "YSLY-OZ 2x0.75mm²", "specs": "100m makara, esnek" },
-      { "name": "YSLY-OZ 2x1.0mm²", "specs": "100m makara, esnek" },
-      { "name": "NYM-J 3x1.5mm²", "specs": "100m makara, sabit döşeme" }
+      { "name": "LED Şerit SMD 2835 60LED/m Beyaz", "specs": "12V, IP20, 6500K, 8W/m" },
+      { "name": "LED Şerit SMD 2835 60LED/m Sarı", "specs": "12V, IP20, 3000K, 8W/m" },
+      { "name": "LED Şerit SMD 2835 120LED/m Beyaz", "specs": "12V, IP20, 6500K, 14W/m" },
+      { "name": "LED Şerit SMD 2835 120LED/m Sarı", "specs": "12V, IP20, 3000K, 14W/m" },
+      { "name": "LED Şerit SMD 5050 RGB 60LED/m", "specs": "12V, IP20, 14.4W/m, tam renk" },
+      { "name": "LED Şerit SMD 5050 RGBW 60LED/m", "specs": "12V, IP20, beyaz + tam renk" },
+      { "name": "LED Şerit COB 320LED/m Beyaz", "specs": "24V, IP20, 10W/m, kesintisiz ışık" },
+      { "name": "LED Şerit COB 320LED/m Sarı", "specs": "24V, IP20, 3000K, kesintisiz ışık" },
+      { "name": "LED Şerit SMD 2835 IP65 Silikon Kaplı", "specs": "12V, su sızdırmaz, dış mekan" },
+      { "name": "LED Şerit SMD 2835 IP68 Şeffaf Tüp", "specs": "12V, tamamen suya dayanıklı" },
+      { "name": "LED Şerit CCT Renk Sıcaklığı Ayarlı", "specs": "24V, 2700K-6500K arası ayarlı" }
     ]
   },
   {
@@ -112,8 +79,9 @@
     "features": [
       "12V ve 24V seçenekleri",
       "IP65 su geçirmez, iç ve dış mekan",
-      "Tek renkli: beyaz, sarı, kırmızı, mavi, yeşil",
+      "Tek renkli: beyaz, sarı, kırmızı, mavi, yeşil, turuncu",
       "RGB ve RGBW modeller",
+      "6x12mm, 8x16mm, 12x20mm profil seçenekleri",
       "Metre başına kesme imkânı",
       "Bükülgen yapı — her forma girebilir"
     ],
@@ -121,9 +89,82 @@
     "products": [
       { "name": "Neon LED Flex 6x12mm Beyaz", "specs": "12V, IP65, 5m rulo, 6500K" },
       { "name": "Neon LED Flex 6x12mm Sarı", "specs": "12V, IP65, 5m rulo, 3000K" },
+      { "name": "Neon LED Flex 6x12mm Kırmızı", "specs": "12V, IP65, 5m rulo" },
+      { "name": "Neon LED Flex 6x12mm Mavi", "specs": "12V, IP65, 5m rulo" },
+      { "name": "Neon LED Flex 6x12mm Yeşil", "specs": "12V, IP65, 5m rulo" },
+      { "name": "Neon LED Flex 6x12mm Turuncu", "specs": "12V, IP65, 5m rulo" },
       { "name": "Neon LED Flex 8x16mm Beyaz", "specs": "24V, IP65, 5m rulo, yüksek lümen" },
+      { "name": "Neon LED Flex 8x16mm Sarı", "specs": "24V, IP65, 5m rulo, 3000K" },
+      { "name": "Neon LED Flex 12x20mm Beyaz", "specs": "24V, IP65, 5m rulo, geniş profil" },
       { "name": "Neon LED Flex RGB 12x20mm", "specs": "12V, IP65, 5m rulo, tam renk" },
-      { "name": "Neon LED Flex Kırmızı / Mavi / Yeşil", "specs": "12V, IP65, renk seçenekli" }
+      { "name": "Neon LED Flex 220V Beyaz", "specs": "220V AC, IP65, direk şebeke bağlantısı" }
+    ]
+  },
+  {
+    "slug": "trafo-led-surucu",
+    "name": "Trafo / LED Sürücü",
+    "shortDesc": "LED aydınlatma sistemleri için güvenilir güç kaynakları ve trafoları",
+    "metaTitle": "LED Trafo Fiyatı | LED Sürücü Toptan | Nadasled",
+    "metaDesc": "Tabela ve LED aydınlatma için toptan trafo ve LED sürücü çeşitleri. 12V-24V, 30W-400W arası güç seçenekleri. Teknik destek ile satış.",
+    "h1": "LED Trafo ve Sürücüler — Toptan Tedarik",
+    "icon": "⚡",
+    "image": "/images/trafo.jpg",
+    "color": "from-purple-500 to-indigo-500",
+    "features": [
+      "12V ve 24V DC çıkış",
+      "30W'dan 400W'a kadar güç seçenekleri",
+      "IP20 iç mekan ve IP67 dış mekan modelleri",
+      "Kısa devre, aşırı yük ve aşırı ısı koruması",
+      "CE/RoHS sertifikalı",
+      "PFC (Güç Faktörü Düzeltme) destekli",
+      "Fanless (fanssız) sessiz modeller"
+    ],
+    "keywords": ["led trafo", "led sürücü", "led driver", "tabela trafosu", "led güç kaynağı"],
+    "products": [
+      { "name": "LED Trafo 12V 30W IP20", "specs": "220V AC giriş, iç mekan, slim kasa" },
+      { "name": "LED Trafo 12V 60W IP20", "specs": "220V AC giriş, iç mekan" },
+      { "name": "LED Trafo 12V 100W IP20", "specs": "220V AC giriş, iç mekan" },
+      { "name": "LED Trafo 12V 150W IP67", "specs": "220V AC giriş, dış mekan, su geçirmez" },
+      { "name": "LED Trafo 12V 200W IP67", "specs": "220V AC giriş, dış mekan" },
+      { "name": "LED Trafo 24V 60W IP20", "specs": "220V AC giriş, iç mekan" },
+      { "name": "LED Trafo 24V 100W IP20", "specs": "220V AC giriş, iç mekan" },
+      { "name": "LED Trafo 24V 200W IP67", "specs": "220V AC giriş, dış mekan" },
+      { "name": "LED Trafo 24V 400W IP67", "specs": "220V AC giriş, endüstriyel, büyük tabela" },
+      { "name": "LED Sürücü Sabit Akım 350mA 10W", "specs": "Noktasal LED'ler için sabit akım" },
+      { "name": "LED Sürücü Dimmable 12V 60W", "specs": "0-10V / PWM dimmer destekli" }
+    ]
+  },
+  {
+    "slug": "kablo",
+    "name": "Kablo",
+    "shortDesc": "Tabela elektrik tesisatı için çok damarlı kablo ve bağlantı ekipmanları",
+    "metaTitle": "Tabela Kablosu Toptan | Çok Damarlı Kablo Fiyatı | Nadasled",
+    "metaDesc": "Tabela yapımı ve LED bağlantısı için toptan kablo çeşitleri. 2x0.5'ten 2x2.5'e kadar. Metre fiyatıyla toptan satış, hızlı kargo.",
+    "h1": "Tabela Kabloları — Toptan Metre Fiyatı",
+    "icon": "🔌",
+    "image": "/images/kablo.jpg",
+    "color": "from-red-500 to-rose-500",
+    "features": [
+      "2x0.5mm² — 3x2.5mm² kesit seçenekleri",
+      "YSLY, NYM ve H05VV-F tip kablolar",
+      "Halogen free (alev geciktirici) seçenekler",
+      "UV dayanımlı dış mekan tipi",
+      "Siyah, beyaz ve kırmızı renk seçenekleri",
+      "Makaradan metre satış",
+      "100m ve 500m makara"
+    ],
+    "keywords": ["tabela kablosu", "led kablo", "kablo toptan", "çok damarlı kablo", "YSLY kablo"],
+    "products": [
+      { "name": "YSLY-OZ 2x0.5mm²", "specs": "100m makara, esnek, siyah" },
+      { "name": "YSLY-OZ 2x0.75mm²", "specs": "100m makara, esnek, siyah" },
+      { "name": "YSLY-OZ 2x1.0mm²", "specs": "100m makara, esnek, siyah" },
+      { "name": "YSLY-OZ 2x1.5mm²", "specs": "100m makara, esnek" },
+      { "name": "YSLY-OZ 3x1.0mm²", "specs": "100m makara, 3 damarlı esnek" },
+      { "name": "YSLY-OZ 3x1.5mm²", "specs": "100m makara, 3 damarlı esnek" },
+      { "name": "NYM-J 3x1.5mm²", "specs": "100m makara, sabit döşeme, beyaz" },
+      { "name": "NYM-J 3x2.5mm²", "specs": "100m makara, sabit döşeme" },
+      { "name": "H05VV-F 2x0.75mm²", "specs": "100m, esnek, beyaz veya siyah" },
+      { "name": "LED Bağlantı Kablosu 2 Damarlı", "specs": "Kırmızı-siyah, 50m makara, 0.5mm²" }
     ]
   },
   {
@@ -140,15 +181,26 @@
       "Alüminyum LED profil çeşitleri",
       "Hızlı konnektör ve bağlantı parçaları",
       "RGB kontrolör ve dimmerler",
-      "Güç dağıtım kutuları",
+      "Güç dağıtım ve sigorta kutuları",
+      "Neon LED başlık ve kapak aparatları",
+      "Termal macun ve yapıştırıcılar",
       "Plastik ve metal tabela aksesuarları"
     ],
-    "keywords": ["led profil", "led konnektör", "tabela aksesuarı", "rgb kontrolör", "dimmer"],
+    "keywords": ["led profil", "led konnektör", "tabela aksesuarı", "rgb kontrolör", "dimmer", "neon led aparat"],
     "products": [
-      { "name": "Alüminyum LED Profil 2m", "specs": "Sıva altı / sıva üstü, difüzörlü" },
-      { "name": "LED Konnektör 2 Pin", "specs": "8mm şerit için, kilitli" },
-      { "name": "RGB Kontrolör 12A", "specs": "12-24V, RF kumandalı" },
-      { "name": "LED Dimmer 8A", "specs": "12-24V, tek renkli şerit" }
+      { "name": "Alüminyum LED Profil Sıva Altı 2m", "specs": "Difüzörlü, PC kapak dahil" },
+      { "name": "Alüminyum LED Profil Sıva Üstü 2m", "specs": "Difüzörlü, PC kapak dahil" },
+      { "name": "Alüminyum LED Profil Köşe 45° 2m", "specs": "Kavisli yüzeyler için" },
+      { "name": "LED Konnektör 2 Pin 8mm", "specs": "Lehimsiz bağlantı, IP20 şerit uyumlu" },
+      { "name": "LED Konnektör 4 Pin RGB", "specs": "10mm RGB şerit için, lehimsiz" },
+      { "name": "Wago Konnektör 2 Girişli", "specs": "0.5-2.5mm² kablo, toplu paket" },
+      { "name": "Wago Konnektör 3 Girişli", "specs": "0.5-2.5mm² kablo, toplu paket" },
+      { "name": "RGB Kontrolör 12A RF Kumandalı", "specs": "12-24V, 144W/288W" },
+      { "name": "LED Dimmer 8A Tek Kanal", "specs": "12-24V, PWM, tek renkli şerit" },
+      { "name": "Güç Dağıtım Kutusu 6 Çıkışlı", "specs": "12V/24V LED sistemleri için" },
+      { "name": "Neon LED Başlık Kapağı 6x12mm", "specs": "Silikon, uç kapatma aparatı" },
+      { "name": "Neon LED Köşe Bağlantı 6x12mm", "specs": "90° köşe, L tipi aparat" },
+      { "name": "Çift Taraflı Bant 3M", "specs": "LED profil yapıştırma, 50m makara" }
     ]
   }
 ]
