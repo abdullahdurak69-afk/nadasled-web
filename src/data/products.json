@@ -33,13 +33,7 @@
       { "name": "Samsung 2835 Modül LED 10000K 12V", "specs": "12V, IP65, gün ışığı, yüksek parlaklık" },
       { "name": "Samsung 2835 Modül LED 3000K 24V", "specs": "24V, IP65, sıcak beyaz" },
       { "name": "Samsung 2835 Modül LED 6500K 24V", "specs": "24V, IP65, soğuk beyaz" },
-      { "name": "CREE Modül LED Beyaz 12V", "specs": "12V, IP65, yüksek CRI, premium çip" },
-      { "name": "İ-LED Modül 3528 Beyaz 3'lü 12V", "specs": "12V, IP65, 4cm, flat flux tasarım" },
-      { "name": "İ-LED Modül 3528 Sarı 3'lü 12V", "specs": "12V, IP65, 4cm, 3000K" },
-      { "name": "İ-LED Modül 3528 Mavi 3'lü 12V", "specs": "12V, IP65, 4cm" },
-      { "name": "İ-LED Modül 3528 Yeşil 3'lü 12V", "specs": "12V, IP65, 4cm" },
-      { "name": "Tekli Kesit İ-LED Modül LED 12V", "specs": "12V, IP65, profil aydınlatma uyumlu" },
-      { "name": "Üçlü Kesit İ-LED Modül LED 12V", "specs": "12V, IP65, geniş yayılım" }
+      { "name": "CREE Modül LED Beyaz 12V", "specs": "12V, IP65, yüksek CRI, premium çip" }
     ]
   },
   {
@@ -53,7 +47,7 @@
     "image": "/images/led-serit.jpg",
     "color": "from-blue-500 to-cyan-500",
     "features": [
-      "Samsung, OSRAM, iLED çip seçenekleri",
+      "Samsung, OSRAM çip seçenekleri",
       "60 LED/m, 120 LED/m ve 520 LED/m (COB) yoğunluk",
       "IP20 (iç) ve IP65/IP67 (dış mekan)",
       "12V ve 24V",
@@ -61,7 +55,7 @@
       "S-Type zikzak model — kavisli yüzeyler için",
       "Makaradan metre satış"
     ],
-    "keywords": ["led şerit", "led bant", "led şerit toptan", "cob led şerit", "samsung şerit led", "pixel rgb şerit led"],
+    "keywords": ["led şerit", "led bant", "led şerit toptan", "cob led şerit", "samsung şerit led", "osram şerit led", "pixel rgb şerit led"],
     "products": [
       { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 60/m 3000K 12V", "specs": "12V, IP20, 8W/m, sıcak beyaz" },
       { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 60/m 6500K 12V", "specs": "12V, IP20, 8W/m, soğuk beyaz" },
