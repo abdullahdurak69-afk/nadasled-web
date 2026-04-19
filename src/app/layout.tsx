@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nadasled.com"),
+  metadataBase: new URL("https://www.nadasled.com.tr"),
   title: {
     default: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",
     template: "%s | Nadasled",
