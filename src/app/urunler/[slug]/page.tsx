@@ -35,7 +35,7 @@ export default async function UrunKategoriPage({ params }: Props) {
   const waMessage = encodeURIComponent(`${product.name} hakkında bilgi almak istiyorum.`);
   const waHref = `https://wa.me/905414696966?text=${waMessage}`;
 
-  const schema = {
+  const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: product.h1,
@@ -48,9 +48,20 @@ export default async function UrunKategoriPage({ params }: Props) {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr" },
+      { "@type": "ListItem", position: 2, name: "Ürünler", item: "https://www.nadasled.com.tr/urunler" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://www.nadasled.com.tr/urunler/${product.slug}` },
+    ],
+  };
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumb */}
       <div className="bg-white border-b border-zinc-100 py-3 px-4">

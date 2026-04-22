@@ -12,6 +12,15 @@ export const metadata: Metadata = {
   title: "Nadasled | LED Modül, LED Şerit, Trafo — Tabela Malzemeleri Toptan",
   description:
     "Tabela yapımı için LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Türkiye geneli hızlı kargo. Tabelacılara özel fiyatlar için hemen arayın.",
+  openGraph: {
+    title: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",
+    description: "LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Tabelacılara özel fiyatlar.",
+    url: "https://www.nadasled.com.tr",
+    images: [{ url: "https://www.nadasled.com.tr/images/led-modul.jpg", width: 1200, height: 630, alt: "Nadasled Tabela Malzemeleri" }],
+  },
+  alternates: {
+    canonical: "https://www.nadasled.com.tr",
+  },
 };
 
 const whyUs = [
@@ -21,12 +30,15 @@ const whyUs = [
   { icon: Shield, title: "Garantili Ürünler", desc: "Tüm ürünlerimiz CE/RoHS sertifikalı, garanti kapsamındadır." },
 ];
 
-const orgSchema = {
+const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
   name: "Nadasled",
   url: "https://www.nadasled.com.tr",
   description: "Tabela yapımı için LED modül, şerit, trafo ve kablo toptan tedarikçisi",
+  telephone: "+90-541-469-6966",
+  priceRange: "₺₺",
+  image: "https://www.nadasled.com.tr/images/led-modul.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Çakmak, Yeşilbahar Sokağı No:15/A",
@@ -35,19 +47,44 @@ const orgSchema = {
     postalCode: "34774",
     addressCountry: "TR",
   },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+90-541-469-6966",
-    contactType: "customer service",
-    areaServed: "TR",
-    availableLanguage: "Turkish",
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 41.0166,
+    longitude: 29.1164,
   },
+  areaServed: {
+    "@type": "Country",
+    name: "Turkey",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  sameAs: [],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.a,
+    },
+  })),
 };
 
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
       <section className="relative bg-zinc-900 text-white overflow-hidden">
