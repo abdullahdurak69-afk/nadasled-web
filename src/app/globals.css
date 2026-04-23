@@ -128,3 +128,140 @@
     @apply font-sans;
   }
 }
+
+html { scroll-behavior: smooth; }
+
+/* ── NADASLED LANDING DESIGN SYSTEM ── */
+:root {
+  --nadas-bg: #070A14;
+  --nadas-bg2: #0B1122;
+  --nadas-bg3: #0F1629;
+  --nadas-ink: #EDEFF5;
+  --nadas-ink2: #A4AAC0;
+  --nadas-ink3: #6A7189;
+  --nadas-orange: #FF6B1A;
+  --nadas-orange2: #FF8A44;
+  --nadas-orange-ink: #1A0A02;
+  --nadas-blue: #2D4FD6;
+  --nadas-blue2: #4C6EEB;
+  --nadas-wa: #1FAD56;
+  --nadas-wa-hover: #24C462;
+  --nadas-line: rgba(255, 107, 26, 0.14);
+  --nadas-line2: rgba(255, 255, 255, 0.06);
+  --nadas-led-r: #FF3B30;
+  --nadas-led-g: #30D158;
+  --nadas-led-b: #0A84FF;
+  --nadas-glow: 0 0 40px rgba(255, 107, 26, 0.4), 0 0 120px rgba(255, 107, 26, 0.14);
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 14px var(--nadas-orange); }
+  50% { opacity: 0.55; box-shadow: 0 0 22px var(--nadas-orange); }
+}
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes corePulse {
+  0%, 100% {
+    box-shadow: 0 0 60px rgba(255, 107, 26, 0.7), 0 0 120px rgba(255, 107, 26, 0.35), inset 0 0 40px rgba(255, 220, 180, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 90px rgba(255, 107, 26, 0.9), 0 0 200px rgba(45, 79, 214, 0.35), inset 0 0 50px rgba(255, 220, 180, 0.5);
+  }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes floatWa {
+  0%, 100% { box-shadow: 0 10px 30px rgba(31, 173, 86, 0.4), 0 0 0 0 rgba(31, 173, 86, 0.5); }
+  50% { box-shadow: 0 10px 30px rgba(31, 173, 86, 0.4), 0 0 0 14px rgba(31, 173, 86, 0); }
+}
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nadas-body-bg {
+  background: var(--nadas-bg);
+  color: var(--nadas-ink);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Grid texture overlay */
+.nadas-grid-texture::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 107, 26, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 107, 26, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 20%, transparent 75%);
+}
+.nadas-grid-texture::after {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: 0; right: 0;
+  height: 900px;
+  background:
+    radial-gradient(circle 500px at 35% 30%, rgba(255, 107, 26, 0.14) 0%, transparent 60%),
+    radial-gradient(circle 500px at 70% 40%, rgba(45, 79, 214, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* LED Core animation */
+.nadas-led-core {
+  animation: corePulse 3s ease-in-out infinite;
+  box-shadow: 0 0 60px rgba(255, 107, 26, 0.7), 0 0 120px rgba(255, 107, 26, 0.35), inset 0 0 40px rgba(255, 220, 180, 0.4);
+}
+.nadas-pulse-dot {
+  animation: pulseDot 2.2s ease-in-out infinite;
+}
+.nadas-float-b1 {
+  animation: floatY 4s ease-in-out infinite;
+}
+.nadas-float-b2 {
+  animation: floatY 4s ease-in-out infinite 2s;
+}
+.nadas-float-wa {
+  animation: floatWa 2.4s ease-in-out infinite;
+}
+.nadas-spin-cw {
+  animation: spin 40s linear infinite;
+}
+.nadas-spin-ccw {
+  animation: spin 25s linear infinite reverse;
+}
+.nadas-spin-cw2 {
+  animation: spin 18s linear infinite;
+}
+.nadas-ticker-track {
+  animation: tickerScroll 40s linear infinite;
+}
+
+/* Product card hover line */
+.nadas-product-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--nadas-orange) 0%, var(--nadas-blue2) 100%);
+  box-shadow: 0 0 12px rgba(255, 107, 26, 0.7);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.6, 0.2, 0.2, 1);
+}
+.nadas-product-card:hover::before {
+  transform: scaleX(1);
+}

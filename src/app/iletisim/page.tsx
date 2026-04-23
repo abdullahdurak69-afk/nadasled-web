@@ -1,25 +1,63 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, MessageCircle, Mail, MapPin, Send, CheckCircle } from "lucide-react";
-
-function InstagramIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-    </svg>
-  );
-}
 
 const PHONE = "0541 469 69 66";
 const PHONE_HREF = "tel:+905414696966";
 const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
 const EMAIL = "nadasled@gmail.com";
-const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul, 34774";
-const INSTAGRAM = "https://www.instagram.com/nadasled/";
+const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul";
 const MAPS_HREF = "https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul";
-
 const FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX";
+
+function trackClick(event: string, label: string) {
+  if (typeof window !== "undefined" && (window as any).gtag) {
+    (window as any).gtag("event", event, { event_category: "contact", event_label: label });
+  }
+}
+
+const contactItems = [
+  {
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    ),
+    label: "WhatsApp",
+    sub: "Hızlı yanıt · Teklif al",
+    href: WA_HREF,
+    target: "_blank",
+    color: "#1FAD56",
+    onClick: () => trackClick("whatsapp_click", "iletisim_page"),
+  },
+  {
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    ),
+    label: PHONE,
+    sub: "Hafta içi 08:30 – 18:00",
+    href: PHONE_HREF,
+    color: "var(--nadas-orange)",
+    onClick: () => trackClick("phone_click", "iletisim_page"),
+  },
+  {
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    ),
+    label: EMAIL,
+    sub: "E-posta ile ulaşın",
+    href: `mailto:${EMAIL}`,
+    color: "var(--nadas-blue2)",
+  },
+  {
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    ),
+    label: "Ümraniye, İstanbul",
+    sub: ADDRESS,
+    href: MAPS_HREF,
+    target: "_blank",
+    color: "var(--nadas-ink3)",
+  },
+];
 
 export default function IletisimPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -36,9 +74,7 @@ export default function IletisimPage() {
       });
       if (res.ok) {
         setStatus("sent");
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "form_submit", { event_category: "contact" });
-        }
+        trackClick("form_submit", "iletisim_page");
       } else {
         setStatus("error");
       }
@@ -47,206 +83,223 @@ export default function IletisimPage() {
     }
   }
 
+  const inputStyle = {
+    width: "100%",
+    background: "var(--nadas-bg3)",
+    border: "1px solid var(--nadas-line2)",
+    borderRadius: "2px",
+    padding: "14px 16px",
+    fontSize: "14px",
+    color: "var(--nadas-ink)",
+    outline: "none",
+  };
+
+  const labelStyle = {
+    display: "block",
+    fontFamily: "var(--font-mono)" as const,
+    fontSize: "11px",
+    color: "var(--nadas-ink3)",
+    textTransform: "uppercase" as const,
+    letterSpacing: "0.1em",
+    marginBottom: "8px",
+  };
+
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <>
       {/* Hero */}
-      <section className="bg-zinc-900 text-white py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">İletişim</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">Bizimle İletişime Geçin</h1>
-          <p className="text-zinc-400 text-lg">Teklif almak veya bilgi için hemen ulaşın.</p>
+      <section style={{ padding: "160px 0 100px", position: "relative", zIndex: 2 }}>
+        <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
+          <div
+            className="flex items-center gap-3 mb-6"
+            style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em" }}
+          >
+            <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
+            İletişim
+          </div>
+          <h1
+            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(52px, 8vw, 120px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "900px", marginBottom: "24px" }}
+          >
+            Bizimle{" "}
+            <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255,107,26,0.5)" }}>
+              İletişime
+            </span>{" "}
+            Geçin
+          </h1>
+          <p style={{ fontSize: "18px", color: "var(--nadas-ink2)", maxWidth: "520px", lineHeight: 1.6 }}>
+            Teklif almak veya bilgi için hemen ulaşın.
+          </p>
         </div>
       </section>
 
-      <div className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-            {/* İletişim bilgileri */}
-            <div className="space-y-6">
-              <div className="bg-white rounded-2xl shadow-sm p-8">
-                <h2 className="text-xl font-bold text-zinc-900 mb-6">Hızlı İletişim</h2>
-                <div className="space-y-4">
-                  <a
-                    href={WA_HREF}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => {
-                      if (typeof window !== "undefined" && (window as any).gtag) {
-                        (window as any).gtag("event", "whatsapp_click", { event_category: "contact", event_label: "iletisim_page" });
-                      }
-                    }}
-                    className="flex items-center gap-4 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors group"
-                  >
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MessageCircle className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-green-800">WhatsApp ile Yaz</p>
-                      <p className="text-sm text-green-600">Hızlı yanıt · Teklif al</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href={PHONE_HREF}
-                    onClick={() => {
-                      if (typeof window !== "undefined" && (window as any).gtag) {
-                        (window as any).gtag("event", "phone_click", { event_category: "contact", event_label: "iletisim_page" });
-                      }
-                    }}
-                    className="flex items-center gap-4 p-4 bg-orange-50 rounded-xl hover:bg-orange-100 transition-colors"
-                  >
-                    <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-zinc-900">Telefon</p>
-                      <p className="text-sm text-orange-600">{PHONE}</p>
-                    </div>
-                  </a>
-
-                  <a href={`mailto:${EMAIL}`} className="flex items-center gap-4 p-4 bg-zinc-50 rounded-xl hover:bg-zinc-100 transition-colors">
-                    <div className="w-12 h-12 bg-zinc-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-zinc-800">E-posta</p>
-                      <p className="text-sm text-zinc-600">{EMAIL}</p>
-                    </div>
-                  </a>
-
-                  <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-violet-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <InstagramIcon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-pink-900">Instagram</p>
-                      <p className="text-sm text-pink-600">@nadasled</p>
-                    </div>
-                  </a>
-
-                  <a href={MAPS_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-zinc-50 rounded-xl hover:bg-zinc-100 transition-colors">
-                    <div className="w-12 h-12 bg-zinc-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-zinc-800">Adres</p>
-                      <p className="text-sm text-zinc-600">{ADDRESS}</p>
-                    </div>
-                  </a>
+      {/* Content */}
+      <section style={{ padding: "0 0 120px", position: "relative", zIndex: 2 }}>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}
+        >
+          {/* Contact info */}
+          <div className="flex flex-col gap-4">
+            {contactItems.map((c, i) => (
+              <a
+                key={i}
+                href={c.href}
+                target={(c as any).target}
+                rel={(c as any).target ? "noopener noreferrer" : undefined}
+                onClick={c.onClick}
+                className="flex items-center gap-5 transition-all duration-200 group"
+                style={{
+                  background: "var(--nadas-bg2)",
+                  border: "1px solid var(--nadas-line2)",
+                  borderRadius: "2px",
+                  padding: "20px 24px",
+                }}
+              >
+                <div
+                  className="flex items-center justify-center flex-shrink-0"
+                  style={{ width: "44px", height: "44px", background: "var(--nadas-bg3)", borderRadius: "2px", color: c.color }}
+                >
+                  {c.icon}
                 </div>
+                <div>
+                  <div style={{ fontSize: "15px", fontWeight: 600, color: "var(--nadas-ink)", marginBottom: "2px" }}>
+                    {c.label}
+                  </div>
+                  <div style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}>
+                    {c.sub}
+                  </div>
+                </div>
+                <svg
+                  className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
+                  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2"
+                >
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            ))}
+
+            {/* Working hours */}
+            <div
+              style={{
+                background: "var(--nadas-bg2)",
+                border: "1px solid var(--nadas-line2)",
+                borderRadius: "2px",
+                padding: "24px",
+                marginTop: "8px",
+              }}
+            >
+              <div
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "16px" }}
+              >
+                Çalışma Saatleri
               </div>
-
-              <div className="bg-zinc-900 text-white rounded-2xl p-7">
-                <h3 className="font-bold text-lg mb-2">Çalışma Saatleri</h3>
-                <div className="space-y-2 text-sm text-zinc-400">
-                  <div className="flex justify-between">
-                    <span>Pazartesi – Cuma</span>
-                    <span className="font-medium text-white">08:30 – 18:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Cumartesi</span>
-                    <span className="font-medium text-white">09:00 – 14:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Pazar</span>
-                    <span className="text-zinc-500">Kapalı</span>
-                  </div>
+              {[
+                { day: "Pazartesi – Cuma", time: "08:30 – 18:00" },
+                { day: "Cumartesi", time: "09:00 – 14:00" },
+                { day: "Pazar", time: "Kapalı" },
+              ].map((r) => (
+                <div
+                  key={r.day}
+                  className="flex justify-between items-center"
+                  style={{ padding: "10px 0", borderBottom: "1px solid var(--nadas-line2)", fontSize: "14px" }}
+                >
+                  <span style={{ color: "var(--nadas-ink2)" }}>{r.day}</span>
+                  <span style={{ color: r.time === "Kapalı" ? "var(--nadas-ink3)" : "var(--nadas-ink)", fontWeight: 600 }}>
+                    {r.time}
+                  </span>
                 </div>
-              </div>
-            </div>
-
-            {/* Teklif formu */}
-            <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h2 className="text-xl font-bold text-zinc-900 mb-6">Teklif Formu</h2>
-              {status === "sent" ? (
-                <div className="text-center py-12">
-                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-zinc-900 mb-2">Mesajınız İletildi!</h3>
-                  <p className="text-zinc-600">En kısa sürede size geri döneceğiz.</p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-zinc-700 mb-1">Ad Soyad *</label>
-                      <input
-                        required
-                        type="text"
-                        value={form.ad}
-                        onChange={(e) => setForm({ ...form, ad: e.target.value })}
-                        className="w-full border border-zinc-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
-                        placeholder="Adınız Soyadınız"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-zinc-700 mb-1">Telefon *</label>
-                      <input
-                        required
-                        type="tel"
-                        value={form.telefon}
-                        onChange={(e) => setForm({ ...form, telefon: e.target.value })}
-                        className="w-full border border-zinc-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
-                        placeholder="0541 469 69 66"
-                      />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-zinc-700 mb-1">İlgilendiğiniz Ürün</label>
-                      <select
-                        value={form.urun}
-                        onChange={(e) => setForm({ ...form, urun: e.target.value })}
-                        className="w-full border border-zinc-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white"
-                      >
-                        <option value="">Seçin</option>
-                        <option>LED Modül</option>
-                        <option>LED Şerit</option>
-                        <option>Neon LED</option>
-                        <option>Trafo / LED Sürücü</option>
-                        <option>Kablo</option>
-                        <option>Aksesuar</option>
-                        <option>Diğer</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-zinc-700 mb-1">Tahmini Miktar</label>
-                      <input
-                        type="text"
-                        value={form.miktar}
-                        onChange={(e) => setForm({ ...form, miktar: e.target.value })}
-                        className="w-full border border-zinc-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
-                        placeholder="örn: 1000 adet, 500m"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-zinc-700 mb-1">Mesajınız</label>
-                    <textarea
-                      rows={4}
-                      value={form.mesaj}
-                      onChange={(e) => setForm({ ...form, mesaj: e.target.value })}
-                      className="w-full border border-zinc-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
-                      placeholder="İhtiyacınızı kısaca açıklayın..."
-                    />
-                  </div>
-                  {status === "error" && (
-                    <p className="text-red-600 text-sm">Bir hata oluştu. Lütfen WhatsApp veya telefon ile iletişime geçin.</p>
-                  )}
-                  <button
-                    type="submit"
-                    disabled={status === "sending"}
-                    className="w-full inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 disabled:opacity-60 text-white h-12 text-base rounded-xl font-semibold transition-colors"
-                  >
-                    <Send className="w-4 h-4" />
-                    {status === "sending" ? "Gönderiliyor..." : "Teklif Talep Et"}
-                  </button>
-                </form>
-              )}
+              ))}
             </div>
           </div>
+
+          {/* Form */}
+          <div
+            style={{
+              background: "var(--nadas-bg2)",
+              border: "1px solid var(--nadas-line2)",
+              borderRadius: "2px",
+              padding: "40px",
+            }}
+          >
+            <div
+              style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "16px" }}
+            >
+              Teklif Formu
+            </div>
+            <h2
+              className="mb-8"
+              style={{ fontFamily: "var(--font-display)", fontSize: "clamp(32px, 3vw, 48px)", lineHeight: 0.95, letterSpacing: "0.02em" }}
+            >
+              Hızlı Teklif Al
+            </h2>
+
+            {status === "sent" ? (
+              <div className="text-center py-12">
+                <div
+                  className="flex items-center justify-center mx-auto mb-4"
+                  style={{ width: "64px", height: "64px", background: "rgba(48,209,88,0.1)", borderRadius: "50%", border: "1px solid rgba(48,209,88,0.3)" }}
+                >
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#30D158" strokeWidth="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "32px", marginBottom: "8px" }}>Mesajınız İletildi!</h3>
+                <p style={{ color: "var(--nadas-ink2)", fontSize: "15px" }}>En kısa sürede size geri döneceğiz.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label style={labelStyle}>Ad Soyad *</label>
+                    <input required type="text" style={inputStyle} placeholder="Adınız Soyadınız"
+                      value={form.ad} onChange={(e) => setForm({ ...form, ad: e.target.value })} />
+                  </div>
+                  <div>
+                    <label style={labelStyle}>Telefon *</label>
+                    <input required type="tel" style={inputStyle} placeholder="0541 469 69 66"
+                      value={form.telefon} onChange={(e) => setForm({ ...form, telefon: e.target.value })} />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label style={labelStyle}>İlgilendiğiniz Ürün</label>
+                    <select style={{ ...inputStyle, appearance: "none" }}
+                      value={form.urun} onChange={(e) => setForm({ ...form, urun: e.target.value })}>
+                      <option value="">Seçin</option>
+                      {["LED Modül", "LED Şerit", "Neon LED", "Trafo / LED Sürücü", "Kablo", "Aksesuar", "Diğer"].map((o) => (
+                        <option key={o}>{o}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label style={labelStyle}>Tahmini Miktar</label>
+                    <input type="text" style={inputStyle} placeholder="örn: 1000 adet, 500m"
+                      value={form.miktar} onChange={(e) => setForm({ ...form, miktar: e.target.value })} />
+                  </div>
+                </div>
+                <div>
+                  <label style={labelStyle}>Mesajınız</label>
+                  <textarea rows={4} style={{ ...inputStyle, resize: "none" }} placeholder="İhtiyacınızı kısaca açıklayın..."
+                    value={form.mesaj} onChange={(e) => setForm({ ...form, mesaj: e.target.value })} />
+                </div>
+                {status === "error" && (
+                  <p style={{ color: "#FF3B30", fontSize: "13px" }}>
+                    Bir hata oluştu. Lütfen WhatsApp veya telefon ile iletişime geçin.
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px disabled:opacity-60"
+                  style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "18px 28px", fontSize: "15px", borderRadius: "2px", border: "none", cursor: "pointer" }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  {status === "sending" ? "Gönderiliyor..." : "Teklif Talep Et"}
+                </button>
+              </form>
+            )}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageCircle, CheckCircle, ArrowLeft } from "lucide-react";
 import products from "@/data/products.json";
 import type { Metadata } from "next";
 
@@ -64,64 +63,139 @@ export default async function UrunKategoriPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-zinc-100 py-3 px-4">
-        <div className="container mx-auto max-w-6xl flex items-center gap-2 text-sm text-zinc-500">
-          <Link href="/" className="hover:text-orange-600 transition-colors">Ana Sayfa</Link>
-          <span>/</span>
-          <Link href="/urunler" className="hover:text-orange-600 transition-colors">Ürünler</Link>
-          <span>/</span>
-          <span className="text-zinc-900 font-medium">{product.name}</span>
+      <div
+        style={{
+          paddingTop: "100px",
+          position: "relative",
+          zIndex: 2,
+        }}
+      >
+        <div
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto", paddingBottom: "20px", borderBottom: "1px solid var(--nadas-line2)" }}
+          className="flex items-center gap-2"
+        >
+          {[
+            { href: "/", label: "Ana Sayfa" },
+            { href: "/urunler", label: "Ürünler" },
+            { label: product.name },
+          ].map((b, i, arr) => (
+            <span key={i} className="flex items-center gap-2">
+              {b.href ? (
+                <Link
+                  href={b.href}
+                  style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}
+                  className="hover:text-[color:var(--nadas-orange)] transition-colors"
+                >
+                  {b.label}
+                </Link>
+              ) : (
+                <span style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}>
+                  {b.label}
+                </span>
+              )}
+              {i < arr.length - 1 && (
+                <span style={{ color: "var(--nadas-ink3)", fontSize: "12px" }}>/</span>
+              )}
+            </span>
+          ))}
         </div>
       </div>
 
       {/* Hero */}
-      <section className="relative bg-zinc-900 py-16 px-4 overflow-hidden">
+      <section style={{ padding: "60px 0 80px", position: "relative", zIndex: 2, overflow: "hidden" }}>
         <div className="absolute inset-0">
           <Image
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover opacity-15"
+            className="object-cover"
+            style={{ opacity: 0.08 }}
             sizes="100vw"
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(234,88,12,0.15),_transparent_60%)]" />
-        <div className="relative container mx-auto max-w-6xl">
-          <Link href="/urunler" className="inline-flex items-center gap-1 text-zinc-400 hover:text-orange-400 text-sm mb-6 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> Tüm Ürünler
+        <div style={{ width: "min(1240px, 92vw)", margin: "0 auto", position: "relative" }}>
+          <Link
+            href="/urunler"
+            className="inline-flex items-center gap-2 mb-8 transition-colors"
+            style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)" }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+            Tüm Ürünler
           </Link>
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3">{product.h1}</h1>
-            <p className="text-zinc-400 text-lg max-w-xl">{product.shortDesc}</p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {product.keywords.slice(0, 3).map((k) => (
-                <span key={k} className="bg-orange-600/20 border border-orange-600/30 text-orange-400 text-xs font-medium px-3 py-1 rounded-full">{k}</span>
-              ))}
-            </div>
+          <h1
+            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(44px, 6vw, 88px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "800px", marginBottom: "20px" }}
+          >
+            {product.h1}
+          </h1>
+          <p style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "560px", lineHeight: 1.6, marginBottom: "24px" }}>
+            {product.shortDesc}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {product.keywords.slice(0, 3).map((k) => (
+              <span
+                key={k}
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "11px",
+                  color: "var(--nadas-orange)",
+                  padding: "6px 12px",
+                  border: "1px solid var(--nadas-line)",
+                  borderRadius: "999px",
+                  background: "rgba(255,107,26,0.04)",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {k}
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
-      <div className="py-16 px-4 bg-zinc-50">
-        <div className="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-          {/* Sol: Ürünler + Özellikler */}
-          <div className="lg:col-span-2 space-y-10">
-            <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h2 className="text-2xl font-bold text-zinc-900 mb-6">Ürünler</h2>
-              <div className="divide-y divide-zinc-100">
-                {product.products.map((item) => (
-                  <div key={item.name} className="py-4 flex items-start justify-between gap-4">
+      {/* Content */}
+      <section style={{ padding: "0 0 140px", position: "relative", zIndex: 2 }}>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-3 gap-10"
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}
+        >
+          {/* Main content */}
+          <div className="lg:col-span-2 flex flex-col gap-6">
+            {/* Products list */}
+            <div
+              style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+            >
+              <div
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "24px" }}
+              >
+                Ürünler
+              </div>
+              <div>
+                {product.products.map((item, i) => (
+                  <div
+                    key={item.name}
+                    className="flex items-start justify-between gap-6"
+                    style={{ padding: "20px 0", borderBottom: i < product.products.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                  >
                     <div>
-                      <p className="font-semibold text-zinc-900">{item.name}</p>
-                      <p className="text-sm text-zinc-500 mt-0.5">{item.specs}</p>
+                      <p style={{ fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}>{item.name}</p>
+                      <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
                     </div>
                     <a
                       href={`https://wa.me/905414696966?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-shrink-0 inline-flex items-center border border-orange-500 text-orange-600 hover:bg-orange-50 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors"
+                      className="flex-shrink-0 inline-flex items-center gap-2 transition-all duration-200 hover:-translate-y-px"
+                      style={{
+                        border: "1px solid var(--nadas-line)",
+                        color: "var(--nadas-orange)",
+                        padding: "8px 16px",
+                        borderRadius: "2px",
+                        fontSize: "13px",
+                        fontWeight: 600,
+                        whiteSpace: "nowrap",
+                      }}
                     >
                       Teklif Al
                     </a>
@@ -130,71 +204,133 @@ export default async function UrunKategoriPage({ params }: Props) {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h2 className="text-2xl font-bold text-zinc-900 mb-6">Özellikler</h2>
-              <ul className="space-y-3">
-                {product.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-zinc-700">{f}</span>
-                  </li>
+            {/* Features */}
+            <div
+              style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+            >
+              <div
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "24px" }}
+              >
+                Özellikler
+              </div>
+              <div className="flex flex-col gap-0">
+                {product.features.map((f, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4"
+                    style={{ padding: "14px 0", borderBottom: i < product.features.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                  >
+                    <span style={{ color: "var(--nadas-orange)", flexShrink: 0, marginTop: "2px" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.6 }}>{f}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
 
-          {/* Sağ: CTA */}
-          <div className="space-y-4">
-            <div className="bg-zinc-900 text-white rounded-2xl p-7 sticky top-24">
-              <h3 className="text-xl font-bold mb-2">Fiyat Teklifi Al</h3>
-              <p className="text-zinc-400 text-sm mb-6 leading-relaxed">
+          {/* Sidebar */}
+          <div className="flex flex-col gap-4">
+            {/* CTA card */}
+            <div
+              style={{
+                background: "var(--nadas-bg2)",
+                border: "1px solid var(--nadas-line2)",
+                borderRadius: "2px",
+                padding: "32px",
+                position: "sticky",
+                top: "100px",
+              }}
+            >
+              <div
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "12px" }}
+              >
+                Fiyat Teklifi Al
+              </div>
+              <h3
+                style={{ fontFamily: "var(--font-display)", fontSize: "32px", lineHeight: 0.95, letterSpacing: "0.02em", marginBottom: "12px" }}
+              >
+                Hemen Sor
+              </h3>
+              <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.6, marginBottom: "24px" }}>
                 İhtiyacınız olan ürün ve miktarı bildirin, en uygun toptan fiyatı hemen iletiyoruz.
               </p>
-              <div className="space-y-3">
+              <div className="flex flex-col gap-3">
                 <a
                   href={waHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white h-12 text-base rounded-xl font-medium transition-colors"
+                  className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
+                  style={{ background: "#1FAD56", color: "white", padding: "16px 20px", borderRadius: "2px", fontSize: "14px" }}
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                   WhatsApp ile Sor
                 </a>
                 <a
                   href={PHONE_HREF}
-                  className="w-full inline-flex items-center justify-center gap-2 border border-zinc-600 text-white hover:bg-zinc-800 h-12 text-base rounded-xl font-medium transition-colors"
+                  className="inline-flex items-center justify-center gap-2 font-medium transition-all duration-200"
+                  style={{ border: "1px solid var(--nadas-line2)", color: "var(--nadas-ink)", padding: "16px 20px", borderRadius: "2px", fontSize: "14px" }}
                 >
-                  <Phone className="w-5 h-5" />
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                   Telefon ile Ara
                 </a>
               </div>
-              <div className="mt-6 pt-6 border-t border-zinc-800 space-y-2">
+              <div
+                className="flex flex-col gap-2 mt-6 pt-6"
+                style={{ borderTop: "1px solid var(--nadas-line2)" }}
+              >
                 {["Aynı gün kargo", "Faturalı satış", "1 yıl garanti", "Teknik destek"].map((t) => (
-                  <div key={t} className="flex items-center gap-2 text-sm text-zinc-400">
-                    <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                  <div key={t} className="flex items-center gap-2" style={{ fontSize: "13px", color: "var(--nadas-ink2)" }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2.5">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
                     {t}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-sm p-6">
-              <h3 className="font-semibold text-zinc-900 mb-4">Diğer Kategoriler</h3>
-              <ul className="space-y-2">
-                {products.filter((p) => p.slug !== product.slug).map((p) => (
-                  <li key={p.slug}>
-                    <Link href={`/urunler/${p.slug}`}
-                      className="flex items-center gap-2 text-sm text-zinc-600 hover:text-orange-600 transition-colors py-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
-                      {p.name}
-                    </Link>
-                  </li>
+            {/* Other categories */}
+            <div
+              style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "24px" }}
+            >
+              <div
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "16px" }}
+              >
+                Diğer Kategoriler
+              </div>
+              <div className="flex flex-col gap-0">
+                {products.filter((p) => p.slug !== product.slug).map((p, i, arr) => (
+                  <Link
+                    key={p.slug}
+                    href={`/urunler/${p.slug}`}
+                    className="flex items-center gap-3 transition-colors group"
+                    style={{
+                      padding: "10px 0",
+                      borderBottom: i < arr.length - 1 ? "1px solid var(--nadas-line2)" : "none",
+                      fontSize: "14px",
+                      color: "var(--nadas-ink2)",
+                    }}
+                  >
+                    <span
+                      className="w-1 h-1 rounded-full flex-shrink-0"
+                      style={{ background: "var(--nadas-orange)" }}
+                    />
+                    {p.name}
+                    <svg
+                      className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
+                      width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                  </Link>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
