@@ -64,6 +64,7 @@ export default function Nav() {
           href={WA_HREF}
           target="_blank"
           rel="noopener noreferrer"
+          data-track="nav"
           className="hidden md:inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-px"
           style={{
             background: "var(--nadas-orange)",

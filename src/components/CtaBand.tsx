@@ -41,6 +41,7 @@ export default function CtaBand() {
               href={WA_HREF}
               target="_blank"
               rel="noopener noreferrer"
+              data-track="cta_band"
               className="inline-flex items-center gap-3 font-semibold transition-all duration-200 hover:-translate-y-px"
               style={{ background: "var(--nadas-orange-ink)", color: "var(--nadas-orange)", padding: "18px 28px", fontSize: "15px", borderRadius: "2px", minWidth: "280px" }}
             >

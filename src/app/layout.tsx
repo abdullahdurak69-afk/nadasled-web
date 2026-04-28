@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import SiteFooter from "@/components/SiteFooter";
 import FloatWhatsapp from "@/components/FloatWhatsapp";
+import WATracker from "@/components/WATracker";
 
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-sans" });
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 relative z-[2]">{children}</main>
         <SiteFooter />
         <FloatWhatsapp />
+        <WATracker />
       </body>
     </html>
   );

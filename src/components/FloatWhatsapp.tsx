@@ -7,6 +7,7 @@ export default function FloatWhatsapp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp"
+      data-track="float_button"
       className="nadas-float-wa fixed bottom-6 right-6 z-[90] flex items-center justify-center transition-transform duration-200 hover:scale-110"
       style={{
         width: "56px",

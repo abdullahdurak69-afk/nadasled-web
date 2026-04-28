@@ -88,6 +88,7 @@ export default function Hero() {
             href={WA_HREF}
             target="_blank"
             rel="noopener noreferrer"
+            data-track="hero"
             className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
             style={{ background: "#1FAD56", color: "white", padding: "16px 28px", fontSize: "15px", borderRadius: "2px", boxShadow: "0 0 0 rgba(31,173,86,0)" }}
           >
