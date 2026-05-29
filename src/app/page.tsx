@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",
     description: "LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Tabelacılara özel fiyatlar.",
     url: "https://www.nadasled.com.tr",
-    images: [{ url: "https://www.nadasled.com.tr/images/led-modul.jpg", width: 1200, height: 630, alt: "Nadasled Tabela Malzemeleri" }],
+    images: [{ url: "https://www.nadasled.com.tr/images/led-modul.webp", width: 800, height: 600, alt: "Nadasled Tabela Malzemeleri" }],
   },
   alternates: { canonical: "https://www.nadasled.com.tr" },
 };

@@ -7,7 +7,7 @@
     "metaDesc": "Tabela yapımı için toptan LED modül çeşitleri. Samsung 2835, Fortune, Mercekli ve RGB modeller. Hızlı kargo, uygun fiyat. Teklif almak için hemen arayın.",
     "h1": "Tabela LED Modülleri — Toptan Fiyatlarla",
     "icon": "💡",
-    "image": "/images/led-modul.jpg",
+    "image": "/images/led-modul.webp",
     "color": "from-yellow-500 to-orange-500",
     "features": [
       "12V ve 24V seçenekleri",
@@ -44,7 +44,7 @@
     "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. Samsung 2835, COB 520LED/m, OSRAM, Pixel RGB, S-Type. Metre fiyatıyla toptan satış. WhatsApp ile teklif alın.",
     "h1": "LED Şerit — Metre Fiyatıyla Toptan Satış",
     "icon": "〰️",
-    "image": "/images/led-serit.jpg",
+    "image": "/images/led-serit.webp",
     "color": "from-blue-500 to-cyan-500",
     "features": [
       "Samsung, OSRAM çip seçenekleri",
@@ -92,7 +92,7 @@
     "metaDesc": "Tabela ve dekoratif aydınlatma için toptan neon LED flex hortum çeşitleri. 12V-24V, Neo Plus silikon seri, tek renkli ve RGB. Kesme ve bağlantı aksesuarlarıyla tam set.",
     "h1": "Neon LED Hortum — Toptan Tedarik",
     "icon": "🌈",
-    "image": "/images/neon-led.jpg",
+    "image": "/images/neon-led.webp",
     "color": "from-pink-500 to-violet-500",
     "features": [
       "12V ve 24V seçenekleri",
@@ -131,7 +131,7 @@
     "metaDesc": "Tabela ve LED aydınlatma için toptan trafo çeşitleri. Dinamo Plus, Dinamo Light, OSRAM Element, Moss Trafo. 12V-24V, 25W-400W arası slim ve dış mekan modelleri. Teknik destek ile satış.",
     "h1": "LED Trafo ve Sürücüler — Toptan Tedarik",
     "icon": "⚡",
-    "image": "/images/trafo.jpg",
+    "image": "/images/trafo.webp",
     "color": "from-purple-500 to-indigo-500",
     "features": [
       "12V ve 24V DC çıkış",
@@ -180,7 +180,7 @@
     "metaDesc": "Pergole ve tente aydınlatması için toptan Pergole LED çeşitleri. 24V DC, IP65+, homojen ışık dağılımı. Çeşitli renk seçenekleri. Teklif almak için hemen arayın.",
     "h1": "Pergole LED — Dış Mekan Aydınlatma",
     "icon": "🏠",
-    "image": "/images/pergole-led.jpg",
+    "image": "/images/pergole-led.webp",
     "color": "from-emerald-500 to-green-600",
     "features": [
       "Pergole, tente ve çardak uygulamaları",
@@ -209,7 +209,7 @@
     "metaDesc": "Dekoratif ve reklam aydınlatması için toptan Power LED çeşitleri. Tekli, üçlü ve daire kesit modeller. 1W, 3W, 5W. Teklif için hemen arayın.",
     "h1": "Power LED — Yüksek Güçlü LED Toptan",
     "icon": "🔆",
-    "image": "/images/power-led.jpg",
+    "image": "/images/power-led.webp",
     "color": "from-orange-400 to-red-500",
     "features": [
       "1W, 3W ve 5W güç seçenekleri",
@@ -242,7 +242,7 @@
     "metaDesc": "Tabela yapımı ve LED bağlantısı için toptan kablo çeşitleri. 2x0.5'ten 3x2.5'e kadar YSLY, NYM ve H05VV-F tipler. Metre fiyatıyla toptan satış, hızlı kargo.",
     "h1": "Tabela Kabloları — Toptan Metre Fiyatı",
     "icon": "🔌",
-    "image": "/images/kablo.jpg",
+    "image": "/images/kablo.webp",
     "color": "from-red-500 to-rose-500",
     "features": [
       "2x0.5mm² — 3x2.5mm² kesit seçenekleri",
@@ -275,7 +275,7 @@
     "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel LED çeşitleri. 20mm, 30mm, 50mm. Teklif için hemen arayın.",
     "h1": "Point LED / Nokta LED — Toptan Tedarik",
     "icon": "🔵",
-    "image": "/images/point-led-nokta.jpg",
+    "image": "/images/point-led-nokta.webp",
     "color": "from-sky-500 to-blue-600",
     "features": [
       "20mm, 30mm ve 50mm çap seçenekleri",
@@ -307,7 +307,7 @@
     "metaDesc": "Işıklı tabela ve kutu harf yapımı için toptan light box LED modül çeşitleri. Yüksek mercekli, geniş açılı, derin kutu uyumlu. Teknik destek ile satış.",
     "h1": "Light Box LED — Işıklı Tabela ve Kutu Harf Malzemeleri",
     "icon": "📦",
-    "image": "/images/light-box-led.jpg",
+    "image": "/images/light-box-led.webp",
     "color": "from-amber-400 to-orange-500",
     "features": [
       "Yüksek mercekli lens teknolojisi",
@@ -340,7 +340,7 @@
     "metaDesc": "Bluetooth RGB, WiFi, sese duyarlı, dokunmatik LED kontrolörler; Pixel LED kontrol cihazı; Wago konnektör; neon LED aparat. Toptan fiyatla tek adreste.",
     "h1": "Tabela Aksesuarları — Kontrolör, Konnektör ve Daha Fazlası",
     "icon": "🔧",
-    "image": "/images/aksesuar.jpg",
+    "image": "/images/aksesuar.webp",
     "color": "from-green-500 to-teal-500",
     "features": [
       "Dokunmatik, RF kumanda, Bluetooth ve WiFi kontrolörler",
