@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import type { Metadata } from "next";
 
 const PHONE = "0541 469 69 66";
 const PHONE_HREF = "tel:+905414696966";
-const WA_HREF = "https://wa.me/905414696966?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
+const WA_BASE = "https://wa.me/905414696966";
 const EMAIL = "nadasled@gmail.com";
 const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul";
-const MAPS_HREF = "https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul";
-const FORM_ENDPOINT = "https://formspree.io/f/XXXXXXXX";
+const MAPS_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5!2d29.1164!3d41.0166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzU5LjgiTiAyOcKwMDYnNTkuMCJF!5e0!3m2!1str!2str!4v1234567890";
 
 function trackClick(event: string, label: string) {
   if (typeof window !== "undefined" && (window as any).gtag) {
@@ -23,14 +23,14 @@ const contactItems = [
     ),
     label: "WhatsApp",
     sub: "Hızlı yanıt · Teklif al",
-    href: WA_HREF,
+    href: WA_BASE + "?text=Merhaba%2C%20bilgi%20almak%20istiyorum.",
     target: "_blank",
     color: "#1FAD56",
     onClick: () => trackClick("whatsapp_click", "iletisim_page"),
   },
   {
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
     ),
     label: PHONE,
     sub: "Hafta içi 08:30 – 18:00",
@@ -53,34 +53,30 @@ const contactItems = [
     ),
     label: "Ümraniye, İstanbul",
     sub: ADDRESS,
-    href: MAPS_HREF,
+    href: "https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul",
     target: "_blank",
     color: "var(--nadas-ink3)",
   },
 ];
 
 export default function IletisimPage() {
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [form, setForm] = useState({ ad: "", telefon: "", urun: "", miktar: "", mesaj: "" });
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setStatus("sending");
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) {
-        setStatus("sent");
-        trackClick("form_submit", "iletisim_page");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
+    const lines = [
+      `Merhaba, teklif talep ediyorum.`,
+      ``,
+      `Ad Soyad: ${form.ad}`,
+      `Telefon: ${form.telefon}`,
+      form.urun ? `İlgilendiğim Ürün: ${form.urun}` : "",
+      form.miktar ? `Tahmini Miktar: ${form.miktar}` : "",
+      form.mesaj ? `Mesaj: ${form.mesaj}` : "",
+    ].filter(Boolean).join("\n");
+
+    const waUrl = WA_BASE + "?text=" + encodeURIComponent(lines);
+    trackClick("form_submit_wa", "iletisim_page");
+    window.open(waUrl, "_blank");
   }
 
   const inputStyle = {
@@ -126,13 +122,13 @@ export default function IletisimPage() {
             Geçin
           </h1>
           <p style={{ fontSize: "18px", color: "var(--nadas-ink2)", maxWidth: "520px", lineHeight: 1.6 }}>
-            Teklif almak veya bilgi için hemen ulaşın.
+            Teklif almak veya bilgi için hemen ulaşın. WhatsApp ile dakikalar içinde yanıt alın.
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section style={{ padding: "0 0 120px", position: "relative", zIndex: 2 }}>
+      <section style={{ padding: "0 0 80px", position: "relative", zIndex: 2 }}>
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12"
           style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}
@@ -232,74 +228,148 @@ export default function IletisimPage() {
               Hızlı Teklif Al
             </h2>
 
-            {status === "sent" ? (
-              <div className="text-center py-12">
-                <div
-                  className="flex items-center justify-center mx-auto mb-4"
-                  style={{ width: "64px", height: "64px", background: "rgba(48,209,88,0.1)", borderRadius: "50%", border: "1px solid rgba(48,209,88,0.3)" }}
-                >
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#30D158" strokeWidth="2.5">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </div>
-                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "32px", marginBottom: "8px" }}>Mesajınız İletildi!</h3>
-                <p style={{ color: "var(--nadas-ink2)", fontSize: "15px" }}>En kısa sürede size geri döneceğiz.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label style={labelStyle}>Ad Soyad *</label>
-                    <input required type="text" style={inputStyle} placeholder="Adınız Soyadınız"
-                      value={form.ad} onChange={(e) => setForm({ ...form, ad: e.target.value })} />
-                  </div>
-                  <div>
-                    <label style={labelStyle}>Telefon *</label>
-                    <input required type="tel" style={inputStyle} placeholder="0541 469 69 66"
-                      value={form.telefon} onChange={(e) => setForm({ ...form, telefon: e.target.value })} />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label style={labelStyle}>İlgilendiğiniz Ürün</label>
-                    <select style={{ ...inputStyle, appearance: "none" }}
-                      value={form.urun} onChange={(e) => setForm({ ...form, urun: e.target.value })}>
-                      <option value="">Seçin</option>
-                      {["LED Modül", "LED Şerit", "Neon LED", "Trafo / LED Sürücü", "Kablo", "Aksesuar", "Diğer"].map((o) => (
-                        <option key={o}>{o}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label style={labelStyle}>Tahmini Miktar</label>
-                    <input type="text" style={inputStyle} placeholder="örn: 1000 adet, 500m"
-                      value={form.miktar} onChange={(e) => setForm({ ...form, miktar: e.target.value })} />
-                  </div>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label style={labelStyle}>Ad Soyad *</label>
+                  <input required type="text" style={inputStyle} placeholder="Adınız Soyadınız"
+                    value={form.ad} onChange={(e) => setForm({ ...form, ad: e.target.value })} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Mesajınız</label>
-                  <textarea rows={4} style={{ ...inputStyle, resize: "none" }} placeholder="İhtiyacınızı kısaca açıklayın..."
-                    value={form.mesaj} onChange={(e) => setForm({ ...form, mesaj: e.target.value })} />
+                  <label style={labelStyle}>Telefon *</label>
+                  <input required type="tel" style={inputStyle} placeholder="05XX XXX XX XX"
+                    value={form.telefon} onChange={(e) => setForm({ ...form, telefon: e.target.value })} />
                 </div>
-                {status === "error" && (
-                  <p style={{ color: "#FF3B30", fontSize: "13px" }}>
-                    Bir hata oluştu. Lütfen WhatsApp veya telefon ile iletişime geçin.
-                  </p>
-                )}
-                <button
-                  type="submit"
-                  disabled={status === "sending"}
-                  className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px disabled:opacity-60"
-                  style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "18px 28px", fontSize: "15px", borderRadius: "2px", border: "none", cursor: "pointer" }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                  {status === "sending" ? "Gönderiliyor..." : "Teklif Talep Et"}
-                </button>
-              </form>
-            )}
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label style={labelStyle}>İlgilendiğiniz Ürün</label>
+                  <select style={{ ...inputStyle, appearance: "none" }}
+                    value={form.urun} onChange={(e) => setForm({ ...form, urun: e.target.value })}>
+                    <option value="">Seçin</option>
+                    {["LED Modül", "LED Şerit", "Neon LED", "Trafo / LED Sürücü", "Kablo", "Aksesuar", "Diğer"].map((o) => (
+                      <option key={o}>{o}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label style={labelStyle}>Tahmini Miktar</label>
+                  <input type="text" style={inputStyle} placeholder="örn: 1000 adet, 500m"
+                    value={form.miktar} onChange={(e) => setForm({ ...form, miktar: e.target.value })} />
+                </div>
+              </div>
+              <div>
+                <label style={labelStyle}>Mesajınız</label>
+                <textarea rows={4} style={{ ...inputStyle, resize: "none" }} placeholder="İhtiyacınızı kısaca açıklayın..."
+                  value={form.mesaj} onChange={(e) => setForm({ ...form, mesaj: e.target.value })} />
+              </div>
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
+                style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "18px 28px", fontSize: "15px", borderRadius: "2px", border: "none", cursor: "pointer" }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp ile Teklif Talep Et
+              </button>
+              <p style={{ fontSize: "12px", color: "var(--nadas-ink3)", textAlign: "center" }}>
+                Formu doldurup gönderin — WhatsApp'ta hazır mesaj açılır, onaylayın.
+              </p>
+            </form>
           </div>
         </div>
       </section>
+
+      {/* Google Maps */}
+      <section style={{ padding: "0 0 120px", position: "relative", zIndex: 2 }}>
+        <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
+          <div
+            style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "24px" }}
+            className="flex items-center gap-3"
+          >
+            <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
+            Konumumuz
+          </div>
+          <div
+            style={{
+              border: "1px solid var(--nadas-line2)",
+              borderRadius: "2px",
+              overflow: "hidden",
+              height: "400px",
+            }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.2!2d29.1264!3d41.0066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8a5be1d8dbb%3A0x2e85e91c14d07c43!2zWWXFn2lsYmFoYXIgU2suIE5vOjE1LCBVbXJhbml5ZS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str"
+              width="100%"
+              height="400"
+              style={{ border: 0, display: "block" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Nadasled Konum"
+            />
+          </div>
+          <a
+            href="https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 text-sm font-medium transition-colors"
+            style={{ color: "var(--nadas-orange)" }}
+          >
+            Google Maps'te Aç
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </section>
+
+      {/* CTA Band */}
+      <div
+        className="relative overflow-hidden"
+        style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "100px 0", zIndex: 2 }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+        <div
+          className="relative text-center"
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}
+        >
+          <h2
+            className="mb-4"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(44px, 6vw, 88px)",
+              lineHeight: 0.95,
+              color: "var(--nadas-orange-ink)",
+            }}
+          >
+            Bizimle Çalışmaya Başlayın
+          </h2>
+          <p style={{ fontSize: "17px", color: "rgba(26,19,5,0.75)", marginBottom: "40px", maxWidth: "480px", margin: "0 auto 40px" }}>
+            Toptan fiyat listesi ve teknik destek için hemen iletişime geçin.
+          </p>
+          <a
+            href={WA_BASE + "?text=Merhaba%2C%20toptan%20fiyat%20listesi%20almak%20istiyorum."}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 font-semibold transition-all duration-200 hover:-translate-y-px"
+            style={{
+              background: "var(--nadas-orange-ink)",
+              color: "var(--nadas-orange)",
+              padding: "18px 36px",
+              fontSize: "16px",
+              borderRadius: "2px",
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp ile İletişime Geç
+          </a>
+        </div>
+      </div>
     </>
   );
 }

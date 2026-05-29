@@ -17,8 +17,8 @@ export default function Nav() {
 
   const links = [
     { href: "/urunler", label: "Ürünler" },
-    { href: "/#hakkimizda", label: "Hakkımızda" },
-    { href: "/#iletisim", label: "İletişim" },
+    { href: "/hakkimizda", label: "Hakkımızda" },
+    { href: "/iletisim", label: "İletişim" },
   ];
 
   return (
