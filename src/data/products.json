@@ -2,378 +2,1113 @@
   {
     "slug": "led-modul",
     "name": "LED Modül",
-    "shortDesc": "Tabela ve kutu harf aydınlatması için yüksek parlaklıklı LED modüller",
+    "shortDesc": "Tabela ve kutu harf aydınlatması için Fortune, Samsung, Osram ve Premium serisi LED modüller",
     "metaTitle": "LED Modül Toptan Fiyatı | Tabela LED Modülü | Nadasled",
-    "metaDesc": "Tabela yapımı için toptan LED modül çeşitleri. Samsung 2835, Fortune, Mercekli ve RGB modeller. Hızlı kargo, uygun fiyat. Teklif almak için hemen arayın.",
+    "metaDesc": "Tabela ve kutu harf için toptan LED modül çeşitleri. Fortune Plus, Fortune Light, Samsung, Osram ve Premium seri mercekli modüller. 12V IP65, hızlı kargo. Teklif için arayın.",
     "h1": "Tabela LED Modülleri — Toptan Fiyatlarla",
     "icon": "💡",
     "image": "/images/led-modul.webp",
     "color": "from-yellow-500 to-orange-500",
     "features": [
-      "12V ve 24V seçenekleri",
-      "IP65 su geçirmez modeller",
-      "Samsung 2835, CREE ve Epistar çip teknolojisi",
-      "Tek renkli (beyaz, sarı) ve RGB",
-      "Mercekli lens — yüksek parlaklık",
-      "Uzun ömür (>50.000 saat)",
-      "CE/RoHS sertifikalı"
+      "Fortune Plus, Fortune Light, Samsung, Osram ve Premium serileri",
+      "Mercekli lens — yüksek parlaklık ve geniş ışık açısı",
+      "12V, IP65 su geçirmez",
+      "Tekli, ikili, üçlü, dörtlü ve mini kasa seçenekleri",
+      "Tek renkli (beyaz tonları) ve RGB / RGB Pixel modeller",
+      "COB ve kristal slim kasa modül seçenekleri",
+      "CE / RoHS sertifikalı, uzun ömür (>50.000 saat)"
     ],
-    "keywords": ["led modül", "tabela led modülü", "led modül toptan", "kutu harf led modülü", "samsung modül led", "fortune led modül"],
+    "keywords": [
+      "led modül",
+      "tabela led modülü",
+      "led modül toptan",
+      "kutu harf led modülü",
+      "fortune plus modül led",
+      "samsung modül led",
+      "mercekli modül led"
+    ],
     "products": [
-      { "name": "Fortune Light 0.72W İkili Modül LED Beyaz", "specs": "12V, IP65, SMD 2835, tabela tipi" },
-      { "name": "Fortune Plus Mercekli Modül LED 1.2W Beyaz", "specs": "12V, IP65, Epistar çip, 61x14mm" },
-      { "name": "Mercekli Modül LED Eco 1.5W Beyaz", "specs": "12V, IP65, GaN teknolojisi, yüksek lümen" },
-      { "name": "0.6W 3'lü Mini Mercekli Modül LED", "specs": "12V, IP65, kompakt tabela modülü" },
-      { "name": "0.70W 2'li Plus Mercekli Modül LED Beyaz", "specs": "12V, IP65, SMD çip, tabela tipi" },
-      { "name": "RGB Mercekli Modül LED 0.72W", "specs": "12V, IP65, 75x15mm, tam renk spektrumu" },
-      { "name": "Samsung 2835 Modül LED 2700K 12V", "specs": "12V, IP65, çok sıcak beyaz, tabela" },
-      { "name": "Samsung 2835 Modül LED 3000K 12V", "specs": "12V, IP65, sıcak beyaz, tabela" },
-      { "name": "Samsung 2835 Modül LED 4000K 12V", "specs": "12V, IP65, nötr beyaz, tabela" },
-      { "name": "Samsung 2835 Modül LED 6500K 12V", "specs": "12V, IP65, soğuk beyaz, tabela" },
-      { "name": "Samsung 2835 Modül LED 10000K 12V", "specs": "12V, IP65, gün ışığı, yüksek parlaklık" },
-      { "name": "Samsung 2835 Modül LED 3000K 24V", "specs": "24V, IP65, sıcak beyaz" },
-      { "name": "Samsung 2835 Modül LED 6500K 24V", "specs": "24V, IP65, soğuk beyaz" },
-      { "name": "CREE Modül LED Beyaz 12V", "specs": "12V, IP65, yüksek CRI, premium çip" }
+      {
+        "name": "0.72W Mercekli İkili Modül LED (Fortune Light)",
+        "specs": "12V, IP65, mercekli lens, tabela tipi",
+        "img": "/images/products/0-72w-mercekli-ikili-modul-led.jpg"
+      },
+      {
+        "name": "1.2W Modül LED (Fortune Light)",
+        "specs": "12V, IP65, mercekli, yüksek lümen",
+        "img": "/images/products/1-2-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "1.5W ECO Modül LED (Fortune Light)",
+        "specs": "12V, IP65, ekonomik seri, mercekli",
+        "img": "/images/products/eco-1-5w-modul-led.png"
+      },
+      {
+        "name": "1.5W Modül LED (Fortune Light)",
+        "specs": "12V, IP65, mercekli, geniş açı",
+        "img": "/images/products/1-5-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "0.6W 3'lü Mini Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, kompakt 3'lü tabela modülü",
+        "img": "/images/products/0-6w-3lu-mini-modul-led.png"
+      },
+      {
+        "name": "0.72W İkili Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, premium mercekli ikili",
+        "img": "/images/products/0-72-watt-ikili-modul-led-fortune-plus.png"
+      },
+      {
+        "name": "0.72W RGB Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, tam renk, kontrolör uyumlu",
+        "img": "/images/products/0-72w-rgb-modul-led.png"
+      },
+      {
+        "name": "0.96W RGB Pixel Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, adreslenebilir pixel RGB",
+        "img": "/images/products/rgb-pixel-modul-led.png"
+      },
+      {
+        "name": "1.2W Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, premium mercekli",
+        "img": "/images/products/1-2-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "1.5W Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, yüksek parlaklık",
+        "img": "/images/products/1-5-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "1.5W Slim Kasa Kristal Modül (Fortune Plus)",
+        "specs": "12V, IP65, ince kristal kasa",
+        "img": "/images/products/slim-kasa-kristal-modul.png"
+      },
+      {
+        "name": "2.4W COB Modül LED (Fortune Plus)",
+        "specs": "12V, IP65, COB çip, homojen ışık",
+        "img": "/images/products/cob-modul-led.jpg"
+      },
+      {
+        "name": "1.08W Osram Modül LED",
+        "specs": "12V, IP65, Osram çip, yüksek CRI",
+        "img": "/images/products/osram-1-08-watt-modul-led.png"
+      },
+      {
+        "name": "1.08W Samsung Modül LED",
+        "specs": "12V, IP65, Samsung 2835 çip",
+        "img": "/images/products/1-08-watt-samsung-modul.png"
+      },
+      {
+        "name": "0.36W Premium Tekli Modül LED",
+        "specs": "12V, IP65, tekli mercekli, ince hat",
+        "img": "/images/products/premium-tekli-modul-led.jpg"
+      },
+      {
+        "name": "0.72W Premium 2'li Modül LED",
+        "specs": "12V, IP65, ikili mercekli premium",
+        "img": "/images/products/premium-2li-modul-led.png"
+      },
+      {
+        "name": "1.08W Premium 3'lü Modül LED",
+        "specs": "12V, IP65, üçlü mercekli, derin kutu",
+        "img": "/images/products/premium-3lu-modul-led.jpg"
+      },
+      {
+        "name": "1.44W Premium 4'lü Modül LED",
+        "specs": "12V, IP65, dörtlü, yüksek lümen",
+        "img": "/images/products/premium-modul-led.jpg"
+      }
     ]
   },
   {
     "slug": "led-serit",
     "name": "LED Şerit",
-    "shortDesc": "Esnek LED şerit — kanal harf, çerçeve ve iç/dış mekan aydınlatma",
+    "shortDesc": "İç ve dış mekan LED şerit — Samsung, Pixel, RGB, S-Type ve ECO seriler, metre satış",
     "metaTitle": "LED Şerit Toptan | LED Bant Fiyatı | Nadasled",
-    "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. Samsung 2835, COB 520LED/m, OSRAM, Pixel RGB, S-Type. Metre fiyatıyla toptan satış. WhatsApp ile teklif alın.",
+    "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. Samsung, ECO 2835, S-Type zikzak, RGB ve adreslenebilir Pixel modeller. IP20 iç, IP65/IP68 dış mekan. Metre fiyatıyla satış.",
     "h1": "LED Şerit — Metre Fiyatıyla Toptan Satış",
     "icon": "〰️",
     "image": "/images/led-serit.webp",
     "color": "from-blue-500 to-cyan-500",
     "features": [
-      "Samsung, OSRAM çip seçenekleri",
-      "60 LED/m, 120 LED/m ve 520 LED/m (COB) yoğunluk",
-      "IP20 (iç) ve IP65/IP67 (dış mekan)",
-      "12V ve 24V",
-      "RGB, Pixel adreslenebilir, tek renkli",
-      "S-Type zikzak model — kavisli yüzeyler için",
+      "Samsung ve ECO çip seçenekleri",
+      "60, 120 ve 240 LED/mt yoğunluklar",
+      "IP20 (iç), IP54/IP65/IP68 (dış mekan)",
+      "RGB, RGB Plus ve adreslenebilir Pixel / Magic Pixel",
+      "S-Type zikzak — kavisli yüzeyler ve kutu harf için",
+      "Drop silikon ve tüp kaplı dış mekan modelleri",
       "Makaradan metre satış"
     ],
-    "keywords": ["led şerit", "led bant", "led şerit toptan", "cob led şerit", "samsung şerit led", "osram şerit led", "pixel rgb şerit led"],
+    "keywords": [
+      "led şerit",
+      "led bant",
+      "led şerit toptan",
+      "samsung şerit led",
+      "pixel şerit led",
+      "s-type şerit led",
+      "dış mekan led şerit"
+    ],
     "products": [
-      { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 60/m 3000K 12V", "specs": "12V, IP20, 8W/m, sıcak beyaz" },
-      { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 60/m 6500K 12V", "specs": "12V, IP20, 8W/m, soğuk beyaz" },
-      { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 120/m 3000K 12V", "specs": "12V, IP20, 14.4W/m, sıcak beyaz" },
-      { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 120/m 6500K 12V", "specs": "12V, IP20, 14.4W/m, soğuk beyaz" },
-      { "name": "Şerit LED İç Mekan 10mm 2835 Samsung 10000K 12V", "specs": "12V, IP20, yüksek parlaklık" },
-      { "name": "Şerit LED İç Mekan 8mm COB 520/m 2700K 24V", "specs": "24V, IP20, kesintisiz homojen ışık" },
-      { "name": "Şerit LED İç Mekan 8mm COB 520/m 3000K 24V", "specs": "24V, IP20, kesintisiz homojen ışık" },
-      { "name": "Şerit LED İç Mekan 8mm COB 520/m 4000K 24V", "specs": "24V, IP20, nötr beyaz" },
-      { "name": "Şerit LED İç Mekan 8mm COB 520/m 6500K 12V", "specs": "12V, IP20, kesintisiz, soğuk beyaz" },
-      { "name": "Şerit LED İç Mekan 8mm COB 520/m 10000K 24V", "specs": "24V, IP20, çok soğuk beyaz" },
-      { "name": "Şerit LED İç Mekan COB RGB 520/m 12V", "specs": "12V, IP20, tam renk COB" },
-      { "name": "Şerit LED İç Mekan COB Kırmızı 520/m 12V", "specs": "12V, IP20" },
-      { "name": "Şerit LED İç Mekan COB Mavi 520/m 12V", "specs": "12V, IP20" },
-      { "name": "Şerit LED İç Mekan COB Yeşil 520/m 12V", "specs": "12V, IP20" },
-      { "name": "Şerit LED İç Mekan COB Sarı 520/m 12V", "specs": "12V, IP20" },
-      { "name": "S-Type Zikzak Şerit LED 60/m 7W/m 12V", "specs": "12V, IP20, kavisli yüzeyler, 135lm/W" },
-      { "name": "Pixel RGB Şerit LED Adreslenebilir 60/m 12V", "specs": "12V, IP20, her LED ayrı kontrol" },
-      { "name": "Pixel RGB Şerit LED Adreslenebilir 60/m IP65", "specs": "12V, IP65, dış mekan, su geçirmez" },
-      { "name": "Pixel RGB Şerit LED Adreslenebilir 60/m IP67", "specs": "12V, IP67, tam suya dayanıklı" },
-      { "name": "OSRAM Şerit LED 2835 60/m 3000K 12V", "specs": "12V, IP20, OSRAM çip, yüksek CRI" },
-      { "name": "OSRAM Element Şerit LED 2835 60/m 6500K 12V", "specs": "12V, IP20, OSRAM çip" },
-      { "name": "Şerit LED Dış Mekan 8mm Drop Silikon 2835 60/m 12V", "specs": "12V, IP65, silikon kaplı, soğuk beyaz" },
-      { "name": "Şerit LED Dış Mekan 2835 60/m IP67 Şeffaf Tüp", "specs": "12V, IP67, tamamen suya dayanıklı" },
-      { "name": "Şerit LED Dış Mekan COB 520/m 3000K 24V IP65", "specs": "24V, IP65, su geçirmez" },
-      { "name": "Şerit LED Dış Mekan COB 520/m 6000K 24V IP67", "specs": "24V, IP67, tam suya dayanıklı" }
+      {
+        "name": "IP20 5mm İç Mekan Şerit LED",
+        "specs": "12V, IP20, ince 5mm, dar kanal",
+        "img": "/images/products/5mm-ic-mekan-serit-led.png"
+      },
+      {
+        "name": "IP20 8mm İç Mekan Şerit LED",
+        "specs": "12V, IP20, standart 8mm şerit",
+        "img": "/images/products/8mm-ic-mekan-serit-led.png"
+      },
+      {
+        "name": "IP20 8mm Samsung İç Mekan Şerit LED",
+        "specs": "12V, IP20, Samsung çip, yüksek CRI",
+        "img": "/images/products/8mm-samsung-ic-mekan-serit-led.jpg"
+      },
+      {
+        "name": "IP20 8mm ECO 4040 60 LED/mt",
+        "specs": "12V, IP20, 4040 çip, 60 LED/mt",
+        "img": "/images/products/8mm-eco-4040-60-led-mt.png"
+      },
+      {
+        "name": "IP20 8mm ECO 2835 120 LED/mt",
+        "specs": "12V, IP20, 2835 çip, 120 LED/mt",
+        "img": "/images/products/8mm-eco-2835-120-led-mt.png"
+      },
+      {
+        "name": "IP20 10mm ECO 2835 240 LED/mt",
+        "specs": "12V, IP20, 240 LED/mt yüksek yoğunluk",
+        "img": "/images/products/10mm-eco-2835-240-led-mt.png"
+      },
+      {
+        "name": "IP20 RGB Şerit LED",
+        "specs": "12V, IP20, tam renk, kontrolör uyumlu",
+        "img": "/images/products/rgb-serit-led.png"
+      },
+      {
+        "name": "IP20 RGB Plus Şerit LED",
+        "specs": "12V, IP20, RGB+W, zengin renk",
+        "img": "/images/products/rgb-plus-serit-led.png"
+      },
+      {
+        "name": "IP20 Pixel Şerit LED",
+        "specs": "12V, IP20, adreslenebilir pixel",
+        "img": "/images/products/pixel-serit-led.webp"
+      },
+      {
+        "name": "IP20 Magic Pixel Şerit LED",
+        "specs": "12V, IP20, dijital animasyon efektleri",
+        "img": "/images/products/magic-pixel-serit-led.jpg"
+      },
+      {
+        "name": "IP20 S-Type Şerit LED",
+        "specs": "12V, IP20, zikzak, kavisli yüzeyler",
+        "img": "/images/products/s-type-serit-led-ip20.png"
+      },
+      {
+        "name": "IP20 Zikzak Şerit LED",
+        "specs": "12V, IP20, bükülebilir zikzak form",
+        "img": "/images/products/zikzak-serit-led.png"
+      },
+      {
+        "name": "IP54 8mm Nano Samsung Şerit LED",
+        "specs": "12V, IP54, nano kaplama, Samsung çip",
+        "img": "/images/products/8mm-nano-samsung-serit-led.png"
+      },
+      {
+        "name": "IP54 S-Type Şerit LED",
+        "specs": "12V, IP54, zikzak, yarı dış mekan",
+        "img": "/images/products/s-type-serit-led.png"
+      },
+      {
+        "name": "IP65 8mm Dış Mekan Drop Silikon Şerit LED",
+        "specs": "12V, IP65, drop silikon, su geçirmez",
+        "img": "/images/products/8mm-dis-mekan-drop-silikon-serit-led.png"
+      },
+      {
+        "name": "IP68 Dış Mekan Şerit LED",
+        "specs": "12V, IP68, tam suya dayanıklı",
+        "img": "/images/products/ip68-dis-mekan-serit-led.png"
+      }
+    ]
+  },
+  {
+    "slug": "cob-led-serit",
+    "name": "COB LED Şerit",
+    "shortDesc": "Noktasız kesintisiz ışık veren COB LED şerit — iç/dış mekan, RGB ve Pixel seçenekleri",
+    "metaTitle": "COB LED Şerit Toptan | COB Şerit Fiyatı | Nadasled",
+    "metaDesc": "Kesintisiz homojen ışık için toptan COB LED şerit çeşitleri. 4mm, 8mm, 10mm, 480-720 LED/mt, RGB ve adreslenebilir Pixel COB. IP20 iç, IP44/IP65 dış mekan. Metre satış.",
+    "h1": "COB LED Şerit — Kesintisiz Homojen Işık",
+    "icon": "➖",
+    "image": "/images/led-serit.webp",
+    "color": "from-cyan-500 to-teal-500",
+    "features": [
+      "Noktasız, homojen kesintisiz ışık çizgisi",
+      "4mm, 8mm ve 10mm genişlik seçenekleri",
+      "480, 520 ve 720 LED/mt yoğunluklar",
+      "Tek renkli, RGB ve adreslenebilir Pixel COB",
+      "Side View (yan ışık) modeli",
+      "IP20 iç mekan, IP44 / IP65 dış mekan",
+      "Şerit & COB bağlantı aparatlarıyla tam set"
+    ],
+    "keywords": [
+      "cob led şerit",
+      "cob şerit led",
+      "cob şerit toptan",
+      "noktasız led şerit",
+      "rgb cob şerit",
+      "pixel cob şerit led"
+    ],
+    "products": [
+      {
+        "name": "IP20 4mm COB 480/mt",
+        "specs": "24V, IP20, ince 4mm, kesintisiz ışık",
+        "img": "/images/products/4mm-cob-480-mt.png"
+      },
+      {
+        "name": "IP20 8mm COB 480/mt",
+        "specs": "24V, IP20, 480 LED/mt homojen",
+        "img": "/images/products/ip20-8mm-cob-480-mt.png"
+      },
+      {
+        "name": "IP20 8mm COB 520/mt",
+        "specs": "24V, IP20, 520 LED/mt yüksek yoğunluk",
+        "img": "/images/products/8mm-cob-520-mt-ip20.png"
+      },
+      {
+        "name": "IP20 Side View COB Şerit LED 480/mt",
+        "specs": "24V, IP20, yan ışık yayılımı",
+        "img": "/images/products/side-view-cob-serit-led-480-mt.png"
+      },
+      {
+        "name": "IP20 RGB COB Şerit LED 576 LED/mt",
+        "specs": "24V, IP20, tam renk COB",
+        "img": "/images/products/rgb-cob-serit-led-576led-mt.webp"
+      },
+      {
+        "name": "IP20 Pixel COB Şerit LED 360 LED/mt",
+        "specs": "24V, IP20, adreslenebilir pixel COB",
+        "img": "/images/products/pixel-cob-serit-led-360led-mt.jpg"
+      },
+      {
+        "name": "IP20 Pixel RGB COB Şerit LED 720/mt",
+        "specs": "24V, IP20, yüksek yoğunluk pixel RGB",
+        "img": "/images/products/pixel-rgb-cob-serit-led-720-mt.png"
+      },
+      {
+        "name": "IP44 8mm COB 520/mt",
+        "specs": "24V, IP44, yarı dış mekan",
+        "img": "/images/products/ip44-ip20-8mm-cob-520-mt.png"
+      },
+      {
+        "name": "IP65 10mm COB 480/mt",
+        "specs": "24V, IP65, dış mekan, su geçirmez",
+        "img": "/images/products/ip65-10mm-cob-480-mt.png"
+      },
+      {
+        "name": "Şerit LED & COB LED Bağlantı Aparatları",
+        "specs": "Lehimsiz konnektör ve ek aparatları",
+        "img": "/images/products/serit-led-baglanti-aparatlari.jpg"
+      }
     ]
   },
   {
     "slug": "neon-led",
     "name": "Neon LED",
-    "shortDesc": "Esnek neon LED hortum — tabela, kanal harf ve dekoratif aydınlatma için",
-    "metaTitle": "Neon LED Hortum Toptan | Flex Neon LED Fiyatı | Nadasled",
-    "metaDesc": "Tabela ve dekoratif aydınlatma için toptan neon LED flex hortum çeşitleri. 12V-24V, Neo Plus silikon seri, tek renkli ve RGB. Kesme ve bağlantı aksesuarlarıyla tam set.",
-    "h1": "Neon LED Hortum — Toptan Tedarik",
+    "shortDesc": "Esnek neon LED — Flat, Silikon, D-Shape, 360°, Mix ve 220V seriler + bağlantı/uygulama aparatları",
+    "metaTitle": "Neon LED Toptan | Flex Neon LED Hortum Fiyatı | Nadasled",
+    "metaDesc": "Tabela ve dekorasyon için toptan neon LED çeşitleri. Flat neon, silikon neon, D-Shape, 360°, Mix, PVC ve 220V seriler. 12V-24V, bağlantı ve uygulama aparatlarıyla tam set.",
+    "h1": "Neon LED — Toptan Tedarik",
     "icon": "🌈",
     "image": "/images/neon-led.webp",
     "color": "from-pink-500 to-violet-500",
     "features": [
-      "12V ve 24V seçenekleri",
+      "Flat, Silikon, Mix, PVC, D-Shape ve 360° seriler",
+      "12V, 24V ve doğrudan 220V modeller",
       "IP65 su geçirmez, iç ve dış mekan",
-      "Tek renkli: beyaz, sarı, kırmızı, mavi, yeşil, turuncu",
-      "RGB ve 360° ışık yayılımlı modeller",
-      "6x12mm ve 8x16mm profil seçenekleri",
-      "Neo Plus silikon serisi — 1cm / 2.5cm'de bir kesilebilir",
-      "Bükülgen yapı — her forma girebilir"
+      "Tek renkli, RGB ve 360° ışık yayılımlı",
+      "1cm / 2.5cm aralıkla kesilebilir silikon seri",
+      "İkinci nesil neon ve uygulama aparatları (keski, CNC ucu)",
+      "Başlangıç / orta bağlantı aparatları, kanal ve kapaklar"
     ],
-    "keywords": ["neon led", "neon led hortum", "flex neon led", "tabela neon led", "neon led toptan", "neo plus neon led", "360 neon led"],
+    "keywords": [
+      "neon led",
+      "flex neon led",
+      "flat neon led",
+      "silikon neon led",
+      "neon led hortum",
+      "neon led toptan",
+      "220v neon led"
+    ],
     "products": [
-      { "name": "Neo Plus 6x12 Silikon Neon LED Soğuk Beyaz", "specs": "12V, IP65, 1cm'de bir kesilebilir" },
-      { "name": "Neo Plus 6x12 Silikon Neon LED Sıcak Beyaz", "specs": "12V, IP65, 2.5cm'de bir kesilebilir" },
-      { "name": "12V Neon LED 6x12mm Soğuk Beyaz 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Sıcak Beyaz 5m", "specs": "12V, IP65, 3000K, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Kırmızı 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Mavi 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Yeşil 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Sarı 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "12V Neon LED 6x12mm Turuncu 5m", "specs": "12V, IP65, 5 metre rulo" },
-      { "name": "24V Neon LED 8x16mm Soğuk Beyaz 5m", "specs": "24V, IP65, yüksek lümen, 5 metre" },
-      { "name": "24V Neon LED 8x16mm Sıcak Beyaz 5m", "specs": "24V, IP65, 3000K, 5 metre" },
-      { "name": "24V Neon LED 8x16mm Kırmızı 5m", "specs": "24V, IP65, 5 metre" },
-      { "name": "24V Neon LED 8x16mm Mavi 5m", "specs": "24V, IP65, 5 metre" },
-      { "name": "360° Neon LED 12V Soğuk Beyaz", "specs": "12V, IP65, her yönde ışık yayılımı" },
-      { "name": "360° Neon LED 12V Sıcak Beyaz", "specs": "12V, IP65, 3000K, 360°" },
-      { "name": "Flex Neon LED 12V RGB", "specs": "12V, IP65, tam renk, kontrolör uyumlu" }
+      {
+        "name": "4x8mm Flat Neon",
+        "specs": "12V, IP65, ince flat profil",
+        "img": "/images/products/4x8mm-flat-neon.png"
+      },
+      {
+        "name": "4x10mm Flat Neon",
+        "specs": "12V, IP65, flat profil",
+        "img": "/images/products/4x10mm-flat-neon.png"
+      },
+      {
+        "name": "6x6mm Flat Neon",
+        "specs": "12V, IP65, kare flat profil",
+        "img": "/images/products/6x6mm-flat-neon.webp"
+      },
+      {
+        "name": "10x5mm Flat Neon",
+        "specs": "12V, IP65, yatık flat profil",
+        "img": "/images/products/10x5-flat-neon.png"
+      },
+      {
+        "name": "10x6mm Flat Neon",
+        "specs": "12V, IP65, flat profil",
+        "img": "/images/products/10x6mm-flatneon-led.png"
+      },
+      {
+        "name": "10x10mm Flat Neon",
+        "specs": "12V, IP65, geniş flat profil",
+        "img": "/images/products/10x10-flat-neon.webp"
+      },
+      {
+        "name": "20x14mm Flat Neon LED",
+        "specs": "24V, IP65, büyük flat profil",
+        "img": "/images/products/20x14mm-flat-neon-led.webp"
+      },
+      {
+        "name": "6x12mm Silikon Neon LED (1cm)",
+        "specs": "12V, IP65, 1cm'de kesilebilir",
+        "img": "/images/products/6x12mm-silikon-neon-led-2-5cm-2.jpg"
+      },
+      {
+        "name": "6x12mm Silikon Neon LED (2.5cm)",
+        "specs": "12V, IP65, 2.5cm'de kesilebilir",
+        "img": "/images/products/6x12mm-silikon-neon-led-2-5cm-2.jpg"
+      },
+      {
+        "name": "6x12mm Mix Neon LED (1cm)",
+        "specs": "12V, IP65, mix çip, 1cm kesim",
+        "img": "/images/products/6x12mm-silikon-neon-led-2-5cm-2.jpg"
+      },
+      {
+        "name": "6x12mm Mix Neon LED (2.5cm)",
+        "specs": "12V, IP65, mix çip, 2.5cm kesim",
+        "img": "/images/products/6x12mm-silikon-neon-led-2-5cm-2.jpg"
+      },
+      {
+        "name": "5x12mm PVC Neon LED (2.5cm)",
+        "specs": "12V, IP65, PVC profil, ekonomik",
+        "img": "/images/products/5x12mm-pvc-neon-led-2.jpg"
+      },
+      {
+        "name": "8x16mm Neon LED (12V)",
+        "specs": "12V, IP65, yüksek profil silikon",
+        "img": "/images/products/8x16mm-neon-led-24v.jpg"
+      },
+      {
+        "name": "8x16mm Neon LED (24V)",
+        "specs": "24V, IP65, yüksek lümen silikon",
+        "img": "/images/products/8x16mm-neon-led-24v.jpg"
+      },
+      {
+        "name": "13mm D-Shape Neon LED",
+        "specs": "12V, IP65, D kesit, yan aydınlatma",
+        "img": "/images/products/13mm-d-shape-neon-led.jpg"
+      },
+      {
+        "name": "360° Neon LED",
+        "specs": "12V, IP65, her yöne ışık yayılımı",
+        "img": "/images/products/360-neon-led.webp"
+      },
+      {
+        "name": "İkinci Nesil Neon LED",
+        "specs": "12V, IP65, gelişmiş silikon yapı",
+        "img": "/images/products/ikinci-nesil-neon-led.webp"
+      },
+      {
+        "name": "220V Neon LED",
+        "specs": "220V, IP65, trafosuz direkt bağlantı",
+        "img": "/images/products/220v-neon-led.png"
+      },
+      {
+        "name": "220V Flat Neon Fiş Bağlantı Aparatı",
+        "specs": "220V neon için fişli besleme",
+        "img": "/images/products/220v-flat-neon-fis-baglanti-aparati.webp"
+      },
+      {
+        "name": "220V Flat Neon Silikon LED Kapağı",
+        "specs": "Uç kapatma silikon aparatı",
+        "img": "/images/products/220v-flat-neon-silikon-led-kapagi.png"
+      },
+      {
+        "name": "6x12mm Neon Başlangıç Bağlantı Aparatı",
+        "specs": "Hat başı besleme aparatı",
+        "img": "/images/products/6x12mm-neon-baslangic-baglanti-aparati.png"
+      },
+      {
+        "name": "6x12mm Neon Orta Bağlantı Aparatı",
+        "specs": "Hat uzatma ara bağlantı",
+        "img": "/images/products/6x12mm-neon-orta-baglanti-aparati.png"
+      },
+      {
+        "name": "6x12mm Neon LED Silikon LED Kapağı",
+        "specs": "Uç kapatma silikon aparatı",
+        "img": "/images/products/6x12mm-neon-led-silikon-led-kapagi.png"
+      },
+      {
+        "name": "8x16mm Neon Delikli Silikon LED Kapağı",
+        "specs": "8x16mm için delikli uç kapağı",
+        "img": "/images/products/8x16mm-neon-delikli-silikon-led-kapagi.png"
+      },
+      {
+        "name": "10x10mm Flat Neon Başlangıç Bağlantı Aparatı",
+        "specs": "Flat neon hat başı aparatı",
+        "img": "/images/products/10x10mm-flat-neon-baslangic-baglanti-aparati.png"
+      },
+      {
+        "name": "10x10mm Flat Neon Orta Bağlantı Aparatı",
+        "specs": "Flat neon ara bağlantı",
+        "img": "/images/products/10x10mm-flat-neon-orta-baglanti-aparati.png"
+      },
+      {
+        "name": "10x10mm Flat Neon Silikon LED Kapağı",
+        "specs": "Flat neon uç kapağı",
+        "img": "/images/products/10x10mm-flat-neon-silikon-led-kapagi.png"
+      },
+      {
+        "name": "6x12mm Alüminyum Neon LED Yuvası",
+        "specs": "Alüminyum montaj kanalı",
+        "img": "/images/products/9449.png"
+      },
+      {
+        "name": "10mm Alüminyum Neon Kanalı",
+        "specs": "Alüminyum profil kanal, 2m",
+        "img": "/images/products/10mm-aluminyum-neon-kanali.png"
+      },
+      {
+        "name": "Anahtarsız AC Kablo",
+        "specs": "220V neon için besleme kablosu",
+        "img": "/images/products/anahtarsiz-ac-kablo.png"
+      },
+      {
+        "name": "Neon Yapıştırıcı",
+        "specs": "Neon LED montaj yapıştırıcısı",
+        "img": "/images/products/neon-yapistirici.jpg"
+      },
+      {
+        "name": "Şeffaf Konektör",
+        "specs": "İkinci nesil neon hızlı bağlantı",
+        "img": "/images/products/seffaf-konektor.jpg"
+      },
+      {
+        "name": "CNC Ucu",
+        "specs": "İkinci nesil neon işleme ucu",
+        "img": "/images/products/cnc-ucu.jpg"
+      },
+      {
+        "name": "Köşeli Keski",
+        "specs": "Neon yuva açma köşeli keski",
+        "img": "/images/products/koseli-keski.jpg"
+      },
+      {
+        "name": "Oval Keski",
+        "specs": "Neon yuva açma oval keski",
+        "img": "/images/products/oval-keski.webp"
+      },
+      {
+        "name": "Kıl Kablo",
+        "specs": "İkinci nesil neon ince bağlantı kablosu",
+        "img": "/images/products/kil-kablo.jpg"
+      }
     ]
   },
   {
     "slug": "trafo-led-surucu",
-    "name": "Trafo / LED Sürücü",
-    "shortDesc": "LED aydınlatma sistemleri için güvenilir güç kaynakları ve trafoları",
-    "metaTitle": "LED Trafo Fiyatı | LED Sürücü Toptan | Nadasled",
-    "metaDesc": "Tabela ve LED aydınlatma için toptan trafo çeşitleri. Dinamo Plus, Dinamo Light, OSRAM Element, Moss Trafo. 12V-24V, 25W-400W arası slim ve dış mekan modelleri. Teknik destek ile satış.",
-    "h1": "LED Trafo ve Sürücüler — Toptan Tedarik",
+    "name": "LED Trafo / Adaptör",
+    "shortDesc": "İç ve dış mekan LED adaptör ve trafolar — Meanwell, Inventronics, Osram, ince ve epoksili kasalar",
+    "metaTitle": "LED Trafo / Adaptör Fiyatı | LED Sürücü Toptan | Nadasled",
+    "metaDesc": "Tabela ve LED aydınlatma için toptan trafo ve adaptör çeşitleri. Meanwell, Inventronics, Osram Element, ultra slim, kalem tipi, yağmur korumalı dış mekan modelleri. 12V-24V.",
+    "h1": "LED Trafo ve Adaptörler — Toptan Tedarik",
     "icon": "⚡",
     "image": "/images/trafo.webp",
     "color": "from-purple-500 to-indigo-500",
     "features": [
-      "12V ve 24V DC çıkış",
-      "25W'dan 400W'a kadar güç seçenekleri",
-      "Ultra Slim, Slim, Dar Kasa ve Dış Mekan modelleri",
-      "IP20 iç mekan ve IP67/IP68 dış mekan modelleri",
-      "Yağmur korumalı (Rainproof) seçenekler",
-      "Kısa devre, aşırı yük ve aşırı ısı koruması",
-      "Dinamo Plus, Dinamo Light, OSRAM Element serileri"
+      "12V ve 24V DC çıkış, geniş güç aralığı",
+      "Ultra Slim, Ultra Thin, Dar Kasa ve Kalem Tipi iç mekan",
+      "Meanwell, Inventronics ve Osram Element markaları",
+      "Epoksili (dolgulu) iç mekan modelleri",
+      "Yağmur korumalı ve metal kasa dış mekan (IP65/IP67)",
+      "Priz tipi, parmak tipi ve laptop tipi pratik adaptörler",
+      "Kısa devre, aşırı yük ve aşırı ısı koruması"
     ],
-    "keywords": ["led trafo", "led sürücü", "led driver", "tabela trafosu", "led güç kaynağı", "dinamo plus", "dinamo light", "osram element adaptör", "moss trafo", "slim trafo", "ultra slim trafo", "dış mekan trafo"],
-    "products": [
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 5A (60W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 8.3A (100W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 12.5A (150W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 16.7A (200W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 20A (240W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 25A (300W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Adaptör 12V 29A (348W)", "specs": "220V AC giriş, ultra ince kasa, iç mekan" },
-      { "name": "Dinamo Plus Ultra Slim Trafo 24V 10.4A (250W)", "specs": "220V AC giriş, ultra ince kasa, 24V çıkış" },
-      { "name": "Dinamo Light Ultra Slim Adaptör 12V 12.5A (150W)", "specs": "220V AC giriş, ultra ince kasa, ekonomi seri" },
-      { "name": "Dinamo Light Ultra Slim Pen Tipi Adaptör 25W", "specs": "220V AC giriş, kalem tipi kasa" },
-      { "name": "Dinamo Light Ultra Slim Pen Tipi Adaptör 36W", "specs": "220V AC giriş, kalem tipi kasa" },
-      { "name": "Dinamo Light Ultra Slim Pen Tipi Adaptör 60W", "specs": "220V AC giriş, kalem tipi kasa" },
-      { "name": "Dinamo Plus Dar Kasa Trafo 12V 5A (60W)", "specs": "220V AC giriş, dar metal kasa, iç mekan" },
-      { "name": "Dinamo Plus Dar Kasa Trafo 12V 12.5A (150W)", "specs": "220V AC giriş, dar metal kasa, iç mekan" },
-      { "name": "Dinamo Light 12V 8.5A Yağmur Korumalı Adaptör (100W)", "specs": "220V AC giriş, Rainproof, yarı dış mekan" },
-      { "name": "Dinamo Light Dış Mekan Trafo 12V 8.5A (100W)", "specs": "220V AC giriş, IP67, dış mekan" },
-      { "name": "Dinamo Light Dış Mekan Trafo 12V 12.5A (150W)", "specs": "220V AC giriş, IP67, dış mekan" },
-      { "name": "Dinamo Light Dış Mekan Trafo 12V 16.5A (200W)", "specs": "220V AC giriş, IP67, dış mekan" },
-      { "name": "Turkuaz Interone Dış Mekan Trafo 12V 25A (300W)", "specs": "220V AC giriş, IP68, ağır dış mekan koşulları" },
-      { "name": "OSRAM Element İç Mekan Adaptör 12V 30W", "specs": "220V AC giriş, OSRAM kalitesi, iç mekan" },
-      { "name": "OSRAM Element İç Mekan Adaptör 12V 60W", "specs": "220V AC giriş, OSRAM kalitesi, iç mekan" },
-      { "name": "OSRAM Element İç Mekan Adaptör 12V 120W", "specs": "220V AC giriş, OSRAM kalitesi, iç mekan" },
-      { "name": "OSRAM Element İç Mekan Adaptör 12V 180W", "specs": "220V AC giriş, OSRAM kalitesi, iç mekan" },
-      { "name": "OSRAM Element İç Mekan Adaptör 12V 250W", "specs": "220V AC giriş, OSRAM kalitesi, iç mekan" },
-      { "name": "OSRAM Element İç Mekan Adaptör 24V 60W", "specs": "220V AC giriş, OSRAM kalitesi, 24V çıkış" },
-      { "name": "OSRAM Element İç Mekan Adaptör 24V 120W", "specs": "220V AC giriş, OSRAM kalitesi, 24V çıkış" }
-    ]
-  },
-  {
-    "slug": "pergole-led",
-    "name": "Pergole LED",
-    "shortDesc": "Pergole, tente ve dış mekan yapıları için özel tasarım LED aydınlatma",
-    "metaTitle": "Pergole LED Toptan | Tente LED Fiyatı | Nadasled",
-    "metaDesc": "Pergole ve tente aydınlatması için toptan Pergole LED çeşitleri. 24V DC, IP65+, homojen ışık dağılımı. Çeşitli renk seçenekleri. Teklif almak için hemen arayın.",
-    "h1": "Pergole LED — Dış Mekan Aydınlatma",
-    "icon": "🏠",
-    "image": "/images/pergole-led.webp",
-    "color": "from-emerald-500 to-green-600",
-    "features": [
-      "Pergole, tente ve çardak uygulamaları",
-      "24V DC çalışma voltajı",
-      "IP65 ve üzeri su/toz geçirmezlik",
-      "Homojen ışık dağılımı",
-      "Uzun ömür (>50.000 saat)",
-      "Çeşitli renk seçenekleri",
-      "Kolay montaj sistemi"
+    "keywords": [
+      "led trafo",
+      "led adaptör",
+      "led sürücü",
+      "led driver",
+      "meanwell adaptör",
+      "inventronics adaptör",
+      "osram element adaptör",
+      "dış mekan led trafo"
     ],
-    "keywords": ["pergole led", "tente led", "dış mekan led", "pergola led", "çardak led", "pergole aydınlatma"],
     "products": [
-      { "name": "Pergole LED 4W 24V Soğuk Beyaz IP65", "specs": "24V, IP65, 4W, 6500K, homojen ışık" },
-      { "name": "Pergole LED 4W 24V Sıcak Beyaz IP65", "specs": "24V, IP65, 4W, 3000K" },
-      { "name": "Pergole LED 4W 24V Kırmızı IP65", "specs": "24V, IP65, 4W, dekoratif" },
-      { "name": "Pergole LED 4W 24V Mavi IP65", "specs": "24V, IP65, 4W, dekoratif" },
-      { "name": "Pergole LED 4W 24V Yeşil IP65", "specs": "24V, IP65, 4W, dekoratif" },
-      { "name": "Pergole LED 4W 24V RGB IP65", "specs": "24V, IP65, 4W, tam renk, kontrolör uyumlu" }
-    ]
-  },
-  {
-    "slug": "power-led",
-    "name": "Power LED",
-    "shortDesc": "Yüksek güçlü LED'ler — dekoratif tabela, ışıklı nesne ve özel projeler için",
-    "metaTitle": "Power LED Toptan | Yüksek Güçlü LED Fiyatı | Nadasled",
-    "metaDesc": "Dekoratif ve reklam aydınlatması için toptan Power LED çeşitleri. Tekli, üçlü ve daire kesit modeller. 1W, 3W, 5W. Teklif için hemen arayın.",
-    "h1": "Power LED — Yüksek Güçlü LED Toptan",
-    "icon": "🔆",
-    "image": "/images/power-led.webp",
-    "color": "from-orange-400 to-red-500",
-    "features": [
-      "1W, 3W ve 5W güç seçenekleri",
-      "Tekli ve çoklu kesit modeller",
-      "Yüksek lümen çıkışı",
-      "Sabit akım (constant current) sürücü gerektirir",
-      "Çeşitli renk sıcaklıkları",
-      "Reklam ve dekoratif aydınlatma için ideal",
-      "CE/RoHS sertifikalı"
-    ],
-    "keywords": ["power led", "yüksek güçlü led", "1w led", "3w led", "power led toptan"],
-    "products": [
-      { "name": "Power LED 1W Soğuk Beyaz", "specs": "Sabit akım sürücü gerekli, 6500K" },
-      { "name": "Power LED 1W Sıcak Beyaz", "specs": "Sabit akım sürücü gerekli, 3000K" },
-      { "name": "Power LED 1W Kırmızı", "specs": "Sabit akım sürücü gerekli" },
-      { "name": "Power LED 1W Mavi", "specs": "Sabit akım sürücü gerekli" },
-      { "name": "Power LED 1W Yeşil", "specs": "Sabit akım sürücü gerekli" },
-      { "name": "Power LED 3W Soğuk Beyaz", "specs": "Sabit akım sürücü gerekli, yüksek lümen" },
-      { "name": "Power LED 3W Sıcak Beyaz", "specs": "Sabit akım sürücü gerekli, 3000K" },
-      { "name": "Power LED 3W RGB", "specs": "Sabit akım sürücü gerekli, tam renk" },
-      { "name": "Kesit Aydınlatma Power LED 1.5W Tekli", "specs": "12V, profil ve kesit aydınlatma" },
-      { "name": "Kesit Aydınlatma Power LED 3W Üçlü", "specs": "12V, geniş yayılım, kesit uygulamaları" }
-    ]
-  },
-  {
-    "slug": "kablo",
-    "name": "Kablo",
-    "shortDesc": "Tabela elektrik tesisatı için çok damarlı kablo ve bağlantı ekipmanları",
-    "metaTitle": "Tabela Kablosu Toptan | Çok Damarlı Kablo Fiyatı | Nadasled",
-    "metaDesc": "Tabela yapımı ve LED bağlantısı için toptan kablo çeşitleri. 2x0.5'ten 3x2.5'e kadar YSLY, NYM ve H05VV-F tipler. Metre fiyatıyla toptan satış, hızlı kargo.",
-    "h1": "Tabela Kabloları — Toptan Metre Fiyatı",
-    "icon": "🔌",
-    "image": "/images/kablo.webp",
-    "color": "from-red-500 to-rose-500",
-    "features": [
-      "2x0.5mm² — 3x2.5mm² kesit seçenekleri",
-      "YSLY-OZ, NYM-J ve H05VV-F tip kablolar",
-      "Halogen free (alev geciktirici) seçenekler",
-      "UV dayanımlı dış mekan tipi",
-      "Siyah, beyaz ve kırmızı renk seçenekleri",
-      "Makaradan metre satış",
-      "100m ve 500m makara"
-    ],
-    "keywords": ["tabela kablosu", "led kablo", "kablo toptan", "çok damarlı kablo", "YSLY kablo", "NYM kablo"],
-    "products": [
-      { "name": "YSLY-OZ 2x0.5mm²", "specs": "100m makara, esnek, siyah" },
-      { "name": "YSLY-OZ 2x0.75mm²", "specs": "100m makara, esnek, siyah" },
-      { "name": "YSLY-OZ 2x1.0mm²", "specs": "100m makara, esnek, siyah" },
-      { "name": "YSLY-OZ 2x1.5mm²", "specs": "100m makara, esnek" },
-      { "name": "YSLY-OZ 3x1.0mm²", "specs": "100m makara, 3 damarlı esnek" },
-      { "name": "YSLY-OZ 3x1.5mm²", "specs": "100m makara, 3 damarlı esnek" },
-      { "name": "NYM-J 3x1.5mm²", "specs": "100m makara, sabit döşeme, beyaz" },
-      { "name": "NYM-J 3x2.5mm²", "specs": "100m makara, sabit döşeme" },
-      { "name": "H05VV-F 2x0.75mm²", "specs": "100m, esnek, beyaz veya siyah" },
-      { "name": "LED Bağlantı Kablosu 2 Damarlı Kırmızı-Siyah", "specs": "50m makara, 0.5mm², LED modül bağlantısı" }
+      {
+        "name": "Ultra Slim İç Mekan Adaptör",
+        "specs": "220V AC giriş, ultra ince kasa, iç mekan",
+        "img": "/images/products/ultra-slim-ic-mekan-adaptor.jpg"
+      },
+      {
+        "name": "Ultraslim İç Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, ince kasa, yüksek verim",
+        "img": "/images/products/ultra-slim-ic-mekan-adaptor-dinamo-plus.png"
+      },
+      {
+        "name": "Ultra Thin Mini Epoksili Plus+ Adaptör",
+        "specs": "220V AC giriş, mini epoksili dolgulu",
+        "img": "/images/products/ultra-thin-ic-mekan-adaptor.jpg"
+      },
+      {
+        "name": "Dar Kasa İç Mekan Epoksili Adaptör",
+        "specs": "220V AC giriş, dar kasa, epoksili",
+        "img": "/images/products/dar-kasa-ic-mekan-adaptor.webp"
+      },
+      {
+        "name": "Dar Kasa İç Mekan Epoksili Plus+ Adaptör",
+        "specs": "220V AC giriş, dar kasa, yüksek verim",
+        "img": "/images/products/dar-kasa-ic-mekan-adaptor-dinamo-plus.jpg"
+      },
+      {
+        "name": "Kalem Tipi İç Mekan Epoksili Plus+ Adaptör",
+        "specs": "220V AC giriş, kalem tipi epoksili",
+        "img": "/images/products/ic-mekan-kalem-tipi-adaptor.webp"
+      },
+      {
+        "name": "Parmak Tipi Mini Adaptör",
+        "specs": "220V AC giriş, kompakt parmak tipi",
+        "img": "/images/products/parmak-tipi-mini-adaptor.jpg"
+      },
+      {
+        "name": "Priz Tipi İç Mekan Adaptör",
+        "specs": "220V AC giriş, prize takılır pratik",
+        "img": "/images/products/priz-tipi-ic-mekan-adaptor.png"
+      },
+      {
+        "name": "Laptop Tipi İç Mekan Adaptör",
+        "specs": "220V AC giriş, laptop kasa formu",
+        "img": "/images/products/laptop-tipi-ic-mekan-adaptor.jpg"
+      },
+      {
+        "name": "Meanwell İç Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, Meanwell kalitesi, iç mekan",
+        "img": "/images/products/meanwell-ic-mekan-adaptor.png"
+      },
+      {
+        "name": "Osram Element Serisi İç Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, Osram Element, iç mekan",
+        "img": "/images/products/osram-ic-mekan-adaptor-element-serisi.jpg"
+      },
+      {
+        "name": "Metal Kasa Dış Mekan Adaptör",
+        "specs": "220V AC giriş, metal kasa, dış mekan",
+        "img": "/images/products/metal-kasa-dis-mekan-adaptor-dinamo-light.png"
+      },
+      {
+        "name": "Metal Kasa Dış Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, metal kasa, yüksek verim",
+        "img": "/images/products/metal-kasa-dis-mekan-adaptor.jpg"
+      },
+      {
+        "name": "Yağmur Korumalı Adaptör",
+        "specs": "220V AC giriş, Rainproof, yarı dış mekan",
+        "img": "/images/products/yagmur-korumali-adaptor.png"
+      },
+      {
+        "name": "Yağmur Korumalı Epoksili Adaptör",
+        "specs": "220V AC giriş, epoksili, yağmur korumalı",
+        "img": "/images/products/yagmur-korumali-trafo-dinamo-light.png"
+      },
+      {
+        "name": "Yağmur Korumalı Epoksili Plus+ Adaptör",
+        "specs": "220V AC giriş, epoksili, yüksek verim",
+        "img": "/images/products/yagmur-korumali-trafo-dinamo-plus.png"
+      },
+      {
+        "name": "Meanwell Dış Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, Meanwell, IP67 dış mekan",
+        "img": "/images/products/meanwell-dis-mekan-adaptor.jpg"
+      },
+      {
+        "name": "İnventronics Dış Mekan Plus+ Adaptör",
+        "specs": "220V AC giriş, Inventronics, dış mekan",
+        "img": "/images/products/inventronics-dis-mekan-adaptor-12v.jpg"
+      },
+      {
+        "name": "İnventronics Dış Mekan Adaptör (EBV Serisi)",
+        "specs": "220V AC giriş, EBV serisi, ağır dış mekan",
+        "img": "/images/products/inventronics-dis-mekan-adaptor-ebv-serisi.webp"
+      }
     ]
   },
   {
     "slug": "point-led",
     "name": "Point LED",
-    "shortDesc": "Tabela yüzü ve kutu harf aydınlatması için nokta LED ve pixel LED modüller",
+    "shortDesc": "Tabela yüzü ve kutu harf için nokta LED ve pixel point LED modüller",
     "metaTitle": "Point LED Toptan | Nokta LED Fiyatı | Nadasled",
-    "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel LED çeşitleri. 20mm, 30mm, 50mm. Teklif için hemen arayın.",
+    "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel point LED çeşitleri. 20mm, 30mm, 50mm, şapkalı ve kesik baş modeller. Teklif için arayın.",
     "h1": "Point LED / Nokta LED — Toptan Tedarik",
     "icon": "🔵",
     "image": "/images/point-led-nokta.webp",
     "color": "from-sky-500 to-blue-600",
     "features": [
       "20mm, 30mm ve 50mm çap seçenekleri",
-      "12V ve 24V",
-      "IP65 su geçirmez",
-      "Tek renkli ve RGB",
+      "Şapkalı, kesik baş ve ek aparatlı modeller",
+      "Tek renkli ve adreslenebilir Pixel point LED",
+      "12V, IP65 su geçirmez",
       "360° ışık yayılımı",
-      "Tabela yüzü ve light box uyumlu",
-      "WS2811 adreslenebilir pixel LED seçeneği"
+      "Tabela yüzü, açık hava nokta aydınlatması",
+      "Dijital pixel kontrol cihazlarıyla uyumlu"
     ],
-    "keywords": ["point led", "nokta led", "pixel led", "tabela point led", "point led toptan", "ws2811 led"],
+    "keywords": [
+      "point led",
+      "nokta led",
+      "pixel point led",
+      "tabela point led",
+      "point led toptan",
+      "30mm point led",
+      "50mm point led"
+    ],
     "products": [
-      { "name": "Point LED 20mm Soğuk Beyaz 12V", "specs": "12V, IP65, 0.5W, 6500K" },
-      { "name": "Point LED 20mm Sıcak Beyaz 12V", "specs": "12V, IP65, 0.5W, 3000K" },
-      { "name": "Point LED 30mm Soğuk Beyaz 12V", "specs": "12V, IP65, 1W, yüksek parlaklık" },
-      { "name": "Point LED 30mm Sıcak Beyaz 12V", "specs": "12V, IP65, 1W, 3000K" },
-      { "name": "Point LED 30mm RGB 12V", "specs": "12V, IP65, 1W, tam renk" },
-      { "name": "Point LED 50mm Soğuk Beyaz 12V", "specs": "12V, IP65, 3W, büyük tabela" },
-      { "name": "Point LED 50mm RGB 12V", "specs": "12V, IP65, 3W, DMX kontrolü uyumlu" },
-      { "name": "Pixel LED WS2811 12mm 12V RGB", "specs": "12V, dijital adreslenebilir, 5cm kablo" },
-      { "name": "Pixel LED WS2812B 5V RGB", "specs": "5V, bireysel kontrol, yoğun renk" }
+      {
+        "name": "20mm Point LED",
+        "specs": "12V, IP65, küçük nokta, tabela yüzü",
+        "img": "/images/products/point-led-20mm.png"
+      },
+      {
+        "name": "30mm Şapkalı Point LED",
+        "specs": "12V, IP65, şapkalı geniş açı",
+        "img": "/images/products/30mm-sapkali-point-led.png"
+      },
+      {
+        "name": "30mm Kesik Baş Point LED",
+        "specs": "12V, IP65, kesik baş difüzör",
+        "img": "/images/products/30mm-kesik-bas-point-led.webp"
+      },
+      {
+        "name": "30mm Şapka (Ek Aparat)",
+        "specs": "30mm point LED için ek şapka aparatı",
+        "img": "/images/products/30mm-sapka-ek-aparat.png"
+      },
+      {
+        "name": "50mm Point LED",
+        "specs": "12V, IP65, büyük nokta, yüksek parlaklık",
+        "img": "/images/products/point-led-50mm.png"
+      },
+      {
+        "name": "50mm Pixel Point LED",
+        "specs": "12V, IP65, adreslenebilir pixel",
+        "img": "/images/products/pixel-point-led-50mm.png"
+      }
     ]
   },
   {
-    "slug": "light-box-led",
-    "name": "Light Box LED",
-    "shortDesc": "Işıklı tabela, kutu harf ve light box aydınlatması için yüksek mercekli LED modüller",
-    "metaTitle": "Light Box LED Toptan | Kutu Harf LED | Işıklı Tabela LED | Nadasled",
-    "metaDesc": "Işıklı tabela ve kutu harf yapımı için toptan light box LED modül çeşitleri. Yüksek mercekli, geniş açılı, derin kutu uyumlu. Teknik destek ile satış.",
-    "h1": "Light Box LED — Işıklı Tabela ve Kutu Harf Malzemeleri",
-    "icon": "📦",
-    "image": "/images/light-box-led.webp",
+    "slug": "kesit-aydinlatma-led",
+    "name": "Kesit Aydınlatma LED",
+    "shortDesc": "Kanal harf ve profil kesitinden aydınlatma için tekli/üçlü LED ve LED bar çözümleri",
+    "metaTitle": "Kesit Aydınlatma LED | Kesitten Aydınlatma LED Bar | Nadasled",
+    "metaDesc": "Kanal harf ve profil kesitinden aydınlatma için toptan kesit LED çeşitleri. 1.5W tekli, 3W üçlü ECO modeller ve IP20/IP65 kesitten aydınlatma LED bar. Teklif için arayın.",
+    "h1": "Kesit Aydınlatma LED — Kanal Harf Çözümleri",
+    "icon": "📐",
+    "image": "/images/kesit-led.webp",
     "color": "from-amber-400 to-orange-500",
     "features": [
-      "Yüksek mercekli lens teknolojisi",
-      "Geniş ışık açısı (120°–160°)",
-      "Derin kutu (10–30cm) aydınlatmaya uygun",
-      "Homojen ışık dağılımı, gölge yok",
-      "12V, IP65",
-      "Tek renkli ve RGB seçenekleri",
-      "Fortune Plus ve Mercekli Eco serisi uyumlu"
+      "Kanal harf ve profil kesitinden aydınlatma",
+      "1.5W tekli ve 3W üçlü modüller",
+      "ECO ve standart seri seçenekleri",
+      "IP20 iç ve IP65 dış mekan LED bar",
+      "50cm ve 100cm hazır bar boyları",
+      "Geniş ışık açısı, homojen dağılım",
+      "12V, CE / RoHS sertifikalı"
     ],
-    "keywords": ["light box led", "kutu harf led", "ışıklı tabela led", "tabela arka aydınlatma", "kutu harf modülü", "mercekli led"],
+    "keywords": [
+      "kesit aydınlatma led",
+      "kesitten aydınlatma led bar",
+      "kanal harf led",
+      "kesit led",
+      "profil aydınlatma led"
+    ],
     "products": [
-      { "name": "Light Box Modül 1W Tek Mercekli Beyaz", "specs": "12V, IP65, 120° açı, soğuk beyaz" },
-      { "name": "Light Box Modül 1.5W 3 Mercekli Beyaz", "specs": "12V, IP65, 150° açı, soğuk beyaz" },
-      { "name": "Light Box Modül 1.5W 3 Mercekli Sarı", "specs": "12V, IP65, 150° açı, 3000K" },
-      { "name": "Light Box Modül 3W 5 Mercekli Beyaz", "specs": "12V, IP65, 160° açı, derin kutu" },
-      { "name": "Light Box Modül 5W Güçlü Beyaz", "specs": "12V, IP65, büyük ışıklı kutular için" },
-      { "name": "Light Box Modül RGB 3 Mercekli", "specs": "12V, IP65, tam renk, kontrolör uyumlu" },
-      { "name": "Fortune Plus Mercekli Modül LED 1.2W Beyaz", "specs": "12V, IP65, Epistar çip, 61x14mm" },
-      { "name": "Mercekli Modül LED Eco 1.5W Beyaz", "specs": "12V, IP65, GaN çip, yüksek lümen" },
-      { "name": "COB Light Box Şerit 10W/m 24V", "specs": "24V, IP20, kesintisiz homojen aydınlatma" },
-      { "name": "Light Box LED Seti (Modül + Kablo)", "specs": "12V, 10'lu paket, hazır bağlantı" }
+      {
+        "name": "1.5W Tekli Kesit Aydınlatma",
+        "specs": "12V, tekli LED, kanal harf kesiti",
+        "img": "/images/products/1-5w-tekli-kesit-aydinlatma.png"
+      },
+      {
+        "name": "1.5W ECO Tekli Kesit Aydınlatma",
+        "specs": "12V, ekonomik tekli kesit modülü",
+        "img": "/images/products/eco-1-5w-tekli-kesit-aydinlatma.png"
+      },
+      {
+        "name": "3'lü 3W Kesit Aydınlatma",
+        "specs": "12V, üçlü LED, geniş yayılım",
+        "img": "/images/products/3lu-3w-kesit-aydinlatma.png"
+      },
+      {
+        "name": "IP20 Kesitten Aydınlatma LED Bar",
+        "specs": "12V, IP20, iç mekan hazır bar",
+        "img": "/images/products/kesitten-aydinlatma-led-bar-ip20.jpg"
+      },
+      {
+        "name": "IP65 Kesitten Aydınlatma LED Bar",
+        "specs": "12V, IP65, dış mekan hazır bar",
+        "img": "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg"
+      },
+      {
+        "name": "IP65 LED Bar Kesitten Aydınlatma (50/100cm)",
+        "specs": "12V, IP65, 50cm ve 100cm boy",
+        "img": "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg"
+      }
     ]
   },
   {
-    "slug": "aksesuar",
-    "name": "Aksesuar & Diğer",
-    "shortDesc": "Kontrol üniteleri, bağlantı aparatları ve tabela yapım aksesuarları",
-    "metaTitle": "Tabela Aksesuarları Toptan | LED Kontrolör, Konnektör | Nadasled",
-    "metaDesc": "Bluetooth RGB, WiFi, sese duyarlı, dokunmatik LED kontrolörler; Pixel LED kontrol cihazı; Wago konnektör; neon LED aparat. Toptan fiyatla tek adreste.",
-    "h1": "Tabela Aksesuarları — Kontrolör, Konnektör ve Daha Fazlası",
-    "icon": "🔧",
-    "image": "/images/aksesuar.webp",
+    "slug": "zemin-aydinlatma-led",
+    "name": "Zemin Aydınlatma LED",
+    "shortDesc": "Light box ve perde tipi LED bar — zemin ve geniş yüzey arka aydınlatma için",
+    "metaTitle": "Zemin Aydınlatma LED | Lightbox LED Bar | Perde LED | Nadasled",
+    "metaDesc": "Işıklı kutu (light box) ve geniş yüzey aydınlatması için toptan zemin aydınlatma LED bar çeşitleri. 13mm/16mm PCB LED bar, geniş açılı ve perde LED modeller. İç/dış mekan.",
+    "h1": "Zemin Aydınlatma LED — Light Box ve Perde LED Bar",
+    "icon": "📦",
+    "image": "/images/light-box-led.webp",
+    "color": "from-amber-400 to-yellow-500",
+    "features": [
+      "Light box (ışıklı kutu) zemin aydınlatması",
+      "13mm ve 16mm PCB LED bar",
+      "Soketli ve vidalı montaj seçenekleri",
+      "Geniş açılı, iz yapmayan homojen ışık",
+      "İç ve dış mekan perde LED bar",
+      "50cm ve 100cm boy seçenekleri",
+      "Derin kutu ve geniş yüzeyler için ideal"
+    ],
+    "keywords": [
+      "zemin aydınlatma led",
+      "lightbox led bar",
+      "light box led",
+      "perde led bar",
+      "pcb led bar",
+      "ışıklı kutu led"
+    ],
+    "products": [
+      {
+        "name": "13mm PCB LED Bar (Soketli)",
+        "specs": "12V, soketli bağlantı, light box",
+        "img": "/images/products/13mm-pcb-led-bar-vidali.jpg"
+      },
+      {
+        "name": "13mm PCB LED Bar (Vidalı)",
+        "specs": "12V, vidalı montaj, light box",
+        "img": "/images/products/13mm-pcb-led-bar-vidali.jpg"
+      },
+      {
+        "name": "16mm PCB Geniş Açılı LED Bar (Soketli)",
+        "specs": "12V, geniş açı, soketli, iz yapmaz",
+        "img": "/images/products/16mm-pcb-genis-acili-led-bar-vidali.jpg"
+      },
+      {
+        "name": "16mm PCB Geniş Açılı LED Bar (Vidalı)",
+        "specs": "12V, geniş açı, vidalı montaj",
+        "img": "/images/products/16mm-pcb-genis-acili-led-bar-vidali.jpg"
+      },
+      {
+        "name": "İç Mekan Perde LED Zemin Aydınlatma (100cm)",
+        "specs": "12V, IP20, 100cm perde bar",
+        "img": "/images/products/ic-mekan-perde-led-zemin-aydinlatma.webp"
+      },
+      {
+        "name": "Dış Mekan Perde LED Zemin Aydınlatma (50cm)",
+        "specs": "12V, IP65, 50cm dış mekan bar",
+        "img": "/images/products/dis-mekan-perde-led-zemin-aydinlatma-50cm.jpg"
+      },
+      {
+        "name": "Dış Mekan Perde LED Zemin Aydınlatma (100cm)",
+        "specs": "12V, IP65, 100cm dış mekan bar",
+        "img": "/images/products/dis-mekan-perde-led-zemin-aydinlatma-50cm.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "pergole-led",
+    "name": "Pergola LED",
+    "shortDesc": "Pergola, tente ve dış mekan yapıları için özel tasarım LED aydınlatma",
+    "metaTitle": "Pergola LED Toptan | Tente LED Fiyatı | Nadasled",
+    "metaDesc": "Pergola ve tente aydınlatması için toptan Pergola LED çeşitleri. 24V DC, IP65+, homojen ışık dağılımı, dış mekan dayanımı. Teklif almak için hemen arayın.",
+    "h1": "Pergola LED — Dış Mekan Aydınlatma",
+    "icon": "🏠",
+    "image": "/images/pergole-led.webp",
+    "color": "from-emerald-500 to-green-600",
+    "features": [
+      "Pergola, tente ve çardak uygulamaları",
+      "Dış mekan dayanımlı yapı",
+      "IP65 ve üzeri su/toz geçirmezlik",
+      "Homojen ışık dağılımı",
+      "Uzun ömür (>50.000 saat)",
+      "Kolay montaj sistemi",
+      "CE / RoHS sertifikalı"
+    ],
+    "keywords": [
+      "pergola led",
+      "tente led",
+      "pergola aydınlatma",
+      "dış mekan led",
+      "çardak led"
+    ],
+    "products": [
+      {
+        "name": "Pergola LED",
+        "specs": "24V, IP65, homojen dış mekan aydınlatma",
+        "img": "/images/products/pergole-led.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "led-kontrol-uniteleri",
+    "name": "LED Kontrol Üniteleri",
+    "shortDesc": "RGB kumanda, dimmer, pixel kontrol, sinyal yükseltici, sensör ve aç/kapa aparatları",
+    "metaTitle": "LED Kontrol Üniteleri | RGB Kumanda, Dimmer, Pixel | Nadasled",
+    "metaDesc": "LED sistemleri için toptan kontrol üniteleri. RGB kumanda, dokunmatik/potanslı dimmer, pixel RGB kontrol cihazları (SP107E/SP110E/SP548E), repeater, radar sensör ve anahtarlar.",
+    "h1": "LED Kontrol Üniteleri — Kumanda, Dimmer ve Pixel",
+    "icon": "🎛️",
+    "image": "/images/kontrol.webp",
     "color": "from-green-500 to-teal-500",
     "features": [
-      "Dokunmatik, RF kumanda, Bluetooth ve WiFi kontrolörler",
-      "Sese duyarlı RGB kontrolör",
-      "Pixel LED kontrol cihazı (1000 pixel)",
-      "DALI dimmer desteği",
-      "Lehimsiz hızlı konnektör ve Wago parçaları",
-      "Neon LED bağlantı ve köşe aparatları",
-      "Şerit LED bağlantı aparatları (5mm, 8mm, 10mm)"
+      "RGB kumandalar: dokunmatik, RF, Bluetooth, sese duyarlı",
+      "Dimmer kontrol: potanslı, dokunmatik, mini ve kablolu",
+      "Pixel RGB kontrol cihazları (SP107E / SP110E / SP548E)",
+      "Sinyal yükseltici (repeater) — uzun şerit sistemleri",
+      "Radar / hareket sensörü",
+      "Aç / kapa anahtarları (dokunmatik, arapuarlı)",
+      "12-24V, geniş akım seçenekleri"
     ],
-    "keywords": ["led kontrolör", "led konnektör", "tabela aksesuarı", "rgb kontrolör", "bluetooth led", "wifi led", "pixel led kontrolör", "neon led aparat"],
+    "keywords": [
+      "led kontrol ünitesi",
+      "rgb kumanda",
+      "led dimmer",
+      "pixel kontrol cihazı",
+      "bluetooth rgb kontrol",
+      "led repeater",
+      "sp107e",
+      "sp110e"
+    ],
     "products": [
-      { "name": "Bluetooth RGB Kontrol Cihazı 12V 6A", "specs": "12–24V, akıllı telefon ile kontrol, uygulama uyumlu" },
-      { "name": "RGB Kontrol Cihazı 36A Dokunmatik Kumanda", "specs": "12–24V, 432W/864W, uzun şerit sistemleri" },
-      { "name": "RGB Kontrol Cihazı 6A 24 Tuşlu Kumanda", "specs": "12–24V, 72W/144W, RF uzaktan kumanda" },
-      { "name": "Sese Duyarlı RGB Kontrol Cihazı 6A", "specs": "12–24V, müzik ve sese tepkili aydınlatma" },
-      { "name": "LED Dimmer Kontrol Cihazı 3A Dokunmatik", "specs": "12–24V, PWM, tek renkli şerit" },
-      { "name": "Pixel LED Kontrol Cihazı", "specs": "5–24V, 1000 pixel kapasitesi, adreslenebilir LED" },
-      { "name": "WiFi LED Kontrol Ünitesi RGB", "specs": "12–24V, akıllı ev uyumlu, ses kontrolü" },
-      { "name": "DALI Dimmer Tek Renk 10A", "specs": "12–24V, DALI protokol, profesyonel dimming" },
-      { "name": "Tunable LED Kontrol Ünitesi CCT", "specs": "12–24V, renk sıcaklığı ayarı, 2 kanal" },
-      { "name": "Güç Yükselteci (Repeater) RGB", "specs": "12–24V, sinyal amplifikatörü, 12A" },
-      { "name": "Şerit LED Bağlantı Aparatı Düz 8mm", "specs": "Lehimsiz, IP20 şerit, 2 pin" },
-      { "name": "Şerit LED Bağlantı Aparatı L Köşe 8mm", "specs": "Lehimsiz, 90° köşe" },
-      { "name": "Şerit LED Bağlantı Aparatı Kablolu 8mm", "specs": "Lehimsiz, ara bağlantı" },
-      { "name": "Şerit LED Konnektör 4 Pin RGB 10mm Lehimsiz", "specs": "RGB şerit uyumlu, hızlı bağlantı" },
-      { "name": "Wago Konnektör 2 Girişli (10'lu Paket)", "specs": "0.5–2.5mm² kablo uyumlu" },
-      { "name": "Wago Konnektör 3 Girişli (10'lu Paket)", "specs": "0.5–2.5mm² kablo uyumlu" },
-      { "name": "Güç Dağıtım Kutusu 6 Çıkışlı", "specs": "12V/24V LED sistemleri, sigortalı" },
-      { "name": "Neon LED Başlık Kapağı 6x12mm", "specs": "Silikon, uç kapatma aparatı" },
-      { "name": "Neon LED 90° Köşe Bağlantı 6x12mm", "specs": "L tipi aparat, köşe geçiş" },
-      { "name": "Neon LED Düz Bağlantı Aparatı 6x12mm", "specs": "Hat uzatma, şeffaf" },
-      { "name": "Alüminyum Neon LED Yuvası 6x12mm 2m", "specs": "Neon LED için alüminyum kanal" }
+      {
+        "name": "Dokunmatik RGB Kontrol Cihazı",
+        "specs": "12-24V, dokunmatik kumanda, RGB",
+        "img": "/images/products/dokunmatik-rgb-kontrol-cihazi.jpg"
+      },
+      {
+        "name": "Bluetooth RGB Kontrol Ünitesi",
+        "specs": "12-24V, telefon uygulaması ile kontrol",
+        "img": "/images/products/bluetooth-rgb-kontrol-unitesi.jpg"
+      },
+      {
+        "name": "20 Tuşlu Sese Duyarlı RGB Kontrol Cihazı",
+        "specs": "12-24V, müzik / sese tepkili",
+        "img": "/images/products/20-tuslu-sese-duyarli-rgb-kontrol-cihazi.jpg"
+      },
+      {
+        "name": "24 Tuşlu RGB Kontrol Cihazı",
+        "specs": "12-24V, RF uzaktan kumanda, 24 tuş",
+        "img": "/images/products/24-tuslu-rgb-kontrol-cihazi-2.jpg"
+      },
+      {
+        "name": "44 Tuşlu RGB Kontrol Cihazı",
+        "specs": "12-24V, RF kumanda, gelişmiş modlar",
+        "img": "/images/products/44-tuslu-rgb-kontrol-cihazi.jpg"
+      },
+      {
+        "name": "30A Potanslı Dimmer",
+        "specs": "12-24V, 30A, potansiyometre ayarlı",
+        "img": "/images/products/30a-potansli-dimmer.png"
+      },
+      {
+        "name": "30A Potanslı Dimmer (Yerli Üretim)",
+        "specs": "12-24V, 30A, yerli üretim",
+        "img": "/images/products/30a-potansli-dimmer.png"
+      },
+      {
+        "name": "8A Potanslı Dimmer",
+        "specs": "12-24V, 8A, potansiyometre ayarlı",
+        "img": "/images/products/8a-potansli-dimmer.png"
+      },
+      {
+        "name": "8A Potanslı Dimmer (Yerli Üretim)",
+        "specs": "12-24V, 8A, yerli üretim",
+        "img": "/images/products/8a-potansli-dimmer.png"
+      },
+      {
+        "name": "6A Mini Dimmer Kontrol Cihazı",
+        "specs": "12-24V, 6A, kompakt",
+        "img": "/images/products/6a-mini-dimmer-kontrol-cihazi.png"
+      },
+      {
+        "name": "Dimmer Kontrol Cihazı",
+        "specs": "12-24V, tek renk PWM dimming",
+        "img": "/images/products/dimmer-kontrol-cihazi-2.png"
+      },
+      {
+        "name": "Dokunmatik Dimmer Kontrol Cihazı",
+        "specs": "12-24V, dokunmatik, tek renk",
+        "img": "/images/products/dokunmatik-dimmer-kontrol-cihazi-2.jpg"
+      },
+      {
+        "name": "Kablo Dimmer Kontrol Cihazı",
+        "specs": "12-24V, hat üzeri ara dimmer",
+        "img": "/images/products/kablo-dimmer-kontrol-cihazi.jpg"
+      },
+      {
+        "name": "Pixel LED Kontrol Cihazı",
+        "specs": "5-24V, adreslenebilir pixel kontrol",
+        "img": "/images/products/pixel-led-kontrol-cihazi.jpg"
+      },
+      {
+        "name": "Pixel RGB Kontrol Cihazı (SP107E)",
+        "specs": "5-24V, Bluetooth pixel kontrol",
+        "img": "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png"
+      },
+      {
+        "name": "Pixel RGB Kontrol Cihazı (SP110E)",
+        "specs": "5-24V, Bluetooth pixel kontrol",
+        "img": "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png"
+      },
+      {
+        "name": "22 Tuşlu Pixel RGB Kontrol Cihazı (SP548E)",
+        "specs": "5-24V, WiFi + RF pixel kontrol",
+        "img": "/images/products/22-tuslu-pixel-rgb-kontrol-cihazi-sp548e.png"
+      },
+      {
+        "name": "RGB Pixel Kontrol Cihazı",
+        "specs": "5-24V, adreslenebilir RGB pixel",
+        "img": "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png"
+      },
+      {
+        "name": "24A RGB Repeater",
+        "specs": "12-24V, 24A sinyal yükseltici",
+        "img": "/images/products/24a-rgb-repeater.jpg"
+      },
+      {
+        "name": "30A Dimmer Repeater",
+        "specs": "12-24V, 30A sinyal yükseltici",
+        "img": "/images/products/30a-dimmer-repeater.jpg"
+      },
+      {
+        "name": "Radar Sensör",
+        "specs": "12-24V, hareket algılamalı otomasyon",
+        "img": "/images/products/radar-sensor.png"
+      },
+      {
+        "name": "Siyah Dokunmatik Anahtar",
+        "specs": "Dokunmatik aç / kapa anahtarı",
+        "img": "/images/products/siyah-dokunmatik-anahtar.png"
+      },
+      {
+        "name": "Arapuarlı Anahtar",
+        "specs": "Hat üzeri ara aç / kapa anahtarı",
+        "img": "/images/products/arapuarli-anahtar.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "reklam-araclari",
+    "name": "Reklam Araçları",
+    "shortDesc": "Görsel projektör lambalar ve döner projeksiyon — vitrin ve reklam aydınlatması için",
+    "metaTitle": "Reklam Araçları | Görsel Projektör Lamba | Nadasled",
+    "metaDesc": "Vitrin ve reklam aydınlatması için toptan reklam araçları. Tek ve 4 görselli projektör lambalar, döner projeksiyon. Logo ve görsel yansıtma çözümleri. Teklif için arayın.",
+    "h1": "Reklam Araçları — Projektör ve Görsel Yansıtma",
+    "icon": "📽️",
+    "image": "/images/power-led.webp",
+    "color": "from-orange-400 to-red-500",
+    "features": [
+      "Logo ve görsel yansıtan projektör lambalar",
+      "Tek ve 4 görsel slot seçenekleri",
+      "Döner projeksiyon modeli",
+      "Vitrin, zemin ve cephe uygulamaları",
+      "Yüksek parlaklık, net görüntü",
+      "Kolay görsel değişimi",
+      "İç ve yarı dış mekan kullanımı"
+    ],
+    "keywords": [
+      "reklam araçları",
+      "görsel projektör lamba",
+      "logo projektör",
+      "gobo projektör",
+      "döner projeksiyon",
+      "reklam aydınlatma"
+    ],
+    "products": [
+      {
+        "name": "Tek Görsel Projektör Lamba",
+        "specs": "Tek görsel slotu, logo yansıtma",
+        "img": "/images/products/doner-projeksiyon.png"
+      },
+      {
+        "name": "4 Görsel Projektör Lamba",
+        "specs": "4 görsel slotu, çoklu yansıtma",
+        "img": "/images/products/4-gorsel-projektor-lamba.png"
+      }
+    ]
+  },
+  {
+    "slug": "yardimci-urunler",
+    "name": "Yardımcı Ürünler",
+    "shortDesc": "Kablo, konnektör, WAGO ve sonlandırıcı — LED sistemleri için yardımcı ekipman",
+    "metaTitle": "Yardımcı Ürünler | LED Kablo, WAGO, Konnektör | Nadasled",
+    "metaDesc": "LED sistemleri için toptan yardımcı ekipman. NYAF bakır kablo, 2mt soketli şeffaf kablo, WAGO ve kablo bağlantı aparatları, kablo sonlandırıcı. Hızlı kargo, uygun fiyat.",
+    "h1": "Yardımcı Ürünler — Kablo ve Bağlantı Ekipmanları",
+    "icon": "🔧",
+    "image": "/images/aksesuar.webp",
+    "color": "from-slate-500 to-gray-600",
+    "features": [
+      "NYAF çok telli bakır kablo",
+      "2mt soketli şeffaf besleme kablosu",
+      "WAGO hızlı bağlantı aparatları",
+      "Lehimsiz kablo bağlantı aparatları",
+      "Kablo sonlandırıcı uç aparatları",
+      "LED modül ve şerit besleme bağlantıları",
+      "Toptan ve perakende satış"
+    ],
+    "keywords": [
+      "led kablo",
+      "wago konnektör",
+      "nyaf kablo",
+      "kablo bağlantı aparatı",
+      "soketli kablo",
+      "kablo sonlandırıcı",
+      "led yardımcı ürünler"
+    ],
+    "products": [
+      {
+        "name": "NYAF Bakır Kablo",
+        "specs": "Çok telli esnek bakır besleme kablosu",
+        "img": "/images/products/nyaf-bakir-kablo.jpg"
+      },
+      {
+        "name": "2mt Soketli Şeffaf Kablo",
+        "specs": "12-24V, soketli hazır besleme, 2m",
+        "img": "/images/products/2mt-soketli-seffaf-kablo.png"
+      },
+      {
+        "name": "WAGO Bağlantı Aparatları",
+        "specs": "Lehimsiz hızlı kablo bağlantısı",
+        "img": "/images/products/wago-baglanti-aparatlari.png"
+      },
+      {
+        "name": "Kablo Bağlantı Aparatları",
+        "specs": "Lehimsiz konnektör çeşitleri",
+        "img": "/images/products/kablo-baglanti-aparatlari.jpg"
+      },
+      {
+        "name": "Kablo Sonlandırıcı",
+        "specs": "Hat sonu kapatma ve sonlandırma",
+        "img": "/images/products/kablo-sonlandirici.png"
+      }
     ]
   }
 ]

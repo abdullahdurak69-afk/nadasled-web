@@ -1,19 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import catalog from "@/data/products.json";
 
-const products = [
-  { title: "LED Modül", desc: "2835 / 5730 / 3030 çipli, IP65 su geçirmez modüller. Işıklı tabela için.", slug: "led-modul", img: "/images/led-modul.jpg" },
-  { title: "LED Şerit", desc: "12V / 24V, iç–dış mekân, çeşitli renk sıcaklıklarında profesyonel şeritler.", slug: "led-serit", img: "/images/led-serit.jpg" },
-  { title: "Neon LED", desc: "Bükülebilir neon flex, kesintisiz ışık çizgisi, tabela ve dekorasyon için.", slug: "neon-led", img: "/images/neon-led.jpg" },
-  { title: "Trafo / Sürücü", desc: "12V ve 24V, 20W–400W arası güç seçenekleri, CE sertifikalı LED sürücüler.", slug: "trafo-led-surucu", img: "/images/trafo.jpg" },
-  { title: "Power LED", desc: "Yüksek lümen, yüksek verimlilik. 1W, 3W, 5W projektör ve spot çözümleri.", slug: "power-led", img: "/images/power-led.jpg" },
-  { title: "Pergole LED", desc: "Dış mekân, IP68 özellikli pergole ve bahçe aydınlatma ürünleri.", slug: "pergole-led", img: "/images/pergole-led.jpg" },
-  { title: "Kablo", desc: "LED kablo, besleme hattı, TTR ve kontrol kabloları — metre ve bobin halinde.", slug: "kablo", img: "/images/kablo.jpg" },
-  { title: "Point LED", desc: "Dekoratif nokta aydınlatma, tabela ve cephe için boncuk LED çözümleri.", slug: "point-led", img: "/images/point-led-nokta.jpg" },
-  { title: "Light Box LED", desc: "Işıklı kutu harf ve light box panolar için özel arka aydınlatma sistemleri.", slug: "light-box-led", img: "/images/light-box-led.jpg" },
-  { title: "Aksesuar", desc: "Klips, konnektör, kanal, profil, montaj ekipmanları — her ihtiyaca yedek parça.", slug: "aksesuar", img: "/images/aksesuar.jpg" },
-];
+const products = catalog.map((c) => ({
+  title: c.name,
+  desc: c.shortDesc,
+  slug: c.slug,
+  img: c.image,
+}));
 
 export default function ProductGrid() {
   return (
@@ -34,7 +29,7 @@ export default function ProductGrid() {
           Tabela için ihtiyacınız olan<br />her şey — tek çatıda.
         </h2>
         <p className="mb-18" style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "640px", marginBottom: "72px" }}>
-          10 ana kategori, 200&apos;den fazla ürün çeşidi. Stoktan aynı gün sevkiyat, toptan fiyat avantajı.
+          12 ana kategori, 150&apos;den fazla ürün çeşidi. Stoktan aynı gün sevkiyat, toptan fiyat avantajı.
         </p>
 
         {/* Grid */}

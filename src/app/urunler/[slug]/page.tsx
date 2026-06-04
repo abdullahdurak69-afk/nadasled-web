@@ -175,12 +175,28 @@ export default async function UrunKategoriPage({ params }: Props) {
                 {product.products.map((item, i) => (
                   <div
                     key={item.name}
-                    className="flex items-start justify-between gap-6"
-                    style={{ padding: "20px 0", borderBottom: i < product.products.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                    className="flex items-center justify-between gap-4"
+                    style={{ padding: "16px 0", borderBottom: i < product.products.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
                   >
-                    <div>
-                      <p style={{ fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}>{item.name}</p>
-                      <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
+                    <div className="flex items-center gap-4 min-w-0">
+                      {item.img && (
+                        <div
+                          className="relative flex-shrink-0 overflow-hidden"
+                          style={{ width: "64px", height: "64px", borderRadius: "4px", background: "#fff", border: "1px solid var(--nadas-line2)" }}
+                        >
+                          <Image
+                            src={item.img}
+                            alt={item.name}
+                            fill
+                            className="object-contain p-1.5"
+                            sizes="64px"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0">
+                        <p style={{ fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}>{item.name}</p>
+                        <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
+                      </div>
                     </div>
                     <a
                       href={`https://wa.me/905414696966?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}

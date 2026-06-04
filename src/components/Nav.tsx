@@ -2,12 +2,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import catalog from "@/data/products.json";
 
 const WA_HREF = "https://wa.me/905414696966";
+
+const categories = catalog.map((c) => ({ slug: c.slug, name: c.name }));
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [catOpen, setCatOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -16,7 +20,7 @@ export default function Nav() {
   }, []);
 
   const links = [
-    { href: "/urunler", label: "Ürünler" },
+    { href: "/markalar", label: "Markalarımız" },
     { href: "/hakkimizda", label: "Hakkımızda" },
     { href: "/iletisim", label: "İletişim" },
   ];
@@ -43,7 +47,55 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex gap-9 list-none">
+        <ul className="hidden md:flex items-center gap-9 list-none">
+          {/* Ürünler dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setCatOpen(true)}
+            onMouseLeave={() => setCatOpen(false)}
+          >
+            <a
+              href="/urunler"
+              className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors duration-200"
+              style={{ color: catOpen ? "var(--nadas-orange)" : "var(--nadas-ink2)" }}
+            >
+              Ürünler
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ transform: catOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            {catOpen && (
+              <div
+                className="absolute left-0 top-full pt-3"
+                style={{ width: "260px" }}
+              >
+                <ul
+                  className="list-none grid grid-cols-1 gap-0.5 p-2"
+                  style={{
+                    background: "rgba(11, 17, 34, 0.96)",
+                    backdropFilter: "blur(16px)",
+                    WebkitBackdropFilter: "blur(16px)",
+                    border: "1px solid var(--nadas-line)",
+                    borderRadius: "4px",
+                    boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+                  }}
+                >
+                  {categories.map((c) => (
+                    <li key={c.slug}>
+                      <Link
+                        href={`/urunler/${c.slug}`}
+                        className="block px-3 py-2 text-sm rounded-sm transition-colors"
+                        style={{ color: "var(--nadas-ink2)" }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--nadas-orange)"; (e.currentTarget as HTMLElement).style.background = "rgba(255,107,26,0.06)"; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--nadas-ink2)"; (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+                        onClick={() => setCatOpen(false)}
+                      >
+                        {c.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </li>
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -101,6 +153,27 @@ export default function Nav() {
           style={{ width: "min(1240px, 92vw)", margin: "0 auto", borderTop: "1px solid var(--nadas-line2)", paddingTop: "20px", marginTop: "12px" }}
           className="flex flex-col gap-4 md:hidden"
         >
+          <Link
+            href="/urunler"
+            className="text-base font-medium transition-colors"
+            style={{ color: "var(--nadas-ink2)" }}
+            onClick={() => setMobileOpen(false)}
+          >
+            Ürünler
+          </Link>
+          <div className="flex flex-col gap-1 pl-3" style={{ borderLeft: "1px solid var(--nadas-line2)" }}>
+            {categories.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/urunler/${c.slug}`}
+                className="text-sm transition-colors"
+                style={{ color: "var(--nadas-ink3)" }}
+                onClick={() => setMobileOpen(false)}
+              >
+                {c.name}
+              </Link>
+            ))}
+          </div>
           {links.map((l) => (
             <a
               key={l.href}

@@ -1,8 +1,11 @@
 import Image from "next/image";
+import catalog from "@/data/products.json";
 
 const WA_HREF = "https://wa.me/905414696966";
 const PHONE_HREF = "tel:+905414696966";
 const EMAIL = "nadasled@gmail.com";
+
+const footerCategories = catalog.slice(0, 6).map((c) => ({ href: `/urunler/${c.slug}`, label: c.name }));
 
 export default function SiteFooter() {
   return (
@@ -35,14 +38,7 @@ export default function SiteFooter() {
               Ürünler
             </div>
             <ul className="flex flex-col gap-2.5" style={{ fontSize: "14px", color: "var(--nadas-ink2)" }}>
-              {[
-                { href: "/urunler/led-modul", label: "LED Modül" },
-                { href: "/urunler/led-serit", label: "LED Şerit" },
-                { href: "/urunler/neon-led", label: "Neon LED" },
-                { href: "/urunler/trafo-led-surucu", label: "Trafo / Sürücü" },
-                { href: "/urunler/power-led", label: "Power LED" },
-                { href: "/urunler/aksesuar", label: "Aksesuar" },
-              ].map((l) => (
+              {footerCategories.map((l) => (
                 <li key={l.label}><a href={l.href} className="transition-colors duration-200 hover:text-[color:var(--nadas-orange)]">{l.label}</a></li>
               ))}
             </ul>
@@ -57,6 +53,7 @@ export default function SiteFooter() {
               {[
                 { href: "/hakkimizda", label: "Hakkımızda" },
                 { href: "/urunler", label: "Ürünler" },
+                { href: "/markalar", label: "Markalarımız" },
                 { href: "/iletisim", label: "İletişim" },
                 { href: WA_HREF, label: "Teklif Al" },
               ].map((l) => (
