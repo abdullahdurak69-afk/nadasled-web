@@ -12,7 +12,7 @@ const products = catalog.map((c) => ({
 
 export default function ProductGrid() {
   return (
-    <section id="urunler" style={{ padding: "140px 0", position: "relative", zIndex: 2 }}>
+    <section id="urunler" style={{ padding: "clamp(72px, 12vw, 140px) 0", position: "relative", zIndex: 2 }}>
       <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
         {/* Section header */}
         <div
@@ -28,7 +28,7 @@ export default function ProductGrid() {
         >
           Tabela için ihtiyacınız olan<br />her şey — tek çatıda.
         </h2>
-        <p className="mb-18" style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "640px", marginBottom: "72px" }}>
+        <p style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "640px", marginBottom: "clamp(40px, 6vw, 72px)" }}>
           12 ana kategori, 150&apos;den fazla ürün çeşidi. Stoktan aynı gün sevkiyat, toptan fiyat avantajı.
         </p>
 
@@ -60,16 +60,24 @@ export default function ProductGrid() {
               >
                 {String(i + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}
               </div>
-              {/* Product image */}
-              <div className="relative overflow-hidden mb-7" style={{ height: "140px", borderRadius: "2px" }}>
+              {/* Product image — light plate so white-background photos look intentional */}
+              <div
+                className="relative overflow-hidden mb-7"
+                style={{
+                  height: "160px",
+                  borderRadius: "8px",
+                  background: "#ffffff",
+                  border: "1px solid var(--nadas-line2)",
+                  boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.04)",
+                }}
+              >
                 <Image
                   src={p.img}
                   alt={p.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
                 />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(7,10,20,0.5), transparent 60%)" }} />
               </div>
               <div style={{ fontFamily: "var(--font-display)", fontSize: "28px", letterSpacing: "0.04em", marginBottom: "10px" }}>
                 {p.title}

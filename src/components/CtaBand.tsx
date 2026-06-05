@@ -6,7 +6,7 @@ export default function CtaBand() {
     <div
       id="iletisim"
       className="relative overflow-hidden"
-      style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "100px 0", zIndex: 2 }}
+      style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "clamp(64px, 9vw, 100px) 0", zIndex: 2 }}
     >
       {/* Grid texture */}
       <div

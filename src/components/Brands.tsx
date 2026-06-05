@@ -11,7 +11,7 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section style={{ padding: "120px 0", position: "relative", zIndex: 2 }}>
+    <section style={{ padding: "clamp(64px, 10vw, 120px) 0", position: "relative", zIndex: 2 }}>
       <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
         {/* Section header */}
         <div

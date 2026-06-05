@@ -54,7 +54,7 @@ export default function HakkimizdaPage() {
             }}
           >
             Tabela Sektörünün{" "}
-            <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255,107,26,0.5)" }}>
+            <span style={{ color: "var(--nadas-orange)" }}>
               Güvenilir
             </span>{" "}
             Tedarikçisi

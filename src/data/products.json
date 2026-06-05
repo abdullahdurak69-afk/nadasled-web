@@ -5,9 +5,9 @@
     "shortDesc": "Tabela ve kutu harf aydınlatması için Fortune, Samsung, Osram ve Premium serisi LED modüller",
     "metaTitle": "LED Modül Toptan Fiyatı | Tabela LED Modülü | Nadasled",
     "metaDesc": "Tabela ve kutu harf için toptan LED modül çeşitleri. Fortune Plus, Fortune Light, Samsung, Osram ve Premium seri mercekli modüller. 12V IP65, hızlı kargo. Teklif için arayın.",
-    "h1": "Tabela LED Modülleri — Toptan Fiyatlarla",
+    "h1": "Tabela LED Modülleri — Kutu Harf ve Cephe Aydınlatma",
     "icon": "💡",
-    "image": "/images/led-modul.webp",
+    "image": "/images/cat/led-modul.jpg",
     "color": "from-yellow-500 to-orange-500",
     "features": [
       "Fortune Plus, Fortune Light, Samsung, Osram ve Premium serileri",
@@ -126,9 +126,9 @@
     "shortDesc": "İç ve dış mekan LED şerit — Samsung, Pixel, RGB, S-Type ve ECO seriler, metre satış",
     "metaTitle": "LED Şerit Toptan | LED Bant Fiyatı | Nadasled",
     "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. Samsung, ECO 2835, S-Type zikzak, RGB ve adreslenebilir Pixel modeller. IP20 iç, IP65/IP68 dış mekan. Metre fiyatıyla satış.",
-    "h1": "LED Şerit — Metre Fiyatıyla Toptan Satış",
+    "h1": "LED Şerit — İç/Dış Mekan ve RGB Serileri",
     "icon": "〰️",
-    "image": "/images/led-serit.webp",
+    "image": "/images/cat/led-serit.jpg",
     "color": "from-blue-500 to-cyan-500",
     "features": [
       "Samsung ve ECO çip seçenekleri",
@@ -239,7 +239,7 @@
     "metaDesc": "Kesintisiz homojen ışık için toptan COB LED şerit çeşitleri. 4mm, 8mm, 10mm, 480-720 LED/mt, RGB ve adreslenebilir Pixel COB. IP20 iç, IP44/IP65 dış mekan. Metre satış.",
     "h1": "COB LED Şerit — Kesintisiz Homojen Işık",
     "icon": "➖",
-    "image": "/images/led-serit.webp",
+    "image": "/images/cat/cob-led-serit.jpg",
     "color": "from-cyan-500 to-teal-500",
     "features": [
       "Noktasız, homojen kesintisiz ışık çizgisi",
@@ -317,9 +317,9 @@
     "shortDesc": "Esnek neon LED — Flat, Silikon, D-Shape, 360°, Mix ve 220V seriler + bağlantı/uygulama aparatları",
     "metaTitle": "Neon LED Toptan | Flex Neon LED Hortum Fiyatı | Nadasled",
     "metaDesc": "Tabela ve dekorasyon için toptan neon LED çeşitleri. Flat neon, silikon neon, D-Shape, 360°, Mix, PVC ve 220V seriler. 12V-24V, bağlantı ve uygulama aparatlarıyla tam set.",
-    "h1": "Neon LED — Toptan Tedarik",
+    "h1": "Neon LED — Flex, Silikon ve 220V Serileri",
     "icon": "🌈",
-    "image": "/images/neon-led.webp",
+    "image": "/images/cat/neon-led.jpg",
     "color": "from-pink-500 to-violet-500",
     "features": [
       "Flat, Silikon, Mix, PVC, D-Shape ve 360° seriler",
@@ -528,9 +528,9 @@
     "shortDesc": "İç ve dış mekan LED adaptör ve trafolar — Meanwell, Inventronics, Osram, ince ve epoksili kasalar",
     "metaTitle": "LED Trafo / Adaptör Fiyatı | LED Sürücü Toptan | Nadasled",
     "metaDesc": "Tabela ve LED aydınlatma için toptan trafo ve adaptör çeşitleri. Meanwell, Inventronics, Osram Element, ultra slim, kalem tipi, yağmur korumalı dış mekan modelleri. 12V-24V.",
-    "h1": "LED Trafo ve Adaptörler — Toptan Tedarik",
+    "h1": "LED Trafo ve Adaptörler — İç/Dış Mekan Güç Kaynakları",
     "icon": "⚡",
-    "image": "/images/trafo.webp",
+    "image": "/images/cat/trafo.jpg",
     "color": "from-purple-500 to-indigo-500",
     "features": [
       "12V ve 24V DC çıkış, geniş güç aralığı",
@@ -655,9 +655,9 @@
     "shortDesc": "Tabela yüzü ve kutu harf için nokta LED ve pixel point LED modüller",
     "metaTitle": "Point LED Toptan | Nokta LED Fiyatı | Nadasled",
     "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel point LED çeşitleri. 20mm, 30mm, 50mm, şapkalı ve kesik baş modeller. Teklif için arayın.",
-    "h1": "Point LED / Nokta LED — Toptan Tedarik",
+    "h1": "Point LED — Kutu Harf ve Pixel Nokta Modüller",
     "icon": "🔵",
-    "image": "/images/point-led-nokta.webp",
+    "image": "/images/cat/point-led-nokta.jpg",
     "color": "from-sky-500 to-blue-600",
     "features": [
       "20mm, 30mm ve 50mm çap seçenekleri",
@@ -718,7 +718,7 @@
     "metaDesc": "Kanal harf ve profil kesitinden aydınlatma için toptan kesit LED çeşitleri. 1.5W tekli, 3W üçlü ECO modeller ve IP20/IP65 kesitten aydınlatma LED bar. Teklif için arayın.",
     "h1": "Kesit Aydınlatma LED — Kanal Harf Çözümleri",
     "icon": "📐",
-    "image": "/images/kesit-led.webp",
+    "image": "/images/cat/kesit-led.jpg",
     "color": "from-amber-400 to-orange-500",
     "features": [
       "Kanal harf ve profil kesitinden aydınlatma",
@@ -777,7 +777,7 @@
     "metaDesc": "Işıklı kutu (light box) ve geniş yüzey aydınlatması için toptan zemin aydınlatma LED bar çeşitleri. 13mm/16mm PCB LED bar, geniş açılı ve perde LED modeller. İç/dış mekan.",
     "h1": "Zemin Aydınlatma LED — Light Box ve Perde LED Bar",
     "icon": "📦",
-    "image": "/images/light-box-led.webp",
+    "image": "/images/cat/light-box-led.jpg",
     "color": "from-amber-400 to-yellow-500",
     "features": [
       "Light box (ışıklı kutu) zemin aydınlatması",
@@ -842,7 +842,7 @@
     "metaDesc": "Pergola ve tente aydınlatması için toptan Pergola LED çeşitleri. 24V DC, IP65+, homojen ışık dağılımı, dış mekan dayanımı. Teklif almak için hemen arayın.",
     "h1": "Pergola LED — Dış Mekan Aydınlatma",
     "icon": "🏠",
-    "image": "/images/pergole-led.webp",
+    "image": "/images/cat/pergole-led.jpg",
     "color": "from-emerald-500 to-green-600",
     "features": [
       "Pergola, tente ve çardak uygulamaları",
@@ -876,7 +876,7 @@
     "metaDesc": "LED sistemleri için toptan kontrol üniteleri. RGB kumanda, dokunmatik/potanslı dimmer, pixel RGB kontrol cihazları (SP107E/SP110E/SP548E), repeater, radar sensör ve anahtarlar.",
     "h1": "LED Kontrol Üniteleri — Kumanda, Dimmer ve Pixel",
     "icon": "🎛️",
-    "image": "/images/kontrol.webp",
+    "image": "/images/cat/kontrol.jpg",
     "color": "from-green-500 to-teal-500",
     "features": [
       "RGB kumandalar: dokunmatik, RF, Bluetooth, sese duyarlı",
@@ -1023,7 +1023,7 @@
     "metaDesc": "Vitrin ve reklam aydınlatması için toptan reklam araçları. Tek ve 4 görselli projektör lambalar, döner projeksiyon. Logo ve görsel yansıtma çözümleri. Teklif için arayın.",
     "h1": "Reklam Araçları — Projektör ve Görsel Yansıtma",
     "icon": "📽️",
-    "image": "/images/power-led.webp",
+    "image": "/images/cat/power-led.jpg",
     "color": "from-orange-400 to-red-500",
     "features": [
       "Logo ve görsel yansıtan projektör lambalar",
@@ -1063,7 +1063,7 @@
     "metaDesc": "LED sistemleri için toptan yardımcı ekipman. NYAF bakır kablo, 2mt soketli şeffaf kablo, WAGO ve kablo bağlantı aparatları, kablo sonlandırıcı. Hızlı kargo, uygun fiyat.",
     "h1": "Yardımcı Ürünler — Kablo ve Bağlantı Ekipmanları",
     "icon": "🔧",
-    "image": "/images/aksesuar.webp",
+    "image": "/images/cat/aksesuar.jpg",
     "color": "from-slate-500 to-gray-600",
     "features": [
       "NYAF çok telli bakır kablo",

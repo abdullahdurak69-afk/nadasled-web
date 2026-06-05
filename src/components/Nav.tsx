@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import catalog from "@/data/products.json";
 
 const WA_HREF = "https://wa.me/905414696966";
@@ -30,20 +30,16 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-[100] transition-all duration-300"
       style={{
         padding: scrolled ? "12px 0" : "18px 0",
-        background: "rgba(7, 10, 20, 0.72)",
+        background: "rgba(255, 255, 255, 0.78)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        borderBottom: scrolled ? "1px solid rgba(255, 107, 26, 0.14)" : "1px solid transparent",
+        borderBottom: scrolled ? "1px solid var(--nadas-line2)" : "1px solid transparent",
       }}
     >
       <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }} className="flex items-center justify-between gap-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Nadasled" width={120} height={80} className="h-10 w-auto" priority />
-          <span
-            className="w-2.5 h-2.5 rounded-full nadas-pulse-dot flex-shrink-0"
-            style={{ background: "var(--nadas-orange)", boxShadow: "0 0 14px var(--nadas-orange)" }}
-          />
+        <Link href="/" className="flex items-center" aria-label="Nadasled ana sayfa">
+          <Logo size={24} />
         </Link>
 
         {/* Desktop links */}
@@ -70,12 +66,12 @@ export default function Nav() {
                 <ul
                   className="list-none grid grid-cols-1 gap-0.5 p-2"
                   style={{
-                    background: "rgba(11, 17, 34, 0.96)",
+                    background: "rgba(255, 255, 255, 0.98)",
                     backdropFilter: "blur(16px)",
                     WebkitBackdropFilter: "blur(16px)",
-                    border: "1px solid var(--nadas-line)",
+                    border: "1px solid var(--nadas-line2)",
                     borderRadius: "4px",
-                    boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+                    boxShadow: "0 20px 60px rgba(16,20,28,0.12)",
                   }}
                 >
                   {categories.map((c) => (

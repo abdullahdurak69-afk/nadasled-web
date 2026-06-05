@@ -1,5 +1,5 @@
-import Image from "next/image";
 import catalog from "@/data/products.json";
+import Logo from "@/components/Logo";
 
 const WA_HREF = "https://wa.me/905414696966";
 const PHONE_HREF = "tel:+905414696966";
@@ -26,7 +26,9 @@ export default function SiteFooter() {
         >
           {/* Brand */}
           <div style={{ gridColumn: "span 1" }}>
-            <Image src="/logo.png" alt="Nadasled" width={120} height={80} className="h-12 w-auto mb-5 brightness-0 invert" />
+            <div className="mb-5">
+              <Logo size={26} dot={false} />
+            </div>
             <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", maxWidth: "280px", lineHeight: 1.6 }}>
               Tabela aydınlatma malzemeleri toptan tedarikçisi. Ümraniye, İstanbul merkezli — Türkiye geneli kargo.
             </p>

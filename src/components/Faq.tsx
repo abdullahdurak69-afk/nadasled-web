@@ -14,14 +14,14 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="sss" style={{ padding: "140px 0", position: "relative", zIndex: 2 }}>
+    <section id="sss" style={{ padding: "clamp(72px, 12vw, 140px) 0", position: "relative", zIndex: 2 }}>
       <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
         <div
           className="flex items-center gap-3 mb-5"
           style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em" }}
         >
           <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
-          03 · Sık Sorulan Sorular
+          04 · Sık Sorulan Sorular
         </div>
         <h2
           className="mb-16"

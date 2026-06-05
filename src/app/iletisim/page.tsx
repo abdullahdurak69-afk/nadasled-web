@@ -116,7 +116,7 @@ export default function IletisimPage() {
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(52px, 8vw, 120px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "900px", marginBottom: "24px" }}
           >
             Bizimle{" "}
-            <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255,107,26,0.5)" }}>
+            <span style={{ color: "var(--nadas-orange)" }}>
               İletişime
             </span>{" "}
             Geçin

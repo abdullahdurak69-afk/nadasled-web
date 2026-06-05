@@ -1,13 +1,35 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, DM_Sans, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import SiteFooter from "@/components/SiteFooter";
 import FloatWhatsapp from "@/components/FloatWhatsapp";
 import WATracker from "@/components/WATracker";
 
-const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-display" });
-const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-sans" });
+// Display: Clash Display (Fontshare) — self-hosted for a distinctive, premium feel.
+const clashDisplay = localFont({
+  src: [
+    { path: "./fonts/ClashDisplay-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/ClashDisplay-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/ClashDisplay-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/ClashDisplay-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-display",
+  display: "swap",
+});
+
+// Body: Satoshi (Fontshare) — clean, neutral, premium.
+const satoshi = localFont({
+  src: [
+    { path: "./fonts/Satoshi-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/Satoshi-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Satoshi-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-sans",
+  display: "swap",
+});
+
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["400","500"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
@@ -26,12 +48,12 @@ const GA_ID = "G-4VYW0MWY61";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={`${bebasNeue.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
+    <html lang="tr" className={`${clashDisplay.variable} ${satoshi.variable} ${jetbrainsMono.variable}`}>
       <head>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
       </head>
-      <body className="nadas-body-bg nadas-grid-texture min-h-screen flex flex-col" style={{ fontFamily: 'var(--font-sans), DM Sans, system-ui, sans-serif' }}>
+      <body className="nadas-body-bg nadas-grid-texture min-h-screen flex flex-col" style={{ fontFamily: 'var(--font-sans), system-ui, sans-serif' }}>
         <Nav />
         <main className="flex-1 relative z-[2]">{children}</main>
         <SiteFooter />

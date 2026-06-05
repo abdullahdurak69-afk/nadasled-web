@@ -60,7 +60,7 @@ export default function MarkalarPage() {
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(48px, 7vw, 110px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "900px", marginBottom: "24px" }}
           >
             Güvenilir markalarla{" "}
-            <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255,107,26,0.5)" }}>orijinal ürünler</span>
+            <span style={{ color: "var(--nadas-orange)" }}>orijinal ürünler</span>
           </h1>
           <p style={{ fontSize: "18px", color: "var(--nadas-ink2)", maxWidth: "640px", lineHeight: 1.6 }}>
             Samsung, OSRAM, MEAN WELL, Inventronics ve WAGO gibi dünya markalarının orijinal LED çip, sürücü, trafo ve bağlantı ürünlerini toptan fiyatlarla tedarik ediyoruz.

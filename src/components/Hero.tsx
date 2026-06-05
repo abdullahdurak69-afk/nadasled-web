@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <header
       className="relative"
-      style={{ padding: "180px 0 120px", overflow: "hidden" }}
+      style={{ padding: "clamp(130px, 18vw, 180px) 0 clamp(72px, 11vw, 120px)", overflow: "hidden" }}
     >
       {/* Floating mono marks */}
       <span
@@ -56,9 +56,10 @@ export default function Hero() {
           className="mb-12"
           style={{
             fontFamily: "var(--font-display)",
+            fontWeight: 600,
             fontSize: "clamp(56px, 9vw, 132px)",
             lineHeight: 1.0,
-            letterSpacing: "0.02em",
+            letterSpacing: "0.01em",
             maxWidth: "1100px",
           }}
         >
@@ -66,10 +67,10 @@ export default function Hero() {
           <span style={{ color: "transparent", WebkitTextStroke: "1.5px var(--nadas-orange)", textShadow: "none" }}>
             Malzemeleri
           </span><br />
-          <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255, 107, 26, 0.5)" }}>
+          <span style={{ color: "var(--nadas-orange)" }}>
             Toptan
           </span><br />
-          <span style={{ color: "var(--nadas-blue2)", textShadow: "0 0 40px rgba(45, 79, 214, 0.5)" }}>
+          <span style={{ color: "var(--nadas-blue2)" }}>
             Tedarik.
           </span>
         </h1>
@@ -98,7 +99,7 @@ export default function Hero() {
           <a
             href={PHONE_HREF}
             className="inline-flex items-center gap-2 font-medium transition-all duration-200"
-            style={{ background: "transparent", color: "var(--nadas-ink)", border: "1px solid rgba(255,255,255,0.15)", padding: "16px 28px", fontSize: "15px", borderRadius: "2px" }}
+            style={{ background: "transparent", color: "var(--nadas-ink)", border: "1px solid var(--nadas-line2)", padding: "16px 28px", fontSize: "15px", borderRadius: "2px" }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
             0541 469 69 66

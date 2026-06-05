@@ -12,7 +12,7 @@ export default function WhyUs() {
     <section
       id="hakkimizda"
       style={{
-        padding: "140px 0",
+        padding: "clamp(72px, 12vw, 140px) 0",
         position: "relative",
         zIndex: 2,
         background: "linear-gradient(180deg, var(--nadas-bg) 0%, var(--nadas-bg2) 50%, var(--nadas-bg) 100%)",
@@ -24,7 +24,7 @@ export default function WhyUs() {
           style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em" }}
         >
           <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
-          02 · Neden Nadasled?
+          03 · Neden Nadasled?
         </div>
 
         <div className="grid gap-16 lg:gap-20" style={{ gridTemplateColumns: "1fr", alignItems: "center" }}>
@@ -124,7 +124,7 @@ export default function WhyUs() {
                     padding: "16px 20px",
                     borderRadius: "2px",
                     backdropFilter: "blur(8px)",
-                    boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
+                    boxShadow: "0 10px 40px rgba(16,20,28,0.12)",
                   }}
                 >
                   <span className="w-2.5 h-2.5 rounded-full nadas-pulse-dot" style={{ background: "#1FAD56", boxShadow: "0 0 10px #1FAD56" }} />
@@ -144,7 +144,7 @@ export default function WhyUs() {
                     padding: "16px 20px",
                     borderRadius: "2px",
                     backdropFilter: "blur(8px)",
-                    boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
+                    boxShadow: "0 10px 40px rgba(16,20,28,0.12)",
                   }}
                 >
                   <span className="w-2.5 h-2.5 rounded-full" style={{ background: "var(--nadas-blue2)", boxShadow: "0 0 10px var(--nadas-blue2)", animation: "pulseDot 1.8s ease-in-out infinite" }} />

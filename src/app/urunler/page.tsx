@@ -26,7 +26,7 @@ export default function UrunlerPage() {
             style={{ fontFamily: "var(--font-display)", fontSize: "clamp(52px, 8vw, 120px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "900px", marginBottom: "24px" }}
           >
             Tabela yapımı için{" "}
-            <span style={{ color: "var(--nadas-orange)", textShadow: "0 0 40px rgba(255,107,26,0.5)" }}>
+            <span style={{ color: "var(--nadas-orange)" }}>
               ihtiyacınız olan
             </span>{" "}
             her şey
@@ -65,15 +65,23 @@ export default function UrunlerPage() {
                 >
                   {String(i + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}
                 </div>
-                <div className="relative overflow-hidden mb-6" style={{ height: "140px", borderRadius: "2px" }}>
+                <div
+                  className="relative overflow-hidden mb-6"
+                  style={{
+                    height: "160px",
+                    borderRadius: "8px",
+                    background: "#ffffff",
+                    border: "1px solid var(--nadas-line2)",
+                    boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.04)",
+                  }}
+                >
                   <Image
                     src={p.image}
                     alt={p.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
                   />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(7,10,20,0.5), transparent 60%)" }} />
                 </div>
                 <div style={{ fontFamily: "var(--font-display)", fontSize: "28px", letterSpacing: "0.04em", marginBottom: "10px" }}>
                   {p.name}

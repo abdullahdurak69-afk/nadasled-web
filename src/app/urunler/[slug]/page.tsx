@@ -34,6 +34,10 @@ export default async function UrunKategoriPage({ params }: Props) {
   const waMessage = encodeURIComponent(`${product.name} hakkında bilgi almak istiyorum.`);
   const waHref = `https://wa.me/905414696966?text=${waMessage}`;
 
+  // Split "Ana Başlık — Açıklama" into a bold title + a lighter subtitle line.
+  const [h1Main, ...h1Rest] = product.h1.split(/\s+[—–-]\s+/);
+  const h1Sub = h1Rest.join(" — ");
+
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -102,54 +106,114 @@ export default async function UrunKategoriPage({ params }: Props) {
       </div>
 
       {/* Hero */}
-      <section style={{ padding: "60px 0 80px", position: "relative", zIndex: 2, overflow: "hidden" }}>
-        <div className="absolute inset-0">
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            className="object-cover"
-            style={{ opacity: 0.08 }}
-            sizes="100vw"
-            priority
-          />
-        </div>
-        <div style={{ width: "min(1240px, 92vw)", margin: "0 auto", position: "relative" }}>
-          <Link
-            href="/urunler"
-            className="inline-flex items-center gap-2 mb-8 transition-colors"
-            style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)" }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            Tüm Ürünler
-          </Link>
-          <h1
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(44px, 6vw, 88px)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "800px", marginBottom: "20px" }}
-          >
-            {product.h1}
-          </h1>
-          <p style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "560px", lineHeight: 1.6, marginBottom: "24px" }}>
-            {product.shortDesc}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {product.keywords.slice(0, 3).map((k) => (
-              <span
-                key={k}
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "11px",
-                  color: "var(--nadas-orange)",
-                  padding: "6px 12px",
-                  border: "1px solid var(--nadas-line)",
-                  borderRadius: "999px",
-                  background: "rgba(255,107,26,0.04)",
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                }}
+      <section style={{ padding: "clamp(40px, 6vw, 64px) 0 clamp(56px, 8vw, 88px)", position: "relative", zIndex: 2, overflow: "hidden" }}>
+        {/* Refined glow backdrop (replaces washed full-bleed photo) */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle 600px at 85% 15%, rgba(255,107,26,0.12), transparent 60%), radial-gradient(circle 520px at 25% 70%, rgba(45,79,214,0.10), transparent 60%)",
+          }}
+        />
+        <div
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto", position: "relative" }}
+          className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+        >
+          {/* Left — copy */}
+          <div>
+            <Link
+              href="/urunler"
+              className="inline-flex items-center gap-2 mb-7 transition-colors hover:text-[color:var(--nadas-orange)]"
+              style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)" }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+              Tüm Ürünler
+            </Link>
+            <h1
+              style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(40px, 5vw, 76px)", lineHeight: 0.98, letterSpacing: "0.01em", marginBottom: h1Sub ? "14px" : "20px" }}
+            >
+              {h1Main}
+            </h1>
+            {h1Sub && (
+              <p
+                style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(20px, 2.2vw, 30px)", lineHeight: 1.12, letterSpacing: "0.01em", color: "var(--nadas-ink2)", maxWidth: "520px", marginBottom: "22px" }}
               >
-                {k}
-              </span>
-            ))}
+                {h1Sub}
+              </p>
+            )}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {product.keywords.slice(0, 3).map((k) => (
+                <span
+                  key={k}
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "11px",
+                    color: "var(--nadas-orange)",
+                    padding: "6px 12px",
+                    border: "1px solid var(--nadas-line)",
+                    borderRadius: "999px",
+                    background: "rgba(255,107,26,0.04)",
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {k}
+                </span>
+              ))}
+            </div>
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
+              style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "15px 26px", fontSize: "15px", borderRadius: "2px" }}
+            >
+              Fiyat Teklifi Al
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          {/* Right — framed product visual */}
+          <div className="relative">
+            <div
+              className="relative overflow-hidden"
+              style={{
+                aspectRatio: "4 / 3",
+                borderRadius: "14px",
+                background: "#ffffff",
+                border: "1px solid var(--nadas-line2)",
+                boxShadow: "0 24px 60px rgba(16,20,28,0.14), 0 0 60px rgba(242,96,15,0.08)",
+              }}
+            >
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-contain p-10"
+                sizes="(max-width: 1024px) 92vw, 560px"
+                priority
+              />
+            </div>
+            {/* Floating stock badge */}
+            <div
+              className="absolute flex items-center gap-3"
+              style={{
+                bottom: "-16px",
+                left: "24px",
+                background: "var(--nadas-bg3)",
+                border: "1px solid var(--nadas-line)",
+                padding: "12px 18px",
+                borderRadius: "4px",
+                backdropFilter: "blur(8px)",
+                boxShadow: "0 10px 40px rgba(16,20,28,0.12)",
+              }}
+            >
+              <span className="w-2.5 h-2.5 rounded-full nadas-pulse-dot" style={{ background: "#1FAD56", boxShadow: "0 0 10px #1FAD56" }} />
+              <div>
+                <div style={{ fontSize: "13px", fontWeight: 600 }}>Stokta · Aynı Gün Kargo</div>
+                <div style={{ fontSize: "11px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}>TOPTAN FİYAT · FATURALI</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -265,7 +329,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                 Fiyat Teklifi Al
               </div>
               <h3
-                style={{ fontFamily: "var(--font-display)", fontSize: "32px", lineHeight: 0.95, letterSpacing: "0.02em", marginBottom: "12px" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "32px", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "12px" }}
               >
                 Hemen Sor
               </h3>
