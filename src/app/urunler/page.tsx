@@ -48,7 +48,7 @@ export default function UrunlerPage() {
               borderLeft: "1px solid var(--nadas-line2)",
             }}
           >
-            {products.map((p, i) => (
+            {products.map((p) => (
               <Link
                 key={p.slug}
                 href={`/urunler/${p.slug}`}
@@ -60,11 +60,6 @@ export default function UrunlerPage() {
                   background: "var(--nadas-bg)",
                 }}
               >
-                <div
-                  style={{ position: "absolute", top: "20px", right: "24px", fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-ink3)" }}
-                >
-                  {String(i + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}
-                </div>
                 <div
                   className="relative overflow-hidden mb-6"
                   style={{

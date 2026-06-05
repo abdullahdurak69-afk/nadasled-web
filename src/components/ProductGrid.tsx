@@ -41,7 +41,7 @@ export default function ProductGrid() {
             borderLeft: "1px solid var(--nadas-line2)",
           }}
         >
-          {products.map((p, i) => (
+          {products.map((p) => (
             <Link
               key={p.slug}
               href={`/urunler/${p.slug}`}
@@ -55,11 +55,6 @@ export default function ProductGrid() {
               onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "var(--nadas-bg2)")}
               onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "var(--nadas-bg)")}
             >
-              <div
-                style={{ position: "absolute", top: "20px", right: "24px", fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-ink3)" }}
-              >
-                {String(i + 1).padStart(2, "0")} / {String(products.length).padStart(2, "0")}
-              </div>
               {/* Product image — light plate so white-background photos look intentional */}
               <div
                 className="relative overflow-hidden mb-7"
