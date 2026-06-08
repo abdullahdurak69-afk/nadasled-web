@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import ProductGrid from "@/components/ProductGrid";
+import Applications from "@/components/Applications";
 import Brands from "@/components/Brands";
 import WhyUs from "@/components/WhyUs";
 import CtaBand from "@/components/CtaBand";
@@ -56,6 +57,7 @@ export default function HomePage() {
       <Hero />
       <Ticker />
       <ProductGrid />
+      <Applications />
       <Brands />
       <WhyUs />
       <CtaBand />

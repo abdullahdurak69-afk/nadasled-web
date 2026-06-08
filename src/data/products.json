@@ -118,6 +118,20 @@
         "specs": "12V, IP65, dörtlü, yüksek lümen",
         "img": "/images/products/premium-modul-led.jpg"
       }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/led-modul-1.webp",
+        "caption": "Önden ışıklı kutu harf"
+      },
+      {
+        "img": "/images/uygulama/led-modul-2.webp",
+        "caption": "Arkadan ışıklı (halo) kutu harf"
+      },
+      {
+        "img": "/images/uygulama/led-modul-3.webp",
+        "caption": "Cephe kutu harf tabela"
+      }
     ]
   },
   {
@@ -229,6 +243,20 @@
         "specs": "12V, IP68, tam suya dayanıklı",
         "img": "/images/products/ip68-dis-mekan-serit-led.png"
       }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/led-serit-1.webp",
+        "caption": "Gizli ışık (cove) aydınlatma"
+      },
+      {
+        "img": "/images/uygulama/led-serit-2.webp",
+        "caption": "Lineer tavan aydınlatması"
+      },
+      {
+        "img": "/images/uygulama/led-serit-3.webp",
+        "caption": "Dekoratif şerit aydınlatma"
+      }
     ]
   },
   {
@@ -308,6 +336,20 @@
         "name": "Şerit LED & COB LED Bağlantı Aparatları",
         "specs": "Lehimsiz konnektör ve ek aparatları",
         "img": "/images/products/serit-led-baglanti-aparatlari.jpg"
+      }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/cob-led-serit-1.webp",
+        "caption": "Kesintisiz (dotless) cove ışık"
+      },
+      {
+        "img": "/images/uygulama/cob-led-serit-2.webp",
+        "caption": "Salon gizli ışık bandı"
+      },
+      {
+        "img": "/images/uygulama/cob-led-serit-3.webp",
+        "caption": "Tavan perimetre COB şerit"
       }
     ]
   },
@@ -520,6 +562,20 @@
         "specs": "İkinci nesil neon ince bağlantı kablosu",
         "img": "/images/products/kil-kablo.jpg"
       }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/neon-led-1.webp",
+        "caption": "Mağaza vitrini neon yazı"
+      },
+      {
+        "img": "/images/uygulama/neon-led-2.webp",
+        "caption": "Cephe neon tabela"
+      },
+      {
+        "img": "/images/uygulama/neon-led-3.webp",
+        "caption": "Kafe & restoran neon logo"
+      }
     ]
   },
   {
@@ -708,6 +764,20 @@
         "specs": "12V, IP65, adreslenebilir pixel",
         "img": "/images/products/pixel-point-led-50mm.png"
       }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/point-led-1.webp",
+        "caption": "Bina cephesi piksel aydınlatma"
+      },
+      {
+        "img": "/images/uygulama/point-led-2.webp",
+        "caption": "RGB cam cephe aydınlatması"
+      },
+      {
+        "img": "/images/uygulama/point-led-3.webp",
+        "caption": "Medya cephe / nokta led"
+      }
     ]
   },
   {
@@ -766,6 +836,20 @@
         "name": "IP65 LED Bar Kesitten Aydınlatma (50/100cm)",
         "specs": "12V, IP65, 50cm ve 100cm boy",
         "img": "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg"
+      }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/kesit-aydinlatma-led-1.webp",
+        "caption": "Kenardan ışıklı pleksi tabela"
+      },
+      {
+        "img": "/images/uygulama/kesit-aydinlatma-led-2.webp",
+        "caption": "Edge-lit dekoratif pano"
+      },
+      {
+        "img": "/images/uygulama/kesit-aydinlatma-led-3.webp",
+        "caption": "Arkadan ışıklı pleksi levha"
       }
     ]
   },
@@ -832,6 +916,20 @@
         "specs": "12V, IP65, 100cm dış mekan bar",
         "img": "/images/products/dis-mekan-perde-led-zemin-aydinlatma-50cm.jpg"
       }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/zemin-aydinlatma-led-1.webp",
+        "caption": "Dış mekan yer aydınlatması"
+      },
+      {
+        "img": "/images/uygulama/zemin-aydinlatma-led-2.webp",
+        "caption": "Cephe yıkama / yer gömme"
+      },
+      {
+        "img": "/images/uygulama/zemin-aydinlatma-led-3.webp",
+        "caption": "Zemine gömme led spot"
+      }
     ]
   },
   {
@@ -865,6 +963,20 @@
         "name": "Pergola LED",
         "specs": "24V, IP65, homojen dış mekan aydınlatma",
         "img": "/images/products/pergole-led.jpg"
+      }
+    ],
+    "applications": [
+      {
+        "img": "/images/uygulama/pergole-led-1.webp",
+        "caption": "Dış mekan pergola aydınlatması"
+      },
+      {
+        "img": "/images/uygulama/pergole-led-2.webp",
+        "caption": "Bahçe & teras pergola ışığı"
+      },
+      {
+        "img": "/images/uygulama/pergole-led-3.webp",
+        "caption": "Modern pergola led aydınlatma"
       }
     ]
   },
