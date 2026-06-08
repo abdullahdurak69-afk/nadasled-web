@@ -223,6 +223,72 @@ export default async function UrunKategoriPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Applications — product in real-world use */}
+      {(() => {
+        const applications = (product as { applications?: Application[] }).applications;
+        if (!applications || applications.length === 0) return null;
+        return (
+          <section style={{ padding: "0 0 clamp(56px, 8vw, 96px)", position: "relative", zIndex: 2 }}>
+            <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
+              <div
+                className="flex items-center gap-3 mb-5"
+                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em" }}
+              >
+                <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
+                Sahada
+              </div>
+              <h2
+                className="mb-3"
+                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.0, letterSpacing: "0.01em" }}
+              >
+                Uygulamada {product.name}
+              </h2>
+              <p style={{ fontSize: "16px", color: "var(--nadas-ink2)", maxWidth: "620px", marginBottom: "clamp(28px, 4vw, 44px)" }}>
+                Bu ürünlerin sahada nasıl kullanıldığına dair örnek uygulamalar.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {applications.map((a, i) => (
+                  <div
+                    key={i}
+                    className="group relative overflow-hidden"
+                    style={{
+                      aspectRatio: "4 / 3",
+                      borderRadius: "12px",
+                      border: "1px solid var(--nadas-line2)",
+                      background: "var(--nadas-bg2)",
+                      boxShadow: "0 14px 40px rgba(16,20,28,0.10)",
+                    }}
+                  >
+                    <Image
+                      src={a.img}
+                      alt={`${product.name} uygulama örneği — ${a.caption}`}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 400px"
+                    />
+                    <div
+                      className="absolute inset-x-0 bottom-0 flex items-end"
+                      style={{
+                        padding: "18px",
+                        minHeight: "90px",
+                        background: "linear-gradient(to top, rgba(8,10,14,0.82), rgba(8,10,14,0))",
+                      }}
+                    >
+                      <span style={{ color: "#fff", fontSize: "14px", fontWeight: 600, lineHeight: 1.35, textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
+                        {a.caption}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p style={{ fontSize: "12px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", marginTop: "18px", letterSpacing: "0.03em" }}>
+                Görseller temsilîdir.
+              </p>
+            </div>
+          </section>
+        );
+      })()}
+
       {/* Content */}
       <section style={{ padding: "0 0 140px", position: "relative", zIndex: 2 }}>
         <div
@@ -416,72 +482,6 @@ export default async function UrunKategoriPage({ params }: Props) {
           </div>
         </div>
       </section>
-
-      {/* Applications — product in real-world use */}
-      {(() => {
-        const applications = (product as { applications?: Application[] }).applications;
-        if (!applications || applications.length === 0) return null;
-        return (
-          <section style={{ padding: "0 0 140px", position: "relative", zIndex: 2 }}>
-            <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }}>
-              <div
-                className="flex items-center gap-3 mb-5"
-                style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em" }}
-              >
-                <span className="w-6 h-px" style={{ background: "var(--nadas-orange)" }} />
-                Sahada
-              </div>
-              <h2
-                className="mb-3"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.0, letterSpacing: "0.01em" }}
-              >
-                Uygulamada {product.name}
-              </h2>
-              <p style={{ fontSize: "16px", color: "var(--nadas-ink2)", maxWidth: "620px", marginBottom: "clamp(28px, 4vw, 44px)" }}>
-                Bu ürünlerin sahada nasıl kullanıldığına dair örnek uygulamalar.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {applications.map((a, i) => (
-                  <div
-                    key={i}
-                    className="group relative overflow-hidden"
-                    style={{
-                      aspectRatio: "4 / 3",
-                      borderRadius: "12px",
-                      border: "1px solid var(--nadas-line2)",
-                      background: "var(--nadas-bg2)",
-                      boxShadow: "0 14px 40px rgba(16,20,28,0.10)",
-                    }}
-                  >
-                    <Image
-                      src={a.img}
-                      alt={`${product.name} uygulama örneği — ${a.caption}`}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 400px"
-                    />
-                    <div
-                      className="absolute inset-x-0 bottom-0 flex items-end"
-                      style={{
-                        padding: "18px",
-                        minHeight: "90px",
-                        background: "linear-gradient(to top, rgba(8,10,14,0.82), rgba(8,10,14,0))",
-                      }}
-                    >
-                      <span style={{ color: "#fff", fontSize: "14px", fontWeight: 600, lineHeight: 1.35, textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}>
-                        {a.caption}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <p style={{ fontSize: "12px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", marginTop: "18px", letterSpacing: "0.03em" }}>
-                Görseller temsilîdir.
-              </p>
-            </div>
-          </section>
-        );
-      })()}
     </>
   );
 }
