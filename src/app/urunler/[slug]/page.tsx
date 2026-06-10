@@ -23,11 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
+  const url = `https://www.nadasled.com.tr/urunler/${product.slug}`;
   return {
     title: product.metaTitle,
     description: product.metaDesc,
     keywords: product.keywords,
-    openGraph: { title: product.metaTitle, description: product.metaDesc },
+    alternates: { canonical: url },
+    openGraph: {
+      title: product.metaTitle,
+      description: product.metaDesc,
+      url,
+      images: [{ url: product.image, alt: product.name }],
+    },
   };
 }
 
@@ -51,10 +58,31 @@ export default async function UrunKategoriPage({ params }: Props) {
     itemListElement: product.products.map((item, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      name: item.name,
-      description: item.specs,
+      item: {
+        "@type": "Product",
+        name: item.name,
+        description: item.specs,
+        ...((item as { img?: string }).img
+          ? { image: `https://www.nadasled.com.tr${(item as { img?: string }).img}` }
+          : {}),
+        brand: { "@type": "Brand", name: "Nadasled" },
+      },
     })),
   };
+
+  const faqs = (product as { faq?: { q: string; a: string }[] }).faq ?? [];
+  const faqSchema =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -70,6 +98,9 @@ export default async function UrunKategoriPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* Breadcrumb */}
       <div
@@ -379,6 +410,30 @@ export default async function UrunKategoriPage({ params }: Props) {
                 ))}
               </div>
             </div>
+
+            {/* FAQ */}
+            {faqs.length > 0 && (
+              <div
+                style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+              >
+                <div
+                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "24px" }}
+                >
+                  Sık Sorulan Sorular
+                </div>
+                <div className="flex flex-col gap-0">
+                  {faqs.map((f, i) => (
+                    <div
+                      key={i}
+                      style={{ padding: "18px 0", borderBottom: i < faqs.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                    >
+                      <h3 style={{ fontSize: "16px", fontWeight: 600, marginBottom: "8px" }}>{f.q}</h3>
+                      <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.7 }}>{f.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}

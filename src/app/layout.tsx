@@ -40,7 +40,13 @@ export const metadata: Metadata = {
   },
   description: "LED modül, LED şerit, trafo, kablo ve tabela malzemelerinin toptan tedarikçisi. Türkiye geneli hızlı kargo. Tabelacılara özel toptan fiyatlar.",
   keywords: ["led modül", "led şerit", "tabela malzemeleri", "led trafo", "kablo toptan", "tabelacı malzemesi"],
-  openGraph: { type: "website", locale: "tr_TR", siteName: "Nadasled" },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    siteName: "Nadasled",
+    images: [{ url: "/images/og.jpg", width: 1200, height: 630, alt: "Nadasled — Tabela Malzemeleri Toptan Tedarikçisi" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og.jpg"] },
   robots: { index: true, follow: true },
 };
 

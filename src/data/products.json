@@ -132,6 +132,24 @@
         "img": "/images/uygulama/led-modul-3.webp",
         "caption": "Cephe kutu harf tabela"
       }
+    ],
+    "faq": [
+      {
+        "q": "Kutu harf tabela için hangi LED modül kullanılır?",
+        "a": "Kutu harf derinliğine göre seçim yapılır: 8-12 cm derinlikteki harflerde mercekli 12V LED modüller (Fortune Plus, Samsung, Osram serileri) en homojen ışığı verir. Dar harflerde mini kasa modüller, geniş yüzeylerde üçlü ve dörtlü modüller tercih edilir."
+      },
+      {
+        "q": "Bir tabela için kaç adet LED modül gerekir?",
+        "a": "Pratik hesap: tabela yüzeyinin her 10x10 cm'lik alanına yaklaşık 1 modül düşer. Örneğin 100x50 cm bir kutu harf için ortalama 45-55 modül gerekir. Harf derinliği azaldıkça modül sıklığı artırılır. Ölçülerinizi WhatsApp'tan iletin, ücretsiz hesaplayalım."
+      },
+      {
+        "q": "Samsung LED modül ile Fortune LED modül arasındaki fark nedir?",
+        "a": "Samsung çipli modüller daha yüksek lümen değeri ve uzun ömür sunar; Fortune Plus serisi fiyat/performans dengesiyle yoğun kullanımda öne çıkar. Her ikisi de 12V, IP65 su geçirmez ve mercekli lensli olarak stoklarımızda mevcuttur."
+      },
+      {
+        "q": "LED modüller garanti kapsamında mı?",
+        "a": "Evet, sattığımız tüm LED modüller faturalı ve 1 yıl garantilidir. Toptan alımlarda da garanti şartları aynen geçerlidir."
+      }
     ]
   },
   {
@@ -257,6 +275,20 @@
         "img": "/images/uygulama/led-serit-3.webp",
         "caption": "Dekoratif şerit aydınlatma"
       }
+    ],
+    "faq": [
+      {
+        "q": "LED şerit metrede kaç watt harcar?",
+        "a": "Çip tipine göre değişir: 2835 şeritler genelde 6-12W/m, 5050 şeritler 10-14W/m aralığındadır. Trafo seçerken şeridin metre başına gücünü toplam metreyle çarpıp %20 pay eklemeniz gerekir."
+      },
+      {
+        "q": "12V mu 24V LED şerit mi tercih etmeliyim?",
+        "a": "Kısa mesafelerde (5 metreye kadar) 12V yeterlidir. Uzun hatlarda 24V şeritler voltaj düşümünü azaltır, ışık sonlara doğru solmaz. Tabela ve kutu harf işlerinde 12V, lineer aydınlatma ve uzun cephelerde 24V öneririz."
+      },
+      {
+        "q": "Dış mekanda hangi LED şerit kullanılmalı?",
+        "a": "Dış mekan için IP65 ve üzeri silikonlu/su geçirmez şeritler şarttır. Tabela içi gibi yarı korumalı alanlarda IP54, doğrudan yağmur alan yerlerde IP67-IP68 öneririz."
+      }
     ]
   },
   {
@@ -350,6 +382,20 @@
       {
         "img": "/images/uygulama/cob-led-serit-3.webp",
         "caption": "Tavan perimetre COB şerit"
+      }
+    ],
+    "faq": [
+      {
+        "q": "COB LED şerit nedir, normal şeritten farkı ne?",
+        "a": "COB (Chip on Board) şeritlerde LED çipleri şerit boyunca kesintisiz dizilir ve fosfor tabakayla kaplanır. Sonuç: nokta nokta görünüm yok, tamamen homojen bir ışık çizgisi. SMD şeritlerdeki benek etkisi istemediğiniz işlerde ideal çözümdür."
+      },
+      {
+        "q": "COB LED şerit nerelerde kullanılır?",
+        "a": "Gizli tavan aydınlatması, banyo/mutfak tezgah altı, vitrin ve raf aydınlatması, ayna çevresi ve profilli lineer aydınlatma uygulamalarında en çok tercih edilen üründür. Difüzörsüz bile noktasız ışık verdiği için alüminyum profille mükemmel sonuç verir."
+      },
+      {
+        "q": "COB şerit kesilip eklenebilir mi?",
+        "a": "Evet, COB şeritler üzerindeki kesim noktalarından (genelde 2,5-5 cm aralıklarla) kesilebilir ve lehim ya da klips konnektörle eklenebilir."
       }
     ]
   },
@@ -576,6 +622,20 @@
         "img": "/images/uygulama/neon-led-3.webp",
         "caption": "Kafe & restoran neon logo"
       }
+    ],
+    "faq": [
+      {
+        "q": "Neon LED (neon flex) nedir?",
+        "a": "Neon flex, silikon gövde içine yerleştirilmiş LED şeridin klasik cam neon görünümü vermesidir. Cam neona göre kırılmaz, daha az enerji harcar, 12V güvenli voltajla çalışır ve çok daha kolay monte edilir."
+      },
+      {
+        "q": "Neon LED nasıl kesilir ve bükülür?",
+        "a": "Üzerindeki kesim işaretlerinden makasla kesilir, uç kapağı silikonlanarak kapatılır. Yatay veya dikey bükülebilen modelleri vardır; yazı ve logo uygulamalarında 1-2 cm çapa kadar bükülebilir. 36 farklı renk ve kesit seçeneğimiz mevcuttur."
+      },
+      {
+        "q": "Neon LED dış mekanda kullanılır mı?",
+        "a": "Evet, silikon gövdeli neon flex IP65 su geçirmezdir ve dış cephe, bahçe, tabela uygulamalarında güvenle kullanılır. UV dayanımlı silikon sayesinde güneşte sararma yapmaz."
+      }
     ]
   },
   {
@@ -703,6 +763,20 @@
         "specs": "220V AC giriş, EBV serisi, ağır dış mekan",
         "img": "/images/products/inventronics-dis-mekan-adaptor-ebv-serisi.webp"
       }
+    ],
+    "faq": [
+      {
+        "q": "LED trafo hesabı nasıl yapılır?",
+        "a": "Toplam LED gücünü hesaplayın (modül adedi x modül watt'ı veya şerit metresi x metre başına watt), üzerine %20 güvenlik payı ekleyin. Örnek: 100 adet 1,5W modül = 150W; %20 payla en az 180W yani 12V 15A trafo gerekir."
+      },
+      {
+        "q": "Tabela için kaç amper trafo gerekir?",
+        "a": "Modül sayısına bağlıdır: 12V sistemde her 8 adet 1,5W modül yaklaşık 1 amper çeker. 80 modüllük bir tabela için 10A, 160 modül için 20A (veya 2 adet 10A) trafo kullanılır. Trafonun tam kapasitede değil %80 yükte çalışması ömrünü uzatır."
+      },
+      {
+        "q": "İç mekan ve dış mekan trafosu farkı nedir?",
+        "a": "Dış mekan ve tabela içi kullanımda IP67 su geçirmez trafolar şarttır. İç mekan kullanımında perfore (delikli) kasalı trafolar hem daha ekonomiktir hem daha iyi soğur."
+      }
     ]
   },
   {
@@ -778,6 +852,16 @@
         "img": "/images/uygulama/point-led-3.webp",
         "caption": "Medya cephe / nokta led"
       }
+    ],
+    "faq": [
+      {
+        "q": "Point LED nedir, nerede kullanılır?",
+        "a": "Point LED'ler tek tek dizilen, piksel görünümlü su geçirmez LED'lerdir. Tabela kontur aydınlatması, lunapark tarzı ışıklandırma, cephe çerçeveleme ve animasyonlu uygulamalarda kullanılır."
+      },
+      {
+        "q": "Point LED animasyon yapabilir mi?",
+        "a": "Evet, adreslenebilir point LED'ler kontrol ünitesiyle birlikte akan ışık, yanıp sönme ve renk geçişi animasyonları yapar. Kontrol ünitelerini de stoklarımızda bulundurduğumuz için tam uyumlu set halinde gönderiyoruz."
+      }
     ]
   },
   {
@@ -850,6 +934,16 @@
       {
         "img": "/images/uygulama/kesit-aydinlatma-led-3.webp",
         "caption": "Arkadan ışıklı pleksi levha"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kesit aydınlatma LED nedir?",
+        "a": "Pleksi (akrilik) levhanın kenarından ışık verilerek harfin veya panelin kesitinin (yan yüzeyinin) parlamasını sağlayan LED sistemidir. Kesme harf ve modern tabela tasarımlarında zarif bir görünüm sunar."
+      },
+      {
+        "q": "Kesit aydınlatmada hangi pleksi kalınlığı uygundur?",
+        "a": "8-20 mm pleksi kalınlıkları için uygun kesit LED seçeneklerimiz mevcuttur. Kalınlığa göre doğru ürünü seçmek homojen ışık için kritiktir; ölçünüzü iletin, doğru ürünü önerelim."
       }
     ]
   },
@@ -930,6 +1024,16 @@
         "img": "/images/uygulama/zemin-aydinlatma-led-3.webp",
         "caption": "Zemine gömme led spot"
       }
+    ],
+    "faq": [
+      {
+        "q": "Zemin aydınlatma LED'leri üzerine basılabilir mi?",
+        "a": "Evet, zemin LED armatürleri IP67 su geçirmez ve üzerine basılmaya/araç geçişine dayanıklı temperli cam ve metal gövdeyle üretilir. Yürüme yolu, peyzaj ve vitrin önü uygulamaları için idealdir."
+      },
+      {
+        "q": "Zemin LED montajı nasıl yapılır?",
+        "a": "Zemine açılan yuvaya gömme kasa yerleştirilir, armatür kasaya oturtulur. 12-24V güvenli voltajla çalıştığı için ıslak zeminlerde de güvenlidir. Kablolama için dış mekan kablosu ve IP68 konnektör kullanılmalıdır."
+      }
     ]
   },
   {
@@ -977,6 +1081,12 @@
       {
         "img": "/images/uygulama/pergole-led-3.webp",
         "caption": "Modern pergola led aydınlatma"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Pergole LED aydınlatma nasıl yapılır?",
+        "a": "Pergole profillerinin içine veya altına monte edilen su geçirmez lineer LED'lerle yapılır. IP65 üzeri koruma, dış ortam sıcaklık dayanımı ve amber/günışığı renk seçenekleri ile bahçe ve teras keyfini bozmayan konforlu bir ışık elde edilir."
       }
     ]
   },
@@ -1125,6 +1235,16 @@
         "specs": "Hat üzeri ara aç / kapa anahtarı",
         "img": "/images/products/arapuarli-anahtar.jpg"
       }
+    ],
+    "faq": [
+      {
+        "q": "RGB LED kontrol ünitesi nasıl seçilir?",
+        "a": "Şerit tipinize (RGB, RGBW, adreslenebilir) ve toplam amper yüküne göre seçilir. Kumandalı, WiFi'lı ve müzik senkronlu modellerimiz mevcuttur. Toplam watt değerinizi iletin, uyumlu kontrolcüyü önerelim."
+      },
+      {
+        "q": "Tabela animasyonu için hangi kontrol ünitesi gerekir?",
+        "a": "Akan yazı ve animasyonlu tabelalar için adreslenebilir (pixel) kontrol üniteleri kullanılır. Point LED ve adreslenebilir şeritlerle tam uyumlu, program yüklenebilir kontrolcüler stoklarımızda mevcuttur."
+      }
     ]
   },
   {
@@ -1164,6 +1284,12 @@
         "name": "4 Görsel Projektör Lamba",
         "specs": "4 görsel slotu, çoklu yansıtma",
         "img": "/images/products/4-gorsel-projektor-lamba.png"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Hangi reklam araçlarını tedarik ediyorsunuz?",
+        "a": "Tabela ve reklam üretiminde kullanılan yardımcı araç ve ekipmanları toptan fiyatlarla tedarik ediyoruz. Güncel ürün listesi ve fiyat için WhatsApp'tan ulaşabilirsiniz."
       }
     ]
   },
@@ -1220,6 +1346,12 @@
         "name": "Kablo Sonlandırıcı",
         "specs": "Hat sonu kapatma ve sonlandırma",
         "img": "/images/products/kablo-sonlandirici.png"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Tabela montajında hangi yardımcı malzemeler gerekir?",
+        "a": "Kablo, silikon, konnektör, klemens ve montaj aksesuarları tabela işinin tamamlayıcılarıdır. Tüm yardımcı ürünleri ana malzemelerle birlikte tek kargoda gönderiyoruz; ayrı tedarikçiyle uğraşmazsınız."
       }
     ]
   }

@@ -21,6 +21,7 @@ export default function Nav() {
 
   const links = [
     { href: "/markalar", label: "Markalarımız" },
+    { href: "/blog", label: "Blog" },
     { href: "/hakkimizda", label: "Hakkımızda" },
     { href: "/iletisim", label: "İletişim" },
   ];

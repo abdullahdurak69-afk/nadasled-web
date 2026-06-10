@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Tabela Malzemeleri — Tüm Ürün Kategorileri",
   description:
     "LED modül, LED şerit, trafo, kablo ve tabela aksesuarları. Türkiye geneli toptan satış. Tüm ürün kategorilerini inceleyin, teklif alın.",
+  alternates: { canonical: "https://www.nadasled.com.tr/urunler" },
 };
 
 export default function UrunlerPage() {
