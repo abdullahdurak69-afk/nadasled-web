@@ -49,6 +49,17 @@ const contactItems = [
   },
   {
     icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+    ),
+    label: "@nadasled",
+    sub: "Instagram'da takip edin",
+    href: "https://www.instagram.com/nadasled/",
+    target: "_blank",
+    color: "#E1306C",
+    onClick: () => trackClick("instagram_click", "iletisim_page"),
+  },
+  {
+    icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
     ),
     label: "Ümraniye, İstanbul",

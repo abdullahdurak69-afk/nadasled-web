@@ -4,6 +4,7 @@ import Logo from "@/components/Logo";
 const WA_HREF = "https://wa.me/905414696966";
 const PHONE_HREF = "tel:+905414696966";
 const EMAIL = "nadasled@gmail.com";
+const INSTAGRAM = "https://www.instagram.com/nadasled/";
 
 const footerCategories = catalog.slice(0, 6).map((c) => ({ href: `/urunler/${c.slug}`, label: c.name }));
 
@@ -82,6 +83,10 @@ export default function SiteFooter() {
               <div className="flex gap-2.5 items-center">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2" className="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 <a href={`mailto:${EMAIL}`} className="hover:text-[color:var(--nadas-orange)] transition-colors">{EMAIL}</a>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="var(--nadas-orange)"/></svg>
+                <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="hover:text-[color:var(--nadas-orange)] transition-colors">@nadasled</a>
               </div>
               <a
                 href={WA_HREF}
