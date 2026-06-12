@@ -55,18 +55,13 @@ export default async function UrunKategoriPage({ params }: Props) {
     "@type": "ItemList",
     name: product.h1,
     description: product.metaDesc,
+    // "Product" tipi kullanılmıyor: fiyat/yorum verisi olmadığından Google'ın
+    // zorunlu tuttuğu offers/review/aggregateRating alanları sağlanamıyor.
     itemListElement: product.products.map((item, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      item: {
-        "@type": "Product",
-        name: item.name,
-        description: item.specs,
-        ...((item as { img?: string }).img
-          ? { image: `https://www.nadasled.com.tr${(item as { img?: string }).img}` }
-          : {}),
-        brand: { "@type": "Brand", name: "Nadasled" },
-      },
+      name: item.name,
+      description: item.specs,
     })),
   };
 
