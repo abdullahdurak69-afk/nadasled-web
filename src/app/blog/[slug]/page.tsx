@@ -20,7 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.metaTitle,
     description: post.metaDesc,
     alternates: { canonical: url },
-    openGraph: { type: "article", title: post.metaTitle, description: post.metaDesc, url },
+    openGraph: {
+      type: "article",
+      title: post.metaTitle,
+      description: post.metaDesc,
+      url,
+      images: [{ url: "https://www.nadasled.com.tr/images/og.jpg", width: 1200, height: 630, alt: post.title }],
+    },
   };
 }
 
@@ -122,6 +128,7 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDesc,
+    image: "https://www.nadasled.com.tr/images/og.jpg",
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: "tr-TR",

@@ -2,6 +2,7 @@
 module.exports = {
   siteUrl: "https://www.nadasled.com.tr",
   generateRobotsTxt: true,
+  exclude: ["/apple-icon.png", "/icon.svg"],
   outDir: "./out",
   changefreq: "weekly",
   priority: 0.7,
