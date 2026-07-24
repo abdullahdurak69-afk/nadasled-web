@@ -98,6 +98,7 @@ export default function Hero() {
           </a>
           <a
             href={PHONE_HREF}
+            data-track="hero"
             className="inline-flex items-center gap-2 font-medium transition-all duration-200"
             style={{ background: "transparent", color: "var(--nadas-ink)", border: "1px solid var(--nadas-line2)", padding: "16px 28px", fontSize: "15px", borderRadius: "2px" }}
           >

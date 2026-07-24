@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
+import { EVENTS, track } from "@/lib/analytics";
 
 const PHONE = "0541 469 69 66";
 const PHONE_HREF = "tel:+905414696966";
@@ -10,12 +10,8 @@ const EMAIL = "nadasled@gmail.com";
 const ADDRESS = "Çakmak, Yeşilbahar Sokağı No:15/A, Ümraniye / İstanbul";
 const MAPS_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5!2d29.1164!3d41.0166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzU5LjgiTiAyOcKwMDYnNTkuMCJF!5e0!3m2!1str!2str!4v1234567890";
 
-function trackClick(event: string, label: string) {
-  if (typeof window !== "undefined" && (window as any).gtag) {
-    (window as any).gtag("event", event, { event_category: "contact", event_label: label });
-  }
-}
-
+// Tıklama olaylarını ClickTracker global olarak gönderir; buradaki data-track
+// etiketleri sadece raporda hangi kartın tıklandığını ayırt etmek için.
 const contactItems = [
   {
     icon: (
@@ -26,7 +22,7 @@ const contactItems = [
     href: WA_BASE + "?text=Merhaba%2C%20bilgi%20almak%20istiyorum.",
     target: "_blank",
     color: "#1FAD56",
-    onClick: () => trackClick("whatsapp_click", "iletisim_page"),
+    track: "iletisim_kart",
   },
   {
     icon: (
@@ -36,7 +32,7 @@ const contactItems = [
     sub: "Hafta içi 08:30 – 18:00",
     href: PHONE_HREF,
     color: "var(--nadas-orange)",
-    onClick: () => trackClick("phone_click", "iletisim_page"),
+    track: "iletisim_kart",
   },
   {
     icon: (
@@ -46,6 +42,7 @@ const contactItems = [
     sub: "E-posta ile ulaşın",
     href: `mailto:${EMAIL}`,
     color: "var(--nadas-blue2)",
+    track: "iletisim_kart",
   },
   {
     icon: (
@@ -56,7 +53,7 @@ const contactItems = [
     href: "https://www.instagram.com/nadasled/",
     target: "_blank",
     color: "#E1306C",
-    onClick: () => trackClick("instagram_click", "iletisim_page"),
+    track: "iletisim_kart",
   },
   {
     icon: (
@@ -67,6 +64,7 @@ const contactItems = [
     href: "https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul",
     target: "_blank",
     color: "var(--nadas-ink3)",
+    track: "iletisim_kart",
   },
 ];
 
@@ -85,8 +83,16 @@ export default function IletisimPage() {
       form.mesaj ? `Mesaj: ${form.mesaj}` : "",
     ].filter(Boolean).join("\n");
 
+    // Sitedeki en değerli dönüşüm: doldurulmuş teklif formu.
+    // urun/miktar parametrelerini raporda görmek için GA4'te özel boyut tanımlayın.
+    track(EVENTS.lead, {
+      event_category: "contact",
+      event_label: "teklif_formu",
+      urun: form.urun || "belirtilmedi",
+      miktar: form.miktar || "belirtilmedi",
+    });
+
     const waUrl = WA_BASE + "?text=" + encodeURIComponent(lines);
-    trackClick("form_submit_wa", "iletisim_page");
     window.open(waUrl, "_blank");
   }
 
@@ -152,7 +158,7 @@ export default function IletisimPage() {
                 href={c.href}
                 target={(c as any).target}
                 rel={(c as any).target ? "noopener noreferrer" : undefined}
-                onClick={c.onClick}
+                data-track={c.track}
                 className="flex items-center gap-5 transition-all duration-200 group"
                 style={{
                   background: "var(--nadas-bg2)",
@@ -323,6 +329,7 @@ export default function IletisimPage() {
             href="https://maps.google.com/?q=Çakmak+Yeşilbahar+Sokağı+15/A+Ümraniye+İstanbul"
             target="_blank"
             rel="noopener noreferrer"
+            data-track="harita_alti"
             className="inline-flex items-center gap-2 mt-4 text-sm font-medium transition-colors"
             style={{ color: "var(--nadas-orange)" }}
           >
@@ -367,6 +374,7 @@ export default function IletisimPage() {
             href={WA_BASE + "?text=Merhaba%2C%20toptan%20fiyat%20listesi%20almak%20istiyorum."}
             target="_blank"
             rel="noopener noreferrer"
+            data-track="iletisim_alt_cta"
             className="inline-flex items-center gap-3 font-semibold transition-all duration-200 hover:-translate-y-px"
             style={{
               background: "var(--nadas-orange-ink)",

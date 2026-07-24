@@ -196,6 +196,7 @@ export default async function UrunKategoriPage({ params }: Props) {
               href={waHref}
               target="_blank"
               rel="noopener noreferrer"
+              data-track="urun_ust"
               className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
               style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "15px 26px", fontSize: "15px", borderRadius: "2px" }}
             >
@@ -363,6 +364,8 @@ export default async function UrunKategoriPage({ params }: Props) {
                       href={`https://wa.me/905414696966?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      /* Hangi ürünün fiyatı soruluyor — GA4'te ürün bazlı talep raporu */
+                      data-track={`urun_karti: ${item.name}`}
                       className="flex-shrink-0 inline-flex items-center gap-2 transition-all duration-200 hover:-translate-y-px"
                       style={{
                         border: "1px solid var(--nadas-line)",
@@ -462,6 +465,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   href={waHref}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-track="urun_yan_panel"
                   className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
                   style={{ background: "#1FAD56", color: "white", padding: "16px 20px", borderRadius: "2px", fontSize: "14px" }}
                 >
@@ -470,6 +474,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                 </a>
                 <a
                   href={PHONE_HREF}
+                  data-track="urun_yan_panel"
                   className="inline-flex items-center justify-center gap-2 font-medium transition-all duration-200"
                   style={{ border: "1px solid var(--nadas-line2)", color: "var(--nadas-ink)", padding: "16px 20px", borderRadius: "2px", fontSize: "14px" }}
                 >

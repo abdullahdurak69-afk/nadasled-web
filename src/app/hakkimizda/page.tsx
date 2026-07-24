@@ -252,6 +252,7 @@ export default function HakkimizdaPage() {
             href={WA_HREF}
             target="_blank"
             rel="noopener noreferrer"
+            data-track="hakkimizda_alt_cta"
             className="inline-flex items-center gap-3 font-semibold transition-all duration-200 hover:-translate-y-px"
             style={{
               background: "var(--nadas-orange-ink)",

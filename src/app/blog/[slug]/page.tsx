@@ -232,6 +232,7 @@ export default async function BlogPostPage({ params }: Props) {
                 href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-track="blog_yazi"
                 className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
                 style={{ background: "#1FAD56", color: "white", padding: "14px 22px", borderRadius: "2px", fontSize: "14px" }}
               >

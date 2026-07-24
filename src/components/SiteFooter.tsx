@@ -53,15 +53,15 @@ export default function SiteFooter() {
               Kurumsal
             </div>
             <ul className="flex flex-col gap-2.5" style={{ fontSize: "14px", color: "var(--nadas-ink2)" }}>
-              {[
+              {([
                 { href: "/hakkimizda", label: "Hakkımızda" },
                 { href: "/urunler", label: "Ürünler" },
                 { href: "/markalar", label: "Markalarımız" },
                 { href: "/blog", label: "Blog" },
                 { href: "/iletisim", label: "İletişim" },
-                { href: WA_HREF, label: "Teklif Al" },
-              ].map((l) => (
-                <li key={l.label}><a href={l.href} className="transition-colors duration-200 hover:text-[color:var(--nadas-orange)]">{l.label}</a></li>
+                { href: WA_HREF, label: "Teklif Al", track: "footer_menu" },
+              ] as { href: string; label: string; track?: string }[]).map((l) => (
+                <li key={l.label}><a href={l.href} data-track={l.track} className="transition-colors duration-200 hover:text-[color:var(--nadas-orange)]">{l.label}</a></li>
               ))}
             </ul>
           </div>
@@ -78,20 +78,21 @@ export default function SiteFooter() {
               </div>
               <div className="flex gap-2.5 items-center">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2" className="flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                <a href={PHONE_HREF} className="hover:text-[color:var(--nadas-orange)] transition-colors">0541 469 69 66</a>
+                <a href={PHONE_HREF} data-track="footer" className="hover:text-[color:var(--nadas-orange)] transition-colors">0541 469 69 66</a>
               </div>
               <div className="flex gap-2.5 items-center">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2" className="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <a href={`mailto:${EMAIL}`} className="hover:text-[color:var(--nadas-orange)] transition-colors">{EMAIL}</a>
+                <a href={`mailto:${EMAIL}`} data-track="footer" className="hover:text-[color:var(--nadas-orange)] transition-colors">{EMAIL}</a>
               </div>
               <div className="flex gap-2.5 items-center">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--nadas-orange)" strokeWidth="2" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="var(--nadas-orange)"/></svg>
-                <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="hover:text-[color:var(--nadas-orange)] transition-colors">@nadasled</a>
+                <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" data-track="footer" className="hover:text-[color:var(--nadas-orange)] transition-colors">@nadasled</a>
               </div>
               <a
                 href={WA_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-track="footer"
                 className="inline-flex items-center gap-2 self-start mt-2 transition-all duration-200 hover:-translate-y-px"
                 style={{ background: "#1FAD56", color: "white", padding: "12px 18px", borderRadius: "2px", fontSize: "13px", fontWeight: 600 }}
               >

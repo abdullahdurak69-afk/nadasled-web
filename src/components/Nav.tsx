@@ -186,6 +186,7 @@ export default function Nav() {
             href={WA_HREF}
             target="_blank"
             rel="noopener noreferrer"
+            data-track="nav_mobil"
             className="inline-flex items-center justify-center gap-2 text-sm font-semibold mt-2"
             style={{ background: "var(--nadas-orange)", color: "var(--nadas-orange-ink)", padding: "14px 20px", borderRadius: "2px" }}
             onClick={() => setMobileOpen(false)}
