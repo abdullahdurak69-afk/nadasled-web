@@ -3,7 +3,7 @@
     "slug": "led-modul",
     "name": "LED Modül",
     "shortDesc": "Tabela ve kutu harf aydınlatması için Fortune, Samsung, Osram ve Premium serisi LED modüller",
-    "metaTitle": "LED Modül Toptan Fiyatı | Tabela LED Modülü | Nadasled",
+    "metaTitle": "LED Modül Toptan Fiyatı | Tabela LED Modülü",
     "metaDesc": "Tabela ve kutu harf için toptan LED modül çeşitleri. Fortune Plus, Fortune Light, Samsung, Osram ve Premium seri mercekli modüller. 12V IP65, hızlı kargo. Teklif için arayın.",
     "h1": "Tabela LED Modülleri — Kutu Harf ve Cephe Aydınlatma",
     "icon": "💡",
@@ -149,6 +149,110 @@
       {
         "q": "LED modüller garanti kapsamında mı?",
         "a": "Evet, sattığımız tüm LED modüller faturalı ve 1 yıl garantilidir. Toptan alımlarda da garanti şartları aynen geçerlidir."
+      },
+      {
+        "q": "LED modüller arasındaki mesafe ne kadar olmalı?",
+        "a": "Pratikte '10x10 kuralı' kullanılır: harf derinliği kaç cm ise modüller arası ve sıralar arası mesafe de yaklaşık o kadar cm olur. 10 cm derinliğindeki bir kutu harfte modüller 10 cm aralıklarla dizilir. Derinlik 6 cm'e düşerse aralık da 6 cm'e indirilmeli, yoksa yüzeyde karanlık bölgeler oluşur."
+      },
+      {
+        "q": "Bir 12V trafoya kaç adet LED modül bağlayabilirim?",
+        "a": "Trafo watt'ını modül watt'ına bölüp 1.25 güvenlik payına bölün: 100W trafo ve 1.5W modül için 100 ÷ 1.5 ÷ 1.25 ≈ 53 adet. Ayrıca tek bir besleme hattına 20–25 modülden fazlasını dizmeyin; daha uzun hatlarda voltaj düşümü nedeniyle son modüller sönük yanar. Hattı ikiye bölüp trafoya ayrı ayrı bağlamak gerekir."
+      }
+    ]
+  },
+  {
+    "slug": "light-box-led",
+    "name": "Light Box LED",
+    "shortDesc": "Işıklı kutu, vitrin ve derin tabela için geniş açılı mercekli modüller ve Samsung LED bar",
+    "metaTitle": "Light Box LED Toptan | Işıklı Kutu ve Vitrin LED Fiyatı",
+    "metaDesc": "Işıklı kutu, vitrin ve derin tabela aydınlatması için toptan light box LED modül ve LED bar. 150°–170° geniş açı, 12V IP65, homojen dağılım. Teklif için arayın.",
+    "h1": "Light Box LED — Işıklı Kutu ve Vitrin Aydınlatması",
+    "icon": "📦",
+    "image": "/images/light-box-led.webp",
+    "color": "from-orange-300 to-amber-500",
+    "features": [
+      "150°–170° geniş açılı mercek — derin kutuda gölge bırakmaz",
+      "10–30 cm derinliğindeki ışıklı kutular için",
+      "Samsung ve Epistar çipli LED bar seçenekleri",
+      "12V, IP65 su geçirmez gövde",
+      "Homojen ışık dağılımı, nokta lekesi yok",
+      "3000K sarı ve 6500K beyaz seçenekleri",
+      "Sığ kutu harfler için LED Modül kategorisine bakın"
+    ],
+    "keywords": [
+      "light box led",
+      "ışıklı kutu led",
+      "vitrin led",
+      "light box led toptan",
+      "geniş açılı modül led",
+      "ışıklı tabela led"
+    ],
+    "products": [
+      {
+        "name": "1.5W ECO Mercekli Modül LED",
+        "specs": "12V, IP65, geniş açılı mercek, ışıklı kutu",
+        "img": "/images/products/eco-1-5w-modul-led.png"
+      },
+      {
+        "name": "1.2W Mercekli Modül LED (Fortune Light)",
+        "specs": "12V, IP65, yüksek lümen, derin kutu",
+        "img": "/images/products/1-2-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "1.5W Mercekli Modül LED (Fortune Light)",
+        "specs": "12V, IP65, geniş açı, homojen dağılım",
+        "img": "/images/products/1-5-watt-modul-led-fortune-light.png"
+      },
+      {
+        "name": "0.72W Mercekli İkili Modül LED",
+        "specs": "12V, IP65, ince kutu ve vitrin uygulamaları",
+        "img": "/images/products/0-72w-mercekli-ikili-modul-led.jpg"
+      },
+      {
+        "name": "1.08W Samsung Modül LED",
+        "specs": "12V, IP65, Samsung çip, yüksek verim",
+        "img": "/images/products/1-08-watt-samsung-modul.png"
+      },
+      {
+        "name": "2.4W COB Modül LED",
+        "specs": "12V, IP65, COB — noktasız kesintisiz ışık",
+        "img": "/images/products/cob-modul-led.jpg"
+      },
+      {
+        "name": "13mm PCB LED Bar (Vidalı)",
+        "specs": "12V, kenar aydınlatma, sığ vitrin kutuları",
+        "img": "/images/products/13mm-pcb-led-bar-vidali.jpg"
+      },
+      {
+        "name": "16mm PCB Geniş Açılı LED Bar (Vidalı)",
+        "specs": "12V, geniş açı, ışıklı kutu kenar dizilimi",
+        "img": "/images/products/16mm-pcb-genis-acili-led-bar-vidali.jpg"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Light box LED ile normal tabela modülü arasındaki fark nedir?",
+        "a": "Light box modülleri 150°–170° geniş açılı mercek kullanır ve 10–30 cm derinliğindeki ışıklı kutuda gölge bırakmadan homojen dağılım verir. Standart tabela modülü 120°–140° açılıdır; sığ kutu harflerde iyi çalışır ama derin kutuda yüzeyde nokta lekesi bırakır."
+      },
+      {
+        "q": "Işıklı kutu için metrekareye kaç adet modül gerekir?",
+        "a": "15–20 cm derinliğinde bir kutuda 12V 1.5W mercekli modülle metrekare başına ortalama 45–60 adet modül kullanılır. Derinlik 10 cm'in altına indiğinde ışık yayılacak mesafe azaldığı için modül sayısı %30–40 artar; 25 cm üstü derinlikte ise 35–45 adete kadar düşebilir."
+      },
+      {
+        "q": "Light box LED için kaç watt trafo seçmeliyim?",
+        "a": "Toplam modül watt'ını hesaplayıp 1.25 güvenlik payıyla çarpın. Örnek: 60 adet 1.5W modül = 90W; 90 × 1.25 = 112.5W, yani 12V 120W trafo uygundur. Trafoyu sürekli %100 yükte çalıştırmak ömrünü kısaltır."
+      },
+      {
+        "q": "Vitrin kutusunda LED bar mı, mercekli modül mü kullanmalıyım?",
+        "a": "5 cm ve altı derinliklerde kenardan aydınlatan LED bar daha uygundur; modül bu mesafede yüzeyde nokta gösterir. 10 cm ve üstü derinliklerde arkadan dizilen geniş açılı mercekli modül daha homojen sonuç verir."
+      },
+      {
+        "q": "Light box LED dış mekânda kullanılabilir mi?",
+        "a": "IP65 modüller dış mekânda kullanılır, ancak trafonun da IP67 dış mekân tipi olması ve tüm kablo eklerinin silikonla izole edilmesi gerekir. Modül IP65 olsa bile su alan bir trafo tüm hattı devre dışı bırakır."
+      },
+      {
+        "q": "Aynı kutuda sarı ve beyaz modül karıştırılabilir mi?",
+        "a": "Önerilmez. 3000K sarı ile 6500K beyaz arasındaki renk sıcaklığı farkı akrilik yüzeyde gözle ayırt edilir ve lekeli bir görüntü oluşturur. Tek kutuda tek renk sıcaklığı kullanın."
       }
     ]
   },
@@ -156,7 +260,7 @@
     "slug": "led-serit",
     "name": "LED Şerit",
     "shortDesc": "İç ve dış mekan LED şerit — Samsung, Pixel, RGB, S-Type ve ECO seriler, metre satış",
-    "metaTitle": "LED Şerit Toptan | LED Bant Fiyatı | Nadasled",
+    "metaTitle": "LED Şerit Toptan | LED Bant Fiyatı",
     "metaDesc": "Tabela ve dekorasyon için toptan LED şerit çeşitleri. Samsung, ECO 2835, S-Type zikzak, RGB ve adreslenebilir Pixel modeller. IP20 iç, IP65/IP68 dış mekan. Metre fiyatıyla satış.",
     "h1": "LED Şerit — İç/Dış Mekan ve RGB Serileri",
     "icon": "〰️",
@@ -288,6 +392,18 @@
       {
         "q": "Dış mekanda hangi LED şerit kullanılmalı?",
         "a": "Dış mekan için IP65 ve üzeri silikonlu/su geçirmez şeritler şarttır. Tabela içi gibi yarı korumalı alanlarda IP54, doğrudan yağmur alan yerlerde IP67-IP68 öneririz."
+      },
+      {
+        "q": "LED şerit tek hattan kaç metre çekilebilir?",
+        "a": "12V şeritte tek besleme ile en fazla 5 metre, 24V şeritte 10 metre çekilir. Daha uzun mesafede hattın sonunda gözle görülür parlaklık kaybı olur. Zorunluysa şeridi iki ucundan da besleyin veya her 5 metrede bir trafodan yeni hat çekin."
+      },
+      {
+        "q": "LED şerit nereden kesilir?",
+        "a": "Şerit üzerindeki makas simgeli bakır pedlerden kesilir. 12V şeritlerde bu noktalar genellikle 3 LED'de bir (yaklaşık 5 cm), 24V şeritlerde 6 LED'de bir (yaklaşık 10 cm) gelir. Kesim çizgisinin dışından kesmek o segmenti çalışmaz hale getirir."
+      },
+      {
+        "q": "IP20, IP65 ve IP68 LED şerit arasındaki fark nedir?",
+        "a": "IP20 korumasız çıplak şerittir, yalnızca iç mekânda kullanılır. IP65 üzeri silikon kaplıdır; yağmura ve toza dayanır, dış cephe ve tabela içi için uygundur. IP68 tamamen silikon dolguludur ve sürekli su altında kalabilir; havuz ve zemin uygulamalarında kullanılır."
       }
     ]
   },
@@ -295,7 +411,7 @@
     "slug": "cob-led-serit",
     "name": "COB LED Şerit",
     "shortDesc": "Noktasız kesintisiz ışık veren COB LED şerit — iç/dış mekan, RGB ve Pixel seçenekleri",
-    "metaTitle": "COB LED Şerit Toptan | COB Şerit Fiyatı | Nadasled",
+    "metaTitle": "COB LED Şerit Toptan | COB Şerit Fiyatı",
     "metaDesc": "Kesintisiz homojen ışık için toptan COB LED şerit çeşitleri. 4mm, 8mm, 10mm, 480-720 LED/mt, RGB ve adreslenebilir Pixel COB. IP20 iç, IP44/IP65 dış mekan. Metre satış.",
     "h1": "COB LED Şerit — Kesintisiz Homojen Işık",
     "icon": "➖",
@@ -396,6 +512,18 @@
       {
         "q": "COB şerit kesilip eklenebilir mi?",
         "a": "Evet, COB şeritler üzerindeki kesim noktalarından (genelde 2,5-5 cm aralıklarla) kesilebilir ve lehim ya da klips konnektörle eklenebilir."
+      },
+      {
+        "q": "COB LED şerit metrede kaç watt çeker?",
+        "a": "8mm 480 LED/m COB şerit tipik olarak 10–12 W/m, 520 LED/m modeller 12–14 W/m, RGB pixel COB şeritler ise 18–20 W/m çeker. 10 metrelik bir 12 W/m hat için toplam 120W; %25 pay ile 24V 150W trafo seçilmelidir."
+      },
+      {
+        "q": "COB LED şerit alüminyum profil gerektirir mi?",
+        "a": "10 W/m üzerindeki COB şeritlerde evet. COB'da ışık kaynağı tek bir sürekli hat üzerinde toplandığı için ısı da orada birikir. Profilsiz kullanımda şerit ilk aylarda gözle görülür lümen kaybeder ve ömrü belirgin şekilde kısalır."
+      },
+      {
+        "q": "COB şerit kutu harfte kullanılabilir mi?",
+        "a": "5 cm ve altı sığ kutu harflerde COB çok iyi sonuç verir — nokta göstermez, homojen bir yüzey oluşturur. 8 cm ve üzeri derinliklerde ise mercekli LED modül hem daha ekonomik hem de daha az sayıda parçayla aynı parlaklığı verir."
       }
     ]
   },
@@ -403,7 +531,7 @@
     "slug": "neon-led",
     "name": "Neon LED",
     "shortDesc": "Esnek neon LED — Flat, Silikon, D-Shape, 360°, Mix ve 220V seriler + bağlantı/uygulama aparatları",
-    "metaTitle": "Neon LED Toptan | Flex Neon LED Hortum Fiyatı | Nadasled",
+    "metaTitle": "Neon LED Toptan | Flex Neon LED Hortum Fiyatı",
     "metaDesc": "Tabela ve dekorasyon için toptan neon LED çeşitleri. Flat neon, silikon neon, D-Shape, 360°, Mix, PVC ve 220V seriler. 12V-24V, bağlantı ve uygulama aparatlarıyla tam set.",
     "h1": "Neon LED — Flex, Silikon ve 220V Serileri",
     "icon": "🌈",
@@ -635,6 +763,18 @@
       {
         "q": "Neon LED dış mekanda kullanılır mı?",
         "a": "Evet, silikon gövdeli neon flex IP65 su geçirmezdir ve dış cephe, bahçe, tabela uygulamalarında güvenle kullanılır. UV dayanımlı silikon sayesinde güneşte sararma yapmaz."
+      },
+      {
+        "q": "Neon LED metrede kaç watt çeker?",
+        "a": "12V ve 24V silikon neon LED tipik olarak 8–12 W/m çeker. 220V neon LED ise metrede yaklaşık 10 W tüketir. 20 metrelik bir 24V neon hattı için 20 × 10 = 200W; %25 pay ile 24V 250W trafo uygundur."
+      },
+      {
+        "q": "Neon LED'in minimum büküm yarıçapı nedir?",
+        "a": "Flat (yan ışıklı) neon yalnızca yan yüzeyi üzerinde bükülür ve minimum yarıçap yaklaşık 3 cm'dir; üst yüzeye doğru bükmek LED'leri kopartır. 360° neonda her yönde bükülebilir ancak yarıçap 5 cm'in altına inmemelidir."
+      },
+      {
+        "q": "220V neon mu, 12V/24V neon mu seçmeliyim?",
+        "a": "220V neon uzun düz hatlarda avantajlıdır — tek fişten 50–100 metreye kadar besleme yapılabilir, trafo gerekmez. 12V ve 24V neon ise harf, yazı ve kavisli işlerde tercih edilir: daha güvenlidir, dimmerlenebilir ve kesim aralıkları çok daha sıktır (220V'ta genellikle 1 metre)."
       }
     ]
   },
@@ -642,7 +782,7 @@
     "slug": "trafo-led-surucu",
     "name": "LED Trafo / Adaptör",
     "shortDesc": "İç ve dış mekan LED adaptör ve trafolar — Meanwell, Inventronics, Osram, ince ve epoksili kasalar",
-    "metaTitle": "LED Trafo / Adaptör Fiyatı | LED Sürücü Toptan | Nadasled",
+    "metaTitle": "LED Trafo / Adaptör Fiyatı | LED Sürücü Toptan",
     "metaDesc": "Tabela ve LED aydınlatma için toptan trafo ve adaptör çeşitleri. Meanwell, Inventronics, Osram Element, ultra slim, kalem tipi, yağmur korumalı dış mekan modelleri. 12V-24V.",
     "h1": "LED Trafo ve Adaptörler — İç/Dış Mekan Güç Kaynakları",
     "icon": "⚡",
@@ -776,6 +916,18 @@
       {
         "q": "İç mekan ve dış mekan trafosu farkı nedir?",
         "a": "Dış mekan ve tabela içi kullanımda IP67 su geçirmez trafolar şarttır. İç mekan kullanımında perfore (delikli) kasalı trafolar hem daha ekonomiktir hem daha iyi soğur."
+      },
+      {
+        "q": "Trafo neden kapasitesinin altında yüklenmeli?",
+        "a": "Trafoyu sürekli %100 yükte çalıştırmak iç kondansatörlerin sıcaklığını yükseltir ve ömrünü belirgin şekilde kısaltır. Sektör pratiği %20–25 pay bırakmaktır: 100W'lık gerçek yük için 125W veya 150W trafo seçilir. Bu pay aynı zamanda ileride hatta modül eklemek için de yer bırakır."
+      },
+      {
+        "q": "Bir trafoya birden fazla hat bağlanabilir mi?",
+        "a": "Evet, hatlar trafo çıkışına paralel bağlanır. Tek koşul, tüm hatların toplam watt'ının trafo kapasitesinin %80'ini geçmemesidir. Her hattın kablo kesiti kendi çektiği akıma göre ayrı hesaplanmalıdır; hepsini aynı ince kabloyla beslemek voltaj düşümü yaratır."
+      },
+      {
+        "q": "Trafo ısınıyorsa ne yapmalıyım?",
+        "a": "Trafonun bir miktar ısınması normaldir, ancak elle dokunulamayacak kadar sıcaksa (yaklaşık 60°C üzeri) iki sebep vardır: ya yük kapasiteye çok yakındır ya da trafo kapalı bir kutuda havalandırmasızdır. Yükü azaltın veya bir üst watt trafoya geçin; kapalı montajda mutlaka havalandırma boşluğu bırakın."
       }
     ]
   },
@@ -783,7 +935,7 @@
     "slug": "point-led",
     "name": "Point LED",
     "shortDesc": "Tabela yüzü ve kutu harf için nokta LED ve pixel point LED modüller",
-    "metaTitle": "Point LED Toptan | Nokta LED Fiyatı | Nadasled",
+    "metaTitle": "Point LED Toptan | Nokta LED Fiyatı",
     "metaDesc": "Tabela ve kutu harf yüzü aydınlatması için toptan point LED, nokta LED ve pixel point LED çeşitleri. 20mm, 30mm, 50mm, şapkalı ve kesik baş modeller. Teklif için arayın.",
     "h1": "Point LED — Kutu Harf ve Pixel Nokta Modüller",
     "icon": "🔵",
@@ -861,6 +1013,22 @@
       {
         "q": "Point LED animasyon yapabilir mi?",
         "a": "Evet, adreslenebilir point LED'ler kontrol ünitesiyle birlikte akan ışık, yanıp sönme ve renk geçişi animasyonları yapar. Kontrol ünitelerini de stoklarımızda bulundurduğumuz için tam uyumlu set halinde gönderiyoruz."
+      },
+      {
+        "q": "Point LED'ler arasındaki mesafe ne olmalı?",
+        "a": "Tabela ve kontur uygulamalarında 10–15 cm aralık kullanılır. Medya cephe ve piksel uygulamalarında aralık istenen çözünürlüğe göre 15–30 cm arasında seçilir; izleme mesafesi arttıkça aralık da büyütülebilir."
+      },
+      {
+        "q": "Bir point LED kaç watt çeker?",
+        "a": "30mm tekli point LED tipik olarak 0.5–0.7 W, 50mm modeller 0.8–1 W, 50mm pixel point LED ise 0.9–1.2 W çeker. 200 adet 30mm point LED yaklaşık 120W eder; %25 pay ile 12V 150W trafo gerekir."
+      },
+      {
+        "q": "Tek hatta kaç adet point LED bağlanabilir?",
+        "a": "12V sistemde tek besleme hattına 40–50 adet point LED bağlanır. Bu sayının üzerinde hattın sonundaki LED'ler voltaj düşümü nedeniyle sönük kalır. Uzun kontur işlerinde hattı bölüp trafoya ayrı ayrı bağlamak veya 24V sisteme geçmek gerekir."
+      },
+      {
+        "q": "Pixel point LED için hangi kontrol cihazı gerekir?",
+        "a": "Adreslenebilir pixel point LED'ler SPI çıkışlı pixel kontrolör ister (SP110E, SP548E gibi modeller). Normal RGB kumandası bu LED'leri sürmez — RGB kontrolör tüm hatta aynı rengi verir, pixel kontrolör ise her LED'i tek tek adresleyerek akan ışık ve animasyon üretir."
       }
     ]
   },
@@ -868,7 +1036,7 @@
     "slug": "kesit-aydinlatma-led",
     "name": "Kesit Aydınlatma LED",
     "shortDesc": "Kanal harf ve profil kesitinden aydınlatma için tekli/üçlü LED ve LED bar çözümleri",
-    "metaTitle": "Kesit Aydınlatma LED | Kesitten Aydınlatma LED Bar | Nadasled",
+    "metaTitle": "Kesit Aydınlatma LED | Kesitten Aydınlatma LED Bar",
     "metaDesc": "Kanal harf ve profil kesitinden aydınlatma için toptan kesit LED çeşitleri. 1.5W tekli, 3W üçlü ECO modeller ve IP20/IP65 kesitten aydınlatma LED bar. Teklif için arayın.",
     "h1": "Kesit Aydınlatma LED — Kanal Harf Çözümleri",
     "icon": "📐",
@@ -944,6 +1112,115 @@
       {
         "q": "Kesit aydınlatmada hangi pleksi kalınlığı uygundur?",
         "a": "8-20 mm pleksi kalınlıkları için uygun kesit LED seçeneklerimiz mevcuttur. Kalınlığa göre doğru ürünü seçmek homojen ışık için kritiktir; ölçünüzü iletin, doğru ürünü önerelim."
+      },
+      {
+        "q": "Kesit aydınlatma ile arkadan aydınlatma arasındaki fark nedir?",
+        "a": "Kesit aydınlatmada LED'ler pleksinin kenarına yerleştirilir ve ışık levhanın içinden yayılır; bu yüzden derinlik gerektirmez, 3–5 cm'lik ince profillerde bile çalışır. Arkadan aydınlatmada ise modüller harfin arkasına dizilir ve ışığın yayılması için 8 cm ve üzeri derinlik gerekir."
+      },
+      {
+        "q": "Kesit aydınlatmada LED'ler arası mesafe ne olmalı?",
+        "a": "Kesit modüller genellikle 5–8 cm aralıkla dizilir. Arkadan aydınlatmadan çok daha sık bir dizilim gerekir, çünkü ışık levhanın içinde ilerlerken hızla zayıflar. Harf yüksekliği 15 cm'in üzerindeyse iki kenardan birden aydınlatma önerilir."
+      },
+      {
+        "q": "Kesit aydınlatma kaç cm harf derinliğine kadar uygundur?",
+        "a": "Kesit aydınlatma 3–8 cm derinliğindeki ince kanal harflerde en verimli sonucu verir. 10 cm ve üzeri derinliklerde ışık levhanın ortasına ulaşamaz; bu durumda arkadan mercekli LED modül kullanmak gerekir."
+      },
+      {
+        "q": "Kesit aydınlatmada hangi pleksi rengi kullanılmalı?",
+        "a": "Buzlu (opal) pleksi kullanılmalıdır; ışığı levha içinde dağıtarak homojen bir yüzey oluşturur. Şeffaf pleksi ışığı kenardan doğrudan geçirir ve yalnızca LED'lerin bulunduğu kenar parlar, harfin ortası karanlık kalır."
+      }
+    ]
+  },
+  {
+    "slug": "power-led",
+    "name": "Power LED",
+    "shortDesc": "1W, 3W ve 5W yüksek güçlü LED çipler — dekoratif, spot ve özel proje aydınlatması",
+    "metaTitle": "Power LED Toptan | 1W 3W 5W Yüksek Güçlü LED Fiyatı",
+    "metaDesc": "Toptan Power LED çeşitleri: 1W, 3W ve 5W yüksek güçlü LED çipler, yıldız PCB'li modeller, beyaz ve renkli seçenekler. Sabit akım sürücü uyumlu. Teklif için arayın.",
+    "h1": "Power LED — 1W, 3W ve 5W Yüksek Güçlü LED",
+    "icon": "🔆",
+    "image": "/images/products/3lu-3w-kesit-aydinlatma.png",
+    "color": "from-red-500 to-rose-600",
+    "features": [
+      "1W, 3W ve 5W güç seçenekleri",
+      "Sabit akım (constant current) sürücü ile çalışır",
+      "Alüminyum yıldız PCB ve soğutucu montajına uygun",
+      "Soğuk beyaz, sıcak beyaz, kırmızı, mavi, yeşil ve RGB",
+      "Yüksek lümen/watt verimi",
+      "Dekoratif, spot ve özel proje aydınlatması",
+      "12V hazır çözüm için Kesit Aydınlatma LED kategorisine bakın"
+    ],
+    "keywords": [
+      "power led",
+      "yüksek güçlü led",
+      "1w led",
+      "3w led",
+      "5w led",
+      "power led toptan",
+      "yıldız pcb led"
+    ],
+    "products": [
+      {
+        "name": "Power LED 1W Soğuk Beyaz",
+        "specs": "6500K, ~350mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 1W Sıcak Beyaz",
+        "specs": "3000K, ~350mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 1W Kırmızı",
+        "specs": "~350mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 1W Mavi",
+        "specs": "~350mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 1W Yeşil",
+        "specs": "~350mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 3W Soğuk Beyaz",
+        "specs": "6500K, ~700mA, yüksek lümen"
+      },
+      {
+        "name": "Power LED 3W Sıcak Beyaz",
+        "specs": "3000K, ~700mA, sabit akım sürücü gerekli"
+      },
+      {
+        "name": "Power LED 3W RGB",
+        "specs": "~700mA, tam renk, kontrolör uyumlu"
+      },
+      {
+        "name": "Power LED 5W Soğuk Beyaz",
+        "specs": "6500K, yüksek çıkış, soğutucu şart"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Power LED nedir, tabela modülünden farkı nedir?",
+        "a": "Power LED tek bir yüksek güçlü çiptir (1W, 3W veya 5W) ve sabit akım sürücü ister. Tabela modülü ise içinde akım sınırlayıcı direnç bulunan, 12V sabit gerilime doğrudan bağlanan hazır bir üründür. Power LED daha yüksek ışık verir ama montaj ve sürücü seçimi bilgi gerektirir."
+      },
+      {
+        "q": "1W ve 3W Power LED kaç lümen verir?",
+        "a": "Soğuk beyaz 1W çip tipik olarak 90–110 lümen, 3W çip 200–260 lümen verir. Renkli çiplerde bu değer düşer: kırmızı ve mavi çipler aynı watt'ta beyazın yaklaşık üçte biri kadar lümen üretir."
+      },
+      {
+        "q": "Power LED'i doğrudan 12V'a bağlayabilir miyim?",
+        "a": "Hayır. Power LED sabit akım sürücü ile beslenmelidir. Doğrudan gerilim verildiğinde çip üzerinden geçen akım kontrolsüz artar ve LED dakikalar içinde yanar. 1W çip için ~350mA, 3W çip için ~700mA sürücü kullanılır."
+      },
+      {
+        "q": "Power LED soğutucu gerektirir mi?",
+        "a": "Evet. 1W ve üzeri çipler alüminyum yıldız PCB üzerine lehimlenip termal macunla bir soğutucuya monte edilmelidir. Soğutucusuz çalıştırılan bir 3W çip ışık akısının önemli kısmını birkaç yüz saat içinde kaybeder."
+      },
+      {
+        "q": "Kaç adet Power LED'i seri bağlayabilirim?",
+        "a": "Sürücünün çıkış gerilimi belirler. Beyaz bir Power LED çipin ileri gerilimi yaklaşık 3–3.4V'tur; 12V çıkışlı bir sabit akım sürücü ile 3 adet seri bağlanabilir. Paralel bağlantı akım dengesizliği yarattığı için önerilmez."
+      },
+      {
+        "q": "Kesit ve profil aydınlatması için Power LED mi kullanmalıyım?",
+        "a": "Kesit ve profil uygulamalarında 12V sabit gerilimle çalışan hazır kesit aydınlatma modülleri çok daha pratiktir — ayrı sürücü ve soğutucu gerektirmez. Power LED'i spot, dekoratif ve özel projelerde tercih edin."
       }
     ]
   },
@@ -951,7 +1228,7 @@
     "slug": "zemin-aydinlatma-led",
     "name": "Zemin Aydınlatma LED",
     "shortDesc": "Light box ve perde tipi LED bar — zemin ve geniş yüzey arka aydınlatma için",
-    "metaTitle": "Zemin Aydınlatma LED | Lightbox LED Bar | Perde LED | Nadasled",
+    "metaTitle": "Zemin Aydınlatma LED | Lightbox LED Bar | Perde LED",
     "metaDesc": "Işıklı kutu (light box) ve geniş yüzey aydınlatması için toptan zemin aydınlatma LED bar çeşitleri. 13mm/16mm PCB LED bar, geniş açılı ve perde LED modeller. İç/dış mekan.",
     "h1": "Zemin Aydınlatma LED — Light Box ve Perde LED Bar",
     "icon": "📦",
@@ -1033,6 +1310,22 @@
       {
         "q": "Zemin LED montajı nasıl yapılır?",
         "a": "Zemine açılan yuvaya gömme kasa yerleştirilir, armatür kasaya oturtulur. 12-24V güvenli voltajla çalıştığı için ıslak zeminlerde de güvenlidir. Kablolama için dış mekan kablosu ve IP68 konnektör kullanılmalıdır."
+      },
+      {
+        "q": "Zemin aydınlatma LED bar metrede kaç watt çeker?",
+        "a": "13mm PCB LED bar tipik olarak 7–9 W/m, 16mm geniş açılı bar 10–12 W/m çeker. 50cm'lik bir bar yaklaşık 4–6W eder; 20 adet bardan oluşan bir hat için 100–120W'lık bir trafo hesaplanmalıdır."
+      },
+      {
+        "q": "Zemin aydınlatmada hangi IP seviyesi gerekir?",
+        "a": "Zemine gömülen veya üzerine su gelebilecek uygulamalarda IP67 minimumdur; sürekli su temasında IP68 dolgulu ürün kullanılmalıdır. IP65 yalnızca yağmura karşı korur, birikinti suyunda yetersiz kalır."
+      },
+      {
+        "q": "LED bar ile LED şerit arasındaki fark nedir?",
+        "a": "LED bar sert alüminyum veya PCB gövde üzerindedir; ısıyı kendi üzerinden atar, düz hatlarda sabit kalır ve vidayla monte edilir. LED şerit esnektir, kavisli yüzeylere uyar ama ısı atımı için profil ister. Zemin ve geniş yüzey arka aydınlatmasında bar daha dayanıklıdır."
+      },
+      {
+        "q": "Zemin aydınlatmada barlar kaç cm aralıkla dizilir?",
+        "a": "Yüzey ile bar arasındaki mesafeye göre ayarlanır: 5 cm boşlukta barlar 8–10 cm aralıkla, 10 cm boşlukta 15–20 cm aralıkla dizilir. Genel kural, aralığın bar ile difüzör yüzeyi arasındaki mesafenin yaklaşık iki katını geçmemesidir."
       }
     ]
   },
@@ -1040,7 +1333,7 @@
     "slug": "pergole-led",
     "name": "Pergola LED",
     "shortDesc": "Pergola, tente ve dış mekan yapıları için özel tasarım LED aydınlatma",
-    "metaTitle": "Pergola LED Toptan | Tente LED Fiyatı | Nadasled",
+    "metaTitle": "Pergola LED Toptan | Tente LED Fiyatı",
     "metaDesc": "Pergola ve tente aydınlatması için toptan Pergola LED çeşitleri. 24V DC, IP65+, homojen ışık dağılımı, dış mekan dayanımı. Teklif almak için hemen arayın.",
     "h1": "Pergola LED — Dış Mekan Aydınlatma",
     "icon": "🏠",
@@ -1087,6 +1380,26 @@
       {
         "q": "Pergole LED aydınlatma nasıl yapılır?",
         "a": "Pergole profillerinin içine veya altına monte edilen su geçirmez lineer LED'lerle yapılır. IP65 üzeri koruma, dış ortam sıcaklık dayanımı ve amber/günışığı renk seçenekleri ile bahçe ve teras keyfini bozmayan konforlu bir ışık elde edilir."
+      },
+      {
+        "q": "Pergola aydınlatmasında hangi IP seviyesi gerekir?",
+        "a": "Üstü kapalı pergolada IP65 yeterlidir. Doğrudan yağmur alan açık kısımlarda ve zemine yakın montajlarda IP67 kullanılmalıdır. Trafo mutlaka dış mekân tipi (IP67) olmalı veya su almayan bir kutu içine alınmalıdır — en sık arıza kaynağı LED değil, ıslanan trafodur."
+      },
+      {
+        "q": "Pergola LED aydınlatması kaç watt çeker?",
+        "a": "Profil içine gizlenen 24V şerit ile metrede tipik 10–14 W tüketilir. 4x4 metrelik bir pergolanın çevresi 16 metredir; 12 W/m ile yaklaşık 190W eder, %25 pay ile 24V 250W trafo uygundur."
+      },
+      {
+        "q": "Pergola aydınlatmasında 12V mi 24V mi kullanmalıyım?",
+        "a": "24V tercih edilmelidir. Pergola hatları genelde uzundur ve 12V sistemde 5 metreden sonra gözle görülür parlaklık kaybı başlar. 24V ile aynı kablo kesitinde iki kat mesafe çekilir, voltaj düşümü yarıya iner."
+      },
+      {
+        "q": "Pergola LED'i dimmerlenebilir mi?",
+        "a": "Evet. Tek renk hatlarda PWM dimmer, RGB hatlarda RGB kontrol ünitesi kullanılır. Dimmerin amper değeri hattın toplam akımını karşılamalıdır: 250W / 24V ≈ 10.4A, yani en az 12A'lık bir dimmer seçilmelidir."
+      },
+      {
+        "q": "Pergola LED'leri kış boyunca dışarıda kalabilir mi?",
+        "a": "IP65/IP67 ürünler kış koşullarında dışarıda kalacak şekilde üretilir; LED'ler soğukta hatta daha verimli çalışır. Kritik nokta bağlantılardır: tüm kablo ekleri silikonla izole edilmeli ve konnektörler suyun birikmeyeceği şekilde aşağı bakacak konumda bırakılmalıdır."
       }
     ]
   },
@@ -1094,7 +1407,7 @@
     "slug": "led-kontrol-uniteleri",
     "name": "LED Kontrol Üniteleri",
     "shortDesc": "RGB kumanda, dimmer, pixel kontrol, sinyal yükseltici, sensör ve aç/kapa aparatları",
-    "metaTitle": "LED Kontrol Üniteleri | RGB Kumanda, Dimmer, Pixel | Nadasled",
+    "metaTitle": "LED Kontrol Üniteleri | RGB Kumanda, Dimmer, Pixel",
     "metaDesc": "LED sistemleri için toptan kontrol üniteleri. RGB kumanda, dokunmatik/potanslı dimmer, pixel RGB kontrol cihazları (SP107E/SP110E/SP548E), repeater, radar sensör ve anahtarlar.",
     "h1": "LED Kontrol Üniteleri — Kumanda, Dimmer ve Pixel",
     "icon": "🎛️",
@@ -1244,6 +1557,22 @@
       {
         "q": "Tabela animasyonu için hangi kontrol ünitesi gerekir?",
         "a": "Akan yazı ve animasyonlu tabelalar için adreslenebilir (pixel) kontrol üniteleri kullanılır. Point LED ve adreslenebilir şeritlerle tam uyumlu, program yüklenebilir kontrolcüler stoklarımızda mevcuttur."
+      },
+      {
+        "q": "RGB kontrol cihazının amper değeri nasıl hesaplanır?",
+        "a": "Toplam watt'ı sistem gerilimine bölün: 12V'ta 240W'lık bir RGB hat 240 / 12 = 20A çeker, yani en az 24A'lık kontrolör gerekir. Kontrolörü sınırında çalıştırmayın; %20 pay bırakmak ısınmayı ve erken arızayı önler."
+      },
+      {
+        "q": "Repeater (sinyal yükseltici) ne zaman gerekir?",
+        "a": "Kontrol ünitesinin amper kapasitesi hattı taşımadığında veya hat kontrolörden 10 metreden uzağa gittiğinde repeater kullanılır. Repeater kontrolörden gelen sinyali alır ve kendi trafosundan güç vererek hattı sürer; böylece tek kumandayla çok daha uzun hatlar yönetilir."
+      },
+      {
+        "q": "Dimmer ile RGB kontrolör aynı şey midir?",
+        "a": "Hayır. Dimmer tek renkli (monokrom) hattın parlaklığını ayarlar ve iki çıkışı vardır. RGB kontrolör ise kırmızı, yeşil ve mavi kanalları ayrı ayrı sürer, dört çıkışlıdır ve renk değiştirme/animasyon yapar. Tek renk şeride RGB kontrolör bağlamak gereksiz maliyettir."
+      },
+      {
+        "q": "Bluetooth ve WiFi kontrol ünitelerinin menzili ne kadardır?",
+        "a": "Bluetooth kontrolörler açık alanda yaklaşık 10–15 metre, duvar arkasından 5–8 metre menzil verir ve telefonun fiziksel olarak yakında olmasını gerektirir. WiFi kontrolörler yerel ağa bağlandığı için mesafe sınırı yoktur; internet üzerinden uzaktan da yönetilebilir. Tabela gibi sürekli erişim gereken işlerde WiFi tercih edilir."
       }
     ]
   },
@@ -1251,7 +1580,7 @@
     "slug": "reklam-araclari",
     "name": "Reklam Araçları",
     "shortDesc": "Görsel projektör lambalar ve döner projeksiyon — vitrin ve reklam aydınlatması için",
-    "metaTitle": "Reklam Araçları | Görsel Projektör Lamba | Nadasled",
+    "metaTitle": "Reklam Araçları | Görsel Projektör Lamba",
     "metaDesc": "Vitrin ve reklam aydınlatması için toptan reklam araçları. Tek ve 4 görselli projektör lambalar, döner projeksiyon. Logo ve görsel yansıtma çözümleri. Teklif için arayın.",
     "h1": "Reklam Araçları — Projektör ve Görsel Yansıtma",
     "icon": "📽️",
@@ -1290,6 +1619,22 @@
       {
         "q": "Hangi reklam araçlarını tedarik ediyorsunuz?",
         "a": "Tabela ve reklam üretiminde kullanılan yardımcı araç ve ekipmanları toptan fiyatlarla tedarik ediyoruz. Güncel ürün listesi ve fiyat için WhatsApp'tan ulaşabilirsiniz."
+      },
+      {
+        "q": "Gobo projektör kaç metreden net görüntü verir?",
+        "a": "20W'lık bir gobo projektör 3–5 metre mesafede yaklaşık 1.5–2.5 metre çapında net görüntü verir. Mesafe arttıkça görüntü büyür ama parlaklık düşer; 8 metrenin üzerinde gündüz okunabilirlik için daha yüksek watt'lı model gerekir."
+      },
+      {
+        "q": "Görsel projektör lambası dış mekânda kullanılabilir mi?",
+        "a": "IP65 gövdeli modeller dış mekânda kullanılır; genellikle mağaza girişi, kaldırım ve cephe uygulamalarında tercih edilir. Lens yüzeyinin düzenli temizlenmesi gerekir — toz ve su lekesi görüntü netliğini gözle görülür ölçüde düşürür."
+      },
+      {
+        "q": "Projeksiyon görselini sonradan değiştirebilir miyim?",
+        "a": "Evet. Gobo projektörlerde görsel, cam bir disk üzerindedir ve lens bölümü açılarak değiştirilir. Kampanya ve sezon değişimlerinde yalnızca cam disk yenilenir, cihazın tamamı değiştirilmez."
+      },
+      {
+        "q": "Döner projeksiyon ile sabit projektör arasındaki fark nedir?",
+        "a": "Sabit projektör tek bir görüntüyü sabit yansıtır. Döner projeksiyon ise motorlu bir mekanizmayla görseli döndürür veya birden fazla görseli sırayla gösterir; hareket dikkat çektiği için vitrin ve yaya trafiği olan noktalarda tercih edilir."
       }
     ]
   },
@@ -1297,7 +1642,7 @@
     "slug": "yardimci-urunler",
     "name": "Yardımcı Ürünler",
     "shortDesc": "Kablo, konnektör, WAGO ve sonlandırıcı — LED sistemleri için yardımcı ekipman",
-    "metaTitle": "Yardımcı Ürünler | LED Kablo, WAGO, Konnektör | Nadasled",
+    "metaTitle": "Yardımcı Ürünler | LED Kablo, WAGO, Konnektör",
     "metaDesc": "LED sistemleri için toptan yardımcı ekipman. NYAF bakır kablo, 2mt soketli şeffaf kablo, WAGO ve kablo bağlantı aparatları, kablo sonlandırıcı. Hızlı kargo, uygun fiyat.",
     "h1": "Yardımcı Ürünler — Kablo ve Bağlantı Ekipmanları",
     "icon": "🔧",
@@ -1352,6 +1697,26 @@
       {
         "q": "Tabela montajında hangi yardımcı malzemeler gerekir?",
         "a": "Kablo, silikon, konnektör, klemens ve montaj aksesuarları tabela işinin tamamlayıcılarıdır. Tüm yardımcı ürünleri ana malzemelerle birlikte tek kargoda gönderiyoruz; ayrı tedarikçiyle uğraşmazsınız."
+      },
+      {
+        "q": "LED hattı için hangi kablo kesiti gerekir?",
+        "a": "Akıma ve mesafeye göre seçilir. Pratik kural: 12V sistemde 5 metreye kadar 5A için 2x0.75mm², 10 metreye kadar veya 10A üstü akımlarda 2x1.5mm² kullanın. İnce kablo yangın riskinden önce voltaj düşümü yaratır — hattın sonundaki LED'lerin sönük yanmasının en yaygın sebebi budur."
+      },
+      {
+        "q": "WAGO klemens lehimli bağlantı kadar güvenli midir?",
+        "a": "Doğru kullanıldığında evet, hatta sahada daha güvenlidir: lehim soğuk kaldığında zamanla direnç oluşturup ısınır, WAGO ise yaylı temasla sabit basınç uygular. Tek şart, kablo ucunun doğru uzunlukta soyulması ve klemensin kablo kesitine uygun modelinin seçilmesidir."
+      },
+      {
+        "q": "Dış mekânda kablo ekleri nasıl izole edilir?",
+        "a": "Yalnızca elektrik bandı yeterli değildir; birkaç ay içinde su alır. Ek noktası önce makaronla (tercihen yapışkanlı ısı ile daralan makaron) kapatılmalı, ardından nötr silikonla dolgu yapılmalıdır. Konnektörler mümkünse aşağı bakacak şekilde bırakılır ki su birikmesin."
+      },
+      {
+        "q": "Kablo sonlandırıcı ne işe yarar?",
+        "a": "LED şerit veya neon hattının kesilen ucunu kapatarak su ve toz girişini engeller. Dış mekânda açık bırakılan bir uç, silikon gövdenin içine su çekerek hattın metrelerce ilerisindeki LED'lerin bozulmasına yol açar; sonlandırıcı silikonla birlikte kullanılmalıdır."
+      },
+      {
+        "q": "Tek bir kabloyla kaç metre LED şerit beslenebilir?",
+        "a": "Kablo kesiti kadar sistem gerilimi de belirleyicidir. 2x0.75mm² kabloyla 12V sistemde yaklaşık 5 metre, 24V sistemde 10 metre güvenle beslenir. Daha uzun mesafelerde ya kesiti 1.5mm²'ye çıkarın ya da trafoyu hattın ortasına alıp iki yöne besleyin."
       }
     ]
   }

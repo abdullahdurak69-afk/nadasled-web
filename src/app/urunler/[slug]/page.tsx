@@ -11,6 +11,14 @@ interface Application {
   caption: string;
 }
 
+// Ürün görseli opsiyoneldir — henüz fotoğrafı olmayan kalemler (ör. Power LED
+// çipleri) yalnızca ad ve teknik özellikle listelenir.
+interface CatalogItem {
+  name: string;
+  specs: string;
+  img?: string;
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -334,7 +342,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                 Ürünler
               </div>
               <div>
-                {product.products.map((item, i) => (
+                {(product.products as CatalogItem[]).map((item, i) => (
                   <div
                     key={item.name}
                     className="flex items-center justify-between gap-4"
