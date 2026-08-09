@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 import SiteFooter from "@/components/SiteFooter";
 import FloatWhatsapp from "@/components/FloatWhatsapp";
 import ClickTracker from "@/components/ClickTracker";
+import LlmSourceTag from "@/components/LlmSourceTag";
 
 // Display: Clash Display (Fontshare) — self-hosted for a distinctive, premium feel.
 const clashDisplay = localFont({
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteFooter />
         <FloatWhatsapp />
         <ClickTracker />
+        <LlmSourceTag />
       </body>
     </html>
   );
