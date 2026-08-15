@@ -11,17 +11,19 @@ import { cobVsSmdLedSerit } from "./posts/cob-vs-smd-led-serit";
 import { ledSeritWattVeTrafoSecimi } from "./posts/led-serit-watt-ve-trafo-secimi";
 import { tabelaYapimindaKullanilanMalzemeler } from "./posts/tabela-yapiminda-kullanilan-malzemeler";
 import { onikiVoltMuYirmidortVoltMu } from "./posts/12v-mu-24v-mu-tabela-aydinlatma";
+import { isikliTabelaMaliyeti } from "./posts/isikli-tabela-maliyeti";
+import { lightBoxLedSecimi } from "./posts/light-box-led-secimi";
+import { rgbLedKontrolUnitesiSecimi } from "./posts/rgb-led-kontrol-unitesi-secimi";
+import { powerLedSurucuSecimi } from "./posts/power-led-surucu-secimi";
+import { ip65MiIp67Mi } from "./posts/ip65-mi-ip67-mi-tabela-led";
+import { ledSeritVoltajDusumu } from "./posts/led-serit-voltaj-dusumu";
+import { pointLedNedir } from "./posts/point-led-nedir";
+import { kesitAydinlatmaLedRehberi } from "./posts/kesit-aydinlatma-led-rehberi";
 
-export type Block =
-  | { type: "p"; text: string }
-  | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] }
-  | { type: "table"; headers: string[]; rows: string[][] };
-
-export interface FaqItem {
-  q: string;
-  a: string;
-}
+// Blok ve SSS tipleri araç sayfalarıyla ortaktır; ./content içinde durur.
+// Mevcut import'lar bozulmasın diye buradan yeniden dışa veriliyor.
+export type { Block, FaqItem } from "./content";
+import type { Block, FaqItem } from "./content";
 
 export interface BlogPost {
   slug: string;
@@ -38,14 +40,26 @@ export interface BlogPost {
   faq?: FaqItem[];
 }
 
+// Sıra hem blog listesinin görünen sırası hem de getRelatedPosts'un dairesel
+// iç link zinciri. Yeni yazılar sona eklenmiyor, eskilerin arasına
+// serpiştiriliyor: böylece liste sayfası tek konuda kümelenmiyor ve iç linkler
+// eski-yeni arasında dolaşıyor.
 export const posts: BlogPost[] = [
   ledTrafoHesaplama,
   kutuHarfIcinLedModulSecimi,
+  isikliTabelaMaliyeti,
   neonFlexSecimVeMontaj,
+  ledSeritVoltajDusumu,
   cobVsSmdLedSerit,
   ledSeritWattVeTrafoSecimi,
+  lightBoxLedSecimi,
   tabelaYapimindaKullanilanMalzemeler,
+  ip65MiIp67Mi,
   onikiVoltMuYirmidortVoltMu,
+  rgbLedKontrolUnitesiSecimi,
+  powerLedSurucuSecimi,
+  pointLedNedir,
+  kesitAydinlatmaLedRehberi,
 ];
 
 export function getPost(slug: string) {

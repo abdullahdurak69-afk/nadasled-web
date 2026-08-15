@@ -20,6 +20,7 @@ export default function Nav() {
   }, []);
 
   const links = [
+    { href: "/araclar", label: "Araçlar" },
     { href: "/markalar", label: "Markalarımız" },
     { href: "/blog", label: "Blog" },
     { href: "/hakkimizda", label: "Hakkımızda" },

@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { posts, getPost, getRelatedPosts, type Block } from "@/data/blog";
+import { posts, getPost, getRelatedPosts } from "@/data/blog";
+import { getToolsForPost } from "@/data/tools";
+import { Prose, FaqList } from "@/components/Prose";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -28,91 +30,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [{ url: "https://www.nadasled.com.tr/images/og.jpg", width: 1200, height: 630, alt: post.title }],
     },
   };
-}
-
-// "[metin](/yol)" iç linklerini gerçek <Link>'e çevirir.
-function renderInline(text: string) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
-  return parts.map((part, i) => {
-    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (m) {
-      return (
-        <Link
-          key={i}
-          href={m[2]}
-          style={{ color: "var(--nadas-orange)", textDecoration: "underline", textUnderlineOffset: "3px" }}
-        >
-          {m[1]}
-        </Link>
-      );
-    }
-    return part;
-  });
-}
-
-function BlockView({ block }: { block: Block }) {
-  switch (block.type) {
-    case "h2":
-      return (
-        <h2
-          style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginTop: "40px", marginBottom: "16px" }}
-        >
-          {block.text}
-        </h2>
-      );
-    case "p":
-      return (
-        <p style={{ fontSize: "16px", color: "var(--nadas-ink2)", lineHeight: 1.8, marginBottom: "18px" }}>
-          {renderInline(block.text)}
-        </p>
-      );
-    case "ul":
-      return (
-        <ul className="flex flex-col gap-3" style={{ marginBottom: "18px" }}>
-          {block.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <span style={{ color: "var(--nadas-orange)", flexShrink: 0, marginTop: "5px" }}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
-              </span>
-              <span style={{ fontSize: "15px", color: "var(--nadas-ink2)", lineHeight: 1.7 }}>{renderInline(item)}</span>
-            </li>
-          ))}
-        </ul>
-      );
-    case "table":
-      return (
-        <div className="overflow-x-auto" style={{ marginBottom: "24px", border: "1px solid var(--nadas-line2)", borderRadius: "2px" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
-            <thead>
-              <tr style={{ background: "var(--nadas-bg3)" }}>
-                {block.headers.map((h) => (
-                  <th
-                    key={h}
-                    style={{ textAlign: "left", padding: "12px 16px", fontFamily: "var(--font-mono)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--nadas-orange)", borderBottom: "1px solid var(--nadas-line2)" }}
-                  >
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {block.rows.map((row, i) => (
-                <tr key={i}>
-                  {row.map((cell, j) => (
-                    <td
-                      key={j}
-                      style={{ padding: "12px 16px", color: j === 0 ? "var(--nadas-ink)" : "var(--nadas-ink2)", fontWeight: j === 0 ? 600 : 400, borderBottom: i < block.rows.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      );
-  }
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -165,6 +82,7 @@ export default async function BlogPostPage({ params }: Props) {
       : null;
 
   const others = getRelatedPosts(post.slug);
+  const relatedTools = getToolsForPost(post.slug);
   const fmt = (d: string) =>
     new Date(d).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
 
@@ -226,31 +144,37 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
 
-          {post.blocks.map((b, i) => (
-            <BlockView key={i} block={b} />
-          ))}
+          <Prose blocks={post.blocks} />
 
           {/* SSS — hem okuyucu için hem FAQPage schema kaynağı */}
-          {post.faq && post.faq.length > 0 && (
-            <section style={{ marginTop: "48px" }}>
-              <h2
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "20px" }}
-              >
-                Sık sorulan sorular
-              </h2>
-              <div className="flex flex-col gap-0">
-                {post.faq.map((f, i) => (
-                  <div
-                    key={i}
-                    style={{ padding: "20px 0", borderTop: "1px solid var(--nadas-line2)", borderBottom: i === post.faq!.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+          {post.faq && <FaqList items={post.faq} />}
+
+          {/* Hesaplama araçları — yazıdaki formülü elle uygulamak yerine */}
+          <section style={{ marginTop: "48px" }}>
+            <div
+              style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "16px" }}
+            >
+              Hesabı Araçla Yapın
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {relatedTools.map((t) => (
+                <Link
+                  key={t.slug}
+                  href={`/araclar/${t.slug}`}
+                  className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
+                  style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "22px" }}
+                >
+                  <h3
+                    className="group-hover:text-[color:var(--nadas-orange)] transition-colors"
+                    style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "19px", lineHeight: 1.2, marginBottom: "8px" }}
                   >
-                    <h3 style={{ fontSize: "17px", fontWeight: 600, marginBottom: "8px" }}>{f.q}</h3>
-                    <p style={{ fontSize: "15px", color: "var(--nadas-ink2)", lineHeight: 1.75 }}>{f.a}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+                    {t.title}
+                  </h3>
+                  <p style={{ fontSize: "13.5px", color: "var(--nadas-ink2)", lineHeight: 1.6 }}>{t.excerpt}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
 
           {/* CTA */}
           <div

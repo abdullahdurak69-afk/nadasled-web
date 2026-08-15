@@ -57,6 +57,7 @@ export default function SiteFooter() {
                 { href: "/hakkimizda", label: "Hakkımızda" },
                 { href: "/urunler", label: "Ürünler" },
                 { href: "/markalar", label: "Markalarımız" },
+                { href: "/araclar", label: "Hesaplama Araçları" },
                 { href: "/blog", label: "Blog" },
                 { href: "/iletisim", label: "İletişim" },
                 { href: WA_HREF, label: "Teklif Al", track: "footer_menu" },

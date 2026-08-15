@@ -64,7 +64,40 @@ async function loadPosts() {
   return posts;
 }
 
+/**
+ * Hesaplama araçları tek dosyada, bir dizi içinde durur (src/data/tools.ts).
+ *
+ * Yazılardaki gibi dosya başına bir kayıt olmadığı için dizi `slug:` satırından
+ * bölünüp her parça ayrı ayrı okunur. Alanlar dizi içinde olduğu için girinti
+ * yazılardakinden bir kademe fazladır (4 boşluk).
+ */
+function loadTools() {
+  const src = readFileSync(resolve(ROOT, "src/data/tools.ts"), "utf8");
+  const body = src.split("export const tools: Tool[] = [")[1]?.split("\nexport function ")[0] ?? "";
+  const field = (chunk, name) =>
+    chunk.match(new RegExp(`^\\s{4}${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)",`, "m"))?.[1];
+
+  const tools = [];
+  for (const part of body.split(/\n {4}slug: "/).slice(1)) {
+    const slug = part.slice(0, part.indexOf('"'));
+    const title = field(part, "title");
+    const excerpt = field(part, "excerpt");
+
+    const faqSrc = part.split(/^\s{4}faq:\s*\[/m)[1] ?? "";
+    const faq = [...faqSrc.matchAll(/q:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*a:\s*\n?\s*"((?:[^"\\]|\\.)*)",/g)].map(
+      (m) => ({ q: m[1], a: m[2] })
+    );
+
+    if (slug && title && excerpt) tools.push({ slug, title, excerpt, faq });
+  }
+  if (tools.length === 0) {
+    throw new Error("src/data/tools.ts okunamadı — araç listesi boş çıktı");
+  }
+  return tools;
+}
+
 const posts = await loadPosts();
+const toolList = loadTools();
 
 const lines = [];
 const push = (s = "") => lines.push(s);
@@ -96,6 +129,18 @@ for (const c of products) {
 }
 push();
 
+push("## Hesaplama araçları");
+push();
+push(
+  "Ücretsiz, kayıt gerektirmeyen hesap makineleri. Hesap adımları sonucun " +
+    "altında gösterilir; sonuç doğrudan WhatsApp teklif mesajına çevrilebilir."
+);
+push();
+for (const t of toolList) {
+  push(`- [${t.title}](${BASE}/araclar/${t.slug}/): ${t.excerpt}`);
+}
+push();
+
 push("## Rehber içerikleri");
 push();
 for (const p of posts) {
@@ -121,6 +166,14 @@ for (const p of posts) {
     push();
   }
 }
+for (const t of toolList) {
+  for (const f of t.faq ?? []) {
+    push(`### ${f.q}`);
+    push(f.a);
+    push(`Kaynak: ${BASE}/araclar/${t.slug}/`);
+    push();
+  }
+}
 
 push("## Diğer sayfalar");
 push();
@@ -129,6 +182,7 @@ push(`- [Markalarımız](${BASE}/markalar/)`);
 push(`- [Hakkımızda](${BASE}/hakkimizda/)`);
 push(`- [İletişim](${BASE}/iletisim/)`);
 push(`- [Blog](${BASE}/blog/)`);
+push(`- [Hesaplama araçları](${BASE}/araclar/)`);
 push();
 
 if (!existsSync(resolve(ROOT, "out"))) {
@@ -139,7 +193,11 @@ if (!existsSync(resolve(ROOT, "out"))) {
 const content = lines.join("\n");
 writeFileSync(OUT, content, "utf8");
 console.log(
-  `out/llms.txt yazıldı — ${products.length} kategori, ${posts.length} yazı, ` +
-    `${products.reduce((n, c) => n + (c.faq?.length ?? 0), 0) + posts.reduce((n, p) => n + (p.faq?.length ?? 0), 0)} SSS, ` +
+  `out/llms.txt yazıldı — ${products.length} kategori, ${posts.length} yazı, ${toolList.length} araç, ` +
+    `${
+      products.reduce((n, c) => n + (c.faq?.length ?? 0), 0) +
+      posts.reduce((n, p) => n + (p.faq?.length ?? 0), 0) +
+      toolList.reduce((n, t) => n + (t.faq?.length ?? 0), 0)
+    } SSS, ` +
     `${content.length} karakter.`
 );

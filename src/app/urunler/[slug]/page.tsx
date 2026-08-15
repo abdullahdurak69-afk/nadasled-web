@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import products from "@/data/products.json";
 import { getPostsForCategory } from "@/data/blog";
+import { getToolsForCategory } from "@/data/tools";
 import type { Metadata } from "next";
 
 const PHONE_HREF = "tel:+905414696966";
@@ -112,6 +113,7 @@ export default async function UrunKategoriPage({ params }: Props) {
   };
 
   const relatedPosts = getPostsForCategory(product.slug);
+  const relatedTools = getToolsForCategory(product.slug);
   const guide = (product as { guide?: Guide }).guide;
 
   return (
@@ -504,6 +506,42 @@ export default async function UrunKategoriPage({ params }: Props) {
                       <h3 style={{ fontSize: "16px", fontWeight: 600, marginBottom: "8px" }}>{f.q}</h3>
                       <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.7 }}>{f.a}</p>
                     </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Hesaplama araçları — kategori sayfalarından /araclar'a iç link akışı */}
+            {relatedTools.length > 0 && (
+              <div
+                style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+              >
+                <div
+                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "12px" }}
+                >
+                  Hesaplama Araçları
+                </div>
+                <h2
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
+                >
+                  Sipariş öncesi hesaplayın
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relatedTools.map((t) => (
+                    <Link
+                      key={t.slug}
+                      href={`/araclar/${t.slug}`}
+                      className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
+                      style={{ border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "20px" }}
+                    >
+                      <h3
+                        className="transition-colors group-hover:text-[color:var(--nadas-orange)]"
+                        style={{ fontSize: "16px", fontWeight: 600, marginBottom: "6px", lineHeight: 1.35 }}
+                      >
+                        {t.title}
+                      </h3>
+                      <p style={{ fontSize: "13.5px", color: "var(--nadas-ink2)", lineHeight: 1.6 }}>{t.excerpt}</p>
+                    </Link>
                   ))}
                 </div>
               </div>

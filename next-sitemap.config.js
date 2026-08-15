@@ -16,6 +16,14 @@ module.exports = {
     if (path === "/urunler/") {
       return { loc: path, changefreq: "weekly", priority: 0.85, lastmod: new Date().toISOString() };
     }
+    // Araç sayfaları rakiplerde de sıralanan sorguları hedefliyor ve
+    // dönüşüme en yakın içerik; blog yazılarının bir kademe üstünde.
+    if (path.startsWith("/araclar/") && path !== "/araclar/") {
+      return { loc: path, changefreq: "monthly", priority: 0.85, lastmod: new Date().toISOString() };
+    }
+    if (path === "/araclar/") {
+      return { loc: path, changefreq: "weekly", priority: 0.8, lastmod: new Date().toISOString() };
+    }
     if (path.startsWith("/blog/") && path !== "/blog/") {
       return { loc: path, changefreq: "monthly", priority: 0.8, lastmod: new Date().toISOString() };
     }
