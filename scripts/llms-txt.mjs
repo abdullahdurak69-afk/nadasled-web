@@ -9,7 +9,7 @@
  * Build zincirinde next-sitemap'ten sonra çalışır (npm run build).
  */
 
-import { writeFileSync, existsSync, readFileSync } from "node:fs";
+import { writeFileSync, existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -22,32 +22,45 @@ const products = JSON.parse(
 );
 
 /**
- * blog.ts TypeScript olduğu için önce Node'un tip sıyırma desteğiyle import
- * denenir (Node 22.18+). Build ortamı daha eski bir Node kullanıyorsa import
- * patlar; o durumda ihtiyacımız olan üç alanı kaynaktan okuruz.
+ * Yazılar src/data/posts altında dosya başına bir yazı olarak durur.
+ *
+ * Önce Node'un tip sıyırma desteğiyle import denenir (Node 22.18+); uzantısız
+ * relative import'lar ESM'de çözülmediği için bu genelde başarısız olur ve
+ * ihtiyacımız olan dört alanı doğrudan kaynaktan okuruz. Sıralama sitedeki
+ * blog listesiyle aynı olsun diye tarihe göre yeniden eskiye yapılır.
  */
 async function loadPosts() {
   try {
     const mod = await import(resolve(ROOT, "src/data/blog.ts"));
     if (mod.posts?.length) return mod.posts;
   } catch {
-    // eski Node — aşağıdaki yedeğe düş
+    // uzantısız import veya eski Node — aşağıdaki yedeğe düş
   }
 
-  const src = readFileSync(resolve(ROOT, "src/data/blog.ts"), "utf8");
-  const field = (block, name) =>
-    block.match(new RegExp(`${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)"`))?.[1];
+  const dir = resolve(ROOT, "src/data/posts");
+  const field = (src, name) =>
+    src.match(new RegExp(`^\\s{2}${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)",`, "m"))?.[1];
 
   const posts = [];
-  for (const m of src.matchAll(/\n  \{\n\s*slug: "([^"]+)"/g)) {
-    const block = src.slice(m.index, m.index + 2000);
-    const title = field(block, "title");
-    const excerpt = field(block, "excerpt");
-    if (title && excerpt) posts.push({ slug: m[1], title, excerpt });
+  for (const file of readdirSync(dir).filter((f) => f.endsWith(".ts"))) {
+    const src = readFileSync(resolve(dir, file), "utf8");
+    const slug = field(src, "slug");
+    const title = field(src, "title");
+    const excerpt = field(src, "excerpt");
+    const date = field(src, "date");
+
+    // faq: [{ q: "...", a: "..." }, ...] — yazı sonundaki SSS bloğu.
+    const faqSrc = src.split(/^\s{2}faq:\s*\[/m)[1] ?? "";
+    const faq = [...faqSrc.matchAll(/q:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*a:\s*\n?\s*"((?:[^"\\]|\\.)*)",/g)].map(
+      (m) => ({ q: m[1], a: m[2] })
+    );
+
+    if (slug && title && excerpt) posts.push({ slug, title, excerpt, date: date ?? "", faq });
   }
   if (posts.length === 0) {
-    throw new Error("blog.ts okunamadı — ne import ne de metin ayrıştırma çalıştı");
+    throw new Error(`${dir} okunamadı — ne import ne de metin ayrıştırma çalıştı`);
   }
+  posts.sort((a, b) => b.date.localeCompare(a.date));
   return posts;
 }
 
@@ -100,6 +113,14 @@ for (const c of products) {
     push();
   }
 }
+for (const p of posts) {
+  for (const f of p.faq ?? []) {
+    push(`### ${f.q}`);
+    push(f.a);
+    push(`Kaynak: ${BASE}/blog/${p.slug}/`);
+    push();
+  }
+}
 
 push("## Diğer sayfalar");
 push();
@@ -119,5 +140,6 @@ const content = lines.join("\n");
 writeFileSync(OUT, content, "utf8");
 console.log(
   `out/llms.txt yazıldı — ${products.length} kategori, ${posts.length} yazı, ` +
-    `${products.reduce((n, c) => n + (c.faq?.length ?? 0), 0)} SSS, ${content.length} karakter.`
+    `${products.reduce((n, c) => n + (c.faq?.length ?? 0), 0) + posts.reduce((n, p) => n + (p.faq?.length ?? 0), 0)} SSS, ` +
+    `${content.length} karakter.`
 );

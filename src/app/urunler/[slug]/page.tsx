@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import products from "@/data/products.json";
+import { getPostsForCategory } from "@/data/blog";
 import type { Metadata } from "next";
 
 const PHONE_HREF = "tel:+905414696966";
@@ -17,6 +18,19 @@ interface CatalogItem {
   name: string;
   specs: string;
   img?: string;
+}
+
+// Kategori seçim rehberi. Her bölüm ya düz paragraf ya da madde listesidir.
+interface GuideSection {
+  h: string;
+  p?: string;
+  items?: string[];
+}
+
+interface Guide {
+  title: string;
+  intro: string;
+  sections: GuideSection[];
 }
 
 interface Props {
@@ -96,6 +110,9 @@ export default async function UrunKategoriPage({ params }: Props) {
       { "@type": "ListItem", position: 3, name: product.name, item: `https://www.nadasled.com.tr/urunler/${product.slug}` },
     ],
   };
+
+  const relatedPosts = getPostsForCategory(product.slug);
+  const guide = (product as { guide?: Guide }).guide;
 
   return (
     <>
@@ -417,16 +434,67 @@ export default async function UrunKategoriPage({ params }: Props) {
               </div>
             </div>
 
+            {/* Seçim rehberi — kategori sayfasına gerçek içerik ve H2/H3 yapısı */}
+            {guide && (
+              <div
+                style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+              >
+                <div
+                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "12px" }}
+                >
+                  Seçim Rehberi
+                </div>
+                <h2
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "16px" }}
+                >
+                  {guide.title}
+                </h2>
+                <p style={{ fontSize: "16px", color: "var(--nadas-ink2)", lineHeight: 1.7 }}>{guide.intro}</p>
+
+                <div className="flex flex-col gap-0">
+                  {guide.sections.map((s, i) => (
+                    <div
+                      key={i}
+                      style={{ paddingTop: "26px", marginTop: "26px", borderTop: "1px solid var(--nadas-line2)" }}
+                    >
+                      <h3 style={{ fontSize: "17px", fontWeight: 600, marginBottom: "10px" }}>{s.h}</h3>
+                      {s.p && (
+                        <p style={{ fontSize: "15px", color: "var(--nadas-ink2)", lineHeight: 1.75 }}>{s.p}</p>
+                      )}
+                      {s.items && (
+                        <ul className="flex flex-col gap-2.5" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                          {s.items.map((it, j) => (
+                            <li key={j} className="flex items-start gap-3">
+                              <span
+                                className="flex-shrink-0"
+                                style={{ width: "5px", height: "5px", borderRadius: "999px", background: "var(--nadas-orange)", marginTop: "9px" }}
+                              />
+                              <span style={{ fontSize: "15px", color: "var(--nadas-ink2)", lineHeight: 1.7 }}>{it}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* FAQ */}
             {faqs.length > 0 && (
               <div
                 style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
               >
                 <div
-                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "24px" }}
+                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "12px" }}
                 >
-                  Sık Sorulan Sorular
+                  SSS
                 </div>
+                <h2
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "20px" }}
+                >
+                  {product.name} hakkında sık sorulanlar
+                </h2>
                 <div className="flex flex-col gap-0">
                   {faqs.map((f, i) => (
                     <div
@@ -438,6 +506,63 @@ export default async function UrunKategoriPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {/* İlgili rehberler — kategori sayfalarından blog'a iç link akışı */}
+            {relatedPosts.length > 0 && (
+              <div
+                style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "40px" }}
+              >
+                <div
+                  style={{ fontFamily: "var(--font-mono)", fontSize: "11px", color: "var(--nadas-orange)", textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: "12px" }}
+                >
+                  İlgili Rehberler
+                </div>
+                <h2
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
+                >
+                  {product.name} seçmeden önce
+                </h2>
+                <div className="flex flex-col gap-0">
+                  {relatedPosts.map((post, i) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="group block transition-colors"
+                      style={{
+                        padding: "18px 0",
+                        borderBottom: i < relatedPosts.length - 1 ? "1px solid var(--nadas-line2)" : "none",
+                      }}
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="min-w-0">
+                          <h3
+                            className="transition-colors group-hover:text-[color:var(--nadas-orange)]"
+                            style={{ fontSize: "16px", fontWeight: 600, marginBottom: "6px", lineHeight: 1.35 }}
+                          >
+                            {post.title}
+                          </h3>
+                          <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.6 }}>{post.excerpt}</p>
+                        </div>
+                        <span
+                          className="flex-shrink-0"
+                          style={{ fontSize: "12px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", whiteSpace: "nowrap", paddingTop: "3px" }}
+                        >
+                          {post.readMins} dk
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center gap-2 mt-6 transition-colors hover:text-[color:var(--nadas-orange)]"
+                  style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}
+                >
+                  Tüm rehberler
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </Link>
               </div>
             )}
           </div>

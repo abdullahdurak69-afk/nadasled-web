@@ -10,7 +10,7 @@ import Faq from "@/components/Faq";
 import faqs from "@/data/faq.json";
 
 export const metadata: Metadata = {
-  title: "Nadasled | LED Modül, LED Şerit, Trafo — Tabela Malzemeleri Toptan",
+  title: "Nadasled | LED Modül, LED Şerit ve Tabela Malzemeleri Toptan",
   description: "Tabela yapımı için LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Türkiye geneli hızlı kargo. Tabelacılara özel fiyatlar için hemen arayın.",
   openGraph: {
     title: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",

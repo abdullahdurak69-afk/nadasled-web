@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Markalarımız — Samsung, OSRAM, MEAN WELL, Inventronics, WAGO",
+  title: "Markalarımız — Samsung, OSRAM, MEAN WELL",
   description:
-    "Nadasled; Samsung, OSRAM, MEAN WELL, Inventronics ve WAGO gibi dünya markalarının orijinal LED çip, sürücü, trafo ve bağlantı ürünlerini toptan tedarik eder.",
+    "Samsung, OSRAM, MEAN WELL, Inventronics ve WAGO orijinal LED çip, sürücü, trafo ve bağlantı ürünleri — toptan tedarik, faturalı satış, aynı gün kargo.",
   keywords: ["samsung led", "osram led", "mean well trafo", "inventronics adaptör", "wago konnektör", "led markaları", "orijinal led ürünleri"],
   alternates: { canonical: "https://www.nadasled.com.tr/markalar" },
 };

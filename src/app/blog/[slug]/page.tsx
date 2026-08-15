@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { posts, getPost, type Block } from "@/data/blog";
+import { posts, getPost, getRelatedPosts, type Block } from "@/data/blog";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -151,7 +151,20 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  const others = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const faqSchema =
+    post.faq && post.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
+  const others = getRelatedPosts(post.slug);
   const fmt = (d: string) =>
     new Date(d).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
 
@@ -159,6 +172,9 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* Breadcrumb */}
       <div style={{ paddingTop: "100px", position: "relative", zIndex: 2 }}>
@@ -213,6 +229,28 @@ export default async function BlogPostPage({ params }: Props) {
           {post.blocks.map((b, i) => (
             <BlockView key={i} block={b} />
           ))}
+
+          {/* SSS — hem okuyucu için hem FAQPage schema kaynağı */}
+          {post.faq && post.faq.length > 0 && (
+            <section style={{ marginTop: "48px" }}>
+              <h2
+                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "20px" }}
+              >
+                Sık sorulan sorular
+              </h2>
+              <div className="flex flex-col gap-0">
+                {post.faq.map((f, i) => (
+                  <div
+                    key={i}
+                    style={{ padding: "20px 0", borderTop: "1px solid var(--nadas-line2)", borderBottom: i === post.faq!.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                  >
+                    <h3 style={{ fontSize: "17px", fontWeight: 600, marginBottom: "8px" }}>{f.q}</h3>
+                    <p style={{ fontSize: "15px", color: "var(--nadas-ink2)", lineHeight: 1.75 }}>{f.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* CTA */}
           <div
