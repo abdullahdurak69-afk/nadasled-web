@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx next-sitemap && node scripts/llms-txt.mjs",
+    "build": "next build && node scripts/lastmod.mjs && npx next-sitemap && node scripts/llms-txt.mjs",
     "start": "next start",
     "indexnow": "node scripts/indexnow.mjs"
   },

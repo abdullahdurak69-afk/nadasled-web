@@ -1,3 +1,24 @@
+/**
+ * lastmod artık build anı değil, sayfanın gerçek son değişiklik tarihi.
+ * Haritayı scripts/lastmod.mjs üretiyor ve next-sitemap'ten önce çalışıyor;
+ * gerekçesi ve tarihlerin nereden geldiği o dosyanın başında yazılı.
+ *
+ * Dosya yoksa build'i düşürmek yerine lastmod'suz devam ediyoruz: eksik alan,
+ * her URL'e yanlış tarih yazmaktan iyidir.
+ */
+let lastmodMap = {};
+try {
+  lastmodMap = require("./.lastmod.json");
+} catch {
+  console.warn("uyarı: .lastmod.json yok — sitemap lastmod alanı olmadan üretiliyor.");
+}
+
+/** Yolu haritada arar; bulunamazsa undefined döner ve alan hiç yazılmaz. */
+const lastmodFor = (path) => {
+  const withSlash = path.endsWith("/") ? path : `${path}/`;
+  return lastmodMap[withSlash] ?? lastmodMap[path];
+};
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://www.nadasled.com.tr",
@@ -7,30 +28,26 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   transform: async (config, path) => {
-    if (path === "/") {
-      return { loc: path, changefreq: "daily", priority: 1.0, lastmod: new Date().toISOString() };
-    }
-    if (path.startsWith("/urunler/") && path !== "/urunler/") {
-      return { loc: path, changefreq: "weekly", priority: 0.9, lastmod: new Date().toISOString() };
-    }
-    if (path === "/urunler/") {
-      return { loc: path, changefreq: "weekly", priority: 0.85, lastmod: new Date().toISOString() };
-    }
+    const lastmod = lastmodFor(path);
+
+    // changefreq/priority sayfa tipine göre; lastmod her dalda aynı kaynaktan.
+    const entry = (changefreq, priority) => ({
+      loc: path,
+      changefreq,
+      priority,
+      ...(lastmod ? { lastmod } : {}),
+    });
+
+    if (path === "/") return entry("daily", 1.0);
+    if (path === "/urunler/") return entry("weekly", 0.85);
+    if (path.startsWith("/urunler/")) return entry("weekly", 0.9);
     // Araç sayfaları rakiplerde de sıralanan sorguları hedefliyor ve
     // dönüşüme en yakın içerik; blog yazılarının bir kademe üstünde.
-    if (path.startsWith("/araclar/") && path !== "/araclar/") {
-      return { loc: path, changefreq: "monthly", priority: 0.85, lastmod: new Date().toISOString() };
-    }
-    if (path === "/araclar/") {
-      return { loc: path, changefreq: "weekly", priority: 0.8, lastmod: new Date().toISOString() };
-    }
-    if (path.startsWith("/blog/") && path !== "/blog/") {
-      return { loc: path, changefreq: "monthly", priority: 0.8, lastmod: new Date().toISOString() };
-    }
-    if (path === "/blog/") {
-      return { loc: path, changefreq: "weekly", priority: 0.75, lastmod: new Date().toISOString() };
-    }
-    return { loc: path, changefreq: config.changefreq, priority: config.priority, lastmod: new Date().toISOString() };
+    if (path === "/araclar/") return entry("weekly", 0.8);
+    if (path.startsWith("/araclar/")) return entry("monthly", 0.85);
+    if (path === "/blog/") return entry("weekly", 0.75);
+    if (path.startsWith("/blog/")) return entry("monthly", 0.8);
+    return entry(config.changefreq, config.priority);
   },
   robotsTxtOptions: {
     policies: [

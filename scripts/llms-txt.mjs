@@ -9,93 +9,14 @@
  * Build zincirinde next-sitemap'ten sonra çalışır (npm run build).
  */
 
-import { writeFileSync, existsSync, readFileSync, readdirSync } from "node:fs";
-import { resolve, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { writeFileSync, existsSync } from "node:fs";
+import { resolve } from "node:path";
+import { ROOT, loadPosts, loadTools, loadProducts } from "./lib/content.mjs";
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const BASE = "https://www.nadasled.com.tr";
 const OUT = resolve(ROOT, "out/llms.txt");
 
-const products = JSON.parse(
-  readFileSync(resolve(ROOT, "src/data/products.json"), "utf8")
-);
-
-/**
- * Yazılar src/data/posts altında dosya başına bir yazı olarak durur.
- *
- * Önce Node'un tip sıyırma desteğiyle import denenir (Node 22.18+); uzantısız
- * relative import'lar ESM'de çözülmediği için bu genelde başarısız olur ve
- * ihtiyacımız olan dört alanı doğrudan kaynaktan okuruz. Sıralama sitedeki
- * blog listesiyle aynı olsun diye tarihe göre yeniden eskiye yapılır.
- */
-async function loadPosts() {
-  try {
-    const mod = await import(resolve(ROOT, "src/data/blog.ts"));
-    if (mod.posts?.length) return mod.posts;
-  } catch {
-    // uzantısız import veya eski Node — aşağıdaki yedeğe düş
-  }
-
-  const dir = resolve(ROOT, "src/data/posts");
-  const field = (src, name) =>
-    src.match(new RegExp(`^\\s{2}${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)",`, "m"))?.[1];
-
-  const posts = [];
-  for (const file of readdirSync(dir).filter((f) => f.endsWith(".ts"))) {
-    const src = readFileSync(resolve(dir, file), "utf8");
-    const slug = field(src, "slug");
-    const title = field(src, "title");
-    const excerpt = field(src, "excerpt");
-    const date = field(src, "date");
-
-    // faq: [{ q: "...", a: "..." }, ...] — yazı sonundaki SSS bloğu.
-    const faqSrc = src.split(/^\s{2}faq:\s*\[/m)[1] ?? "";
-    const faq = [...faqSrc.matchAll(/q:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*a:\s*\n?\s*"((?:[^"\\]|\\.)*)",/g)].map(
-      (m) => ({ q: m[1], a: m[2] })
-    );
-
-    if (slug && title && excerpt) posts.push({ slug, title, excerpt, date: date ?? "", faq });
-  }
-  if (posts.length === 0) {
-    throw new Error(`${dir} okunamadı — ne import ne de metin ayrıştırma çalıştı`);
-  }
-  posts.sort((a, b) => b.date.localeCompare(a.date));
-  return posts;
-}
-
-/**
- * Hesaplama araçları tek dosyada, bir dizi içinde durur (src/data/tools.ts).
- *
- * Yazılardaki gibi dosya başına bir kayıt olmadığı için dizi `slug:` satırından
- * bölünüp her parça ayrı ayrı okunur. Alanlar dizi içinde olduğu için girinti
- * yazılardakinden bir kademe fazladır (4 boşluk).
- */
-function loadTools() {
-  const src = readFileSync(resolve(ROOT, "src/data/tools.ts"), "utf8");
-  const body = src.split("export const tools: Tool[] = [")[1]?.split("\nexport function ")[0] ?? "";
-  const field = (chunk, name) =>
-    chunk.match(new RegExp(`^\\s{4}${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)",`, "m"))?.[1];
-
-  const tools = [];
-  for (const part of body.split(/\n {4}slug: "/).slice(1)) {
-    const slug = part.slice(0, part.indexOf('"'));
-    const title = field(part, "title");
-    const excerpt = field(part, "excerpt");
-
-    const faqSrc = part.split(/^\s{4}faq:\s*\[/m)[1] ?? "";
-    const faq = [...faqSrc.matchAll(/q:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*a:\s*\n?\s*"((?:[^"\\]|\\.)*)",/g)].map(
-      (m) => ({ q: m[1], a: m[2] })
-    );
-
-    if (slug && title && excerpt) tools.push({ slug, title, excerpt, faq });
-  }
-  if (tools.length === 0) {
-    throw new Error("src/data/tools.ts okunamadı — araç listesi boş çıktı");
-  }
-  return tools;
-}
-
+const products = loadProducts();
 const posts = await loadPosts();
 const toolList = loadTools();
 
