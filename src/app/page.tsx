@@ -8,6 +8,7 @@ import WhyUs from "@/components/WhyUs";
 import CtaBand from "@/components/CtaBand";
 import Faq from "@/components/Faq";
 import faqs from "@/data/faq.json";
+import { orgRef } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Nadasled | LED Modül, LED Şerit ve Tabela Malzemeleri Toptan",
@@ -21,27 +22,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.nadasled.com.tr" },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Nadasled",
-  url: "https://www.nadasled.com.tr",
-  description: "Tabela yapımı için LED modül, şerit, trafo ve kablo toptan tedarikçisi",
-  telephone: "+90-541-469-6966",
-  priceRange: "₺₺",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Çakmak, Yeşilbahar Sokağı No:15/A",
-    addressLocality: "Ümraniye",
-    addressRegion: "İstanbul",
-    postalCode: "34774",
-    addressCountry: "TR",
-  },
-};
-
+// İşletme düğümü artık root layout'ta, tek kanonik tanım olarak duruyor
+// (bkz. lib/schema.ts); burada yalnızca ona referans veriliyor.
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  about: orgRef,
   mainEntity: faqs.map((f) => ({
     "@type": "Question",
     name: f.q,
@@ -52,7 +38,6 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Hero />
       <Ticker />

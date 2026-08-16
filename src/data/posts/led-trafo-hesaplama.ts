@@ -9,6 +9,7 @@ export const ledTrafoHesaplama: BlogPost = {
   excerpt:
     "Modül sayısından amper değerine: tabelanız için doğru trafoyu 2 dakikada hesaplayın.",
   date: "2026-06-10",
+  updated: "2026-08-16",
   readMins: 9,
   categorySlug: "trafo-led-surucu",
   categoryName: "Trafo & LED Sürücü",

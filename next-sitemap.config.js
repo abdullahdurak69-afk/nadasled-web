@@ -35,6 +35,33 @@ module.exports = {
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },
+      // Yapay zekâ tarayıcıları `*` grubu tarafından zaten kapsanıyor; bunlar
+      // niyeti açıkça yazıyor. Faydası dokümantasyondan ibaret değil: bu
+      // tokenlar ileride biri "AI'ya kapatalım" diye düşünürse kararın
+      // görünür olmasını sağlıyor, ayrıca birkaç tarayıcı yalnızca kendi
+      // adına yazılmış grubu okuyor.
+      //
+      // Arama/alıntı tarayıcıları — yanıtın içine kaynak olarak girmeyi sağlar
+      { userAgent: "OAI-SearchBot", allow: "/" },   // ChatGPT arama
+      { userAgent: "ChatGPT-User", allow: "/" },    // ChatGPT'nin canlı sayfa çekmesi
+      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "Perplexity-User", allow: "/" },
+      { userAgent: "Claude-SearchBot", allow: "/" },
+      { userAgent: "Claude-User", allow: "/" },
+      { userAgent: "Applebot-Extended", allow: "/" },
+      // Model eğitimi / genel derlem — markanın modellerin bilgisine girmesi
+      { userAgent: "GPTBot", allow: "/" },
+      { userAgent: "ClaudeBot", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+      { userAgent: "CCBot", allow: "/" },           // Common Crawl
+      { userAgent: "meta-externalagent", allow: "/" },
     ],
   },
+  /**
+   * llms.txt build zincirinde üretiliyor (scripts/llms-txt.mjs) ama robots.txt'nin
+   * standart alanlarında karşılığı yok. Sitemap satırının yanına yorum olarak
+   * yazmak, dosyayı arayan tarayıcının bakacağı tek yer olduğu için işe yarıyor.
+   */
+  transformRobotsTxt: async (_config, robotsTxt) =>
+    `${robotsTxt.trimEnd()}\n\n# llms.txt — site özeti, kategoriler, rehberler ve SSS (düz metin)\n# https://www.nadasled.com.tr/llms.txt\n`,
 };

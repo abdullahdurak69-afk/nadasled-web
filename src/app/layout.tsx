@@ -7,6 +7,7 @@ import SiteFooter from "@/components/SiteFooter";
 import FloatWhatsapp from "@/components/FloatWhatsapp";
 import ClickTracker from "@/components/ClickTracker";
 import LlmSourceTag from "@/components/LlmSourceTag";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 // Display: Clash Display (Fontshare) — self-hosted for a distinctive, premium feel.
 const clashDisplay = localFont({
@@ -58,6 +59,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={`${clashDisplay.variable} ${satoshi.variable} ${jetbrainsMono.variable}`}>
       <head>
+        {/* llms.txt build zincirinde üretiliyor ama hiçbir yerden linklenmiyordu.
+            Metadata API'sinin alternates.types alanı denendi; sayfa seviyesindeki
+            alternates.canonical onu tümüyle ezdiği için çıktıya hiç düşmedi.
+            Ham link etiketi her sayfada garanti duruyor. */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt — site özeti" />
+        {/* İşletme ve site düğümleri her sayfada duruyor: diğer şemaların
+            verdiği {"@id"} referansları böylece aynı sayfa içinde çözülüyor. */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
         <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${CLARITY_ID}");` }} />

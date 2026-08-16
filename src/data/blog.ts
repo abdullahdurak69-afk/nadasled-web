@@ -32,6 +32,11 @@ export interface BlogPost {
   metaDesc: string;
   excerpt: string;
   date: string; // ISO
+  /**
+   * Gövde baştan yazıldıysa son güncelleme tarihi (ISO). Yalnızca ilk yayın
+   * tarihinden farklıysa doldurulur; schema'daki dateModified bunu kullanır.
+   */
+  updated?: string;
   readMins: number;
   categorySlug: string; // ilgili ürün kategorisi
   categoryName: string;

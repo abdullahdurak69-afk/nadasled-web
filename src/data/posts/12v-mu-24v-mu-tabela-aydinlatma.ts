@@ -9,6 +9,7 @@ export const onikiVoltMuYirmidortVoltMu: BlogPost = {
   excerpt:
     "Voltaj düşümü, kablo kesiti ve verim: iki sistemin gerçek farkları.",
   date: "2026-05-29",
+  updated: "2026-08-16",
   readMins: 8,
   categorySlug: "trafo-led-surucu",
   categoryName: "Trafo & LED Sürücü",

@@ -9,6 +9,7 @@ export const ledSeritWattVeTrafoSecimi: BlogPost = {
   excerpt:
     "Çip tipine göre watt tablosu ve metraja göre trafo hesabı — tek sayfada.",
   date: "2026-06-03",
+  updated: "2026-08-16",
   readMins: 8,
   categorySlug: "led-serit",
   categoryName: "LED Şerit",

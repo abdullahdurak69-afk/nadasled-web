@@ -9,6 +9,7 @@ export const kutuHarfIcinLedModulSecimi: BlogPost = {
   excerpt:
     "Harf derinliğine göre doğru modül tipi ve 10x10 kuralıyla adet hesabı.",
   date: "2026-06-09",
+  updated: "2026-08-16",
   readMins: 9,
   categorySlug: "led-modul",
   categoryName: "LED Modül",

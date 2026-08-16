@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { posts, getPost, getRelatedPosts } from "@/data/blog";
 import { getToolsForPost } from "@/data/tools";
 import { Prose, FaqList } from "@/components/Prose";
+import { orgRef } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -47,15 +48,13 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.metaDesc,
     image: "https://www.nadasled.com.tr/images/og.jpg",
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     inLanguage: "tr-TR",
     mainEntityOfPage: url,
-    author: { "@type": "Organization", name: "Nadasled", url: "https://www.nadasled.com.tr" },
-    publisher: {
-      "@type": "Organization",
-      name: "Nadasled",
-      logo: { "@type": "ImageObject", url: "https://www.nadasled.com.tr/logo.png" },
-    },
+    // Yazar ve yayıncı, root layout'taki tek işletme düğümüne bağlanıyor;
+    // burada ayrı bir Organization tanımlamak grafiği bölüyordu.
+    author: orgRef,
+    publisher: orgRef,
   };
 
   const breadcrumbSchema = {

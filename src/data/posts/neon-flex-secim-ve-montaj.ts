@@ -9,6 +9,7 @@ export const neonFlexSecimVeMontaj: BlogPost = {
   excerpt:
     "Cam neonun esnek ve dayanıklı alternatifi: neon flex seçimi, kesimi ve montajı.",
   date: "2026-06-07",
+  updated: "2026-08-16",
   readMins: 9,
   categorySlug: "neon-led",
   categoryName: "Neon LED",

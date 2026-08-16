@@ -9,6 +9,7 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
   excerpt:
     "Kutu harften totem tabelaya: ışıklı tabela üretiminin tam malzeme listesi.",
   date: "2026-06-01",
+  updated: "2026-08-16",
   readMins: 9,
   categorySlug: "led-modul",
   categoryName: "LED Modül",

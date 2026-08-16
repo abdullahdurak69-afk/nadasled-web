@@ -9,6 +9,7 @@ export const cobVsSmdLedSerit: BlogPost = {
   excerpt:
     "Noktasız homojen ışık mı, kanıtlanmış klasik mi? Proje tipine göre şerit seçimi.",
   date: "2026-06-05",
+  updated: "2026-08-16",
   readMins: 8,
   categorySlug: "cob-led-serit",
   categoryName: "COB LED Şerit",
