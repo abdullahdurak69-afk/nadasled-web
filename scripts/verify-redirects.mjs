@@ -8,7 +8,12 @@
  *
  * Kurulumdan sonra çalıştırın:  node scripts/verify-redirects.mjs
  *
- * Beklenen: her eski yol 301 döner ve Location tam olarak listedeki hedeftir.
+ * Beklenen: her eski yol 301 döner ve Location listedeki hedefi gösterir.
+ *
+ * Location hem mutlak (https://www.nadasled.com.tr/x/) hem göreli (/x/) olabilir;
+ * ikisi de geçerli HTTP'dir (RFC 7231) ve tarayıcılar/Googlebot ikisini de aynı
+ * şekilde çözer. Amplify göreli yazıyor, CloudFront Function mutlak yazıyordu —
+ * script hangi katmanın sunduğuna bakmaksızın ikisini de kabul eder.
  * Function bağlanmamışsa yollar 200 veya 404 döner ve script hepsini hata sayar.
  */
 
@@ -41,12 +46,15 @@ async function probe(url) {
   }
 }
 
+/** normalize ile aynı iş; non-www sınaması fonksiyon tanımından önce çalışıyor. */
+const normalizeRoot = (loc) => (loc && loc.startsWith("/") ? `${HOST}${loc}` : loc);
+
 const fails = [];
 let ok = 0;
 
 // non-www -> www kuralı, tablodan bağımsız olarak ayrıca sınanır.
 const rootProbe = await probe("https://nadasled.com.tr/");
-if (rootProbe.status === 301 && rootProbe.location === `${HOST}/`) {
+if (rootProbe.status === 301 && normalizeRoot(rootProbe.location) === `${HOST}/`) {
   ok++;
 } else {
   fails.push({
@@ -56,10 +64,16 @@ if (rootProbe.status === 301 && rootProbe.location === `${HOST}/`) {
   });
 }
 
+/** Location'ı mutlak biçime çevirir; göreli değerler HOST'a göre çözülür. */
+function normalize(location) {
+  if (!location) return null;
+  return location.startsWith("/") ? `${HOST}${location}` : location;
+}
+
 for (const { from, to } of rules) {
   const { status, location } = await probe(`${HOST}${from}`);
   const expected = `${HOST}${to}`;
-  if (status === 301 && location === expected) {
+  if (status === 301 && normalize(location) === expected) {
     ok++;
   } else {
     fails.push({
