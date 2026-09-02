@@ -16,6 +16,25 @@
 
 Toplam 57 yönlendirme.
 
+## Neden hâlâ önemli (2 Eylül 2026 denetimi)
+
+Function **henüz kurulmadı** ve Search Console'daki "dizine eklenmedi" sayısının
+büyük kısmı doğrudan bunun sonucu. 28 Ağustos raporunda 67 sayfa 6 sebeple
+indekslenmemişti; sebeplerin üçü bu dosyanın çözdüğü şeyler:
+
+| Sebep | Adet | redirects.js çözüyor mu |
+|---|---|---|
+| Doğru standart etikete sahip alternatif sayfa | 19 | Evet — non-www → www kuralı |
+| Yönlendirmeli sayfa | 16 | Evet |
+| Bulunamadı (404) | 11 | Evet |
+| Yeniden yönlendirme hatası | 4 | Evet |
+
+Ölçülen davranış: eski bir URL (`/modul-led`) şu anda slash ekleyen bir 301
+alıyor, ardından `/modul-led/` **404** dönüyor. Yani her eski bağlantı hem bir
+yönlendirme hem bir 404 üretiyor.
+
+Hedeflerin tamamı canlıda 200 dönüyor (57/57 doğrulandı) — dosya kurulmaya hazır.
+
 ## Dağıtım
 
 1. AWS Konsolu → **CloudFront** → sol menüden **Functions** → *Create function*
@@ -26,6 +45,16 @@ Toplam 57 yönlendirme.
 4. Dağıtımı seç → **Behaviors** → Default (`*`) behavior → *Edit*
    → **Function associations** → Viewer request → Function type: *CloudFront Function*,
    Function ARN: `nadasled-redirects` → **Save**.
+
+## Kurulumdan sonra doğrulama
+
+```
+npm run verify-redirects
+```
+
+58 kuralın (57 yol + non-www) her birini canlıda yoklar ve 301 ile doğru hedefe
+gidip gitmediğini söyler. Kurulumdan **önce** çalıştırılırsa hepsi hatalı çıkar;
+bu beklenen davranıştır ve function'ın bağlı olmadığını gösterir.
 
 > **Önemli:** Bir behavior'ın viewer-request olayına yalnızca **tek** function
 > bağlanabilir. Dağıtımda hâlihazırda bir viewer-request function varsa
