@@ -1,5 +1,18 @@
 # CloudFront yönlendirmeleri
 
+> **BU YÖNTEM ŞU ANDA UYGULANAMIYOR — 2 Eylül 2026.**
+>
+> Site Amplify Hosting'te duruyor ve önündeki CloudFront dağıtımı Amplify'a ait;
+> AWS hesabının CloudFront konsolunda **hiç dağıtım görünmüyor**, dolayısıyla bu
+> function'ı bağlayacak bir behavior yok. Function oluşturulup test edildi
+> (301'ler doğru üretiliyor) ama bağlanamadı.
+>
+> Kuralların uygulanabilir hâli: **`infra/amplify/redirects.json`** — aynı tablodan
+> üretiliyor, Amplify konsoluna yapıştırılıyor. Bkz. `infra/amplify/README.md`.
+>
+> Bu dosya kural tablosunun tek kaynağı olarak duruyor ve barındırma kendi
+> CloudFront dağıtımımıza taşınırsa olduğu gibi kullanılabilir.
+
 `redirects.js` — eski URL'leri 301 ile yeni karşılıklarına yönlendiren CloudFront Function.
 
 ## Neyi çözer

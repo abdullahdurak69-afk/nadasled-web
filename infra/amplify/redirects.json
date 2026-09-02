@@ -1,0 +1,686 @@
+[
+  {
+    "source": "/urunler/kablo",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/urunler/kablo/",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/urunler/aksesuar",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/urunler/aksesuar/",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/modul-led/page/2",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/modul-led/page/2/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/serit-led",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/serit-led/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/serit-led",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/serit-led/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/neon-led",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/neon-led/",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/neon-led",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/neon-led/",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/nds-neon-led-urunleri",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/nds-neon-led-urunleri/",
+    "target": "/urunler/neon-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/kablo",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/kablo/",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/kablo",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/kablo/",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/bakir-kablo-nyaf",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/bakir-kablo-nyaf/",
+    "target": "/urunler/yardimci-urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/led-bar",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/led-bar/",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/led-bar",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/led-bar/",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/kesit-aydinlatma-led-bar",
+    "target": "/urunler/kesit-aydinlatma-led/ip65-kesitten-aydinlatma-led-bar/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/kesit-aydinlatma-led-bar/",
+    "target": "/urunler/kesit-aydinlatma-led/ip65-kesitten-aydinlatma-led-bar/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/15-watt-kesit-aydinlatma",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/15-watt-kesit-aydinlatma/",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rgb-kontrol-cihazlari",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rgb-kontrol-cihazlari/",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rgb-kontrol-cihazlar",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rgb-kontrol-cihazlar/",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/rgb-kontrol-cihazlari",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/rgb-kontrol-cihazlari/",
+    "target": "/urunler/led-kontrol-uniteleri/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/markalarimiz",
+    "target": "/markalar/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/markalarimiz/",
+    "target": "/markalar/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/guc-kaynagi-adaptor",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/guc-kaynagi-adaptor/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/guc-kaynagi-adaptor",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/guc-kaynagi-adaptor/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/dis-mekan-adaptorler",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/dis-mekan-adaptorler/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/ic-mekan-adaptorler",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/ic-mekan-adaptorler/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/interone-kore-dis-mekan-adaptor",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/interone-kore-dis-mekan-adaptor/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/mosso-dis-mekan-adaptoru",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/mosso-dis-mekan-adaptoru/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/union-dis-mekan-adaptoru",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/union-dis-mekan-adaptoru/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/ultra-slim-ic-mekan-adaptor",
+    "target": "/urunler/trafo-led-surucu/ultra-slim-ic-mekan-adaptor/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/ultra-slim-ic-mekan-adaptor/",
+    "target": "/urunler/trafo-led-surucu/ultra-slim-ic-mekan-adaptor/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/yagmur-korumali-adaptor",
+    "target": "/urunler/trafo-led-surucu/yagmur-korumali-epoksili-adaptor/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/yagmur-korumali-adaptor/",
+    "target": "/urunler/trafo-led-surucu/yagmur-korumali-epoksili-adaptor/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/interone",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/interone/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/mosso",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/mosso/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/union",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/union/",
+    "target": "/urunler/trafo-led-surucu/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-072w-2li-mercekli-modul-led",
+    "target": "/urunler/led-modul/0-72w-mercekli-ikili-modul-led-fortune-light/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-072w-2li-mercekli-modul-led/",
+    "target": "/urunler/led-modul/0-72w-mercekli-ikili-modul-led-fortune-light/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-1-2-mercekli-modul-led",
+    "target": "/urunler/led-modul/1-2w-modul-led-fortune-light/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-1-2-mercekli-modul-led/",
+    "target": "/urunler/led-modul/1-2w-modul-led-fortune-light/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-2li-kisa-mercekli-modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-2li-kisa-mercekli-modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-kare-mercekli-modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-kare-mercekli-modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-mini-modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-mini-modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-kisa-mercekli-modulled",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-kisa-mercekli-modulled/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-uzun-mercekli-modul-led",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-uzun-mercekli-modul-led/",
+    "target": "/urunler/led-modul/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-rgb-modul-led",
+    "target": "/urunler/led-modul/0-72w-rgb-modul-led-fortune-plus/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-rgb-modul-led/",
+    "target": "/urunler/led-modul/0-72w-rgb-modul-led-fortune-plus/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/samsung-2835-modul-led",
+    "target": "/urunler/led-modul/1-08w-samsung-modul-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/samsung-2835-modul-led/",
+    "target": "/urunler/led-modul/1-08w-samsung-modul-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-3w-kesit-aydinlatma-modul-led",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-3lu-3w-kesit-aydinlatma-modul-led/",
+    "target": "/urunler/kesit-aydinlatma-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-ic-mekan-serit-led-10-mm-mt-60",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-ic-mekan-serit-led-10-mm-mt-60/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-ince-silikon-dis-mekan-serit-led-10-mm-mt-60",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/2835-ince-silikon-dis-mekan-serit-led-10-mm-mt-60/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-dis-mekan-silikonlu-serit-led-10-mm-mt-60",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-dis-mekan-silikonlu-serit-led-10-mm-mt-60/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-ic-mekan-serit-led-10-mm-mt-60",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/5050-ic-mekan-serit-led-10-mm-mt-60/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rishang-serit-led",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/rishang-serit-led/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/rishang",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/rishang/",
+    "target": "/urunler/led-serit/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/30-mm-point-led",
+    "target": "/urunler/point-led/30mm-sapkali-point-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/30-mm-point-led/",
+    "target": "/urunler/point-led/30mm-sapkali-point-led/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/belirtilmemis-2",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/belirtilmemis-2/",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/belirtilmemis-2/page/2",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/belirtilmemis-2/page/2/",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/markasiz",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/markasiz/",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/markasiz/page/2",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/category/markasiz/page/2/",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/author/admin",
+    "target": "/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/author/admin/",
+    "target": "/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/wp-sitemap.xml",
+    "target": "/sitemap.xml",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/wp-sitemap.xml/",
+    "target": "/sitemap.xml",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/wp-content/uploads/2022/12/nadas-led-katalog-incele.pdf",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  },
+  {
+    "source": "/wp-content/uploads/2022/12/nadas-led-katalog-incele.pdf/",
+    "target": "/urunler/",
+    "status": "301",
+    "condition": null
+  }
+]

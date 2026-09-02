@@ -7,7 +7,8 @@
     "build": "next build && node scripts/lastmod.mjs && npx next-sitemap && node scripts/llms-txt.mjs",
     "start": "next start",
     "indexnow": "node scripts/indexnow.mjs",
-    "verify-redirects": "node scripts/verify-redirects.mjs"
+    "verify-redirects": "node scripts/verify-redirects.mjs",
+    "amplify-redirects": "node scripts/amplify-redirects.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.0",
