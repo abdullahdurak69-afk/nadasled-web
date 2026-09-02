@@ -263,7 +263,7 @@ export function Result({
       <div
         style={{
           fontFamily: "var(--font-display)",
-          fontWeight: 600,
+          fontWeight: 400,
           fontSize: "clamp(22px, 3vw, 30px)",
           lineHeight: 1,
           color: accent ? "var(--nadas-orange)" : "var(--nadas-ink)",

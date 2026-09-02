@@ -26,7 +26,7 @@ export default function BlogPage() {
             Rehberler
           </div>
           <h1
-            style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(44px, 7vw, 96px)", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "20px" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(44px, 7vw, 96px)", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "20px" }}
           >
             Tabelacının <span style={{ color: "var(--nadas-orange)" }}>el kitabı</span>
           </h1>
@@ -63,7 +63,7 @@ export default function BlogPage() {
               </div>
               <h2
                 className="group-hover:text-[color:var(--nadas-orange)] transition-colors"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "24px", lineHeight: 1.15, letterSpacing: "0.01em", marginBottom: "12px" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "24px", lineHeight: 1.15, letterSpacing: "0.01em", marginBottom: "12px" }}
               >
                 {p.title}
               </h2>

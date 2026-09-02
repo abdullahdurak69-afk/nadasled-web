@@ -31,7 +31,7 @@ export function BlockView({ block }: { block: Block }) {
     case "h2":
       return (
         <h2
-          style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginTop: "40px", marginBottom: "16px" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginTop: "40px", marginBottom: "16px" }}
         >
           {block.text}
         </h2>
@@ -107,7 +107,7 @@ export function FaqList({ items, heading = "Sık sorulan sorular" }: { items: Fa
   return (
     <section style={{ marginTop: "48px" }}>
       <h2
-        style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "20px" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "20px" }}
       >
         {heading}
       </h2>

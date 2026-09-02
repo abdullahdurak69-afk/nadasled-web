@@ -47,7 +47,7 @@ export default function AraclarPage() {
             Hesaplama Araçları
           </div>
           <h1
-            style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(44px, 7vw, 96px)", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "20px" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(44px, 7vw, 96px)", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "20px" }}
           >
             Sahada <span style={{ color: "var(--nadas-orange)" }}>iki dakikada</span> hesap
           </h1>
@@ -85,7 +85,7 @@ export default function AraclarPage() {
               </div>
               <h2
                 className="group-hover:text-[color:var(--nadas-orange)] transition-colors"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "28px", lineHeight: 1.12, letterSpacing: "0.01em", marginBottom: "12px" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "28px", lineHeight: 1.12, letterSpacing: "0.01em", marginBottom: "12px" }}
               >
                 {t.title}
               </h2>
@@ -113,7 +113,7 @@ export default function AraclarPage() {
           className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5"
         >
           <div>
-            <div style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "24px", marginBottom: "6px" }}>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "24px", marginBottom: "6px" }}>
               Hesabı biz de yapabiliriz
             </div>
             <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", maxWidth: "520px", lineHeight: 1.6 }}>

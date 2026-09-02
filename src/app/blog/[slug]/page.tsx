@@ -138,7 +138,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span>{post.readMins} dk okuma</span>
           </div>
           <h1
-            style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05, letterSpacing: "0.01em", marginBottom: "36px" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.05, letterSpacing: "0.01em", marginBottom: "36px" }}
           >
             {post.title}
           </h1>
@@ -165,7 +165,7 @@ export default async function BlogPostPage({ params }: Props) {
                 >
                   <h3
                     className="group-hover:text-[color:var(--nadas-orange)] transition-colors"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "19px", lineHeight: 1.2, marginBottom: "8px" }}
+                    style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "19px", lineHeight: 1.2, marginBottom: "8px" }}
                   >
                     {t.title}
                   </h3>
@@ -181,7 +181,7 @@ export default async function BlogPostPage({ params }: Props) {
             style={{ marginTop: "48px", background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "32px" }}
           >
             <div>
-              <div style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "24px", marginBottom: "6px" }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "24px", marginBottom: "6px" }}>
                 Toptan fiyat mı lazım?
               </div>
               <p style={{ fontSize: "14px", color: "var(--nadas-ink2)" }}>
