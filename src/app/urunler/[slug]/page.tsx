@@ -4,6 +4,7 @@ import Image from "next/image";
 import products from "@/data/products.json";
 import { getPostsForCategory } from "@/data/blog";
 import { getToolsForCategory } from "@/data/tools";
+import { getItemByName } from "@/data/items";
 import type { Metadata } from "next";
 
 const PHONE_HREF = "tel:+905414696966";
@@ -188,7 +189,7 @@ export default async function UrunKategoriPage({ params }: Props) {
               Tüm Ürünler
             </Link>
             <h1
-              style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(40px, 5vw, 76px)", lineHeight: 0.98, letterSpacing: "0.01em", marginBottom: h1Sub ? "14px" : "20px" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(40px, 5vw, 76px)", lineHeight: 0.98, letterSpacing: "0.01em", marginBottom: h1Sub ? "14px" : "20px" }}
             >
               {h1Main}
             </h1>
@@ -293,7 +294,7 @@ export default async function UrunKategoriPage({ params }: Props) {
               </div>
               <h2
                 className="mb-3"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.0, letterSpacing: "0.01em" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(30px, 4vw, 52px)", lineHeight: 1.0, letterSpacing: "0.01em" }}
               >
                 Uygulamada {product.name}
               </h2>
@@ -382,10 +383,38 @@ export default async function UrunKategoriPage({ params }: Props) {
                           />
                         </div>
                       )}
-                      <div className="min-w-0">
-                        <p style={{ fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}>{item.name}</p>
-                        <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
-                      </div>
+                      {/* Kendi sayfası olan kalemler adından linklenir; diğerleri
+                          düz metin kalır — 166 kalemin yalnızca bir bölümünün
+                          sayfası var, gerekçesi data/items.ts başında yazılı. */}
+                      {(() => {
+                        const page = getItemByName(product.slug, item.name);
+                        return (
+                          <div className="min-w-0">
+                            {page ? (
+                              <Link
+                                href={`/urunler/${product.slug}/${page.slug}`}
+                                className="transition-colors hover:text-[color:var(--nadas-orange)]"
+                                style={{ display: "block", fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}
+                              >
+                                {item.name}
+                              </Link>
+                            ) : (
+                              <p style={{ fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}>{item.name}</p>
+                            )}
+                            <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
+                            {page && (
+                              <Link
+                                href={`/urunler/${product.slug}/${page.slug}`}
+                                className="inline-flex items-center gap-1 mt-1.5 transition-colors hover:text-[color:var(--nadas-orange)]"
+                                style={{ fontSize: "12px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}
+                              >
+                                Ürün detayı
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                              </Link>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                     <a
                       href={`https://wa.me/905414696966?text=${encodeURIComponent(`${item.name} için fiyat öğrenmek istiyorum.`)}`}
@@ -447,7 +476,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   Seçim Rehberi
                 </div>
                 <h2
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "16px" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "16px" }}
                 >
                   {guide.title}
                 </h2>
@@ -493,7 +522,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   SSS
                 </div>
                 <h2
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "20px" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "clamp(26px, 3vw, 34px)", lineHeight: 1.08, letterSpacing: "0.01em", marginBottom: "20px" }}
                 >
                   {product.name} hakkında sık sorulanlar
                 </h2>
@@ -522,7 +551,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   Hesaplama Araçları
                 </div>
                 <h2
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
                 >
                   Sipariş öncesi hesaplayın
                 </h2>
@@ -558,7 +587,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   İlgili Rehberler
                 </div>
                 <h2
-                  style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "26px", lineHeight: 1.1, letterSpacing: "0.01em", marginBottom: "24px" }}
                 >
                   {product.name} seçmeden önce
                 </h2>
@@ -624,7 +653,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                 Fiyat Teklifi Al
               </div>
               <h3
-                style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "32px", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "12px" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: "32px", lineHeight: 0.95, letterSpacing: "0.01em", marginBottom: "12px" }}
               >
                 Hemen Sor
               </h3>

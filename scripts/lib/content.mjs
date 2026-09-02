@@ -93,6 +93,43 @@ export function loadTools() {
   return tools;
 }
 
+/**
+ * Tekil ürün sayfaları (src/data/items.ts). Araçlarla aynı biçimde tek dosyada
+ * bir dizi olarak durduğu için ayrıştırma da aynı: dizi `slug:` satırından
+ * bölünür, alanlar 4 boşluk girintiyle okunur.
+ *
+ * items.ts'te tarihler bilerek düz metin yazılır (ortak bir sabite referans
+ * verilmez) — buradaki metin ayrıştırma sabit referansını çözemez.
+ */
+export function loadItems() {
+  const src = readFileSync(resolve(ROOT, "src/data/items.ts"), "utf8");
+  const body = src.split("export const items: ItemPage[] = [")[1]?.split("\nexport function ")[0] ?? "";
+  const field = (chunk, name) =>
+    chunk.match(new RegExp(`^\\s{4}${name}:\\s*\\n?\\s*"((?:[^"\\\\]|\\\\.)*)",`, "m"))?.[1];
+
+  const items = [];
+  for (const part of body.split(/\n {4}slug: "/).slice(1)) {
+    const slug = part.slice(0, part.indexOf('"'));
+    const categorySlug = field(part, "categorySlug");
+    const name = field(part, "name");
+    const intro = field(part, "intro");
+    const updated = field(part, "updated");
+
+    const faqSrc = part.split(/^\s{4}faq:\s*\[/m)[1] ?? "";
+    // Kapanış virgülü aranmıyor: items.ts'te SSS kayıtları tek satır
+    // ({ q: "…", a: "…" },) ve son tırnaktan sonra boşluk geliyor.
+    const faq = [...faqSrc.matchAll(/q:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*a:\s*\n?\s*"((?:[^"\\]|\\.)*)"/g)].map(
+      (m) => ({ q: m[1], a: m[2] })
+    );
+
+    if (slug && categorySlug && name) items.push({ slug, categorySlug, name, intro, updated, faq });
+  }
+  if (items.length === 0) {
+    throw new Error("src/data/items.ts okunamadı — ürün sayfası listesi boş çıktı");
+  }
+  return items;
+}
+
 export function loadProducts() {
   return JSON.parse(readFileSync(resolve(ROOT, "src/data/products.json"), "utf8"));
 }

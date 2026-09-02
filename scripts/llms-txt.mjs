@@ -3,7 +3,7 @@
  * out/llms.txt üretir — dil modellerinin (ChatGPT, Perplexity, Claude) siteyi
  * tek istekte kavraması için düz metin site haritası.
  *
- * products.json ve blog.ts'den türetilir; elle güncellenmez, böylece katalog
+ * products.json, items.ts ve blog.ts'den türetilir; elle güncellenmez, böylece katalog
  * değiştiğinde llms.txt ile site arasında drift oluşmaz.
  *
  * Build zincirinde next-sitemap'ten sonra çalışır (npm run build).
@@ -11,7 +11,7 @@
 
 import { writeFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
-import { ROOT, loadPosts, loadTools, loadProducts } from "./lib/content.mjs";
+import { ROOT, loadPosts, loadTools, loadProducts, loadItems } from "./lib/content.mjs";
 
 const BASE = "https://www.nadasled.com.tr";
 const OUT = resolve(ROOT, "out/llms.txt");
@@ -19,6 +19,7 @@ const OUT = resolve(ROOT, "out/llms.txt");
 const products = loadProducts();
 const posts = await loadPosts();
 const toolList = loadTools();
+const itemList = loadItems();
 
 const lines = [];
 const push = (s = "") => lines.push(s);
@@ -50,6 +51,24 @@ for (const c of products) {
 }
 push();
 
+push("## Ürün sayfaları");
+push();
+push(
+  "Kendi sayfası olan kalemler. Her sayfada teknik özellik tablosu, kullanım " +
+    "alanları, seçim notları ve SSS bulunur. Kataloğun tamamı kategori " +
+    "sayfalarında listelenir."
+);
+push();
+for (const c of products) {
+  const own = itemList.filter((i) => i.categorySlug === c.slug);
+  if (own.length === 0) continue;
+  push(`### ${c.name}`);
+  for (const i of own) {
+    push(`- [${i.name}](${BASE}/urunler/${i.categorySlug}/${i.slug}/): ${i.intro}`);
+  }
+  push();
+}
+
 push("## Hesaplama araçları");
 push();
 push(
@@ -76,6 +95,14 @@ for (const c of products) {
     push(`### ${f.q}`);
     push(f.a);
     push(`Kaynak: ${BASE}/urunler/${c.slug}/`);
+    push();
+  }
+}
+for (const i of itemList) {
+  for (const f of i.faq ?? []) {
+    push(`### ${f.q}`);
+    push(f.a);
+    push(`Kaynak: ${BASE}/urunler/${i.categorySlug}/${i.slug}/`);
     push();
   }
 }
@@ -114,9 +141,11 @@ if (!existsSync(resolve(ROOT, "out"))) {
 const content = lines.join("\n");
 writeFileSync(OUT, content, "utf8");
 console.log(
-  `out/llms.txt yazıldı — ${products.length} kategori, ${posts.length} yazı, ${toolList.length} araç, ` +
+  `out/llms.txt yazıldı — ${products.length} kategori, ${itemList.length} ürün sayfası, ` +
+    `${posts.length} yazı, ${toolList.length} araç, ` +
     `${
       products.reduce((n, c) => n + (c.faq?.length ?? 0), 0) +
+      itemList.reduce((n, i) => n + (i.faq?.length ?? 0), 0) +
       posts.reduce((n, p) => n + (p.faq?.length ?? 0), 0) +
       toolList.reduce((n, t) => n + (t.faq?.length ?? 0), 0)
     } SSS, ` +

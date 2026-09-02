@@ -13,6 +13,7 @@
  *   /blog/<slug>    → yazının updated ?? date alanı
  *   /araclar/<slug> → aracın updated alanı
  *   /urunler/<slug> → products.json'ın son commit tarihi
+ *   /urunler/<slug>/<urun> → kalemin kendi updated alanı
  *   liste sayfaları → altındaki en yeni içeriğin tarihi
  *   sabit sayfalar  → kendi page.tsx'inin son commit tarihi
  *
@@ -26,7 +27,7 @@
 import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { execFileSync } from "node:child_process";
-import { ROOT, loadPosts, loadTools, loadProducts } from "./lib/content.mjs";
+import { ROOT, loadPosts, loadTools, loadProducts, loadItems } from "./lib/content.mjs";
 
 const OUT = resolve(ROOT, ".lastmod.json");
 
@@ -54,6 +55,7 @@ function gitDate(relPath) {
 const posts = await loadPosts();
 const tools = loadTools();
 const products = loadProducts();
+const items = loadItems();
 
 /** İki ISO tarihten yeni olanı. */
 const newest = (dates) => dates.filter(Boolean).sort().at(-1) ?? null;
@@ -68,12 +70,20 @@ for (const t of tools) map[`/araclar/${t.slug}/`] = t.updated ?? null;
 
 // Kategoriler: metinleri products.json'da duruyor, tarihi de oradan gelir.
 const productsDate = gitDate("src/data/products.json") ?? previous["/urunler/"];
-for (const c of products) map[`/urunler/${c.slug}/`] = productsDate;
+for (const c of products) {
+  // Kategori sayfası, altındaki ürün sayfalarından biri güncellenince de tazelenir.
+  const itemDates = items.filter((i) => i.categorySlug === c.slug).map((i) => i.updated);
+  map[`/urunler/${c.slug}/`] = newest([productsDate, ...itemDates]);
+}
+
+// Tekil ürün sayfaları: metinleri items.ts'te, tarihi de kalemin kendi
+// updated alanından gelir — kategori sayfasının tarihinden bağımsızdır.
+for (const i of items) map[`/urunler/${i.categorySlug}/${i.slug}/`] = i.updated ?? null;
 
 // Liste sayfaları, altlarındaki en yeni içerik kadar tazedir.
 map["/blog/"] = newest(posts.map((p) => p.updated ?? p.date));
 map["/araclar/"] = newest(tools.map((t) => t.updated));
-map["/urunler/"] = productsDate;
+map["/urunler/"] = newest([productsDate, ...items.map((i) => i.updated)]);
 
 // Sabit sayfalar: içerikleri doğrudan kendi dosyalarında.
 const pageDate = (file, url) => gitDate(file) ?? previous[url];
