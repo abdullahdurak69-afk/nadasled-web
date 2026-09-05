@@ -36,7 +36,7 @@ export const organizationSchema = {
   "@type": "Store",
   "@id": ORG_ID,
   name: "Nadasled",
-  url: SITE,
+  url: `${SITE}/`,
   logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
   image: `${SITE}/images/og.jpg`,
   description:
@@ -93,7 +93,7 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": SITE_ID,
-  url: SITE,
+  url: `${SITE}/`,
   name: "Nadasled",
   inLanguage: "tr-TR",
   publisher: orgRef,

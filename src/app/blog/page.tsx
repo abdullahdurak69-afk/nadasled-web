@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Blog — Tabela ve LED Aydınlatma Rehberleri",
   description:
     "Tabelacılar için pratik rehberler: LED trafo hesaplama, modül seçimi, neon flex montajı, COB vs SMD karşılaştırması ve daha fazlası.",
-  alternates: { canonical: "https://www.nadasled.com.tr/blog" },
+  alternates: { canonical: "https://www.nadasled.com.tr/blog/" },
 };
 
 export default function BlogPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "İletişim — Toptan Fiyat Teklifi Alın",
   description:
     "Nadasled iletişim: Ümraniye / İstanbul. Telefon, WhatsApp veya e-posta ile ulaşın, tabela malzemeleri için toptan fiyat teklifi alın. Türkiye geneli kargo.",
-  alternates: { canonical: "https://www.nadasled.com.tr/iletisim" },
+  alternates: { canonical: "https://www.nadasled.com.tr/iletisim/" },
 };
 
 // Adres, telefon ve çalışma saatleri artık root layout'taki tek işletme
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  url: "https://www.nadasled.com.tr/iletisim",
+  url: "https://www.nadasled.com.tr/iletisim/",
   name: "İletişim — Nadasled",
   inLanguage: "tr-TR",
   mainEntity: orgRef,

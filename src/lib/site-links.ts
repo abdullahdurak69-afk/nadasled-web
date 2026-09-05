@@ -47,3 +47,21 @@ export const FOOTER_LINKS: SiteLink[] = [
   { href: ROUTES.blog, label: "Blog" },
   { href: ROUTES.iletisim, label: "İletişim" },
 ];
+
+/** Mutlak adresler — JSON-LD, canonical ve Open Graph için. */
+export const ORIGIN = "https://www.nadasled.com.tr";
+
+/**
+ * Sayfanın mutlak adresi. Yol sonda slash'lı gelir, sonuç da öyle olur.
+ *
+ * JSON-LD'de `@id`, `item` ve `mainEntityOfPage` bir varlığın kimliğidir;
+ * yönlendirilen bir adres verilirse şemanın işaret ettiği düğüm ile
+ * canonical'ın gösterdiği sayfa ayrışır. Bu yüzden şemadaki her sayfa
+ * adresi buradan üretilir.
+ *
+ * Dikkat: `#organization` gibi çapalarda ve `/logo.png` gibi dosyalarda
+ * kullanılmaz — onlar `schema.ts` içindeki SITE kökünden türer.
+ */
+export const absUrl = (path: string) => `${ORIGIN}${path}`;
+
+export const HOME_URL = absUrl(ROUTES.home);

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  const url = `https://www.nadasled.com.tr/blog/${post.slug}`;
+  const url = `https://www.nadasled.com.tr/blog/${post.slug}/`;
   return {
     title: post.metaTitle,
     description: post.metaDesc,
@@ -38,7 +38,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPost(slug);
   if (!post) notFound();
 
-  const url = `https://www.nadasled.com.tr/blog/${post.slug}`;
+  const url = `https://www.nadasled.com.tr/blog/${post.slug}/`;
   const waHref = `https://wa.me/905414696966?text=${encodeURIComponent(`${post.categoryName} ürünleri hakkında bilgi almak istiyorum.`)}`;
 
   const articleSchema = {
@@ -61,8 +61,8 @@ export default async function BlogPostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.nadasled.com.tr/blog" },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.nadasled.com.tr/blog/" },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };

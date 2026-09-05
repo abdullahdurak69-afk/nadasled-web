@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const tool = getTool(slug);
   if (!tool) return {};
-  const url = `https://www.nadasled.com.tr/araclar/${tool.slug}`;
+  const url = `https://www.nadasled.com.tr/araclar/${tool.slug}/`;
   return {
     title: tool.metaTitle,
     description: tool.metaDesc,
@@ -57,14 +57,14 @@ export default async function AracPage({ params }: Props) {
   const Calculator = tool ? CALCULATORS[tool.slug] : undefined;
   if (!tool || !Calculator) notFound();
 
-  const url = `https://www.nadasled.com.tr/araclar/${tool.slug}`;
+  const url = `https://www.nadasled.com.tr/araclar/${tool.slug}/`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr" },
-      { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://www.nadasled.com.tr/araclar" },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr/" },
+      { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://www.nadasled.com.tr/araclar/" },
       { "@type": "ListItem", position: 3, name: tool.title, item: url },
     ],
   };

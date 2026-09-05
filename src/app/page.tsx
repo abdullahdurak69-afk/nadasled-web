@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HOME_URL } from "@/lib/site-links";
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import ProductGrid from "@/components/ProductGrid";
@@ -16,10 +17,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",
     description: "LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Tabelacılara özel fiyatlar.",
-    url: "https://www.nadasled.com.tr",
+    url: HOME_URL,
     images: [{ url: "https://www.nadasled.com.tr/images/led-modul.webp", width: 800, height: 600, alt: "Nadasled Tabela Malzemeleri" }],
   },
-  alternates: { canonical: "https://www.nadasled.com.tr" },
+  alternates: { canonical: HOME_URL },
 };
 
 // İşletme düğümü artık root layout'ta, tek kanonik tanım olarak duruyor

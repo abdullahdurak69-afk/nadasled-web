@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Tabela Hesaplama Araçları — Trafo, Modül, Şerit, Maliyet",
   description:
     "Tabelacılar için ücretsiz hesaplama araçları: trafo amper hesabı, kutu harf modül adedi, LED şerit güç ve metrajı, tabela malzeme maliyeti.",
-  alternates: { canonical: "https://www.nadasled.com.tr/araclar" },
+  alternates: { canonical: "https://www.nadasled.com.tr/araclar/" },
 };
 
 export default function AraclarPage() {
@@ -18,7 +18,7 @@ export default function AraclarPage() {
       "@type": "ListItem",
       position: i + 1,
       name: t.title,
-      url: `https://www.nadasled.com.tr/araclar/${t.slug}`,
+      url: `https://www.nadasled.com.tr/araclar/${t.slug}/`,
     })),
   };
 
@@ -26,8 +26,8 @@ export default function AraclarPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr" },
-      { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://www.nadasled.com.tr/araclar" },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr/" },
+      { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://www.nadasled.com.tr/araclar/" },
     ],
   };
 

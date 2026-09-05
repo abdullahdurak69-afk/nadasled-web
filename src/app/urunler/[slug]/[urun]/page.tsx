@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, urun } = await params;
   const item = getItem(slug, urun);
   if (!item) return {};
-  const url = `${SITE}/urunler/${item.categorySlug}/${item.slug}`;
+  const url = `${SITE}/urunler/${item.categorySlug}/${item.slug}/`;
   return {
     title: item.metaTitle,
     description: item.metaDesc,
@@ -60,10 +60,10 @@ export default async function UrunPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: SITE },
-      { "@type": "ListItem", position: 2, name: "Ürünler", item: `${SITE}/urunler` },
-      { "@type": "ListItem", position: 3, name: category.name, item: `${SITE}/urunler/${category.slug}` },
-      { "@type": "ListItem", position: 4, name: item.name, item: `${SITE}/urunler/${item.categorySlug}/${item.slug}` },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Ürünler", item: `${SITE}/urunler/` },
+      { "@type": "ListItem", position: 3, name: category.name, item: `${SITE}/urunler/${category.slug}/` },
+      { "@type": "ListItem", position: 4, name: item.name, item: `${SITE}/urunler/${item.categorySlug}/${item.slug}/` },
     ],
   };
 

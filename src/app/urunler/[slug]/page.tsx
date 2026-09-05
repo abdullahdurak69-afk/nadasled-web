@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
-  const url = `https://www.nadasled.com.tr/urunler/${product.slug}`;
+  const url = `https://www.nadasled.com.tr/urunler/${product.slug}/`;
   return {
     title: product.metaTitle,
     description: product.metaDesc,
@@ -107,9 +107,9 @@ export default async function UrunKategoriPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr" },
-      { "@type": "ListItem", position: 2, name: "Ürünler", item: "https://www.nadasled.com.tr/urunler" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://www.nadasled.com.tr/urunler/${product.slug}` },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.nadasled.com.tr/" },
+      { "@type": "ListItem", position: 2, name: "Ürünler", item: "https://www.nadasled.com.tr/urunler/" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://www.nadasled.com.tr/urunler/${product.slug}/` },
     ],
   };
 

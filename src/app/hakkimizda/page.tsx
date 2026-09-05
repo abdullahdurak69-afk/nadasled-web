@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Hakkımızda — Nadasled Tabela Malzemeleri",
   description:
     "Nadasled olarak tabela sektörüne LED modül, şerit, trafo ve kablo tedarik ediyoruz. Tabelacılara özel toptan fiyatlar, Türkiye geneli hızlı kargo.",
-  alternates: { canonical: "https://www.nadasled.com.tr/hakkimizda" },
+  alternates: { canonical: "https://www.nadasled.com.tr/hakkimizda/" },
 };
 
 const WA_HREF = "https://wa.me/905414696966";
