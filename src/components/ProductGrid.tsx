@@ -44,7 +44,7 @@ export default function ProductGrid() {
           {products.map((p) => (
             <Link
               key={p.slug}
-              href={`/urunler/${p.slug}`}
+              href={`/urunler/${p.slug}/`}
               className="nadas-product-card group block relative overflow-hidden transition-colors duration-300"
               style={{
                 padding: "40px 32px",

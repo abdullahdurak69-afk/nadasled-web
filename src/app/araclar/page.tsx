@@ -67,7 +67,7 @@ export default function AraclarPage() {
           {tools.map((t, i) => (
             <Link
               key={t.slug}
-              href={`/araclar/${t.slug}`}
+              href={`/araclar/${t.slug}/`}
               className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
               style={{
                 background: "var(--nadas-bg2)",

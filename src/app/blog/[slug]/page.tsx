@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }: Props) {
         >
           {[
             { href: "/", label: "Ana Sayfa" },
-            { href: "/blog", label: "Blog" },
+            { href: "/blog/", label: "Blog" },
             { label: post.title },
           ].map((b, i, arr) => (
             <span key={i} className="flex items-center gap-2">
@@ -159,7 +159,7 @@ export default async function BlogPostPage({ params }: Props) {
               {relatedTools.map((t) => (
                 <Link
                   key={t.slug}
-                  href={`/araclar/${t.slug}`}
+                  href={`/araclar/${t.slug}/`}
                   className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
                   style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "22px" }}
                 >
@@ -200,7 +200,7 @@ export default async function BlogPostPage({ params }: Props) {
                 WhatsApp
               </a>
               <Link
-                href={`/urunler/${post.categorySlug}`}
+                href={`/urunler/${post.categorySlug}/`}
                 className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
                 style={{ border: "1px solid var(--nadas-line)", color: "var(--nadas-orange)", padding: "14px 22px", borderRadius: "2px", fontSize: "14px" }}
               >
@@ -223,7 +223,7 @@ export default async function BlogPostPage({ params }: Props) {
             {others.map((p, i) => (
               <Link
                 key={p.slug}
-                href={`/blog/${p.slug}`}
+                href={`/blog/${p.slug}/`}
                 className="group flex items-center gap-3 transition-colors"
                 style={{ padding: "14px 0", borderBottom: i < others.length - 1 ? "1px solid var(--nadas-line2)" : "none", fontSize: "16px", color: "var(--nadas-ink2)" }}
               >

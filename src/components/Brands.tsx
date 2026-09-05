@@ -62,7 +62,7 @@ export default function Brands() {
         </div>
 
         <Link
-          href="/markalar"
+          href="/markalar/"
           className="inline-flex items-center gap-2 mt-10 font-semibold transition-all duration-200 hover:-translate-y-px"
           style={{ color: "var(--nadas-orange)", fontSize: "15px" }}
         >

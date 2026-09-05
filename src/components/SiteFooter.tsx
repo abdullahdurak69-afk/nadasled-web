@@ -1,12 +1,13 @@
 import catalog from "@/data/products.json";
 import Logo from "@/components/Logo";
+import { FOOTER_LINKS, categoryHref } from "@/lib/site-links";
 
 const WA_HREF = "https://wa.me/905414696966";
 const PHONE_HREF = "tel:+905414696966";
 const EMAIL = "nadasled@gmail.com";
 const INSTAGRAM = "https://www.instagram.com/nadasled/";
 
-const footerCategories = catalog.slice(0, 6).map((c) => ({ href: `/urunler/${c.slug}`, label: c.name }));
+const footerCategories = catalog.slice(0, 6).map((c) => ({ href: categoryHref(c.slug), label: c.name }));
 
 export default function SiteFooter() {
   return (
@@ -54,12 +55,7 @@ export default function SiteFooter() {
             </div>
             <ul className="flex flex-col gap-2.5" style={{ fontSize: "14px", color: "var(--nadas-ink2)" }}>
               {([
-                { href: "/hakkimizda", label: "Hakkımızda" },
-                { href: "/urunler", label: "Ürünler" },
-                { href: "/markalar", label: "Markalarımız" },
-                { href: "/araclar", label: "Hesaplama Araçları" },
-                { href: "/blog", label: "Blog" },
-                { href: "/iletisim", label: "İletişim" },
+                ...FOOTER_LINKS,
                 { href: WA_HREF, label: "Teklif Al", track: "footer_menu" },
               ] as { href: string; label: string; track?: string }[]).map((l) => (
                 <li key={l.label}><a href={l.href} data-track={l.track} className="transition-colors duration-200 hover:text-[color:var(--nadas-orange)]">{l.label}</a></li>

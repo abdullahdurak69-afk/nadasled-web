@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import catalog from "@/data/products.json";
+import { NAV_LINKS, ROUTES, categoryHref } from "@/lib/site-links";
 
 const WA_HREF = "https://wa.me/905414696966";
 
@@ -19,13 +20,7 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const links = [
-    { href: "/araclar", label: "Araçlar" },
-    { href: "/markalar", label: "Markalarımız" },
-    { href: "/blog", label: "Blog" },
-    { href: "/hakkimizda", label: "Hakkımızda" },
-    { href: "/iletisim", label: "İletişim" },
-  ];
+  const links = NAV_LINKS;
 
   return (
     <nav
@@ -53,7 +48,7 @@ export default function Nav() {
             onMouseLeave={() => setCatOpen(false)}
           >
             <a
-              href="/urunler"
+              href={ROUTES.urunler}
               className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors duration-200"
               style={{ color: catOpen ? "var(--nadas-orange)" : "var(--nadas-ink2)" }}
             >
@@ -79,7 +74,7 @@ export default function Nav() {
                   {categories.map((c) => (
                     <li key={c.slug}>
                       <Link
-                        href={`/urunler/${c.slug}`}
+                        href={categoryHref(c.slug)}
                         className="block px-3 py-2 text-sm rounded-sm transition-colors"
                         style={{ color: "var(--nadas-ink2)" }}
                         onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--nadas-orange)"; (e.currentTarget as HTMLElement).style.background = "rgba(255,107,26,0.06)"; }}
@@ -152,7 +147,7 @@ export default function Nav() {
           className="flex flex-col gap-4 md:hidden"
         >
           <Link
-            href="/urunler"
+            href={ROUTES.urunler}
             className="text-base font-medium transition-colors"
             style={{ color: "var(--nadas-ink2)" }}
             onClick={() => setMobileOpen(false)}
@@ -163,7 +158,7 @@ export default function Nav() {
             {categories.map((c) => (
               <Link
                 key={c.slug}
-                href={`/urunler/${c.slug}`}
+                href={categoryHref(c.slug)}
                 className="text-sm transition-colors"
                 style={{ color: "var(--nadas-ink3)" }}
                 onClick={() => setMobileOpen(false)}

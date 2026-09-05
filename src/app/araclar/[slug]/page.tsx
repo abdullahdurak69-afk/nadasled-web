@@ -106,7 +106,7 @@ export default async function AracPage({ params }: Props) {
         >
           {[
             { href: "/", label: "Ana Sayfa" },
-            { href: "/araclar", label: "Araçlar" },
+            { href: "/araclar/", label: "Araçlar" },
             { label: tool.title },
           ].map((b, i, arr) => (
             <span key={i} className="flex items-center gap-2">
@@ -167,7 +167,7 @@ export default async function AracPage({ params }: Props) {
               {otherTools.map((t) => (
                 <Link
                   key={t.slug}
-                  href={`/araclar/${t.slug}`}
+                  href={`/araclar/${t.slug}/`}
                   className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
                   style={{ background: "var(--nadas-bg2)", border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "22px" }}
                 >
@@ -195,7 +195,7 @@ export default async function AracPage({ params }: Props) {
                 {relatedPosts.map((p, i) => (
                   <Link
                     key={p.slug}
-                    href={`/blog/${p.slug}`}
+                    href={`/blog/${p.slug}/`}
                     className="group flex items-center gap-3 transition-colors"
                     style={{ padding: "14px 0", borderBottom: i < relatedPosts.length - 1 ? "1px solid var(--nadas-line2)" : "none", fontSize: "16px", color: "var(--nadas-ink2)" }}
                   >
@@ -232,7 +232,7 @@ export default async function AracPage({ params }: Props) {
                 WhatsApp
               </a>
               <Link
-                href={`/urunler/${tool.categorySlug}`}
+                href={`/urunler/${tool.categorySlug}/`}
                 className="inline-flex items-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-px"
                 style={{ border: "1px solid var(--nadas-line)", color: "var(--nadas-orange)", padding: "14px 22px", borderRadius: "2px", fontSize: "14px" }}
               >

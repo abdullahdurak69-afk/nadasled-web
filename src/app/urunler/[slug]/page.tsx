@@ -139,7 +139,7 @@ export default async function UrunKategoriPage({ params }: Props) {
         >
           {[
             { href: "/", label: "Ana Sayfa" },
-            { href: "/urunler", label: "Ürünler" },
+            { href: "/urunler/", label: "Ürünler" },
             { label: product.name },
           ].map((b, i, arr) => (
             <span key={i} className="flex items-center gap-2">
@@ -181,7 +181,7 @@ export default async function UrunKategoriPage({ params }: Props) {
           {/* Left — copy */}
           <div>
             <Link
-              href="/urunler"
+              href="/urunler/"
               className="inline-flex items-center gap-2 mb-7 transition-colors hover:text-[color:var(--nadas-orange)]"
               style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)" }}
             >
@@ -392,7 +392,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                           <div className="min-w-0">
                             {page ? (
                               <Link
-                                href={`/urunler/${product.slug}/${page.slug}`}
+                                href={`/urunler/${product.slug}/${page.slug}/`}
                                 className="transition-colors hover:text-[color:var(--nadas-orange)]"
                                 style={{ display: "block", fontSize: "15px", fontWeight: 600, marginBottom: "4px" }}
                               >
@@ -404,7 +404,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                             <p style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)" }}>{item.specs}</p>
                             {page && (
                               <Link
-                                href={`/urunler/${product.slug}/${page.slug}`}
+                                href={`/urunler/${product.slug}/${page.slug}/`}
                                 className="inline-flex items-center gap-1 mt-1.5 transition-colors hover:text-[color:var(--nadas-orange)]"
                                 style={{ fontSize: "12px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}
                               >
@@ -559,7 +559,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   {relatedTools.map((t) => (
                     <Link
                       key={t.slug}
-                      href={`/araclar/${t.slug}`}
+                      href={`/araclar/${t.slug}/`}
                       className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
                       style={{ border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "20px" }}
                     >
@@ -595,7 +595,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   {relatedPosts.map((post, i) => (
                     <Link
                       key={post.slug}
-                      href={`/blog/${post.slug}`}
+                      href={`/blog/${post.slug}/`}
                       className="group block transition-colors"
                       style={{
                         padding: "18px 0",
@@ -623,7 +623,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                   ))}
                 </div>
                 <Link
-                  href="/blog"
+                  href="/blog/"
                   className="inline-flex items-center gap-2 mt-6 transition-colors hover:text-[color:var(--nadas-orange)]"
                   style={{ fontSize: "13px", color: "var(--nadas-ink2)", fontFamily: "var(--font-mono)", letterSpacing: "0.04em" }}
                 >
@@ -710,7 +710,7 @@ export default async function UrunKategoriPage({ params }: Props) {
                 {products.filter((p) => p.slug !== product.slug).map((p, i, arr) => (
                   <Link
                     key={p.slug}
-                    href={`/urunler/${p.slug}`}
+                    href={`/urunler/${p.slug}/`}
                     className="flex items-center gap-3 transition-colors group"
                     style={{
                       padding: "10px 0",

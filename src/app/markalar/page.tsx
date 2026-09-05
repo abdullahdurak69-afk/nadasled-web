@@ -94,7 +94,7 @@ export default function MarkalarPage() {
                   {b.cats.map((c) => (
                     <Link
                       key={c.s}
-                      href={`/urunler/${c.s}`}
+                      href={`/urunler/${c.s}/`}
                       className="inline-flex items-center gap-2 transition-all duration-200 hover:-translate-y-px"
                       style={{ border: "1px solid var(--nadas-line)", color: "var(--nadas-orange)", padding: "8px 16px", borderRadius: "2px", fontSize: "13px", fontWeight: 600 }}
                     >

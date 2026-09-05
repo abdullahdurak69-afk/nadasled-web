@@ -115,8 +115,8 @@ export default async function UrunPage({ params }: Props) {
         >
           {[
             { href: "/", label: "Ana Sayfa" },
-            { href: "/urunler", label: "Ürünler" },
-            { href: `/urunler/${category.slug}`, label: category.name },
+            { href: "/urunler/", label: "Ürünler" },
+            { href: `/urunler/${category.slug}/`, label: category.name },
             { label: item.name },
           ].map((b, i, arr) => (
             <span key={i} className="flex items-center gap-2">
@@ -154,7 +154,7 @@ export default async function UrunPage({ params }: Props) {
         >
           <div>
             <Link
-              href={`/urunler/${category.slug}`}
+              href={`/urunler/${category.slug}/`}
               className="inline-flex items-center gap-2 mb-7 transition-colors hover:text-[color:var(--nadas-orange)]"
               style={{ fontSize: "13px", color: "var(--nadas-ink3)", fontFamily: "var(--font-mono)" }}
             >
@@ -313,7 +313,7 @@ export default async function UrunPage({ params }: Props) {
                   {related.map((r) => (
                     <Link
                       key={r.slug}
-                      href={`/urunler/${r.categorySlug}/${r.slug}`}
+                      href={`/urunler/${r.categorySlug}/${r.slug}/`}
                       className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
                       style={{ border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "20px" }}
                     >
@@ -341,7 +341,7 @@ export default async function UrunPage({ params }: Props) {
                   {relatedTools.map((t) => (
                     <Link
                       key={t.slug}
-                      href={`/araclar/${t.slug}`}
+                      href={`/araclar/${t.slug}/`}
                       className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
                       style={{ border: "1px solid var(--nadas-line2)", borderRadius: "2px", padding: "20px" }}
                     >
@@ -367,7 +367,7 @@ export default async function UrunPage({ params }: Props) {
                   {relatedPosts.map((post, i) => (
                     <Link
                       key={post.slug}
-                      href={`/blog/${post.slug}`}
+                      href={`/blog/${post.slug}/`}
                       className="group block"
                       style={{ padding: "18px 0", borderBottom: i < relatedPosts.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
                     >

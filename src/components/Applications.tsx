@@ -45,7 +45,7 @@ export default function Applications() {
           {items.map((it) => (
             <Link
               key={it.slug}
-              href={`/urunler/${it.slug}`}
+              href={`/urunler/${it.slug}/`}
               className={`group relative overflow-hidden block ${it.span}`}
               style={{
                 aspectRatio: "16 / 10",

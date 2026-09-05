@@ -45,7 +45,7 @@ export default function BlogPage() {
           {posts.map((p) => (
             <Link
               key={p.slug}
-              href={`/blog/${p.slug}`}
+              href={`/blog/${p.slug}/`}
               className="group flex flex-col transition-all duration-200 hover:-translate-y-1"
               style={{
                 background: "var(--nadas-bg2)",
