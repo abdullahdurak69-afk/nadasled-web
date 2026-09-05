@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import { tools, getTool } from "@/data/tools";
 import { getPost } from "@/data/blog";
+import { orgRef } from "@/lib/schema";
 import { Prose, FaqList } from "@/components/Prose";
 import TrafoCalc from "@/components/tools/TrafoCalc";
 import KutuHarfCalc from "@/components/tools/KutuHarfCalc";
@@ -69,9 +70,34 @@ export default async function AracPage({ params }: Props) {
     ],
   };
 
-  // Ürün/uygulama tipli schema'lar Search Console'da offers ve review zorunluluğu
-  // nedeniyle hata veriyordu; burada da yalnızca sorunsuz çalışan iki tipi
-  // kullanıyoruz.
+  // Hesaplayıcının kendisi bir uygulama; şema bunu söylemezse sayfa dil
+  // modellerine ve arama motorlarına sıradan bir yazı gibi görünüyor.
+  //
+  // Daha önce Product tipi Search Console'da hata vermişti (9946f22): zorunlu
+  // `offers` alanı doldurulamıyordu, çünkü ürün fiyatları proje bazlı veriliyor.
+  // Burada aynı sorun yok — araç gerçekten ücretsiz, `price: 0` uydurma değil.
+  //
+  // `aggregateRating` bilerek yok: puanımız yok, uydurulmaz. Google'ın zengin
+  // sonuç raporunda bu alan için uyarı çıkabilir; uyarı indekslemeyi engellemez
+  // ve şema yine de dil modelleri tarafından okunur. Rapor hata seviyesine
+  // çıkarsa bu düğüm kaldırılabilir, sayfanın geri kalanı etkilenmez.
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": `${url}#calculator`,
+    name: tool.title,
+    url,
+    description: tool.metaDesc,
+    applicationCategory: "UtilitiesApplication",
+    applicationSubCategory: "Hesaplama aracı",
+    operatingSystem: "Tarayıcı — kurulum gerektirmez",
+    browserRequirements: "JavaScript",
+    inLanguage: "tr-TR",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: 0, priceCurrency: "TRY" },
+    publisher: orgRef,
+  };
+
   const faqSchema =
     tool.faq.length > 0
       ? {
@@ -94,6 +120,7 @@ export default async function AracPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
