@@ -501,6 +501,7 @@
       "Noktasız, homojen kesintisiz ışık çizgisi",
       "4mm, 8mm ve 10mm genişlik seçenekleri",
       "480, 520 ve 720 LED/mt yoğunluklar",
+      "Mor, pembe ve buz mavisi tek renk seçenekleri",
       "Tek renkli, RGB ve adreslenebilir Pixel COB",
       "Side View (yan ışık) modeli",
       "IP20 iç mekan, IP44 / IP65 dış mekan",
@@ -512,7 +513,10 @@
       "cob şerit toptan",
       "noktasız led şerit",
       "rgb cob şerit",
-      "pixel cob şerit led"
+      "pixel cob şerit led",
+      "mor cob şerit led",
+      "pembe cob şerit led",
+      "renkli cob şerit led"
     ],
     "products": [
       {
@@ -529,6 +533,21 @@
         "name": "IP20 8mm COB 520/mt",
         "specs": "24V, IP20, 520 LED/mt yüksek yoğunluk",
         "img": "/images/products/8mm-cob-520-mt-ip20.png"
+      },
+      {
+        "name": "Mor COB Şerit LED 520/mt",
+        "specs": "24V, IP20, 12W/m, 425nm mor",
+        "img": "/images/products/mor-cob-serit-led-520-mt.jpg"
+      },
+      {
+        "name": "Pembe COB Şerit LED 520/mt",
+        "specs": "24V, IP20, 12W/m, 400nm pembe",
+        "img": "/images/products/pembe-cob-serit-led-520-mt.jpg"
+      },
+      {
+        "name": "Buz Mavisi COB Şerit LED 520/mt",
+        "specs": "24V, IP20, 12W/m, 485nm açık mavi",
+        "img": "/images/products/buz-mavisi-cob-serit-led-520-mt.jpg"
       },
       {
         "name": "IP20 Side View COB Şerit LED 480/mt",
@@ -558,6 +577,16 @@
       {
         "name": "IP65 10mm COB 480/mt",
         "specs": "24V, IP65, dış mekan, su geçirmez",
+        "img": "/images/products/ip65-10mm-cob-480-mt.png"
+      },
+      {
+        "name": "IP65 10mm COB 480/mt Beyaz 6000K",
+        "specs": "24V, IP65, dış mekan, soğuk beyaz",
+        "img": "/images/products/ip65-10mm-cob-480-mt.png"
+      },
+      {
+        "name": "IP65 10mm COB 480/mt Günışığı 3000K",
+        "specs": "24V, IP65, dış mekan, sıcak ton",
         "img": "/images/products/ip65-10mm-cob-480-mt.png"
       },
       {
@@ -646,7 +675,7 @@
     "features": [
       "Flat, Silikon, Mix, PVC, D-Shape ve 360° seriler",
       "12V, 24V ve doğrudan 220V modeller",
-      "IP65 su geçirmez, iç ve dış mekan",
+      "IP65 / IP67 su geçirmez, iç ve dış mekan",
       "Tek renkli, RGB ve 360° ışık yayılımlı",
       "1cm / 2.5cm aralıkla kesilebilir silikon seri",
       "İkinci nesil neon ve uygulama aparatları (keski, CNC ucu)",
@@ -664,37 +693,37 @@
     "products": [
       {
         "name": "4x8mm Flat Neon",
-        "specs": "12V, IP65, ince flat profil",
+        "specs": "24V, IP67, 8W/m, ince flat profil",
         "img": "/images/products/4x8mm-flat-neon.png"
       },
       {
         "name": "4x10mm Flat Neon",
-        "specs": "12V, IP65, flat profil",
+        "specs": "24V, IP67, 8W/m, flat profil",
         "img": "/images/products/4x10mm-flat-neon.png"
       },
       {
         "name": "6x6mm Flat Neon",
-        "specs": "12V, IP65, kare flat profil",
+        "specs": "24V, IP67, 12W/m, kare flat profil",
         "img": "/images/products/6x6mm-flat-neon.webp"
       },
       {
         "name": "10x5mm Flat Neon",
-        "specs": "12V, IP65, yatık flat profil",
+        "specs": "24V, IP67, 11W/m, OSRAM 264 LED/mt",
         "img": "/images/products/10x5-flat-neon.png"
       },
       {
         "name": "10x6mm Flat Neon",
-        "specs": "12V, IP65, flat profil",
+        "specs": "24V, IP67, 9.6W/m, OSRAM çip",
         "img": "/images/products/10x6mm-flatneon-led.png"
       },
       {
         "name": "10x10mm Flat Neon",
-        "specs": "12V, IP65, geniş flat profil",
+        "specs": "12V/24V, IP67, 10W/m, geniş kare profil",
         "img": "/images/products/10x10-flat-neon.webp"
       },
       {
         "name": "20x14mm Flat Neon LED",
-        "specs": "24V, IP65, büyük flat profil",
+        "specs": "12V, IP67, 15.5W/m, büyük flat profil",
         "img": "/images/products/20x14mm-flat-neon-led.webp"
       },
       {
@@ -734,7 +763,7 @@
       },
       {
         "name": "13mm D-Shape Neon LED",
-        "specs": "12V, IP65, D kesit, yan aydınlatma",
+        "specs": "24V, IP67, 18W/m, 204 LED/mt, D kesit",
         "img": "/images/products/13mm-d-shape-neon-led.jpg"
       },
       {

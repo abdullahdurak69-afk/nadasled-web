@@ -75,7 +75,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Modül gücünü belirleyen şey harfin derinliği ile yüzeyin ışığı ne kadar yaydığıdır. Sığ harflerde yüksek güçlü modül, pleksi yüzeyde tek tek parlak noktalar bırakır — buna sahada \"benek\" denir. 1.5W modülün doğru yeri, ışığın yayılmak için yeterli mesafe bulduğu derin kutulardır: yaklaşık 8 cm ve üzeri. Daha sığ harflerde [0.72W ikili modül](/urunler/led-modul/0-72w-mercekli-ikili-modul-led-fortune-light) ya da 1.2W kademesi daha temiz sonuç verir.",
+          "Modül gücünü belirleyen şey harfin derinliği ile yüzeyin ışığı ne kadar yaydığıdır. Sığ harflerde yüksek güçlü modül, pleksi yüzeyde tek tek parlak noktalar bırakır — buna sahada \"benek\" denir. 1.5W modülün doğru yeri, ışığın yayılmak için yeterli mesafe bulduğu derin kutulardır: yaklaşık 8 cm ve üzeri. Daha sığ harflerde [0.72W ikili modül](/urunler/led-modul/0-72w-mercekli-ikili-modul-led-fortune-light/) ya da 1.2W kademesi daha temiz sonuç verir.",
       },
       {
         type: "p",
@@ -86,12 +86,12 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Modül adedini harf alanından çıkarırsınız: yaklaşık her 100 cm² için bir modül, kenarlardan 3-4 cm boşluk bırakarak. Adet belli olunca toplam güç doğrudan çarpımdır — 40 modül 60 watt eder. Trafoyu bu değerin %20-30 üstünden seçin; sürekli tepe yükte çalışan adaptörün ömrü belirgin biçimde kısalır. Hesabı elle yapmak yerine [kutu harf modül hesaplama aracını](/araclar/kutu-harf-modul-hesaplama) ve [trafo amper hesaplama aracını](/araclar/trafo-amper-hesaplama) kullanabilirsiniz.",
+          "Modül adedini harf alanından çıkarırsınız: yaklaşık her 100 cm² için bir modül, kenarlardan 3-4 cm boşluk bırakarak. Adet belli olunca toplam güç doğrudan çarpımdır — 40 modül 60 watt eder. Trafoyu bu değerin %20-30 üstünden seçin; sürekli tepe yükte çalışan adaptörün ömrü belirgin biçimde kısalır. Hesabı elle yapmak yerine [kutu harf modül hesaplama aracını](/araclar/kutu-harf-modul-hesaplama/) ve [trafo amper hesaplama aracını](/araclar/trafo-amper-hesaplama/) kullanabilirsiniz.",
       },
       {
         type: "p",
         text:
-          "Uzun harf dizilerinde tek besleme noktasından gitmeyin. 12V hatlarda kablo üzerinde voltaj düşümü olur ve hattın sonundaki modüller gözle görülür biçimde sönük kalır; konu ayrıntılı olarak [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu) yazısında anlatılıyor, aynı fizik modüller için de geçerlidir.",
+          "Uzun harf dizilerinde tek besleme noktasından gitmeyin. 12V hatlarda kablo üzerinde voltaj düşümü olur ve hattın sonundaki modüller gözle görülür biçimde sönük kalır; konu ayrıntılı olarak [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında anlatılıyor, aynı fizik modüller için de geçerlidir.",
       },
       { type: "h2", text: "Fortune Plus ile Fortune Light farkı" },
       {
@@ -153,7 +153,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Köşelerde ve dar dönüşlerde modül aralığını sıklaştırmak yerine modülü köşeye açıyla yerleştirin. Aralığı sıklaştırmak o bölgede ısıyı ve tüketimi artırır, ışığı ise beklendiği kadar düzeltmez. Ayrıntı için [kutu harf için LED modül seçimi](/blog/kutu-harf-icin-led-modul-secimi) rehberine bakabilirsiniz.",
+          "Köşelerde ve dar dönüşlerde modül aralığını sıklaştırmak yerine modülü köşeye açıyla yerleştirin. Aralığı sıklaştırmak o bölgede ısıyı ve tüketimi artırır, ışığı ise beklendiği kadar düzeltmez. Ayrıntı için [kutu harf için LED modül seçimi](/blog/kutu-harf-icin-led-modul-secimi/) rehberine bakabilirsiniz.",
       },
       { type: "h2", text: "Light serisi hangi işlerde yeter" },
       {
@@ -167,7 +167,7 @@ export const items: ItemPage[] = [
       { q: "Kaç modül bir arada seri bağlanabilir?", a: "Üretici zincir sınırı tipik olarak 20-25 modüldür. Daha uzun hatlarda ikinci besleme çekin, yoksa hattın sonu sönük kalır." },
       { q: "Fortune Light dış mekanda kullanılır mı?", a: "Kullanılır, IP65'tir. Ancak sürekli doğrudan güneş alan cephelerde Fortune Plus serisi zaman içinde renk kararlılığını daha iyi korur." },
       { q: "Modülü pleksiye yapıştırabilir miyim?", a: "Modül harfin arka yüzeyine yapıştırılır, ışığın çıktığı ön pleksiye değil. Yapıştırma bandı yüzey tozdan ve yağdan arındırılmadan tutmaz." },
-      { q: "12V trafo dışında bir şey gerekir mi?", a: "Tek renk modülde hayır. Yalnızca uygun watt değerinde bir [LED trafo](/urunler/trafo-led-surucu) ve besleme kablosu yeterlidir." },
+      { q: "12V trafo dışında bir şey gerekir mi?", a: "Tek renk modülde hayır. Yalnızca uygun watt değerinde bir [LED trafo](/urunler/trafo-led-surucu/) ve besleme kablosu yeterlidir." },
     ],
     related: ["1-5w-modul-led-fortune-plus", "0-72w-mercekli-ikili-modul-led-fortune-light", "1-08w-samsung-modul-led"],
     img: "/images/products/1-2-watt-modul-led-fortune-light.png",
@@ -214,13 +214,13 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Genişliği 6-7 cm'nin altına inen harflerde büyük kasa modül fiziksel olarak sığmaz. İkili modülün kompakt kasası bu noktada tek pratik çözümdür; daha da darsa üçlü mini kasa modüllere ya da [kesit aydınlatma çözümlerine](/urunler/kesit-aydinlatma-led) geçilir.",
+          "Genişliği 6-7 cm'nin altına inen harflerde büyük kasa modül fiziksel olarak sığmaz. İkili modülün kompakt kasası bu noktada tek pratik çözümdür; daha da darsa üçlü mini kasa modüllere ya da [kesit aydınlatma çözümlerine](/urunler/kesit-aydinlatma-led/) geçilir.",
       },
       { type: "h2", text: "Trafo tarafı" },
       {
         type: "p",
         text:
-          "Modül başına güç düşük olduğu için aynı trafoya çok daha fazla modül bağlanabilir; buradaki sınır watt değil, zincir uzunluğu ve kablo kesitidir. Toplam yükü ve hattın kaça bölüneceğini [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) çıkarabilirsiniz.",
+          "Modül başına güç düşük olduğu için aynı trafoya çok daha fazla modül bağlanabilir; buradaki sınır watt değil, zincir uzunluğu ve kablo kesitidir. Toplam yükü ve hattın kaça bölüneceğini [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) çıkarabilirsiniz.",
       },
     ],
     faq: [
@@ -276,7 +276,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "1.08W kademesi güç olarak 1.2W ile hemen hemen aynı yerde durur; seçim güce göre değil, çipe göre yapılır. Renk hassasiyeti olmayan işlerde [1.2W Fortune Light](/urunler/led-modul/1-2w-modul-led-fortune-light) aynı işi daha uygun maliyetle görür.",
+          "1.08W kademesi güç olarak 1.2W ile hemen hemen aynı yerde durur; seçim güce göre değil, çipe göre yapılır. Renk hassasiyeti olmayan işlerde [1.2W Fortune Light](/urunler/led-modul/1-2w-modul-led-fortune-light/) aynı işi daha uygun maliyetle görür.",
       },
     ],
     faq: [
@@ -325,7 +325,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Bunun bedeli birim güçtür: 2.4W, modül kademeleri arasında yüksek bir değerdir ve trafo hesabını yukarı çeker. COB ile SMD arasındaki karşılaştırmanın tamamı [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit) yazısında; oradaki mantık modüller için de aynen geçerli.",
+          "Bunun bedeli birim güçtür: 2.4W, modül kademeleri arasında yüksek bir değerdir ve trafo hesabını yukarı çeker. COB ile SMD arasındaki karşılaştırmanın tamamı [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit/) yazısında; oradaki mantık modüller için de aynen geçerli.",
       },
       { type: "h2", text: "Nerede gereksiz" },
       {
@@ -381,7 +381,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "RGB modülün kablosu iki değil dört damardır; ortak besleme ile üç ayrı renk hattı. Bu yüzden doğrudan trafoya bağlanmaz, arada mutlaka bir [RGB kontrol ünitesi](/urunler/led-kontrol-uniteleri) bulunur. Bağlantı sırası önemlidir: hat üzerindeki tüm modüller aynı damar sırasıyla bağlanmazsa renkler harften harfe farklı çıkar.",
+          "RGB modülün kablosu iki değil dört damardır; ortak besleme ile üç ayrı renk hattı. Bu yüzden doğrudan trafoya bağlanmaz, arada mutlaka bir [RGB kontrol ünitesi](/urunler/led-kontrol-uniteleri/) bulunur. Bağlantı sırası önemlidir: hat üzerindeki tüm modüller aynı damar sırasıyla bağlanmazsa renkler harften harfe farklı çıkar.",
       },
       { type: "h2", text: "RGB mi, adreslenebilir pixel mi" },
       {
@@ -393,7 +393,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Kontrol ünitesinin amper sınırı çoğu zaman trafodan önce dolar. Toplam yükü hesaplayıp kontrolörün kanal başına akımına bakın; sınır aşılıyorsa araya bir RGB repeater konur. Kontrolör seçiminin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi) yazısında.",
+          "Kontrol ünitesinin amper sınırı çoğu zaman trafodan önce dolar. Toplam yükü hesaplayıp kontrolörün kanal başına akımına bakın; sınır aşılıyorsa araya bir RGB repeater konur. Kontrolör seçiminin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında.",
       },
       {
         type: "p",
@@ -455,7 +455,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Pratik başlangıç değeri: kasa derinliği kadar modül aralığı. 10 cm derinlikte 10-12 cm aralık, 15 cm derinlikte 15-18 cm aralık. Kasa sığlaştıkça aralık kısalmalıdır. Seçimin tamamı [light box LED seçimi](/blog/light-box-led-secimi) rehberinde, gereken modül adedini ise [kutu harf modül hesaplama aracıyla](/araclar/kutu-harf-modul-hesaplama) çıkarabilirsiniz.",
+          "Pratik başlangıç değeri: kasa derinliği kadar modül aralığı. 10 cm derinlikte 10-12 cm aralık, 15 cm derinlikte 15-18 cm aralık. Kasa sığlaştıkça aralık kısalmalıdır. Seçimin tamamı [light box LED seçimi](/blog/light-box-led-secimi/) rehberinde, gereken modül adedini ise [kutu harf modül hesaplama aracıyla](/araclar/kutu-harf-modul-hesaplama/) çıkarabilirsiniz.",
       },
       {
         type: "p",
@@ -464,7 +464,7 @@ export const items: ItemPage[] = [
       },
     ],
     faq: [
-      { q: "Işıklı kutuda modül mü, şerit mi daha iyi?", a: "Derin kutularda modül daha ekonomik ve daha homojendir. 5 cm altı sığ kutularda kenardan besleyen [LED bar](/urunler/zemin-aydinlatma-led) veya COB şerit daha iyi sonuç verir." },
+      { q: "Işıklı kutuda modül mü, şerit mi daha iyi?", a: "Derin kutularda modül daha ekonomik ve daha homojendir. 5 cm altı sığ kutularda kenardan besleyen [LED bar](/urunler/zemin-aydinlatma-led/) veya COB şerit daha iyi sonuç verir." },
       { q: "ECO seri dış mekanda dayanır mı?", a: "IP65 olduğu için yağmura dayanır. Doğrudan güneş alan totemlerde premium seri daha uzun süre renk kararlılığını korur." },
       { q: "Kaç watt trafo gerekir?", a: "Modül adedi × 1.5W toplam yüktür; üzerine %20-30 pay ekleyin. 60 modüllük bir pano 90W çeker, 120W trafo uygun olur." },
       { q: "Modüller yüzeyde daire daire görünüyor, ne yapmalı?", a: "Aralık kasanın derinliğine göre fazla açılmıştır. Aralığı kısaltın ya da difüzör kalınlığını artırın; gücü yükseltmek bu hatayı düzeltmez." },
@@ -516,19 +516,19 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Minimum bükme yarıçapına uyun; keskin köşeler bükülerek değil, iki parçanın uç uca eklenmesiyle oluşturulur. Montajın tamamı [neon flex seçim ve montaj](/blog/neon-flex-secim-ve-montaj) rehberinde adım adım anlatılıyor.",
+          "Minimum bükme yarıçapına uyun; keskin köşeler bükülerek değil, iki parçanın uç uca eklenmesiyle oluşturulur. Montajın tamamı [neon flex seçim ve montaj](/blog/neon-flex-secim-ve-montaj/) rehberinde adım adım anlatılıyor.",
       },
       { type: "h2", text: "Uçlar ve besleme" },
       {
         type: "p",
         text:
-          "Her kesim iki açık uç bırakır. Besleme ucuna başlangıç aparatı, serbest uca silikon kapak takılır ve ikisi de yapıştırıcı ile sızdırmaz hâle getirilir. Kapatılmamış uç, IP65 ürünü dış mekanda birkaç ay içinde bitirir. Aparatlar ve neon yapıştırıcısı [neon LED kategorisinde](/urunler/neon-led) listelidir.",
+          "Her kesim iki açık uç bırakır. Besleme ucuna başlangıç aparatı, serbest uca silikon kapak takılır ve ikisi de yapıştırıcı ile sızdırmaz hâle getirilir. Kapatılmamış uç, IP65 ürünü dış mekanda birkaç ay içinde bitirir. Aparatlar ve neon yapıştırıcısı [neon LED kategorisinde](/urunler/neon-led/) listelidir.",
       },
     ],
     faq: [
       { q: "Neon LED istediğim yerden kesilir mi?", a: "Hayır, yalnızca üzerinde işaretli kesim noktalarından. Bu üründe işaretler 1 cm aralıklıdır; arada kesmek o segmenti söndürür." },
       { q: "Bir hatta kaç metre neon bağlanabilir?", a: "12V üründe tek besleme ile 5 metre pratik sınırdır. Daha uzun hatlarda sonda gözle görülür sönüklük olur; hattı ortadan ya da iki uçtan besleyin." },
-      { q: "Kaç watt trafo gerekir?", a: "Metre başına watt değerini metrajla çarpıp %20 pay ekleyin. Metrajdan trafoyu doğrudan [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) çıkarabilirsiniz." },
+      { q: "Kaç watt trafo gerekir?", a: "Metre başına watt değerini metrajla çarpıp %20 pay ekleyin. Metrajdan trafoyu doğrudan [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) çıkarabilirsiniz." },
       { q: "6x12mm ile 8x16mm arasında nasıl seçim yapılır?", a: "6x12mm dar yazılar ve iç mekan için, 8x16mm daha kalın hat ve daha yüksek parlaklık gerektiren dış mekan işleri için uygundur." },
       { q: "Silikon neon dış mekanda kaç yıl dayanır?", a: "Uçları düzgün kapatılmış ve payla seçilmiş trafoyla beslenen bir hat tipik olarak yıllarca sorunsuz çalışır. Erken arızaların büyük çoğunluğu açık uçtan ve ters bükmeden kaynaklanır." },
     ],
@@ -571,13 +571,18 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "12V ve 24V arasındaki tercihin tabela işlerindeki karşılığı [12V mu 24V mu](/blog/12v-mu-24v-mu-tabela-aydinlatma) yazısında ayrıntılı olarak karşılaştırılıyor.",
+          "12V ve 24V arasındaki tercihin tabela işlerindeki karşılığı [12V mu 24V mu](/blog/12v-mu-24v-mu-tabela-aydinlatma/) yazısında ayrıntılı olarak karşılaştırılıyor.",
       },
       { type: "h2", text: "Kalın kesit ne kazandırır" },
       {
         type: "p",
         text:
           "8x16mm profil, ince modellere göre hem daha kalın bir ışık hattı hem daha sağlam bir gövde verir. Yüksekten ve uzaktan okunacak yazılarda ince hat kaybolur; bu ölçü uzaktan da dolgun görünür. Karşılığında minimum bükme yarıçapı büyür, yani çok küçük puntolu ve kıvrımlı el yazılarına uygun değildir — orada 6x12mm tercih edilir.",
+      },
+      {
+        type: "p",
+        text:
+          "Kalın kesit arayışı 8x16 ile sınırlı değil: yarım daire kesitli [13mm D-Shape neon](/urunler/neon-led/13mm-d-shape-neon-led/) metrede 1750 lümenle bu ailenin en parlağıdır ve düz tabanı sayesinde yüzeye tam oturur. Aynı ışık yüzünü daha alçak profilde isteyen işlerde ise [10x5 flat neon](/urunler/neon-led/10x5mm-flat-neon/) kullanılır.",
       },
       { type: "h2", text: "Montaj ve sabitleme" },
       {
@@ -589,7 +594,7 @@ export const items: ItemPage[] = [
     faq: [
       { q: "24V neon 12V trafoyla çalışır mı?", a: "Çalışmaz — çok sönük yanar ya da hiç yanmaz. 24V ürün mutlaka 24V trafo ile beslenir." },
       { q: "Aynı işte 12V ve 24V neon karıştırılabilir mi?", a: "Aynı hatta asla. Ayrı hatlar ve ayrı trafolarla aynı tabelada kullanılabilir, ancak parlaklık farkı gözle seçilebileceği için önerilmez." },
-      { q: "Hat sonunda sönüklük olursa ne yapmalı?", a: "Hattı iki uçtan besleyin veya ortadan besleyerek iki kola bölün. Kablo kesitini artırmak da kaybı düşürür; ayrıntısı [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu) yazısında." },
+      { q: "Hat sonunda sönüklük olursa ne yapmalı?", a: "Hattı iki uçtan besleyin veya ortadan besleyerek iki kola bölün. Kablo kesitini artırmak da kaybı düşürür; ayrıntısı [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında." },
       { q: "Dış mekanda hangi trafo kullanılmalı?", a: "IP67 metal kasa ya da yağmur korumalı epoksili bir adaptör. İç mekan tipi ultra slim adaptörler dış mekanda kısa sürede arızalanır." },
       { q: "8x16mm profil ne kadar bükülür?", a: "Üreticinin verdiği minimum yarıçapa uyun; tipik olarak 6x12mm'den belirgin biçimde büyüktür. Keskin dönüşleri bükerek değil, kesip ekleyerek yapın." },
     ],
@@ -601,24 +606,34 @@ export const items: ItemPage[] = [
     slug: "10x10mm-flat-neon",
     categorySlug: "neon-led",
     name: "10x10mm Flat Neon",
-    metaTitle: "10x10mm Flat Neon LED | Geniş Profil Neon Şerit",
+    metaTitle: "10x10mm Flat Neon LED 12V/24V IP67 | Kare Kesit",
     metaDesc:
-      "10x10mm flat neon LED: 12V, IP65, geniş kare profil ile dolgun ve düz ışık hattı. Kontur, çerçeve ve cephe aydınlatması için toptan fiyat.",
-    keywords: ["10x10mm flat neon", "flat neon led", "kare neon profil", "neon kontur aydınlatma", "geniş neon şerit"],
-    h1: "10x10mm Flat Neon LED",
+      "10x10mm flat neon LED: 12V ve 24V, IP67, 10W/m, çift katmanlı silikon difüzör, 14 tek renk + RGB + Pixel. Kare kesit, 3 yıl garanti. Toptan fiyat.",
+    keywords: ["10x10mm flat neon", "flat neon led", "kare neon profil", "12v 24v neon led", "ip67 flat neon", "geniş neon şerit"],
+    h1: "10x10mm Flat Neon LED — 12V/24V IP67",
     intro:
-      "Kare kesitli, geniş yüzeyli 12V IP65 flat neon. Yuvarlak profillerden farklı olarak ışığı tek bir düz yüzden verir; düz hatların ve çerçevelerin keskin görünmesi gerektiği işlerde kullanılır.",
+      "Kare kesitli, geniş yüzeyli flat neon. 12V ve 24V seçenekleri, IP67 koruma ve %100 silikon çift katmanlı difüzör ile 400±50 lümen verir. Işığı tek bir düz yüzden verdiği için düz hatların ve çerçevelerin keskin görünmesi gereken işlerde kullanılır.",
     specs: [
-      ["Kesit", "10 × 10 mm"],
-      ["Besleme", "12V DC"],
-      ["Koruma sınıfı", "IP65"],
+      ["Kesit", "10 × 10 mm — kare"],
+      ["Besleme", "12V DC ve 24V DC seçenekleri"],
+      ["Güç", "10 W / metre"],
+      ["Çip", "SMD 2835"],
+      ["Işık akısı", "400 ± 50 lm / metre"],
+      ["Koruma sınıfı", "IP67 — iç ve dış mekan"],
+      ["Gövde", "%100 silikon, çift katmanlı difüzör"],
       ["Profil", "Flat — geniş ışık yüzü"],
       ["Montaj", "Yapıştırma, klips veya alüminyum kanal"],
+      ["Renk seçenekleri", "15 tek renk + RGB + Pixel"],
+      ["Ömür", "30.000 saat"],
+      ["Garanti", "3 yıl"],
+      ["Seri", "Neo Plus"],
+      ["Ürün kodu", "NLF05002410P01 – P15 / PRGB / PPXL"],
     ],
     useCases: [
       "Bina ve tabela konturu aydınlatması",
       "Çerçeve ve bordür hatları",
       "Düz ve geometrik neon yazılar",
+      "Mobilya gömme ve alüminyum kanal içi hatlar",
       "Raf altı ve niş dekoratif aydınlatma",
     ],
     blocks: [
@@ -626,13 +641,35 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Yuvarlak profil ışığı geniş bir yay boyunca dağıtır; uzaktan yumuşak, yakından biraz belirsiz bir hat verir. Flat profilde ışık düz bir yüzeyden çıkar ve hattın kenarları keskin okunur. Mimari konturlarda, çerçevelerde ve geometrik yazılarda tercih edilme sebebi budur: çizgi çizgi durur, dağılmaz.",
+          "Yuvarlak profil ışığı geniş bir yay boyunca dağıtır; uzaktan yumuşak, yakından biraz belirsiz bir hat verir. Flat profilde ışık düz bir yüzeyden çıkar ve hattın kenarları keskin okunur. Mimari konturlarda, çerçevelerde ve geometrik yazılarda tercih edilme sebebi budur: çizgi çizgi durur, dağılmaz. Yuvarlak ve dolgun bir görüntü isteniyorsa [13mm D-Shape neon](/urunler/neon-led/13mm-d-shape-neon-led/) tarafına bakın.",
       },
-      { type: "h2", text: "10x10 mm ölçüsünün yeri" },
+      { type: "h2", text: "Kare kesitin yeri" },
       {
         type: "p",
         text:
-          "Flat neon ailesinde 4x8, 6x6, 10x5 gibi daha ince kesitler de vardır ve onlar dar kanallara girer. 10x10mm bu ailenin geniş ucudur: uzaktan görünecek kadar dolgun bir hat verir ama hâlâ 12V'tur, yani kısa ve orta hatlarda ek trafo altyapısı gerektirmez. Uzun cephelerde 20x14mm 24V modele geçilir.",
+          "Flat neon ailesinde 4x8, 6x6 ve 10x5 gibi daha ince kesitler de vardır. 10x10 mm bu ailenin kare ucudur: 10 mm ışık yüzü uzaktan görünecek kadar dolgun bir hat verir, 1:1 oranı da alüminyum kanal ve mobilya frezesine tam oturur. Montaj derinliği sorun oluyorsa aynı ışık yüzünü 5 mm yükseklikte veren [10x5 flat neon](/urunler/neon-led/10x5mm-flat-neon/) daha uygundur.",
+      },
+      { type: "h2", text: "12V mi 24V mi" },
+      {
+        type: "p",
+        text:
+          "Bu ürünün iki besleme seçeneği vardır ve seçim metrajla belirlenir. 12V kademesinde kesintisiz hat pratikte 5 metrede biter; 24V'ta aynı kesit kaybı 10 metreye kadar taşınır. Kısa harf ve vitrin işlerinde 12V yeterlidir ve elde bulunan trafolarla uyumludur; uzun cephe hatlarında 24V seçmek besleme noktası sayısını yarıya indirir. Gerekçesi [12V mi 24V mi](/blog/12v-mu-24v-mu-tabela-aydinlatma/) yazısında.",
+      },
+      {
+        type: "p",
+        text:
+          "Sipariş verirken hangi kademeyi aldığınızı not edin. 24V ürünü 12V trafoya bağlamak sönük ve renk kaymış bir hat verir; ürün arızalı sanılıp değiştirilir, yeni parça da aynı sonucu doğurur.",
+      },
+      { type: "h2", text: "IP67 ve çift katmanlı difüzör" },
+      {
+        type: "p",
+        text:
+          "Gövde %100 silikondur ve çift katmanlı difüzör taşır: alt katman ışığı dağıtır, üst katman dışa karşı korur. IP67, geçici olarak suya batmaya karşı korumadır — IP65 yalnızca püskürtme suya dayanır. Cephede ve yağmurun biriktiği yatay yüzeylerde fark doğrudan arıza süresine yansır; sınıfların karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında.",
+      },
+      {
+        type: "p",
+        text:
+          "Koruma gövdeye aittir, kesilen uca değil. Her uç silikon kapak ve yapıştırıcı ile kapatılır, kablo giriş noktası ayrıca sızdırmaz hâle getirilir. Açık bırakılan tek bir uç, içeri ilerleyen nemle parçanın tamamını bitirir.",
       },
       { type: "h2", text: "Aparatlar ürüne özeldir" },
       {
@@ -645,17 +682,31 @@ export const items: ItemPage[] = [
         text:
           "Düz uzun hatlarda 10 mm alüminyum kanal hem hizayı tutar hem ısıyı alır. Kavisli işlerde kanal kullanılmaz, klips ve yapıştırıcı ile ilerlenir.",
       },
+      { type: "h2", text: "Renk seçimi ve trafo" },
+      {
+        type: "p",
+        text:
+          "15 tek renk, RGB ve Pixel seçenekleri vardır. Tabela ve mimari işlerde 6500K soğuk beyaz ile 3000K gün ışığı standarttır; dekoratif hatlarda mor, buz mavisi ve maldiv yeşili sık kullanılır. Tek renk modeller kontrol ünitesi gerektirmez ve RGB'ye göre daha parlaktır.",
+      },
+      {
+        type: "p",
+        text:
+          "Hesap metre başına 10 W üzerinden yürür: 20 metrelik hat 200 W eder, %25 pay ile 250 W trafo uygundur. Kendi metrajınız için [trafo amper hesaplama aracını](/araclar/trafo-amper-hesaplama/) kullanın; trafo dışarıda kalacaksa [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) tercih edin.",
+      },
     ],
     faq: [
       { q: "Flat neon hangi yöne bükülür?", a: "Işık yüzeyinin düzlemi boyunca bükülür. Işık yüzüne dik yönde zorlamak devre kartını çatlatır." },
-      { q: "10x10mm flat neon kaç metre tek beslenir?", a: "12V olduğu için pratik sınır yaklaşık 5 metredir. Daha uzun hatlarda iki uçtan besleyin." },
-      { q: "Flat neon dış mekanda kullanılır mı?", a: "IP65 olduğu için kullanılır. Uçların kapatılması ve dış mekan tipi bir trafo şarttır." },
+      { q: "10x10mm flat neon kaç metre tek beslenir?", a: "12V kademesinde pratik sınır yaklaşık 5 metre, 24V kademesinde 10 metredir. Daha uzun hatlarda iki uçtan besleyin." },
+      { q: "12V mi 24V mi almalıyım?", a: "Kısa harf ve vitrin işlerinde 12V yeterlidir. Uzun cephe hatlarında 24V seçmek besleme noktası sayısını yarıya indirir." },
+      { q: "Flat neon dış mekanda kullanılır mı?", a: "IP67 olduğu için kullanılır. Uçların kapatılması ve dış mekan tipi bir trafo şarttır." },
       { q: "Kanal kullanmak zorunlu mu?", a: "Zorunlu değil ama düz uzun hatlarda hizanın yıllarca bozulmaması için önerilir. Kavisli işlerde kanal kullanılmaz." },
       { q: "Aparatları başka neonla ortak kullanabilir miyim?", a: "Hayır. Bağlantı aparatları ve uç kapakları kesit ölçüsüne özeldir; farklı ölçüye takılan aparat sızdırmazlığı sağlamaz." },
+      { q: "10x10 mu 10x5 mi?", a: "İkisinin de ışık yüzü 10 mm'dir. 10x10 kare kesittir ve 10 mm montaj derinliği ister; 10x5 aynı görünümü 5 mm yükseklikte verir ve dar kanala girer." },
+      { q: "Garanti süresi nedir?", a: "Üretici 30.000 saat ömür ve 3 yıl garanti belirtir. Kesilen uçların kurallara göre kapatılmamasından doğan su hasarı kapsam dışıdır." },
     ],
-    related: ["6x12mm-silikon-neon-led-1cm", "8x16mm-neon-led-24v", "220v-neon-led"],
+    related: ["10x5mm-flat-neon", "13mm-d-shape-neon-led", "8x16mm-neon-led-24v"],
     img: "/images/products/10x10-flat-neon.webp",
-    updated: "2026-09-02",
+    updated: "2026-09-08",
   },
   {
     slug: "220v-neon-led",
@@ -699,7 +750,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "220V neon tipik olarak 1 metrede bir kesilir. Yani hattınız 6.4 metre ise 7 metre kullanırsınız; ara ölçüler mümkün değildir. Harf ve yazı işleri bu yüzden 220V ile yapılmaz, bu ürün düz ve uzun hatlar içindir. Ölçüye tam oturması gereken işlerde [6x12mm 1 cm kesim neon](/urunler/neon-led/6x12mm-silikon-neon-led-1cm) tercih edilir.",
+          "220V neon tipik olarak 1 metrede bir kesilir. Yani hattınız 6.4 metre ise 7 metre kullanırsınız; ara ölçüler mümkün değildir. Harf ve yazı işleri bu yüzden 220V ile yapılmaz, bu ürün düz ve uzun hatlar içindir. Ölçüye tam oturması gereken işlerde [6x12mm 1 cm kesim neon](/urunler/neon-led/6x12mm-silikon-neon-led-1cm/) tercih edilir.",
       },
     ],
     faq: [
@@ -759,7 +810,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Bükme ve kesim kuralları diğer silikon neonlarla aynıdır; ayrıntısı [neon flex seçim ve montaj](/blog/neon-flex-secim-ve-montaj) rehberinde.",
+          "Bükme ve kesim kuralları diğer silikon neonlarla aynıdır; ayrıntısı [neon flex seçim ve montaj](/blog/neon-flex-secim-ve-montaj/) rehberinde.",
       },
     ],
     faq: [
@@ -767,11 +818,240 @@ export const items: ItemPage[] = [
       { q: "Tek yüzlü neondan daha mı çok elektrik çeker?", a: "Aynı parlaklıkta daha fazla çeker, çünkü ışığı geniş bir alana yayar. Trafo seçimini ürünün kendi metre/watt değerine göre yapın." },
       { q: "Şeffaf pano üzerinde nasıl sabitlenir?", a: "Şeffaf klipsler veya delik açılıp geçirilen montaj noktaları kullanılır. Yapıştırıcı şeffaf yüzeyde görünür iz bırakır." },
       { q: "Dış mekanda kullanılır mı?", a: "IP65 olduğu için kullanılır; asılı dış mekan işlerinde rüzgâr yükünü taşıyacak bir taşıyıcı tel gerekir." },
-      { q: "RGB seçeneği var mı?", a: "Tek renk modeller yaygındır. Renk değişimi isteniyorsa RGB neon modellerine ve bir [kontrol ünitesine](/urunler/led-kontrol-uniteleri) geçmek gerekir." },
+      { q: "RGB seçeneği var mı?", a: "Tek renk modeller yaygındır. Renk değişimi isteniyorsa RGB neon modellerine ve bir [kontrol ünitesine](/urunler/led-kontrol-uniteleri/) geçmek gerekir." },
     ],
     related: ["6x12mm-silikon-neon-led-1cm", "10x10mm-flat-neon", "8x16mm-neon-led-24v"],
     img: "/images/products/360-neon-led.webp",
     updated: "2026-09-02",
+  },
+  {
+    slug: "10x5mm-flat-neon",
+    categorySlug: "neon-led",
+    name: "10x5mm Flat Neon",
+    metaTitle: "10x5 Flat Neon LED 24V IP67 | OSRAM 264 LED/mt",
+    metaDesc:
+      "10x5mm flat neon LED: 24V, IP67, OSRAM SMD 2835, metrede 264 LED ve 820 lümen. Alçak profil, 14 tek renk + RGB. Toptan fiyat, aynı gün kargo.",
+    keywords: ["10x5mm flat neon", "10x5 flat neon led", "24v flat neon led", "ip67 neon led", "osram neon led", "alçak profil neon led"],
+    h1: "10x5 Flat Neon LED — 24V IP67",
+    intro:
+      "10 mm ışık yüzü, 5 mm montaj yüksekliği. Flat neon ailesinin en alçak profilli üyesi: 24V DC, IP67 ve metrede 264 OSRAM SMD 2835 çip ile 820 lümen verir. Dar kanala giren ama ince görünmeyen hat isteyen işlerin ölçüsüdür.",
+    specs: [
+      ["Kesit", "10 × 5 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "11 W / metre"],
+      ["LED yoğunluğu", "264 LED / metre"],
+      ["Çip", "OSRAM SMD 2835"],
+      ["Işık akısı", "820 lm / metre"],
+      ["Koruma sınıfı", "IP67 — iç ve dış mekan"],
+      ["Gövde", "%100 silikon, esnek"],
+      ["Büküm yönü", "Üstten (top bend)"],
+      ["Renk seçenekleri", "14 tek renk + RGB + Pixel"],
+      ["Seri", "Neo Plus"],
+      ["Ürün kodu", "NLF05002405P02 – P15 / PRGB / PPXL"],
+    ],
+    useCases: [
+      "5 mm derinlik bırakılabilen dar kanal ve niş işleri",
+      "Raf altı, tezgah altı ve vitrin çerçevesi hatları",
+      "Kutu harf konturu ve ince çerçeve aydınlatması",
+      "Mobilya frezesine gömülen dekoratif hatlar",
+      "Cephe üzerinde ince ama okunur çizgi istenen işler",
+    ],
+    blocks: [
+      { type: "h2", text: "Yatık kesitin işe yaradığı yer" },
+      {
+        type: "p",
+        text:
+          "10 mm genişlik, 5 mm yükseklik. Bu oran flat neon ailesinde özel bir yer tutar: ışık yüzü 10 mm kalırken profil yüksekliği yarıya iner. Pratikte şu demektir — hat dışarıdan bakınca dolgun görünür, ama montaj için gereken derinlik yarı yarıya azalır. 5 mm boşluk bırakabildiğiniz her yere girer.",
+      },
+      {
+        type: "p",
+        text:
+          "Seçim genellikle üç ölçü arasında yapılır. [10x10mm flat neon](/urunler/neon-led/10x10mm-flat-neon/) kare kesittir, hat kalın ve uzaktan okunur ama 10 mm derinlik ister. 4x8 ve 6x6 gibi ince kesitler dar kanala girer ama yakından bakıldığında hat cılız kalır. 10x5, aradaki boşluğu doldurur: görünen kalınlık 10 mm, harcanan derinlik 5 mm.",
+      },
+      { type: "h2", text: "24V olması ne değiştirir" },
+      {
+        type: "p",
+        text:
+          "Bu ürün 24V DC'dir ve bu, metrajı doğrudan etkiler. 12V serilerde kesintisiz hat pratikte 5 metrede biter; 24V'ta aynı kesit kaybı 10 metreye kadar taşınır. Uzun cephede besleme noktası sayısı yarıya iner — daha az kablo, daha az kanal, daha az işçilik. Voltaj tercihinin gerekçesi [12V mi 24V mi](/blog/12v-mu-24v-mu-tabela-aydinlatma/) yazısında ayrıntılı.",
+      },
+      {
+        type: "p",
+        text:
+          "Sahada en sık yapılan hata, 24V neonu elde kalan 12V trafoya bağlamaktır. Ürün yanar ama sönük ve renk kayar; arıza sanılıp değiştirilir, yeni parça da aynı sonucu verir. Trafo etiketini hattı çekmeden önce okuyun.",
+      },
+      { type: "h2", text: "264 LED ve 820 lümen ne anlatıyor" },
+      {
+        type: "p",
+        text:
+          "Metrede 264 adet SMD 2835 çip, noktaların ayırt edilmeyeceği kadar sık bir dizilimdir; silikon difüzörle birleşince hat kesintisiz okunur. 820 lümen/metre ise bu kesit için yüksek bir değerdir: gündüz ışığında bile çalışan tabelalarda ve gün ışığı alan vitrinlerde hattın kaybolmamasını sağlayan şey budur.",
+      },
+      {
+        type: "p",
+        text:
+          "Çipin OSRAM olması ayrı bir başlık. Beyaz LED'lerde renk sıcaklığı üretim partisine göre küçük farklar gösterir; marka çipte bu tolerans dardır. İşi bölerek almanız gerekiyorsa ya da sonradan hat uzatacaksanız, aynı seriden ve mümkünse aynı partiden istemek renk tutmasını sağlar.",
+      },
+      { type: "h2", text: "IP67'nin IP65'ten farkı" },
+      {
+        type: "p",
+        text:
+          "Gövde %100 silikondur ve LED şeridi tam kapatır: IP67, geçici olarak suya batmaya karşı korumadır; IP65 yalnızca püskürtme suya dayanır. Cephede, saçak altında ve yağmurun biriktiği yatay yüzeylerde aradaki fark doğrudan arıza süresine yansır. Sınıfların tam karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında.",
+      },
+      {
+        type: "p",
+        text:
+          "Koruma gövdeye aittir, kesilen uca değil. Dış mekan neon arızalarının büyük kısmı açık bırakılmış uçtan başlar: içeri giren nem şerit boyunca ilerler ve parçanın tamamını bitirir. Her uç silikon kapak ve yapıştırıcı ile kapatılır, kablo giriş noktası ayrıca sızdırmaz hâle getirilir.",
+      },
+      { type: "h2", text: "Renk seçimi: 14 tek renk, RGB ve Pixel" },
+      {
+        type: "p",
+        text:
+          "Beyaz tonları (6500K soğuk beyaz, 4000K nötr, 3000K gün ışığı) tabela ve mimari işlerin standardıdır. Kırmızı, yeşil, mavi, buz mavisi, mor, pembe, turuncu ve altın sarısı gibi tek renkler dekoratif hatlarda kullanılır — tek renk modeller RGB'ye göre daha parlaktır ve kontrol ünitesi gerektirmez.",
+      },
+      {
+        type: "p",
+        text:
+          "Renk değişimi isteniyorsa RGB, akan ve dalgalanan efektler isteniyorsa Pixel modele geçilir; ikisi de ayrı bir kontrol ünitesi ister. Seçimin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında, uygun modeller [LED kontrol üniteleri](/urunler/led-kontrol-uniteleri/) kategorisinde.",
+      },
+      { type: "h2", text: "Kaç metre, hangi trafo" },
+      {
+        type: "p",
+        text:
+          "Hesap metre başına 11 W üzerinden yürür. 20 metrelik bir hat 220 W çeker; trafo hiçbir zaman tam yükte çalıştırılmaz, %25 pay eklenip 24V 300 W'a çıkılır. Kendi metrajınız için [trafo amper hesaplama aracını](/araclar/trafo-amper-hesaplama/) kullanabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "Trafo dışarıda kalacaksa şeridin IP sınıfı tek başına yetmez — arıza çoğu zaman şeritten değil beslemeden gelir. Dış ortamda [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) veya epoksili bir model kullanın.",
+      },
+    ],
+    faq: [
+      { q: "10x5 flat neon kaç metre tek beslenir?", a: "24V olduğu için pratik sınır yaklaşık 10 metredir. Daha uzun hatlarda iki uçtan besleyin veya hattı ayrı trafo çıkışlarına bölün." },
+      { q: "12V trafoya bağlanır mı?", a: "Hayır. Bu ürün 24V DC içindir. 12V ile sönük yanar ve renk kayar; ürün arızalı sanılır." },
+      { q: "Nereden kesilir?", a: "Yalnızca gövde üzerindeki işaretli noktalardan. Kesilen uç mutlaka silikon kapak ve yapıştırıcı ile kapatılmalıdır." },
+      { q: "10x5 mi 10x6 mı almalıyım?", a: "İkisi de 24V ve IP67'dir. 10x5 daha alçak profilli ve metrede 11 W ile daha parlaktır; 10x6 biraz daha yüksek gövdeli ve 9,6 W ile daha düşük çekişlidir." },
+      { q: "Hangi yöne bükülür?", a: "Üstten büküm (top bend) yapısındadır: ışık yüzeyinin düzlemi boyunca bükülür. Işık yüzüne dik yönde zorlamak devre kartını çatlatır." },
+      { q: "Dış mekanda kullanılır mı?", a: "IP67 olduğu için kullanılır. Uçların kapatılmış olması ve dış mekan tipi bir trafo kullanılması şarttır." },
+      { q: "OSRAM çip farkı nedir?", a: "Üretim toleransı dardır. Beyaz tonlarda partiler arası renk sapması daha azdır; hattı sonradan uzatacaksanız renk tutma ihtimali yüksektir." },
+      { q: "RGB ve Pixel modeli var mı?", a: "Var. RGB tüm hattı aynı anda tek renge boyar, Pixel ise adreslenebilir olduğu için akan efekt yapar. İkisi de uyumlu bir kontrol ünitesi gerektirir." },
+    ],
+    related: ["10x10mm-flat-neon", "13mm-d-shape-neon-led", "6x12mm-silikon-neon-led-1cm"],
+    img: "/images/products/10x5-flat-neon.png",
+    updated: "2026-09-08",
+  },
+  {
+    slug: "13mm-d-shape-neon-led",
+    categorySlug: "neon-led",
+    name: "13mm D-Shape Neon LED",
+    metaTitle: "13mm D-Shape Neon LED 24V IP67 | 204 LED/mt",
+    metaDesc:
+      "13mm D-Shape neon LED: 24V, IP67, 18W/m, metrede 204 LED ve 1750 lümen, 120° ışık açısı. Yarım daire kesit, 14 tek renk + RGB. Toptan fiyat.",
+    keywords: ["13mm d-shape neon led", "d shape neon led", "d kesit neon led", "24v neon led ip67", "yüksek lümen neon led", "kalın neon led"],
+    h1: "13mm D-Shape Neon LED — 24V IP67",
+    intro:
+      "Düz tabanlı, kubbe yüzeyli 13 mm neon. 24V DC, IP67 ve metrede 204 SMD 2835 çip ile 1750 lümen verir — flat serilerin iki katına yakın ışık. Uzaktan okunması gereken kalın hat isteyen işlerin ürünüdür.",
+    specs: [
+      ["Kesit", "13 mm D — düz taban, kubbe yüz"],
+      ["Besleme", "24V DC"],
+      ["Güç", "18 W / metre"],
+      ["LED yoğunluğu", "204 LED / metre"],
+      ["Çip", "SMD 2835"],
+      ["Işık akısı", "1750 lm / metre"],
+      ["Işık açısı", "120°"],
+      ["Koruma sınıfı", "IP67 — iç ve dış mekan"],
+      ["Gövde", "%100 silikon, esnek"],
+      ["Montaj", "Düz arka yüz — yapıştırma, klips veya kanal"],
+      ["Renk seçenekleri", "14 tek renk + RGB + Pixel"],
+      ["Seri", "Neo Plus"],
+      ["Ürün kodu", "NLFD05002413P01 – P15 / PRGB / PPXL"],
+    ],
+    useCases: [
+      "Bina ve çatı konturu — uzaktan okunacak hatlar",
+      "Mimari cephe ve saçak altı aydınlatması",
+      "Büyük ölçekli neon yazı ve logo işleri",
+      "Otel, AVM ve restoran dış cephe vurguları",
+      "Peyzaj ve bahçe kontur hatları",
+    ],
+    blocks: [
+      { type: "h2", text: "D kesit ne demek, ne kazandırır" },
+      {
+        type: "p",
+        text:
+          "D-Shape, kesiti yarım daireye benzeyen profildir: taban düz, ışık yüzü kubbe. Düz taban montajı kolaylaştırır — yüzeye tam oturur, yapıştırma ve klips hizası kendiliğinden tutar. Kubbe yüz ise ışığı 120°'lik geniş bir yaya dağıtır; hat hangi açıdan bakılırsa bakılsın dolgun görünür.",
+      },
+      {
+        type: "p",
+        text:
+          "Flat profillerle arasındaki fark tam burada. Flat neon ışığı düz bir yüzden verir; kenarları keskin, çizgisi net okunur, mimari detay vurgulamak için idealdir. D-Shape ise klasik cam neon görünümüne daha yakındır: hat yuvarlak ve yumuşak durur. Yazı ve logo işlerinde bu görüntü çoğu zaman aranan şeydir.",
+      },
+      { type: "h2", text: "1750 lümen: bu ailenin en parlağı" },
+      {
+        type: "p",
+        text:
+          "Metrede 1750 lümen, flat serilerin belirgin biçimde üzerindedir — [10x5 flat neon](/urunler/neon-led/10x5mm-flat-neon/) 820 lm, 10x10 model 400±50 lm verir. Fark, izleme mesafesinde ortaya çıkar: yüksek bir bina konturu ya da yol kenarındaki bir tabela, gündüz de okunması isteniyorsa bu seviyede bir çıkış ister.",
+      },
+      {
+        type: "p",
+        text:
+          "Bunun bedeli watt olarak ödenir. 18 W/m, kategorinin en yüksek çekişlerinden biridir ve trafo tarafını doğrudan büyütür. Yakından bakılan iç mekan hatlarında bu parlaklık gereksiz, hatta rahatsız edicidir; orada daha düşük watt'lı bir flat seri daha dengeli sonuç verir.",
+      },
+      { type: "h2", text: "Metraj ve besleme" },
+      {
+        type: "p",
+        text:
+          "10 metrelik bir D-Shape hattı 180 W çeker; %25 pay eklenince 24V 250 W trafo gerekir. Aynı metraj bir flat neonda 110 W civarındadır. Yani metraj planı yapılırken hem kesintisiz hat sınırı hem trafo bütçesi bu ürüne göre yeniden çıkarılmalıdır — [trafo amper hesaplama aracı](/araclar/trafo-amper-hesaplama/) bunu birkaç saniyede verir.",
+      },
+      {
+        type: "p",
+        text:
+          "Yüksek watt, kesintisiz hat sınırını da kısaltır. 24V olmasına rağmen hattın sonunda gözle görülür bir sönme başlıyorsa sebep neredeyse her zaman voltaj düşümüdür; çözüm hattı ikiye bölüp iki uçtan beslemektir. Konunun mekaniği [LED şeritte voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında.",
+      },
+      { type: "h2", text: "IP67 ve uç kapatma" },
+      {
+        type: "p",
+        text:
+          "IP67 silikon gövde, geçici su altında kalmaya karşı korur; yağmur, kar ve nem sorun değildir. Ancak koruma gövdeye aittir — kesilen uç çıplaktır. Dış mekanda ömrü belirleyen tek şey, uçların ve kablo giriş noktasının kurallara göre kapatılmış olmasıdır.",
+      },
+      {
+        type: "p",
+        text:
+          "Trafoyu da unutmayın: IP67 şeridi iç mekan tipi bir adaptörle beslemek, arızayı şeritten değil beslemeden getirir. Dış ortamda [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) veya [yağmur korumalı epoksili adaptör](/urunler/trafo-led-surucu/yagmur-korumali-epoksili-adaptor/) kullanın.",
+      },
+      { type: "h2", text: "Renk ve kontrol" },
+      {
+        type: "p",
+        text:
+          "14 tek renk, RGB ve Pixel seçenekleri vardır. Kontur ve cephe işlerinde en yaygın tercih 6500K soğuk beyaz ile 3000K gün ışığıdır; ahşap ve taş cephelerde gün ışığı, modern metal ve cam cephelerde soğuk beyaz daha oturur. Dekoratif işlerde mor, buz mavisi ve maldiv yeşili sık kullanılır.",
+      },
+      {
+        type: "p",
+        text:
+          "RGB ve Pixel modellerde yükün kontrolör kapasitesini aşmadığından emin olun: 18 W/m yüksek bir değerdir ve kanal başına amper sınırı çabuk dolar. Kapasite yetmiyorsa araya repeater girer.",
+      },
+      { type: "h2", text: "Kanal, klips ve sipariş kalemleri" },
+      {
+        type: "p",
+        text:
+          "Düz taban montajı kolaylaştırsa da uzun hatlarda tek başına yapıştırıcıya güvenmeyin: silikon gövde sıcaklık farkıyla çalışır ve zamanla yüzeyden ayrılır. Düz hatlarda alüminyum kanal, kavisli işlerde klips kullanılır — kanal hem hizayı yıllarca tutar hem 18 W/m'lik ısıyı alır.",
+      },
+      {
+        type: "p",
+        text:
+          "Metrajı çıkarırken kesim artıklarını ve köşe dönüşlerini hesaba katın. Bağlantı aparatları ve uç kapakları kesit ölçüsüne özeldir; hat metrajı kadar aparat adedini de aynı siparişte belirleyin. 24V trafo, uç kapağı, yapıştırıcı ve besleme kablosu eksik kaldığında hat çekilmiş olsa bile iş teslim edilemez.",
+      },
+    ],
+    faq: [
+      { q: "13mm D-Shape kaç metre tek beslenir?", a: "24V olmasına rağmen 18 W/m yüksek bir çekiştir; pratik sınır 8-10 metre civarındadır. Daha uzun hatlarda iki uçtan besleyin." },
+      { q: "D-Shape ile flat neon arasındaki fark nedir?", a: "D-Shape kubbe yüzlüdür, ışığı 120°'ye yayar ve klasik cam neon görünümüne yakındır. Flat düz yüzeylidir, hattın kenarları daha keskin okunur." },
+      { q: "Kaç watt trafo gerekir?", a: "Metre × 18 W hesaplanır, üzerine %25 pay eklenir. 10 metre için 24V 250 W uygundur." },
+      { q: "Düz taban montajı kolaylaştırır mı?", a: "Evet. Yüzeye tam oturduğu için yapıştırma ve klips hizası kendiliğinden tutar; ayrı bir kanal şart değildir." },
+      { q: "İç mekanda kullanılabilir mi?", a: "Kullanılabilir ama 1750 lümen yakın mesafede fazla parlaktır. İç mekan dekoratif hatlarda daha düşük watt'lı bir flat seri daha dengelidir." },
+      { q: "Suya batarsa ne olur?", a: "IP67 geçici daldırmaya karşı korumadır. Sürekli su altında kalacak uygulamalar için uygun değildir." },
+      { q: "Kesim aralığı ne kadar?", a: "Gövde üzerindeki işaretli noktalardan kesilir. Kesilen her uç silikon kapak ve yapıştırıcı ile kapatılmalıdır." },
+      { q: "Aparatları başka neonla ortak kullanabilir miyim?", a: "Hayır. Uç kapağı ve bağlantı aparatları kesit ölçüsüne özeldir; farklı ölçüye takılan aparat sızdırmazlığı sağlamaz." },
+    ],
+    related: ["10x10mm-flat-neon", "10x5mm-flat-neon", "8x16mm-neon-led-24v"],
+    img: "/images/products/13mm-d-shape-neon-led.jpg",
+    updated: "2026-09-08",
   },
   // ——— LED Şerit ————————————————————————————————————————————————
   {
@@ -810,7 +1090,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Noktanın hiç görünmemesi isteniyorsa yoğunluğu artırmak yerine [COB şeride](/urunler/cob-led-serit) geçmek daha doğrudur; karşılaştırma [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit) yazısında.",
+          "Noktanın hiç görünmemesi isteniyorsa yoğunluğu artırmak yerine [COB şeride](/urunler/cob-led-serit/) geçmek daha doğrudur; karşılaştırma [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit/) yazısında.",
       },
       { type: "h2", text: "IP20 nerede kullanılmaz" },
       {
@@ -822,7 +1102,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Metre başına watt değerini metrajla çarpın ve %20 pay ekleyin — hesabı [LED şerit güç hesaplama aracı](/araclar/led-serit-guc-hesaplama) doğrudan yapar. Ayrı bir konu hat uzunluğudur: 12V şeritte tek besleme ile 5 metre sınırdır, iki rulo uç uca eklenirse ikinci rulonun sonu sönük kalır. İki ruloyu paralel besleyin.",
+          "Metre başına watt değerini metrajla çarpın ve %20 pay ekleyin — hesabı [LED şerit güç hesaplama aracı](/araclar/led-serit-guc-hesaplama/) doğrudan yapar. Ayrı bir konu hat uzunluğudur: 12V şeritte tek besleme ile 5 metre sınırdır, iki rulo uç uca eklenirse ikinci rulonun sonu sönük kalır. İki ruloyu paralel besleyin.",
       },
     ],
     faq: [
@@ -830,7 +1110,7 @@ export const items: ItemPage[] = [
       { q: "İki rulo uç uca eklenebilir mi?", a: "Elektriksel olarak eklenir ama 12V'ta ikinci rulonun sonu belirgin biçimde söner. Doğrusu her ruloyu trafodan ayrı beslemektir." },
       { q: "Kaç watt trafo gerekir?", a: "Metre başına watt × metraj, üzerine %20 pay. 10 metre 9.6W/m şerit 96W çeker; 120W trafo uygun olur." },
       { q: "IP20 şerit alüminyum kanala gerekir mi?", a: "Zorunlu değil ama önerilir: kanal ısıyı alır, ömrü uzatır ve difüzörle noktaları gizler." },
-      { q: "Şerit yanıyor ama bir bölümü sönük, neden?", a: "Çoğunlukla voltaj düşümüdür. Hattı kısaltın ya da iki uçtan besleyin; ayrıntısı [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu) yazısında." },
+      { q: "Şerit yanıyor ama bir bölümü sönük, neden?", a: "Çoğunlukla voltaj düşümüdür. Hattı kısaltın ya da iki uçtan besleyin; ayrıntısı [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında." },
     ],
     related: ["ip20-8mm-samsung-ic-mekan-serit-led", "ip65-8mm-dis-mekan-drop-silikon-serit-led", "ip20-8mm-cob-480-mt"],
     img: "/images/products/8mm-eco-2835-120-led-mt.png",
@@ -866,7 +1146,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "IP65 toza tam kapalı, her yönden gelen su püskürtmesine dayanıklı demektir. Yağmur, sulama ve yıkama bu kapsamdadır. Kapsam dışında olan şey suyun içinde kalmaktır: su birikintisine oturan, havuz kenarında suya giren ya da toprağa gömülen hatlar için IP67 ya da IP68 gerekir. Sınıflar arasındaki farkın pratik karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led) yazısında.",
+          "IP65 toza tam kapalı, her yönden gelen su püskürtmesine dayanıklı demektir. Yağmur, sulama ve yıkama bu kapsamdadır. Kapsam dışında olan şey suyun içinde kalmaktır: su birikintisine oturan, havuz kenarında suya giren ya da toprağa gömülen hatlar için IP67 ya da IP68 gerekir. Sınıflar arasındaki farkın pratik karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında.",
       },
       { type: "h2", text: "Kaplama biçimleri arasında drop silikon" },
       {
@@ -883,7 +1163,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Trafo da dışarıda kalacaksa iç mekan tipi adaptör kullanmayın; [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor) ya da yağmur korumalı bir model gerekir.",
+          "Trafo da dışarıda kalacaksa iç mekan tipi adaptör kullanmayın; [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) ya da yağmur korumalı bir model gerekir.",
       },
     ],
     faq: [
@@ -927,19 +1207,19 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "RGB şerit tek başına çalışmaz. Trafo, kontrol ünitesi ve şerit üçlüsü birlikte kurulur ve üçünün de amper değeri birbirine uymalıdır. En sık yapılan hata, trafoyu doğru seçip kontrolörü unutmaktır: kontrolörün kanal kapasitesi trafodan önce dolarsa cihaz ısınır ve renkler kararsızlaşır. Seçimin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi) yazısında.",
+          "RGB şerit tek başına çalışmaz. Trafo, kontrol ünitesi ve şerit üçlüsü birlikte kurulur ve üçünün de amper değeri birbirine uymalıdır. En sık yapılan hata, trafoyu doğru seçip kontrolörü unutmaktır: kontrolörün kanal kapasitesi trafodan önce dolarsa cihaz ısınır ve renkler kararsızlaşır. Seçimin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında.",
       },
       { type: "h2", text: "Kontrol yöntemi işi belirler" },
       {
         type: "p",
         text:
-          "Kumandalı üniteler (24 veya 44 tuşlu) en yaygın ve en ucuz çözümdür; kumanda kaybolduğunda sorun çıkarır. [Bluetooth üniteler](/urunler/led-kontrol-uniteleri/bluetooth-rgb-kontrol-unitesi) telefondan kontrol verir ve ulaşılması zor yerlerde rahattır. Duvara sabitlenen dokunmatik paneller ise işletmelerde personelin kullanması için en pratik olanıdır.",
+          "Kumandalı üniteler (24 veya 44 tuşlu) en yaygın ve en ucuz çözümdür; kumanda kaybolduğunda sorun çıkarır. [Bluetooth üniteler](/urunler/led-kontrol-uniteleri/bluetooth-rgb-kontrol-unitesi/) telefondan kontrol verir ve ulaşılması zor yerlerde rahattır. Duvara sabitlenen dokunmatik paneller ise işletmelerde personelin kullanması için en pratik olanıdır.",
       },
       { type: "h2", text: "RGB'nin sınırı: beyaz ve efekt" },
       {
         type: "p",
         text:
-          "Üç rengin karışımıyla elde edilen beyaz, adanmış beyaz çipin beyazı kadar temiz değildir — genel aydınlatma da beklenen bir hatta RGB+W modeller daha doğrudur. Dalga ve akış gibi hareketli efektler ise sıradan RGB'de mümkün değildir; hattın tamamı her an aynı rengi alır. Efekt isteniyorsa [pixel şeride](/urunler/led-serit/ip20-pixel-serit-led) geçilir.",
+          "Üç rengin karışımıyla elde edilen beyaz, adanmış beyaz çipin beyazı kadar temiz değildir — genel aydınlatma da beklenen bir hatta RGB+W modeller daha doğrudur. Dalga ve akış gibi hareketli efektler ise sıradan RGB'de mümkün değildir; hattın tamamı her an aynı rengi alır. Efekt isteniyorsa [pixel şeride](/urunler/led-serit/ip20-pixel-serit-led/) geçilir.",
       },
     ],
     faq: [
@@ -995,7 +1275,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Vitrin aydınlatmasında şeridin kendisi görünmemeli, yalnızca ışığı görünmelidir. Alüminyum kanal ve opal difüzör hem noktaları gizler hem ısıyı alarak yüksek CRI'nin zamanla bozulmasını yavaşlatır. Noktanın hiç olmaması isteniyorsa [COB şerit](/urunler/cob-led-serit/ip20-8mm-cob-480-mt) bir adım öteye gider.",
+          "Vitrin aydınlatmasında şeridin kendisi görünmemeli, yalnızca ışığı görünmelidir. Alüminyum kanal ve opal difüzör hem noktaları gizler hem ısıyı alarak yüksek CRI'nin zamanla bozulmasını yavaşlatır. Noktanın hiç olmaması isteniyorsa [COB şerit](/urunler/cob-led-serit/ip20-8mm-cob-480-mt/) bir adım öteye gider.",
       },
     ],
     faq: [
@@ -1051,7 +1331,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Pixel şerit yalnızca pixel kontrol cihazıyla çalışır; RGB kontrolörü işe yaramaz. Cihaz seçilirken şeridin çip protokolü ve toplam pixel sayısı eşleşmelidir. Bluetooth üzerinden telefonla yönetilen [SP110E benzeri üniteler](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e) küçük ve orta işlerde en pratik çözümdür.",
+          "Pixel şerit yalnızca pixel kontrol cihazıyla çalışır; RGB kontrolörü işe yaramaz. Cihaz seçilirken şeridin çip protokolü ve toplam pixel sayısı eşleşmelidir. Bluetooth üzerinden telefonla yönetilen [SP110E benzeri üniteler](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e/) küçük ve orta işlerde en pratik çözümdür.",
       },
       {
         type: "p",
@@ -1106,7 +1386,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "İki teknolojinin maliyet ve verim karşılaştırması [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit) yazısında ayrıntılı olarak yapılıyor.",
+          "İki teknolojinin maliyet ve verim karşılaştırması [COB mu SMD şerit mi](/blog/cob-vs-smd-led-serit/) yazısında ayrıntılı olarak yapılıyor.",
       },
       { type: "h2", text: "Neden 24V" },
       {
@@ -1124,7 +1404,7 @@ export const items: ItemPage[] = [
     faq: [
       { q: "COB şerit 12V trafoyla çalışır mı?", a: "Bu ürün 24V'tur, 12V trafoyla çalışmaz. Şeridin etiketindeki voltajı trafonun çıkışıyla eşleştirin." },
       { q: "COB şeritte hiç nokta görünmez mi?", a: "Şeridin kendisi nokta göstermez. Yalnızca çok yakından bakıldığında hafif bir doku fark edilebilir." },
-      { q: "Kaç metre tek besleme yapılabilir?", a: "24V olduğu için 12V'a göre belirgin biçimde daha uzun; pratik sınır tipik olarak 8-10 metredir. Metrajdan trafoyu [güç hesaplama aracıyla](/araclar/led-serit-guc-hesaplama) çıkarabilirsiniz." },
+      { q: "Kaç metre tek besleme yapılabilir?", a: "24V olduğu için 12V'a göre belirgin biçimde daha uzun; pratik sınır tipik olarak 8-10 metredir. Metrajdan trafoyu [güç hesaplama aracıyla](/araclar/led-serit-guc-hesaplama/) çıkarabilirsiniz." },
       { q: "COB şerit kesilebilir mi?", a: "İşaretli noktalardan kesilir. Kesim aralığı SMD'ye göre daha kısadır, bu da ölçüye oturtmayı kolaylaştırır." },
       { q: "Alüminyum kanal şart mı?", a: "Kısa dekoratif hatlarda şart değil, uzun ve sürekli yanan hatlarda evet. Isı atmayan COB hattın ömrü belirgin biçimde kısalır." },
     ],
@@ -1150,6 +1430,9 @@ export const items: ItemPage[] = [
       ["Besleme", "24V DC"],
       ["Koruma sınıfı", "IP65 — dış mekan"],
       ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Renk sıcaklığı", "6000K beyaz / 4000K nötr / 3000K gün ışığı"],
+      ["Güç", "12 W / metre"],
+      ["Seri", "Fortune Plus"],
     ],
     useCases: [
       "Cephe kontur ve çizgi aydınlatması",
@@ -1168,23 +1451,34 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "IP65 koruma şeridin gövdesine aittir; kesilen uç çıplaktır. Dış mekan arızalarının çoğu buradan başlar. Her uç silikon kapak ve yapıştırıcı ile kapatılmalı, kablo giriş noktası ayrıca sızdırmaz hâle getirilmelidir. Su altında kalacak hatlar için IP65 yeterli değildir; sınıf farkları [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led) yazısında.",
+          "IP65 koruma şeridin gövdesine aittir; kesilen uç çıplaktır. Dış mekan arızalarının çoğu buradan başlar. Her uç silikon kapak ve yapıştırıcı ile kapatılmalı, kablo giriş noktası ayrıca sızdırmaz hâle getirilmelidir. Su altında kalacak hatlar için IP65 yeterli değildir; sınıf farkları [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında.",
+      },
+      { type: "h2", text: "Hangi renk sıcaklığı" },
+      {
+        type: "p",
+        text:
+          "Bu şerit üç kademede gelir: 6000K beyaz, 4000K nötr beyaz ve 3000K gün ışığı. Seçim cephenin malzemesine ve işin amacına bağlıdır. Cam, metal ve beton cephelerde, tabela ve güvenlik hatlarında [6000K soğuk beyaz](/urunler/cob-led-serit/dis-mekan-cob-beyaz-6000k/) daha parlak algılandığı için öne çıkar. Ahşap, tuğla ve taş cephelerde, teras ve bahçe gibi oturulan alanlarda ise [3000K gün ışığı](/urunler/cob-led-serit/dis-mekan-cob-gunisigi-3000k/) yüzeyin kendi rengini canlandırır. 4000K ikisi arasında güvenli bir orta yoldur.",
+      },
+      {
+        type: "p",
+        text:
+          "Tek kural: aynı yüzeyde iki farklı renk sıcaklığı yan yana gelmesin. Gündüz fark edilmeyen küçük ton farkı gece leke gibi okunur ve düzeltmesi çoğu zaman hattın tamamını sökmeyi gerektirir.",
       },
       { type: "h2", text: "Trafo dışarıda mı kalacak" },
       {
         type: "p",
         text:
-          "Şeridi IP65 seçip trafoyu iç mekan tipi bırakmak sık yapılan bir hatadır ve arıza şeritten değil trafodan gelir. Dış mekanda kalacak besleme için [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor) veya IP67 sınıfı bir model kullanın.",
+          "Şeridi IP65 seçip trafoyu iç mekan tipi bırakmak sık yapılan bir hatadır ve arıza şeritten değil trafodan gelir. Dış mekanda kalacak besleme için [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) veya IP67 sınıfı bir model kullanın.",
       },
     ],
     faq: [
       { q: "IP65 COB şerit yağmurda kalabilir mi?", a: "Gövdesi yağmura dayanır. Uçların kapatılmış olması ve suyun birikmediği bir montaj şarttır." },
       { q: "Silikon kaplama ısıyı hapsetmez mi?", a: "Bir miktar hapseder. Uzun hatlarda alüminyum kanal kullanmak ısıyı alır ve parlaklık kaybını yavaşlatır." },
-      { q: "Neon yerine COB şerit kullanılabilir mi?", a: "Kullanılabilir; hat daha ince ve daha keskin görünür. Kalın ve dolgun bir neon görüntüsü isteniyorsa [neon LED](/urunler/neon-led) daha doğrudur." },
+      { q: "Neon yerine COB şerit kullanılabilir mi?", a: "Kullanılabilir; hat daha ince ve daha keskin görünür. Kalın ve dolgun bir neon görüntüsü isteniyorsa [neon LED](/urunler/neon-led/) daha doğrudur." },
       { q: "24V zorunlu mu?", a: "Bu ürün için evet. 24V ayrıca uzun cephe hatlarında daha az besleme noktası demektir." },
       { q: "Kesim yaparsam garanti düşer mi?", a: "İşaretli noktalardan kesim normal kullanımdır. Uçların kurallara göre kapatılmaması durumunda oluşan su hasarı kapsam dışıdır." },
     ],
-    related: ["ip20-8mm-cob-480-mt", "ip65-8mm-dis-mekan-drop-silikon-serit-led", "metal-kasa-dis-mekan-adaptor"],
+    related: ["dis-mekan-cob-beyaz-6000k", "dis-mekan-cob-gunisigi-3000k", "ip20-8mm-cob-480-mt"],
     img: "/images/products/ip65-10mm-cob-480-mt.png",
     updated: "2026-09-02",
   },
@@ -1224,13 +1518,18 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Metrede 576 çip yüksek bir yoğunluktur; metre başına watt değeri sıradan RGB şeritten belirgin biçimde yüksektir. Bu, hem trafoyu hem kontrolörü yukarı çeker. Kontrolörün kanal başına amperi hesaplanan yükün altında kalıyorsa araya repeater girer — seçimin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi) yazısında.",
+          "Metrede 576 çip yüksek bir yoğunluktur; metre başına watt değeri sıradan RGB şeritten belirgin biçimde yüksektir. Bu, hem trafoyu hem kontrolörü yukarı çeker. Kontrolörün kanal başına amperi hesaplanan yükün altında kalıyorsa araya repeater girer — seçimin ayrıntısı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında.",
       },
       { type: "h2", text: "Sınırı: efekt yok" },
       {
         type: "p",
         text:
-          "RGB COB da sıradan RGB gibi tek renkli bir bütündür; hattın tamamı aynı anda aynı rengi alır. Akan ve dalgalanan efektler isteniyorsa [pixel şeride](/urunler/led-serit/ip20-pixel-serit-led) ya da pixel COB modellerine geçmek gerekir.",
+          "RGB COB da sıradan RGB gibi tek renkli bir bütündür; hattın tamamı aynı anda aynı rengi alır. Akan ve dalgalanan efektler isteniyorsa [pixel şeride](/urunler/led-serit/ip20-pixel-serit-led/) ya da pixel COB modellerine geçmek gerekir.",
+      },
+      {
+        type: "p",
+        text:
+          "Renk hiç değişmeyecekse RGB gereksiz bir katmandır: tek renk çipler daha parlaktır, kontrol ünitesi istemez ve hat boyunca ton kaydırmaz. Aynı seride [mor](/urunler/cob-led-serit/mor-cob-serit-led/), [pembe](/urunler/cob-led-serit/pembe-cob-serit-led/) ve [buz mavisi](/urunler/cob-led-serit/buz-mavisi-cob-serit-led/) tek renk kademeleri bulunur.",
       },
     ],
     faq: [
@@ -1243,6 +1542,574 @@ export const items: ItemPage[] = [
     related: ["ip20-8mm-cob-480-mt", "ip20-rgb-serit-led", "44-tuslu-rgb-kontrol-cihazi"],
     img: "/images/products/rgb-cob-serit-led-576led-mt.webp",
     updated: "2026-09-02",
+  },
+  {
+    slug: "mor-cob-serit-led",
+    categorySlug: "cob-led-serit",
+    name: "Mor COB Şerit LED 520/mt",
+    metaTitle: "Mor COB Şerit LED 24V IP20 | 8mm 520 LED/mt",
+    metaDesc:
+      "Mor COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız mor ışık hattı — bar, gece kulübü ve dekoratif iç mekan için toptan fiyat.",
+    keywords: ["mor cob şerit led", "mor led şerit", "renkli cob şerit", "24v mor şerit led", "noktasız mor led", "425nm mor led"],
+    h1: "Mor COB Şerit LED — 24V IP20 520 LED/mt",
+    intro:
+      "Tek renk mor COB şerit: 24V, 8 mm genişlik, metrede 520 çip. RGB'de karışımla elde edilen mordan farklı olarak tek dalga boyunda üretilir — hat boyunca renk sapmaz ve kontrol ünitesi gerektirmez.",
+    specs: [
+      ["Renk", "Mor — tek renk"],
+      ["Katalog dalga boyu", "425 nm"],
+      ["Çip tipi", "COB"],
+      ["Yoğunluk", "520 LED / metre"],
+      ["Genişlik", "8 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "12 W / metre"],
+      ["Koruma sınıfı", "IP20 — iç mekan"],
+      ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Kontrol", "Gerekmez — tek renk"],
+      ["Seri", "Fortune Plus"],
+      ["Ürün kodu", "ŞL12C520-TL08"],
+    ],
+    useCases: [
+      "Bar, gece kulübü ve eğlence mekanı hatları",
+      "Oyun odası ve bilgisayar kasası dekoratif aydınlatma",
+      "Vitrin ve teşhir alanında renk vurgusu",
+      "Kartonpiyer ve niş içi gizli aydınlatma",
+      "Etkinlik ve stant dekorasyonu",
+    ],
+    blocks: [
+      { type: "h2", text: "Tek renk mor ile RGB moru arasındaki fark" },
+      {
+        type: "p",
+        text:
+          "RGB şeritte mor, kırmızı ile mavinin karışımından elde edilir. Bu karışım hat boyunca birebir aynı kalmaz: kanal dengeleri, kablo uzunluğu ve kontrolörün çıkışı arasındaki küçük farklar renk tonunu kaydırır, uzun hatlarda bir uç diğerinden hafif farklı görünür. Tek renk mor çip ise tek dalga boyunda üretilir — kayacak bir karışım yoktur.",
+      },
+      {
+        type: "p",
+        text:
+          "İkinci fark maliyet ve kurulum tarafındadır. Tek renk model kontrol ünitesi istemez; iki damar kablo ve bir trafo yeterlidir. Renk değişimi gerekmeyen, mor rengin sabit kalacağı işlerde bu hem daha ucuz hem daha az arıza noktası demektir. Renk değiştirebilmek şartsa [RGB COB şerit](/urunler/cob-led-serit/ip20-rgb-cob-serit-led-576-led-mt/) modele geçilir.",
+      },
+      { type: "h2", text: "Mor rengin gözle görünen davranışı" },
+      {
+        type: "p",
+        text:
+          "Mor, insan gözünün en az duyarlı olduğu bölgeye yakındır. Aynı watt'taki beyaz ya da yeşil bir şeritle yan yana konduğunda gözle daha sönük algılanır — bu bir kalite sorunu değil, görme fizyolojisinin sonucudur. Mor hattın istenen etkiyi vermesi için ortam ışığının düşük olması gerekir; aydınlık bir mağaza içinde mor bant çoğu zaman kaybolur.",
+      },
+      {
+        type: "p",
+        text:
+          "Buna karşılık karanlık ortamda mor, beyaz ve açık renkli yüzeylerde belirgin bir parlama yaratır. Bar tezgâhı, beyaz gömlek, açık renk duvar — mor ışık altında bu yüzeyler öne çıkar. Etkiyi isteyerek kullanmak mümkün; istemiyorsanız hattı bu yüzeylerden uzağa, gizli bir niş içine almak gerekir.",
+      },
+      { type: "h2", text: "Noktasız hat neden önemli" },
+      {
+        type: "p",
+        text:
+          "Renkli SMD şeritlerde tek tek noktalar difüzörsüz bakıldığında ayırt edilir ve bu, kırmızı ile mor gibi tonlarda daha belirgindir. COB'da çipler bitişik dizildiği için renk boydan boya yayılır. Şeridin kendisinin göründüğü, difüzör konulamayan dekoratif hatlarda aradaki fark doğrudan görünür kalitedir — karşılaştırma [COB mu SMD mi](/blog/cob-vs-smd-led-serit/) yazısında.",
+      },
+      { type: "h2", text: "Besleme ve metraj" },
+      {
+        type: "p",
+        text:
+          "Metrede 12 W çeker. 10 metrelik bir hat 120 W eder; %25 pay ile 24V 150 W trafo uygundur. Kendi metrajınız için [LED şerit güç hesaplama aracını](/araclar/led-serit-guc-hesaplama/) kullanabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "IP20'dir, iç mekan içindir: mutfak tezgâhı arkası, banyo ve dış cephe gibi nemli noktalara uygun değildir. Şerit alüminyum kanala alınırsa hem ısı çekilir hem hiza yıllarca bozulmaz; uzun hatlarda kanal kullanmak parlaklık kaybını da yavaşlatır.",
+      },
+      { type: "h2", text: "Kesim, kanal ve difüzör" },
+      {
+        type: "p",
+        text:
+          "COB şeritte kesim aralığı SMD'ye göre belirgin biçimde sıktır — hattı ölçüye göre bitirmek kolaydır. Buna karşılık kesilen yüzeydeki bakır pedler dardır ve lehimsiz konnektör kullanılacaksa şeridin genişliğine uygun 8 mm aparat seçilmelidir; dar pede zorlanan geniş aparat temas etmez ya da kısa devre yapar.",
+      },
+      {
+        type: "p",
+        text:
+          "Alüminyum kanal uzun hatlarda ısıyı alır ve hizayı tutar, ancak kapak seçimi renkli şeritlerde ayrı bir karardır: opal difüzör kapak parlaklığın bir kısmını yutar. Mor, gözün zaten en az duyarlı olduğu bölgeye yakındır; bu kayıp orada gözle net biçimde fark edilir. Şeffaf kapak ya da kapaksız kanal, renkli hatlarda çoğu zaman daha doğru sonuç verir.",
+      },
+      {
+        type: "p",
+        text:
+          "Arka yapışkan bant tek başına kalıcı bir çözüm değildir. Yüzey tozlu, yağlı ya da pürüzlüyse bant birkaç ay içinde bırakır; montajdan önce alkolle silinmiş, kuru ve düz bir yüzey şarttır. Tavan ve dikey uygulamalarda banda ek olarak klips veya kanal kullanın.",
+      },
+      { type: "h2", text: "Sipariş ederken" },
+      {
+        type: "p",
+        text:
+          "Metrajı ölçtükten sonra üzerine kayıp payı ekleyin: köşe dönüşleri, kesim artıkları ve besleme uçları hesabı her zaman birkaç metre yukarı çeker. Mor gibi tek renk çiplerde de üretim partileri arasında küçük ton farkları olabilir; hattı bölerek almanız gerekiyorsa tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      {
+        type: "p",
+        text:
+          "Yanında gerekecek kalemleri aynı siparişte çıkarın: 24V trafo, lehimsiz konnektör ve gerekiyorsa alüminyum kanal. Sahada eksik kalan tek bir konnektör işin tamamını bekletir.",
+      },
+    ],
+    faq: [
+      { q: "Mor COB şerit neden daha sönük görünüyor?", a: "Mor, gözün en az duyarlı olduğu bölgeye yakındır. Aynı watt'taki beyaz şeritle yan yana daha sönük algılanır; bu ürün kusuru değildir." },
+      { q: "RGB şeritle mor yapmak yerine neden bunu alayım?", a: "Tek renk mor hat boyunca sapmaz, kontrol ünitesi istemez ve daha az arıza noktası taşır. Renk değişimi gerekiyorsa RGB doğru tercihtir." },
+      { q: "Dış mekanda kullanılır mı?", a: "Hayır. Bu ürün IP20'dir, iç mekan içindir. Dış mekan için IP65 sınıfı bir model gerekir." },
+      { q: "Kontrol ünitesi gerekir mi?", a: "Gerekmez. İki damar kablo ve 24V trafo yeterlidir. Kısmak isterseniz tek kanallı bir dimmer eklenebilir." },
+      { q: "Kaç metre tek hat çekilebilir?", a: "24V ve 12 W/m için pratik sınır 8-10 metredir. Daha uzunda hattı ikiye bölüp paralel besleyin." },
+      { q: "Beyaz yüzeylerde parlama yapar mı?", a: "Karanlık ortamda beyaz ve açık renkli yüzeylerde belirgin bir parlama oluşur. Bu etkiyi istemiyorsanız hattı gizli bir nişe alın." },
+      { q: "Kesim yapılabilir mi?", a: "Evet, şerit üzerindeki işaretli noktalardan kesilir. COB şeritlerde kesim aralığı SMD'ye göre daha sıktır." },
+      { q: "Diğer renkler mevcut mu?", a: "Aynı seride pembe, buz mavisi, kırmızı, yeşil, mavi ve altın sarısı tek renk seçenekleri bulunur." },
+    ],
+    related: ["pembe-cob-serit-led", "buz-mavisi-cob-serit-led", "ip20-rgb-cob-serit-led-576-led-mt"],
+    img: "/images/products/mor-cob-serit-led-520-mt.jpg",
+    updated: "2026-09-08",
+  },
+  {
+    slug: "pembe-cob-serit-led",
+    categorySlug: "cob-led-serit",
+    name: "Pembe COB Şerit LED 520/mt",
+    metaTitle: "Pembe COB Şerit LED 24V IP20 | 8mm 520 LED/mt",
+    metaDesc:
+      "Pembe COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız pembe ışık hattı — tekstil, kozmetik ve vitrin aydınlatması için toptan fiyat.",
+    keywords: ["pembe cob şerit led", "pembe led şerit", "renkli cob şerit led", "24v pembe şerit", "vitrin pembe led", "noktasız pembe led"],
+    h1: "Pembe COB Şerit LED — 24V IP20 520 LED/mt",
+    intro:
+      "Tek renk pembe COB şerit: 24V, 8 mm genişlik, metrede 520 çip. Tekstil, kozmetik ve güzellik sektöründe ten rengini ve pastel ürünleri öne çıkarmak için kullanılan sabit renkli hat.",
+    specs: [
+      ["Renk", "Pembe — tek renk"],
+      ["Katalog dalga boyu", "400 nm"],
+      ["Çip tipi", "COB"],
+      ["Yoğunluk", "520 LED / metre"],
+      ["Genişlik", "8 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "12 W / metre"],
+      ["Koruma sınıfı", "IP20 — iç mekan"],
+      ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Kontrol", "Gerekmez — tek renk"],
+      ["Seri", "Fortune Plus"],
+      ["Ürün kodu", "ŞL12C520-TL09"],
+    ],
+    useCases: [
+      "Tekstil ve hazır giyim vitrini",
+      "Kozmetik, parfüm ve güzellik salonu teşhiri",
+      "Kuaför ve makyaj aynası çevresi",
+      "Pastane, çiçekçi ve hediyelik eşya vitrini",
+      "Etkinlik, düğün ve organizasyon dekorasyonu",
+    ],
+    blocks: [
+      { type: "h2", text: "Pembe ışığın ürün üzerindeki etkisi" },
+      {
+        type: "p",
+        text:
+          "Pembe ışık, altındaki yüzeyin rengini değiştirir — bu bazen istenen şeydir, bazen sorun. Ten rengi, pastel tonlar, açık pembe ve krem yüzeyler pembe ışık altında daha canlı ve sıcak görünür; tekstil, kozmetik ve güzellik sektöründe tercih edilme sebebi budur. Buna karşılık yeşil ve mavi ürünler donuklaşır, beyaz kumaş pembeye kaçar.",
+      },
+      {
+        type: "p",
+        text:
+          "Pratik kural: ürünün gerçek rengi satın alma kararında belirleyiciyse pembe hattı ana aydınlatma olarak değil, vurgu olarak kullanın. Vitrinin genel aydınlatması nötr beyaz kalır, pembe hat raf altına ya da çerçeveye gizlenir. Bu kurgu hem atmosferi verir hem ürünü yanlış göstermez.",
+      },
+      { type: "h2", text: "Tek renk pembe mi, RGB mi" },
+      {
+        type: "p",
+        text:
+          "RGB şeritte pembe, kırmızı ile mavinin belirli oranda karışmasıyla elde edilir ve bu oran hat boyunca birebir korunmaz — uzun hatlarda tonun kaydığı görülür. Tek renk pembe çipte kayacak bir karışım yoktur, hat başından sonuna aynı tonda kalır.",
+      },
+      {
+        type: "p",
+        text:
+          "Ayrıca tek renk model kontrol ünitesi istemez: iki damar kablo ve bir trafo yeterlidir. Vitrin gibi yıl boyu aynı renkte kalacak işlerde bu hem daha ucuz hem bakımı daha basittir. Renk değişimi şartsa [RGB COB şerit](/urunler/cob-led-serit/ip20-rgb-cob-serit-led-576-led-mt/) doğru tercihtir.",
+      },
+      { type: "h2", text: "Noktasız hattın vitrindeki karşılığı" },
+      {
+        type: "p",
+        text:
+          "Vitrinde şerit çoğu zaman doğrudan görünür; cam yüzey ve parlak raflar hattı yansıtır. Sıradan renkli SMD şeritte tek tek noktalar bu yansımalarda tek tek okunur. COB'da çipler bitişiktir, hat kesintisiz bir çizgi olarak yansır. Difüzör konulamayan yerlerde aradaki fark doğrudan görünür kalitedir — karşılaştırma [COB mu SMD mi](/blog/cob-vs-smd-led-serit/) yazısında.",
+      },
+      { type: "h2", text: "Besleme, metraj ve montaj" },
+      {
+        type: "p",
+        text:
+          "Metrede 12 W çeker; 10 metre 120 W eder ve %25 pay ile 24V 150 W trafo uygundur. Metrajınıza göre hesabı [LED şerit güç hesaplama aracıyla](/araclar/led-serit-guc-hesaplama/) çıkarabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "IP20'dir, iç mekan içindir. Vitrin camına yakın montajlarda yoğuşma riskine dikkat edin: soğuk havada cam iç yüzeyinde biriken nem şeride ulaşırsa IP20 gövde bunu tolere etmez. Camdan birkaç santim içeride, alüminyum kanal içinde ilerlemek hem bu riski hem ısıyı çözer.",
+      },
+      { type: "h2", text: "Kesim, kanal ve difüzör" },
+      {
+        type: "p",
+        text:
+          "COB şeritte kesim aralığı SMD'ye göre belirgin biçimde sıktır — hattı ölçüye göre bitirmek kolaydır. Buna karşılık kesilen yüzeydeki bakır pedler dardır ve lehimsiz konnektör kullanılacaksa şeridin genişliğine uygun 8 mm aparat seçilmelidir; dar pede zorlanan geniş aparat temas etmez ya da kısa devre yapar.",
+      },
+      {
+        type: "p",
+        text:
+          "Alüminyum kanal uzun hatlarda ısıyı alır ve hizayı tutar, ancak kapak seçimi renkli şeritlerde ayrı bir karardır: opal difüzör kapak parlaklığın bir kısmını yutar. Vitrin gibi hattın parlaklığının belirleyici olduğu yerlerde bu kayıp doğrudan görünür. Şeffaf kapak ya da kapaksız kanal, renkli hatlarda çoğu zaman daha doğru sonuç verir.",
+      },
+      {
+        type: "p",
+        text:
+          "Arka yapışkan bant tek başına kalıcı bir çözüm değildir. Yüzey tozlu, yağlı ya da pürüzlüyse bant birkaç ay içinde bırakır; montajdan önce alkolle silinmiş, kuru ve düz bir yüzey şarttır. Tavan ve dikey uygulamalarda banda ek olarak klips veya kanal kullanın.",
+      },
+      { type: "h2", text: "Sipariş ederken" },
+      {
+        type: "p",
+        text:
+          "Metrajı ölçtükten sonra üzerine kayıp payı ekleyin: köşe dönüşleri, kesim artıkları ve besleme uçları hesabı her zaman birkaç metre yukarı çeker. Pembe gibi tek renk çiplerde de üretim partileri arasında küçük ton farkları olabilir; hattı bölerek almanız gerekiyorsa tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      {
+        type: "p",
+        text:
+          "Yanında gerekecek kalemleri aynı siparişte çıkarın: 24V trafo, lehimsiz konnektör ve gerekiyorsa alüminyum kanal. Sahada eksik kalan tek bir konnektör işin tamamını bekletir.",
+      },
+    ],
+    faq: [
+      { q: "Pembe ışık ürünün rengini bozar mı?", a: "Ten rengi ve pastel tonları canlandırır; yeşil ve mavi ürünleri donuklaştırır, beyaz kumaşı pembeye kaydırır. Ürün rengi kritikse vurgu olarak kullanın." },
+      { q: "RGB ile pembe yapmak yerine neden bunu alayım?", a: "Tek renk pembe hat boyunca ton kaydırmaz ve kontrol ünitesi istemez. Renk değişimi gerekiyorsa RGB doğru tercihtir." },
+      { q: "Dış mekanda veya vitrin dışında kullanılır mı?", a: "Hayır. IP20'dir, iç mekan içindir. Nemli ortam ve dış cephe için IP65 sınıfı bir model gerekir." },
+      { q: "Kaç metre tek hat çekilebilir?", a: "24V ve 12 W/m için pratik sınır 8-10 metredir. Daha uzun hatlarda ikiye bölüp paralel besleyin." },
+      { q: "Kısılabilir mi?", a: "Evet. Tek kanallı bir 24V dimmer ile parlaklık ayarlanabilir; RGB kontrolörüne gerek yoktur." },
+      { q: "Kesim aralığı nedir?", a: "Şerit üzerindeki işaretli noktalardan kesilir; COB şeritlerde bu aralık SMD'ye göre daha sıktır." },
+      { q: "Vitrin camına yapıştırılabilir mi?", a: "Önerilmez. Soğuk havada camda yoğuşan nem IP20 gövdeye zarar verir; camdan birkaç santim içeride kanal içinde ilerleyin." },
+      { q: "Diğer renkler mevcut mu?", a: "Aynı seride mor, buz mavisi, kırmızı, yeşil, mavi ve altın sarısı tek renk seçenekleri bulunur." },
+    ],
+    related: ["mor-cob-serit-led", "buz-mavisi-cob-serit-led", "ip20-8mm-cob-480-mt"],
+    img: "/images/products/pembe-cob-serit-led-520-mt.jpg",
+    updated: "2026-09-08",
+  },
+  {
+    slug: "buz-mavisi-cob-serit-led",
+    categorySlug: "cob-led-serit",
+    name: "Buz Mavisi COB Şerit LED 520/mt",
+    metaTitle: "Buz Mavisi COB Şerit LED 24V IP20 | Açık Mavi",
+    metaDesc:
+      "Buz mavisi (açık mavi) COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız açık mavi hat — soğutucu reyon ve teknoloji vitrini için toptan fiyat.",
+    keywords: ["buz mavisi cob şerit led", "açık mavi cob şerit", "açık mavi led şerit", "24v buz mavisi led", "soğutucu reyon led", "485nm led şerit"],
+    h1: "Buz Mavisi COB Şerit LED — 24V IP20 520 LED/mt",
+    intro:
+      "Tek renk buz mavisi (açık mavi) COB şerit: 24V, 8 mm genişlik, metrede 520 çip. Koyu maviden farklı olarak turkuaza yakın, yüksek görünürlüklü bir tondur — soğuk ve temiz izlenim istenen işlerde kullanılır.",
+    specs: [
+      ["Renk", "Buz mavisi (açık mavi) — tek renk"],
+      ["Katalog dalga boyu", "485 nm"],
+      ["Çip tipi", "COB"],
+      ["Yoğunluk", "520 LED / metre"],
+      ["Genişlik", "8 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "12 W / metre"],
+      ["Koruma sınıfı", "IP20 — iç mekan"],
+      ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Kontrol", "Gerekmez — tek renk"],
+      ["Seri", "Fortune Plus"],
+      ["Ürün kodu", "ŞL12C520-TL07"],
+    ],
+    useCases: [
+      "Market soğutucu reyonu ve dolap içi aydınlatma",
+      "Teknoloji ve beyaz eşya mağazası teşhiri",
+      "Su, buz ve deniz temalı dekorasyonlar",
+      "Havuz çevresi iç mekan detayları ve spa alanları",
+      "Klinik, laboratuvar ve showroom vurgu hatları",
+    ],
+    blocks: [
+      { type: "h2", text: "Buz mavisi ile koyu mavi aynı şey değil" },
+      {
+        type: "p",
+        text:
+          "Standart mavi LED derin, koyu bir tondur ve gözün duyarlılığının düşük olduğu bölgede kalır: aynı watt'ta sönük algılanır. Buz mavisi ise turkuaza yakın, gözün belirgin biçimde daha duyarlı olduğu bir tondur. Pratik sonucu şudur — aynı 12 W ile buz mavisi hat, koyu mavi bir hattan gözle çok daha parlak okunur.",
+      },
+      {
+        type: "p",
+        text:
+          "Bu yüzden ikisi farklı işlerde kullanılır. Koyu mavi karanlık ortamda derinlik ve atmosfer için tercih edilir; buz mavisi aydınlık ortamda bile görünürlüğünü koruduğu için mağaza içi teşhirde ve reyon aydınlatmasında işe yarar.",
+      },
+      { type: "h2", text: "Soğuk ve temiz izlenimi" },
+      {
+        type: "p",
+        text:
+          "Buz mavisi ışık, altındaki yüzeyi soğuk ve temiz gösterir. Market soğutucu reyonlarında, dondurma ve içecek dolaplarında bu izlenim doğrudan satın alma kararına dokunur: ürün daha soğuk, daha taze algılanır. Aynı sebeple beyaz eşya, klima ve teknoloji teşhirinde de sık kullanılır.",
+      },
+      {
+        type: "p",
+        text:
+          "Sınırı da burada: gıdanın kendi rengi öne çıkacaksa buz mavisi yanlış tercihtir. Et, ekmek, ahşap ve sıcak tonlu ürünler bu ışık altında soluk ve cansız görünür. Bu ürünlerde 3000K gün ışığı ya da nötr beyaz doğru seçimdir.",
+      },
+      { type: "h2", text: "Tek renk olmanın avantajı" },
+      {
+        type: "p",
+        text:
+          "RGB şeritte buz mavisini yakalamak mavi ile yeşilin ince bir karışımını tutturmayı gerektirir ve bu oran hat boyunca kaymaya açıktır. Tek renk çipte böyle bir ayar yoktur: hat başından sonuna aynı tonda kalır, kontrol ünitesi de gerekmez. İki damar kablo ve 24V trafo yeterlidir.",
+      },
+      {
+        type: "p",
+        text:
+          "COB olması ayrı bir kazanım: çipler bitişik dizildiği için renk boydan boya yayılır, difüzörsüz bakıldığında tek tek noktalar okunmaz. Reyon içi gibi şeridin doğrudan göründüğü yerlerde bu fark doğrudan görünür kalitedir — ayrıntısı [COB mu SMD mi](/blog/cob-vs-smd-led-serit/) yazısında.",
+      },
+      { type: "h2", text: "Besleme ve nem uyarısı" },
+      {
+        type: "p",
+        text:
+          "Metrede 12 W çeker; 10 metrelik hat 120 W eder, %25 pay ile 24V 150 W trafo uygundur. Hesabı kendi metrajınız için [LED şerit güç hesaplama aracıyla](/araclar/led-serit-guc-hesaplama/) çıkarabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "Bu ürün IP20'dir ve buradaki en önemli uyarı soğutucu uygulamalarıyla ilgilidir: soğuk yüzeylerde yoğuşma olur ve IP20 gövde bunu tolere etmez. Dolap içi ve reyon montajlarında ya nemin ulaşmayacağı bir hat seçilmeli ya da IP65 sınıfı bir modele geçilmelidir.",
+      },
+      { type: "h2", text: "Kesim, kanal ve difüzör" },
+      {
+        type: "p",
+        text:
+          "COB şeritte kesim aralığı SMD'ye göre belirgin biçimde sıktır — hattı ölçüye göre bitirmek kolaydır. Buna karşılık kesilen yüzeydeki bakır pedler dardır ve lehimsiz konnektör kullanılacaksa şeridin genişliğine uygun 8 mm aparat seçilmelidir; dar pede zorlanan geniş aparat temas etmez ya da kısa devre yapar.",
+      },
+      {
+        type: "p",
+        text:
+          "Alüminyum kanal uzun hatlarda ısıyı alır ve hizayı tutar, ancak kapak seçimi renkli şeritlerde ayrı bir karardır: opal difüzör kapak parlaklığın bir kısmını yutar. Buz mavisi gözün duyarlı olduğu bölgede kaldığı için kaybı en iyi tolere eden renklerden biridir, yine de aydınlık ortamlarda hesaba katın. Şeffaf kapak ya da kapaksız kanal, renkli hatlarda çoğu zaman daha doğru sonuç verir.",
+      },
+      {
+        type: "p",
+        text:
+          "Arka yapışkan bant tek başına kalıcı bir çözüm değildir. Yüzey tozlu, yağlı ya da pürüzlüyse bant birkaç ay içinde bırakır; montajdan önce alkolle silinmiş, kuru ve düz bir yüzey şarttır. Tavan ve dikey uygulamalarda banda ek olarak klips veya kanal kullanın.",
+      },
+      { type: "h2", text: "Sipariş ederken" },
+      {
+        type: "p",
+        text:
+          "Metrajı ölçtükten sonra üzerine kayıp payı ekleyin: köşe dönüşleri, kesim artıkları ve besleme uçları hesabı her zaman birkaç metre yukarı çeker. Buz mavisi gibi tek renk çiplerde de üretim partileri arasında küçük ton farkları olabilir; hattı bölerek almanız gerekiyorsa tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      {
+        type: "p",
+        text:
+          "Yanında gerekecek kalemleri aynı siparişte çıkarın: 24V trafo, lehimsiz konnektör ve gerekiyorsa alüminyum kanal. Sahada eksik kalan tek bir konnektör işin tamamını bekletir.",
+      },
+    ],
+    faq: [
+      { q: "Buz mavisi ile mavi arasındaki fark nedir?", a: "Buz mavisi turkuaza yakın açık bir tondur ve gözün daha duyarlı olduğu bölgede kalır; aynı watt'ta koyu maviden belirgin biçimde parlak görünür." },
+      { q: "Soğutucu dolap içinde kullanılır mı?", a: "IP20 olduğu için yoğuşma riski vardır. Nemin ulaşmayacağı bir hat seçilmeli ya da IP65 sınıfı bir modele geçilmelidir." },
+      { q: "Gıda reyonunda uygun mu?", a: "Soğuk ürünlerde uygundur. Et, ekmek ve ahşap gibi sıcak tonlu ürünleri soluk gösterir; oralarda 3000K gün ışığı daha doğrudur." },
+      { q: "Kontrol ünitesi gerekir mi?", a: "Gerekmez. İki damar kablo ve 24V trafo yeterlidir; kısmak için tek kanallı dimmer eklenebilir." },
+      { q: "Kaç metre tek hat çekilebilir?", a: "24V ve 12 W/m için pratik sınır 8-10 metredir. Daha uzun hatlarda ikiye bölüp paralel besleyin." },
+      { q: "RGB ile aynı ton elde edilir mi?", a: "Yaklaşık olarak elde edilir ama mavi-yeşil karışımı hat boyunca kaymaya açıktır. Tek renk çipte ton sabittir." },
+      { q: "Alüminyum kanal şart mı?", a: "Şart değil ama uzun hatlarda önerilir; ısıyı alır, hizayı tutar ve parlaklık kaybını yavaşlatır." },
+      { q: "Diğer renkler mevcut mu?", a: "Aynı seride mor, pembe, kırmızı, yeşil, mavi ve altın sarısı tek renk seçenekleri bulunur." },
+    ],
+    related: ["mor-cob-serit-led", "pembe-cob-serit-led", "ip20-8mm-cob-480-mt"],
+    img: "/images/products/buz-mavisi-cob-serit-led-520-mt.jpg",
+    updated: "2026-09-08",
+  },
+  {
+    slug: "dis-mekan-cob-beyaz-6000k",
+    categorySlug: "cob-led-serit",
+    name: "IP65 10mm COB 480/mt Beyaz 6000K",
+    metaTitle: "Dış Mekan COB Şerit LED Beyaz 6000K | IP65 24V",
+    metaDesc:
+      "6000K soğuk beyaz dış mekan COB şerit LED: IP65, 24V, 10mm, 480 LED/mt, 12W. Cephe konturu ve tabela için noktasız hat. Toptan fiyat.",
+    keywords: ["dış mekan cob şerit led beyaz", "6000k cob şerit", "soğuk beyaz cob led", "ip65 beyaz cob şerit", "cephe kontur led", "24v beyaz cob"],
+    h1: "Dış Mekan COB Şerit LED — Beyaz 6000K",
+    intro:
+      "IP65 10 mm COB şeridin soğuk beyaz kademesi: 6000K, 24V, metrede 480 çip ve 12 W. Gündüz de okunması gereken cephe konturlarında ve tabela hatlarında kullanılan renk sıcaklığıdır.",
+    specs: [
+      ["Renk sıcaklığı", "6000K — soğuk beyaz"],
+      ["Çip tipi", "COB"],
+      ["Yoğunluk", "480 LED / metre"],
+      ["Genişlik", "10 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "12 W / metre"],
+      ["Koruma sınıfı", "IP65 — dış mekan"],
+      ["Kaplama", "Silikon dolgulu"],
+      ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Kontrol", "Gerekmez — tek renk sıcaklığı"],
+      ["Seri", "Fortune Plus"],
+      ["Ürün kodu", "ŞL12C480-TL01"],
+    ],
+    useCases: [
+      "Cephe kontur ve çizgi aydınlatması",
+      "Tabela ve kutu harf çevre hattı",
+      "Saçak altı, giriş ve kapı üstü bantları",
+      "Otopark, geçiş ve merdiven güvenlik aydınlatması",
+      "Cam, metal ve beton cepheli modern yapılar",
+    ],
+    blocks: [
+      { type: "h2", text: "6000K neden ticari işlerin varsayılanı" },
+      {
+        type: "p",
+        text:
+          "Soğuk beyaz, aynı watt'ta sıcak tonlardan daha parlak algılanır. Tabelada ve cephe konturunda amaç gece atmosferi değil gündüz de sürebilen okunurluksa, bu fark doğrudan işe yarar. Aynı sebeple otopark girişi, merdiven ve geçiş gibi güvenlik amaçlı hatlarda da 6000K tercih edilir.",
+      },
+      {
+        type: "p",
+        text:
+          "Cephenin malzemesi de tercihi belirler. Cam, alüminyum kompozit, beton ve açık renk boya soğuk beyazla uyumludur; hat temiz ve keskin durur. Ahşap, tuğla ve taş cephelerde ise aynı ton yüzeyi soluklaştırır — orada [3000K gün ışığı](/urunler/cob-led-serit/dis-mekan-cob-gunisigi-3000k/) kademesi daha doğru sonuç verir.",
+      },
+      { type: "h2", text: "Karar: 6000K mı, 4000K mı, 3000K mı" },
+      {
+        type: "ul",
+        items: [
+          "6000K soğuk beyaz — tabela, kontur, güvenlik hatları; en yüksek algılanan parlaklık",
+          "4000K nötr beyaz — karma cepheler ve kurumsal binalar; iki uç arasında güvenli orta yol",
+          "3000K gün ışığı — ahşap, taş ve restoran terası; sıcak ve konforlu görünüm",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Tek kural şudur: aynı yüzeyde iki farklı renk sıcaklığı yan yana gelmesin. Gündüz fark edilmeyen küçük ton farkı gece leke gibi okunur ve sonradan düzeltmek çoğu zaman hattın tamamını sökmeyi gerektirir. İşi bölerek alacaksanız tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      { type: "h2", text: "Dış mekanda COB'un yeri" },
+      {
+        type: "p",
+        text:
+          "Dış mekan kontur işlerinde iki seçenek yarışır: neon flex ve IP65 COB şerit. Neon daha kalın, daha dolgun bir hat verir ve uzaktan okunur. COB şerit daha ince, daha keskin bir çizgi bırakır ve dar kanallara girer. Mimari detayın kendisini vurgulamak isteyen, hattın kalın görünmesini istemeyen işlerde COB tercih edilir — kalın hat gerekiyorsa [neon LED](/urunler/neon-led/) tarafına bakın. Ürünün genel teknik anlatımı [IP65 10mm COB 480/mt](/urunler/cob-led-serit/ip65-10mm-cob-480-mt/) sayfasında.",
+      },
+      { type: "h2", text: "Besleme ve uç kapatma" },
+      {
+        type: "p",
+        text:
+          "Metrede 12 W çeker; 20 metrelik bir hat 240 W eder ve %25 pay ile 24V 300 W trafo gerekir. Metrajınıza göre hesabı [LED şerit güç hesaplama aracıyla](/araclar/led-serit-guc-hesaplama/) çıkarabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "IP65 koruma şeridin gövdesine aittir; kesilen uç çıplaktır ve dış mekan arızalarının çoğu buradan başlar. Her uç silikon kapak ve yapıştırıcı ile kapatılmalı, kablo giriş noktası ayrıca sızdırmaz hâle getirilmelidir. Trafo da dışarıda kalacaksa iç mekan tipi bir adaptör yerine [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) kullanın.",
+      },
+      { type: "h2", text: "Montaj yüzeyi ve ısı" },
+      {
+        type: "p",
+        text:
+          "Silikon kaplama suyu dışarıda tutar ama ısıyı da bir miktar içeride tutar. Kısa hatlarda bu sorun değildir; uzun cephe hatlarında alüminyum kanal ya da alüminyum profil üzerine montaj, ısıyı alarak parlaklık kaybını yıllar boyunca yavaşlatır. Doğrudan ahşap ya da plastik üzerine uzun metraj çekmek, aynı şeridin ömrünü belirgin biçimde kısaltır.",
+      },
+      {
+        type: "p",
+        text:
+          "Arka yapışkan bant dış mekanda tek başına güvenilmez: sıcaklık farkı ve nem bandı zamanla bırakır. Cephede klips, kanal ya da uygun bir yapıştırıcı ile mekanik sabitleme yapın. Şerit yatay bir yüzeye monte ediliyorsa, suyun birikmeyeceği bir eğim ya da montaj yönü seçilmelidir — IP65 birikmiş suda uzun süre kalmaya göre tasarlanmamıştır.",
+      },
+      { type: "h2", text: "Sipariş ederken" },
+      {
+        type: "p",
+        text:
+          "Metraja köşe dönüşleri ve kesim artıkları için pay ekleyin. Renk sıcaklığı seçimini siparişten önce netleştirin: aynı yüzeye sonradan farklı bir kademe eklemek, hattın tamamını sökmeyi gerektiren tek hatadır. Beyaz LED'lerde partiler arası küçük ton farkları olabildiği için tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      {
+        type: "p",
+        text:
+          "Yanında gerekecek kalemleri de aynı siparişte çıkarın: dış mekan tipi 24V trafo, silikon uç kapağı, yapıştırıcı ve lehimsiz konnektör. Bu kalemlerden biri eksik kaldığında hat çekilmiş olsa bile iş teslim edilemez.",
+      },
+    ],
+    faq: [
+      { q: "6000K mı 3000K mı seçmeliyim?", a: "Cam, metal ve beton cephelerde ve tabela işlerinde 6000K; ahşap, taş ve restoran terası gibi sıcak yüzeylerde 3000K daha doğrudur." },
+      { q: "6000K daha mı parlak?", a: "Aynı watt'ta gözle daha parlak algılanır. Lümen değeri birebir aynı olsa bile soğuk beyaz daha aydınlık görünür." },
+      { q: "Aynı cephede iki renk sıcaklığı kullanılır mı?", a: "Kullanılmamalı. Küçük ton farkı gece aynı yüzeyde leke gibi okunur ve düzeltmesi hattı sökmeyi gerektirir." },
+      { q: "IP65 yağmurda kalabilir mi?", a: "Gövdesi yağmura dayanır. Uçların kapatılmış olması ve suyun birikmediği bir montaj şarttır; su altında kalacak hatlar için IP65 yeterli değildir." },
+      { q: "Kaç metre tek hat çekilebilir?", a: "24V ve 12 W/m için pratik sınır 8-10 metredir. Uzun cephelerde hattı bölüp iki uçtan besleyin." },
+      { q: "Trafo iç mekan tipi olabilir mi?", a: "Şerit dışarıdaysa olmaz. Arıza çoğu zaman şeritten değil beslemeden gelir; dış mekan veya IP67 sınıfı bir model kullanın." },
+      { q: "Neon yerine kullanılabilir mi?", a: "Kullanılabilir; hat daha ince ve keskin görünür. Kalın ve dolgun bir neon görüntüsü isteniyorsa neon LED daha doğrudur." },
+      { q: "Sonradan hat uzatırsam renk tutar mı?", a: "Aynı seri ve mümkünse aynı parti istenirse tutar. Farklı partiler arasında küçük ton farkları olabilir." },
+    ],
+    related: ["dis-mekan-cob-gunisigi-3000k", "ip65-10mm-cob-480-mt", "metal-kasa-dis-mekan-adaptor"],
+    img: "/images/products/ip65-10mm-cob-480-mt.png",
+    updated: "2026-09-08",
+  },
+  {
+    slug: "dis-mekan-cob-gunisigi-3000k",
+    categorySlug: "cob-led-serit",
+    name: "IP65 10mm COB 480/mt Günışığı 3000K",
+    metaTitle: "Dış Mekan COB Şerit LED Günışığı 3000K | IP65 24V",
+    metaDesc:
+      "3000K gün ışığı dış mekan COB şerit LED: IP65, 24V, 10mm, 480 LED/mt, 12W. Ahşap cephe, teras ve peyzaj için sıcak tonlu noktasız hat. Toptan fiyat.",
+    keywords: ["dış mekan cob şerit günışığı", "3000k cob şerit led", "sıcak beyaz cob led", "ip65 günışığı şerit", "ahşap cephe led", "teras aydınlatma led"],
+    h1: "Dış Mekan COB Şerit LED — Günışığı 3000K",
+    intro:
+      "IP65 10 mm COB şeridin sıcak kademesi: 3000K, 24V, metrede 480 çip ve 12 W. Ahşap ve taş cephelerde, teras ve peyzaj hatlarında göz yormayan, mekânı sıcak gösteren renk sıcaklığıdır.",
+    specs: [
+      ["Renk sıcaklığı", "3000K — gün ışığı (sıcak beyaz)"],
+      ["Çip tipi", "COB"],
+      ["Yoğunluk", "480 LED / metre"],
+      ["Genişlik", "10 mm"],
+      ["Besleme", "24V DC"],
+      ["Güç", "12 W / metre"],
+      ["Koruma sınıfı", "IP65 — dış mekan"],
+      ["Kaplama", "Silikon dolgulu"],
+      ["Işık karakteri", "Noktasız, sürekli hat"],
+      ["Kontrol", "Gerekmez — tek renk sıcaklığı"],
+      ["Seri", "Fortune Plus"],
+      ["Ürün kodu", "ŞL12C480-TL03"],
+    ],
+    useCases: [
+      "Ahşap, tuğla ve taş cephe aydınlatması",
+      "Restoran, kafe ve otel terası",
+      "Pergole, çardak ve bahçe kontur hatları",
+      "Peyzaj, yürüyüş yolu ve havuz çevresi",
+      "Butik otel ve villa dış mekan detayları",
+    ],
+    blocks: [
+      { type: "h2", text: "3000K neyi değiştirir" },
+      {
+        type: "p",
+        text:
+          "Gün ışığı tonu, altındaki yüzeyin sıcak renklerini öne çıkarır. Ahşabın sarı-kahve damarı, tuğlanın kırmızısı, doğal taşın bej tonu 3000K altında canlı görünür; aynı yüzey 6000K soğuk beyaz altında gri ve cansız kalır. Bu yüzden malzemesi sıcak olan her cephede tercih 3000K'dan yana yapılır.",
+      },
+      {
+        type: "p",
+        text:
+          "İkinci etken, mekânın işlevi. Restoran terası, otel bahçesi ve villa girişi gibi insanların oturduğu yerlerde amaç okunurluk değil konfordur. Soğuk beyaz bu alanlarda klinik bir his verir; gün ışığı tonu ise akşam saatlerinde göz yormayan, davetkâr bir ortam kurar. Okunurluğun öncelik olduğu tabela ve kontur işlerinde ise [6000K soğuk beyaz](/urunler/cob-led-serit/dis-mekan-cob-beyaz-6000k/) kademesi doğru seçimdir.",
+      },
+      { type: "h2", text: "Sıcak tonun iki yan faydası" },
+      {
+        type: "p",
+        text:
+          "Dış mekanda 3000K'nın soğuk beyaza göre iki pratik avantajı vardır. Birincisi böcek: gece uçan böcekler kısa dalga boylu, maviye kaçan ışığa belirgin biçimde daha fazla toplanır. Yemek servisi yapılan teraslarda sıcak ton seçmek bu sorunu tamamen bitirmez ama gözle görülür ölçüde azaltır.",
+      },
+      {
+        type: "p",
+        text:
+          "İkincisi komşuluk. Konut bölgelerinde ve villa bahçelerinde soğuk beyaz hatlar, cepheden taşıp yan parselleri rahatsız eden bir keskinlik yaratır. Gün ışığı tonu aynı metrajda daha az rahatsız edicidir; ışığın yönünü aşağı çeviren bir montajla birleştiğinde şikâyet riski büyük ölçüde ortadan kalkar.",
+      },
+      { type: "h2", text: "Noktasız hattın peyzajdaki karşılığı" },
+      {
+        type: "p",
+        text:
+          "Peyzaj ve teras işlerinde şerit çoğu zaman gizlenmez; basamak kenarında, pergole profilinde ve duvar nişinde doğrudan görünür. Sıradan SMD şeritte tek tek noktalar bu mesafede okunur ve hat teknik bir aparat gibi durur. COB'da çipler bitişiktir; hat kesintisiz bir çizgi olarak görünür ve mimari detayın parçası hâline gelir. Ürünün genel teknik anlatımı [IP65 10mm COB 480/mt](/urunler/cob-led-serit/ip65-10mm-cob-480-mt/) sayfasında.",
+      },
+      { type: "h2", text: "Besleme, uç kapatma ve montaj" },
+      {
+        type: "p",
+        text:
+          "Metrede 12 W çeker; 20 metre 240 W eder ve %25 pay ile 24V 300 W trafo gerekir. Kendi metrajınız için [LED şerit güç hesaplama aracını](/araclar/led-serit-guc-hesaplama/) kullanabilirsiniz.",
+      },
+      {
+        type: "p",
+        text:
+          "IP65 gövdeye aittir, kesilen uca değil: her uç silikon kapak ve yapıştırıcı ile kapatılmalı, kablo giriş noktası ayrıca sızdırmaz hâle getirilmelidir. Bahçe ve peyzaj hatlarında su birikmeyen bir montaj ayrıca önemlidir — sulama ve yağmur suyunun toplandığı yatay yüzeylerde IP65 yeterli olmaz. Trafo dışarıda kalacaksa [metal kasa dış mekan adaptör](/urunler/trafo-led-surucu/metal-kasa-dis-mekan-adaptor/) kullanın.",
+      },
+      { type: "h2", text: "Montaj yüzeyi ve ısı" },
+      {
+        type: "p",
+        text:
+          "Silikon kaplama suyu dışarıda tutar ama ısıyı da bir miktar içeride tutar. Kısa hatlarda bu sorun değildir; uzun cephe hatlarında alüminyum kanal ya da alüminyum profil üzerine montaj, ısıyı alarak parlaklık kaybını yıllar boyunca yavaşlatır. Doğrudan ahşap ya da plastik üzerine uzun metraj çekmek, aynı şeridin ömrünü belirgin biçimde kısaltır.",
+      },
+      {
+        type: "p",
+        text:
+          "Arka yapışkan bant dış mekanda tek başına güvenilmez: sıcaklık farkı ve nem bandı zamanla bırakır. Cephede klips, kanal ya da uygun bir yapıştırıcı ile mekanik sabitleme yapın. Şerit yatay bir yüzeye monte ediliyorsa, suyun birikmeyeceği bir eğim ya da montaj yönü seçilmelidir — IP65 birikmiş suda uzun süre kalmaya göre tasarlanmamıştır.",
+      },
+      { type: "h2", text: "Sipariş ederken" },
+      {
+        type: "p",
+        text:
+          "Metraja köşe dönüşleri ve kesim artıkları için pay ekleyin. Renk sıcaklığı seçimini siparişten önce netleştirin: aynı yüzeye sonradan farklı bir kademe eklemek, hattın tamamını sökmeyi gerektiren tek hatadır. Beyaz LED'lerde partiler arası küçük ton farkları olabildiği için tüm metrajı tek seferde ve aynı partiden isteyin.",
+      },
+      {
+        type: "p",
+        text:
+          "Yanında gerekecek kalemleri de aynı siparişte çıkarın: dış mekan tipi 24V trafo, silikon uç kapağı, yapıştırıcı ve lehimsiz konnektör. Bu kalemlerden biri eksik kaldığında hat çekilmiş olsa bile iş teslim edilemez.",
+      },
+    ],
+    faq: [
+      { q: "3000K mı 6000K mı seçmeliyim?", a: "Ahşap, taş ve tuğla cephelerde, teras ve bahçe gibi oturulan alanlarda 3000K; tabela, kontur ve güvenlik hatlarında 6000K daha doğrudur." },
+      { q: "3000K daha mı sönük?", a: "Lümen değeri yakın olsa da soğuk beyaza göre gözle biraz daha sönük algılanır. Okunurluk öncelikse 6000K seçin." },
+      { q: "Böcek sorununu azaltır mı?", a: "Azaltır. Gece uçan böcekler maviye kaçan ışığa daha fazla toplanır; sıcak ton bu etkiyi gözle görülür ölçüde düşürür." },
+      { q: "Pergole ve çardakta kullanılır mı?", a: "Uygundur. Profil içine veya altına monte edilir; su birikmeyen bir montaj ve kapatılmış uçlar şarttır." },
+      { q: "Aynı cephede 3000K ve 6000K birlikte olur mu?", a: "Aynı yüzeyde olmamalı. İki ton yan yana geldiğinde gece leke gibi okunur." },
+      { q: "Kaç metre tek hat çekilebilir?", a: "24V ve 12 W/m için pratik sınır 8-10 metredir. Uzun hatlarda bölüp iki uçtan besleyin." },
+      { q: "Havuz kenarında kullanılabilir mi?", a: "Su sıçramasının olduğu ama suyun birikmediği noktalarda kullanılır. Su altında kalacak yerler için IP65 yeterli değildir." },
+      { q: "Nötr beyaz seçeneği var mı?", a: "Var. Aynı üründe 4000K nötr beyaz kademesi de bulunur; karma cephelerde iki uç arasında güvenli bir orta yoldur." },
+    ],
+    related: ["dis-mekan-cob-beyaz-6000k", "ip65-10mm-cob-480-mt", "metal-kasa-dis-mekan-adaptor"],
+    img: "/images/products/ip65-10mm-cob-480-mt.png",
+    updated: "2026-09-08",
   },
   // ——— LED Trafo / Adaptör ——————————————————————————————————————
   {
@@ -1275,7 +2142,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Bir adaptörü etiketindeki watt değerinde sürekli çalıştırmak, ömrünü kısaltmanın en hızlı yoludur. Toplam yükü hesapladıktan sonra en az %20, tercihen %30 pay ekleyin: 80 watt çeken bir hat için 100W değil 120W adaptör seçin. Sahada görülen erken trafo arızalarının çoğunun sebebi kalitesizlik değil, sınırda çalıştırılmasıdır. Hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) doğrudan yapabilirsiniz.",
+          "Bir adaptörü etiketindeki watt değerinde sürekli çalıştırmak, ömrünü kısaltmanın en hızlı yoludur. Toplam yükü hesapladıktan sonra en az %20, tercihen %30 pay ekleyin: 80 watt çeken bir hat için 100W değil 120W adaptör seçin. Sahada görülen erken trafo arızalarının çoğunun sebebi kalitesizlik değil, sınırda çalıştırılmasıdır. Hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) doğrudan yapabilirsiniz.",
       },
       { type: "h2", text: "İnce kasanın bedeli: ısı" },
       {
@@ -1287,12 +2154,12 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Ultra slim kasa sızdırmaz değildir. Tabela dışarıda dursa bile trafo kapalı ve kuru bir kasada olmalıdır; nem alan bir noktaya konulursa kısa sürede arızalanır. Dışarıda kalacak beslemeler için [yağmur korumalı](/urunler/trafo-led-surucu/yagmur-korumali-epoksili-adaptor) ya da metal kasa dış mekan modelleri kullanılır.",
+          "Ultra slim kasa sızdırmaz değildir. Tabela dışarıda dursa bile trafo kapalı ve kuru bir kasada olmalıdır; nem alan bir noktaya konulursa kısa sürede arızalanır. Dışarıda kalacak beslemeler için [yağmur korumalı](/urunler/trafo-led-surucu/yagmur-korumali-epoksili-adaptor/) ya da metal kasa dış mekan modelleri kullanılır.",
       },
     ],
     faq: [
       { q: "Kaç watt adaptör almalıyım?", a: "Toplam yükü hesaplayıp %20-30 pay ekleyin. 80W çeken hat için 100-120W adaptör doğru seçimdir." },
-      { q: "12V mi 24V mı almalıyım?", a: "Beslenecek ürünün voltajına göre. Uzun hatlarda 24V daha az kayıp verir; karşılaştırma [12V mu 24V mu](/blog/12v-mu-24v-mu-tabela-aydinlatma) yazısında." },
+      { q: "12V mi 24V mı almalıyım?", a: "Beslenecek ürünün voltajına göre. Uzun hatlarda 24V daha az kayıp verir; karşılaştırma [12V mu 24V mu](/blog/12v-mu-24v-mu-tabela-aydinlatma/) yazısında." },
       { q: "Bir adaptöre birden fazla hat bağlanır mı?", a: "Bağlanır, toplam yük kapasitenin altında kaldığı sürece. Hatları adaptörün çıkışında paralel birleştirin." },
       { q: "Adaptör ısınıyor, normal mi?", a: "Ilık olması normaldir, elle tutulamayacak kadar sıcaksa yük fazla ya da havalandırma yetersizdir." },
       { q: "Tabela dışarıdaysa trafo nereye konur?", a: "Kapalı ve kuru bir kasaya. İç mekan tipi adaptör doğrudan dışarı asılmaz." },
@@ -1343,7 +2210,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Dışarıda trafo yaz aylarında zaten yüksek ortam sıcaklığında çalışır. Sınırda seçilmiş bir adaptör iç mekanda idare ederken dışarıda etmez. Dış mekan kurulumlarında payı %30'un altına düşürmeyin; hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) yapabilirsiniz.",
+          "Dışarıda trafo yaz aylarında zaten yüksek ortam sıcaklığında çalışır. Sınırda seçilmiş bir adaptör iç mekanda idare ederken dışarıda etmez. Dış mekan kurulumlarında payı %30'un altına düşürmeyin; hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) yapabilirsiniz.",
       },
     ],
     faq: [
@@ -1393,7 +2260,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "IP67, toza tam kapalı ve geçici olarak suya batmaya dayanıklı demektir. Çatıda su birikebilen, kar altında kalabilen ya da doğrudan yağmur alan konumlarda IP65 sınıfının ötesine geçmek gerekir. Sınıfların pratik karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led) yazısında karşılaştırılıyor.",
+          "IP67, toza tam kapalı ve geçici olarak suya batmaya dayanıklı demektir. Çatıda su birikebilen, kar altında kalabilen ya da doğrudan yağmur alan konumlarda IP65 sınıfının ötesine geçmek gerekir. Sınıfların pratik karşılığı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında karşılaştırılıyor.",
       },
       { type: "h2", text: "Koruma devreleri" },
       {
@@ -1463,7 +2330,7 @@ export const items: ItemPage[] = [
       { q: "Doğrudan yağmur alan yere asabilir miyim?", a: "Önerilmez. Doğrudan yağmur ve su birikmesi olan konumlarda IP67 sınıfı model kullanın." },
       { q: "İç mekanda kullanmakta sakınca var mı?", a: "Yok. Nemli iç mekanlarda ve titreşimli montajlarda standart adaptörden daha uzun ömürlüdür." },
       { q: "Kasa çok ısınıyor, arızalı mı?", a: "Dolgulu modellerde kasanın ılık-sıcak olması normaldir. Elle tutulamayacak sıcaklık yük fazlalığına işaret eder." },
-      { q: "Kaç watt seçmeliyim?", a: "Toplam yükün %25-30 üstü. Hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) yapabilirsiniz." },
+      { q: "Kaç watt seçmeliyim?", a: "Toplam yükün %25-30 üstü. Hesabı [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) yapabilirsiniz." },
     ],
     related: ["metal-kasa-dis-mekan-adaptor", "meanwell-dis-mekan-plus-adaptor", "ultra-slim-ic-mekan-adaptor"],
     img: "/images/products/yagmur-korumali-trafo-dinamo-light.png",
@@ -1512,14 +2379,14 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Kontrolör seçiminde tuş sayısından önce amper kapasitesine bakın. Toplam yük kanal kapasitesini aşarsa ünite ısınır, renkler kararsızlaşır ve cihaz ömrünü tamamlar. Sınır aşılıyorsa araya RGB repeater konur. Ayrıntı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi) yazısında.",
+          "Kontrolör seçiminde tuş sayısından önce amper kapasitesine bakın. Toplam yük kanal kapasitesini aşarsa ünite ısınır, renkler kararsızlaşır ve cihaz ömrünü tamamlar. Sınır aşılıyorsa araya RGB repeater konur. Ayrıntı [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında.",
       },
     ],
     faq: [
       { q: "Kontrolör trafodan önce mi sonra mı bağlanır?", a: "Sonra. Sıra şöyledir: 220V → trafo → kontrol ünitesi → RGB şerit/modül." },
       { q: "Kaç metre şerit sürebilir?", a: "Ünitenin amper değerine bağlıdır. 6A'lık bir ünite 12V'ta yaklaşık 70W, yani 7-8 metre standart RGB şerit taşır." },
       { q: "Kumanda kaybolursa ne olur?", a: "Yedek RF kumanda eşleştirilebilir. Kumandanın kaybolma ihtimali yüksekse duvara sabit dokunmatik panel veya Bluetooth ünite daha güvenlidir." },
-      { q: "Pixel şerit sürer mi?", a: "Sürmez. Adreslenebilir pixel şeritler için [pixel kontrol cihazı](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e) gerekir." },
+      { q: "Pixel şerit sürer mi?", a: "Sürmez. Adreslenebilir pixel şeritler için [pixel kontrol cihazı](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e/) gerekir." },
       { q: "İki hattı ayrı ayrı kontrol edebilir miyim?", a: "Aynı üniteye bağlı hatlar hep aynı rengi gösterir. Bağımsız kontrol için her hatta ayrı ünite gerekir." },
     ],
     related: ["bluetooth-rgb-kontrol-unitesi", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-rgb-serit-led"],
@@ -1575,7 +2442,7 @@ export const items: ItemPage[] = [
       { q: "İnternet bağlantısı gerekir mi?", a: "Hayır, Bluetooth doğrudan telefonla ünite arasında çalışır. Uzaktan (evden dışarıdan) kontrol için WiFi destekli model gerekir." },
       { q: "Birden fazla telefondan kontrol edilir mi?", a: "Ünite aynı anda tek cihazla eşleşir; diğer telefon bağlanmadan önce mevcut bağlantının kesilmesi gerekir." },
       { q: "Kaç metre şerit sürebilir?", a: "Ünitenin amper değerine bağlı. Toplam yükü hesaplayıp kapasitenin altında kaldığından emin olun." },
-      { q: "Pixel şerit sürer mi?", a: "Standart RGB üniteleri sürmez. Pixel için [SP110E gibi pixel üniteler](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e) kullanılır." },
+      { q: "Pixel şerit sürer mi?", a: "Standart RGB üniteleri sürmez. Pixel için [SP110E gibi pixel üniteler](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e/) kullanılır." },
       { q: "Elektrik kesilirse ayarlar kaybolur mu?", a: "Çoğu ünite son durumu hafızada tutar ve enerji gelince aynı renkte açılır." },
     ],
     related: ["44-tuslu-rgb-kontrol-cihazi", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-rgb-serit-led"],
@@ -1624,7 +2491,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "SP110E veri sürücüsüdür; şeridin gücünü kendisi taşımaz, besleme trafodan gelir. Uzun hatlarda şeridi yalnızca kontrolör ucundan beslemeyin, ara noktalardan da güç verin — aksi hâlde hattın sonunda hem parlaklık düşer hem renkler kayar. Bağlantı ve efekt ayrıntıları için [pixel şerit](/urunler/led-serit/ip20-pixel-serit-led) sayfasına da bakabilirsiniz.",
+          "SP110E veri sürücüsüdür; şeridin gücünü kendisi taşımaz, besleme trafodan gelir. Uzun hatlarda şeridi yalnızca kontrolör ucundan beslemeyin, ara noktalardan da güç verin — aksi hâlde hattın sonunda hem parlaklık düşer hem renkler kayar. Bağlantı ve efekt ayrıntıları için [pixel şerit](/urunler/led-serit/ip20-pixel-serit-led/) sayfasına da bakabilirsiniz.",
       },
     ],
     faq: [
@@ -1669,7 +2536,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Modül ve şerit bir yüzeyi arkadan aydınlatır; point LED ise noktanın kendisi görünsün diye kullanılır. Harfin konturu boyunca dizilen noktalar, uzaktan kesikli bir ışık hattı oluşturur — klasik lunapark ve sinema tabelası görüntüsü budur. Yüzey aydınlatmasının aksine burada amaç homojenlik değil, tek tek okunan parlak noktalardır. Konu bütünüyle [point LED nedir](/blog/point-led-nedir) yazısında anlatılıyor.",
+          "Modül ve şerit bir yüzeyi arkadan aydınlatır; point LED ise noktanın kendisi görünsün diye kullanılır. Harfin konturu boyunca dizilen noktalar, uzaktan kesikli bir ışık hattı oluşturur — klasik lunapark ve sinema tabelası görüntüsü budur. Yüzey aydınlatmasının aksine burada amaç homojenlik değil, tek tek okunan parlak noktalardır. Konu bütünüyle [point LED nedir](/blog/point-led-nedir/) yazısında anlatılıyor.",
       },
       { type: "h2", text: "Şapkanın işlevi" },
       {
@@ -1689,7 +2556,7 @@ export const items: ItemPage[] = [
       { q: "Nokta aralığı ne kadar olmalı?", a: "Tipik olarak 10-15 cm. Uzaktan sürekli bir hat görünmesi isteniyorsa aralığı kısaltın." },
       { q: "Bir hatta kaç adet bağlanabilir?", a: "Üreticinin zincir sınırını aşmayın. Uzun konturlarda hattı ikiye bölüp iki uçtan beslemek en güvenli yöntemdir." },
       { q: "Point LED dış mekanda kullanılır mı?", a: "IP65 olduğu için kullanılır. Montaj deliklerinin sızdırmaz kapatılması ve trafonun dış mekan tipi olması gerekir." },
-      { q: "Renk seçeneği var mı?", a: "Tek renk ve RGB modeller bulunur; RGB kullanımı için ayrıca bir [kontrol ünitesi](/urunler/led-kontrol-uniteleri) gerekir." },
+      { q: "Renk seçeneği var mı?", a: "Tek renk ve RGB modeller bulunur; RGB kullanımı için ayrıca bir [kontrol ünitesi](/urunler/led-kontrol-uniteleri/) gerekir." },
     ],
     related: ["50mm-point-led", "1-2w-modul-led-fortune-light", "44-tuslu-rgb-kontrol-cihazi"],
     img: "/images/products/30mm-sapkali-point-led.png",
@@ -1737,7 +2604,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Yüksek parlaklık daha fazla akım demektir; aynı zincir uzunluğunda 30 mm modelden daha çok yük çeker. Trafo hesabını bu ürünün kendi watt değerinden yapın ve [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) doğrulayın. Yüksekteki kurulumlarda montaj deliklerinin sızdırmaz kapatılması ve kabloların rüzgârda salınmayacak biçimde sabitlenmesi gerekir.",
+          "Yüksek parlaklık daha fazla akım demektir; aynı zincir uzunluğunda 30 mm modelden daha çok yük çeker. Trafo hesabını bu ürünün kendi watt değerinden yapın ve [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) doğrulayın. Yüksekteki kurulumlarda montaj deliklerinin sızdırmaz kapatılması ve kabloların rüzgârda salınmayacak biçimde sabitlenmesi gerekir.",
       },
     ],
     faq: [
@@ -1788,7 +2655,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Aynı iş esnek şeritle de yapılabilir ama kesit dar bir kanaldır ve şerit orada hizada durmakta zorlanır; ışık kaçar, hat dalgalanır. Sert bar formu kesite oturur ve hizayı kendi tutar. Kavisli harflerde bar kullanılamaz, orada esnek çözümlere dönülür. Seçimin tamamı [kesit aydınlatma LED rehberinde](/blog/kesit-aydinlatma-led-rehberi).",
+          "Aynı iş esnek şeritle de yapılabilir ama kesit dar bir kanaldır ve şerit orada hizada durmakta zorlanır; ışık kaçar, hat dalgalanır. Sert bar formu kesite oturur ve hizayı kendi tutar. Kavisli harflerde bar kullanılamaz, orada esnek çözümlere dönülür. Seçimin tamamı [kesit aydınlatma LED rehberinde](/blog/kesit-aydinlatma-led-rehberi/).",
       },
       { type: "h2", text: "Işık kaçağı — işin kalitesini belirleyen detay" },
       {
@@ -1807,7 +2674,7 @@ export const items: ItemPage[] = [
       { q: "Kavisli harflerde kullanılır mı?", a: "Sert bar kavise oturmaz. Kavisli harflerde esnek kesit çözümleri ya da IP65 şerit tercih edilir." },
       { q: "50 cm mi 100 cm mi almalıyım?", a: "Harf boylarınıza göre; fireyi azaltmak için ölçüleri planlayıp iki boyu karışık kullanmak yaygındır." },
       { q: "Işık duvara vuruyor, nasıl engellenir?", a: "Barın kesit içindeki konumunu geri çekin ve harf gövdesindeki boşlukları kapatın. Kaçağın kaynağı neredeyse her zaman montaj boşluğudur." },
-      { q: "Hangi trafo gerekir?", a: "12V, dış mekan tipi ve %25-30 paylı. Toplam yükü [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama) çıkarabilirsiniz." },
+      { q: "Hangi trafo gerekir?", a: "12V, dış mekan tipi ve %25-30 paylı. Toplam yükü [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) çıkarabilirsiniz." },
     ],
     related: ["1-5w-eco-mercekli-modul-led", "ip65-8mm-dis-mekan-drop-silikon-serit-led", "metal-kasa-dis-mekan-adaptor"],
     img: "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg",
