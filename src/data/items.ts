@@ -48,7 +48,7 @@ export const items: ItemPage[] = [
     slug: "1-5w-modul-led-fortune-plus",
     categorySlug: "led-modul",
     name: "1.5W Modül LED (Fortune Plus)",
-    metaTitle: "1.5W Modül LED Fortune Plus | Kutu Harf LED Modülü",
+    metaTitle: "1.5W Modül LED Fiyatı | Fortune Plus Kutu Harf",
     metaDesc:
       "Fortune Plus 1.5W mercekli modül LED: 12V, IP65, derin kutu harf ve büyük tabelalar için yüksek parlaklık. Toptan fiyat, aynı gün kargo, faturalı satış.",
     keywords: ["1.5w modül led", "fortune plus modül led", "kutu harf led modülü", "1.5 watt led modül", "yüksek parlaklık modül led"],
@@ -116,7 +116,7 @@ export const items: ItemPage[] = [
     slug: "1-2w-modul-led-fortune-light",
     categorySlug: "led-modul",
     name: "1.2W Modül LED (Fortune Light)",
-    metaTitle: "1.2W Modül LED Fortune Light | Mercekli Tabela Modülü",
+    metaTitle: "1.2W Modül LED Fiyatı | Fortune Light Mercekli",
     metaDesc:
       "Fortune Light 1.2W mercekli modül LED: 12V, IP65, orta derinlikte kutu harf ve tabela için dengeli parlaklık. Toptan fiyat, aynı gün kargo.",
     keywords: ["1.2w modül led", "fortune light modül", "mercekli modül led", "tabela led modülü 1.2 watt"],
@@ -177,7 +177,7 @@ export const items: ItemPage[] = [
     slug: "0-72w-mercekli-ikili-modul-led-fortune-light",
     categorySlug: "led-modul",
     name: "0.72W Mercekli İkili Modül LED (Fortune Light)",
-    metaTitle: "0.72W Mercekli İkili Modül LED | Sığ Kutu Harf Modülü",
+    metaTitle: "0.72W İkili Mercekli Modül LED Fiyatı | Sığ Harf",
     metaDesc:
       "0.72W ikili mercekli modül LED: 12V, IP65, sığ kutu harf ve ince tabelalarda benek yapmayan dengeli ışık. Toptan fiyat, aynı gün kargo.",
     keywords: ["0.72w modül led", "ikili modül led", "mercekli ikili modül", "sığ kutu harf led", "ince tabela modülü"],
@@ -238,7 +238,7 @@ export const items: ItemPage[] = [
     slug: "1-08w-samsung-modul-led",
     categorySlug: "led-modul",
     name: "1.08W Samsung Modül LED",
-    metaTitle: "Samsung Modül LED 1.08W | Yüksek CRI Tabela Modülü",
+    metaTitle: "Samsung Modül LED 1.08W Fiyatı | Yüksek CRI",
     metaDesc:
       "Samsung 2835 çipli 1.08W modül LED: 12V, IP65, yüksek CRI ve kararlı beyaz. Kurumsal kimlik renginin doğru çıkması gereken tabelalar için.",
     keywords: ["samsung modül led", "1.08w modül led", "samsung 2835 modül", "yüksek cri tabela led", "kurumsal renk led modül"],
@@ -294,7 +294,7 @@ export const items: ItemPage[] = [
     slug: "2-4w-cob-modul-led-fortune-plus",
     categorySlug: "led-modul",
     name: "2.4W COB Modül LED (Fortune Plus)",
-    metaTitle: "COB Modül LED 2.4W | Noktasız Homojen Tabela Işığı",
+    metaTitle: "COB Modül LED 2.4W Fiyatı | Noktasız Işık",
     metaDesc:
       "2.4W COB modül LED: 12V, IP65, tek tek nokta görünmeyen kesintisiz ışık. Sığ kutu harf ve şeffaf yüzeylerde benek sorununu bitirir.",
     keywords: ["cob modül led", "2.4w cob modül", "noktasız modül led", "homojen tabela ışığı", "cob tabela modülü"],
@@ -355,7 +355,7 @@ export const items: ItemPage[] = [
     slug: "0-72w-rgb-modul-led-fortune-plus",
     categorySlug: "led-modul",
     name: "0.72W RGB Modül LED (Fortune Plus)",
-    metaTitle: "RGB Modül LED 0.72W | Renk Değiştiren Tabela Modülü",
+    metaTitle: "RGB Modül LED 0.72W Fiyatı | Renk Değiştiren",
     metaDesc:
       "0.72W RGB modül LED: 12V, IP65, kontrolör ile tam renk ve renk geçişi. Tabela, cephe ve dekoratif aydınlatma için toptan fiyat.",
     keywords: ["rgb modül led", "0.72w rgb modül", "renk değiştiren modül led", "tabela rgb led", "rgb kutu harf"],
@@ -417,7 +417,7 @@ export const items: ItemPage[] = [
     slug: "1-5w-eco-mercekli-modul-led",
     categorySlug: "light-box-led",
     name: "1.5W ECO Mercekli Modül LED",
-    metaTitle: "1.5W ECO Mercekli Modül LED | Işıklı Kutu Modülü",
+    metaTitle: "1.5W ECO Mercekli Modül LED Fiyatı | Light Box",
     metaDesc:
       "1.5W ECO mercekli modül LED: 12V, IP65, geniş açılı mercek ile ışıklı kutu ve light box panolarında homojen dağılım. Toptan fiyat.",
     keywords: ["light box led modül", "ışıklı kutu led", "1.5w eco modül", "geniş açılı modül led", "pano led modülü"],
@@ -479,7 +479,7 @@ export const items: ItemPage[] = [
     slug: "6x12mm-silikon-neon-led-1cm",
     categorySlug: "neon-led",
     name: "6x12mm Silikon Neon LED (1cm)",
-    metaTitle: "6x12mm Neon LED 1cm Kesim | Silikon Neon Flex",
+    metaTitle: "6x12mm Silikon Neon LED Fiyatı | 1cm Kesim",
     metaDesc:
       "6x12mm silikon neon LED, 1 cm'de kesilebilir: 12V, IP65, dar yazı ve keskin dönüşler için. Toptan fiyat, metrede kesim, aynı gün kargo.",
     keywords: ["6x12mm neon led", "silikon neon led", "neon flex", "1cm kesim neon", "neon yazı led"],
@@ -540,7 +540,7 @@ export const items: ItemPage[] = [
     slug: "8x16mm-neon-led-24v",
     categorySlug: "neon-led",
     name: "8x16mm Neon LED (24V)",
-    metaTitle: "8x16mm Neon LED 24V | Yüksek Lümen Dış Mekan Neon",
+    metaTitle: "8x16mm Neon LED 24V Fiyatı | Yüksek Lümen",
     metaDesc:
       "8x16mm 24V neon LED: IP65, yüksek lümen silikon profil, uzun hatlarda düşük voltaj kaybı. Cephe ve dış mekan neon için toptan fiyat.",
     keywords: ["8x16mm neon led", "24v neon led", "dış mekan neon led", "yüksek lümen neon", "cephe neon aydınlatma"],
@@ -606,7 +606,7 @@ export const items: ItemPage[] = [
     slug: "10x10mm-flat-neon",
     categorySlug: "neon-led",
     name: "10x10mm Flat Neon",
-    metaTitle: "10x10mm Flat Neon LED 12V/24V IP67 | Kare Kesit",
+    metaTitle: "10x10mm Flat Neon LED Fiyatı | 12V/24V IP67",
     metaDesc:
       "10x10mm flat neon LED: 12V ve 24V, IP67, 10W/m, çift katmanlı silikon difüzör, 14 tek renk + RGB + Pixel. Kare kesit, 3 yıl garanti. Toptan fiyat.",
     keywords: ["10x10mm flat neon", "flat neon led", "kare neon profil", "12v 24v neon led", "ip67 flat neon", "geniş neon şerit"],
@@ -712,7 +712,7 @@ export const items: ItemPage[] = [
     slug: "220v-neon-led",
     categorySlug: "neon-led",
     name: "220V Neon LED",
-    metaTitle: "220V Neon LED | Trafosuz Direkt Bağlantı Neon",
+    metaTitle: "220V Neon LED Fiyatı | Trafosuz Bağlantı",
     metaDesc:
       "220V neon LED: IP65, trafo gerektirmeden prize bağlanır, çok uzun hatlarda voltaj düşümü yaşatmaz. Toptan fiyat, metrede kesim.",
     keywords: ["220v neon led", "trafosuz neon", "şehir şebekesi neon led", "uzun hat neon", "direkt bağlantı neon"],
@@ -768,7 +768,7 @@ export const items: ItemPage[] = [
     slug: "360-neon-led",
     categorySlug: "neon-led",
     name: "360° Neon LED",
-    metaTitle: "360 Derece Neon LED | Her Yöne Işık Veren Neon",
+    metaTitle: "360 Derece Neon LED Fiyatı | Her Yöne Işık",
     metaDesc:
       "360° neon LED: 12V, IP65, gövdesinin her yönüne ışık verir. Asılı yazılar, çift taraftan görünen hatlar ve hacimli neon için toptan fiyat.",
     keywords: ["360 neon led", "360 derece neon", "çift taraflı neon led", "asılı neon yazı", "hacimli neon"],
@@ -828,7 +828,7 @@ export const items: ItemPage[] = [
     slug: "10x5mm-flat-neon",
     categorySlug: "neon-led",
     name: "10x5mm Flat Neon",
-    metaTitle: "10x5 Flat Neon LED 24V IP67 | OSRAM 264 LED/mt",
+    metaTitle: "10x5 Flat Neon LED Fiyatı | OSRAM 264 LED/mt",
     metaDesc:
       "10x5mm flat neon LED: 24V, IP67, OSRAM SMD 2835, metrede 264 LED ve 820 lümen. Alçak profil, 14 tek renk + RGB. Toptan fiyat, aynı gün kargo.",
     keywords: ["10x5mm flat neon", "10x5 flat neon led", "24v flat neon led", "ip67 neon led", "osram neon led", "alçak profil neon led"],
@@ -942,7 +942,7 @@ export const items: ItemPage[] = [
     slug: "13mm-d-shape-neon-led",
     categorySlug: "neon-led",
     name: "13mm D-Shape Neon LED",
-    metaTitle: "13mm D-Shape Neon LED 24V IP67 | 204 LED/mt",
+    metaTitle: "13mm D-Shape Neon LED Fiyatı | 24V 204 LED/mt",
     metaDesc:
       "13mm D-Shape neon LED: 24V, IP67, 18W/m, metrede 204 LED ve 1750 lümen, 120° ışık açısı. Yarım daire kesit, 14 tek renk + RGB. Toptan fiyat.",
     keywords: ["13mm d-shape neon led", "d shape neon led", "d kesit neon led", "24v neon led ip67", "yüksek lümen neon led", "kalın neon led"],
@@ -1058,7 +1058,7 @@ export const items: ItemPage[] = [
     slug: "ip20-8mm-eco-2835-120-led-mt",
     categorySlug: "led-serit",
     name: "IP20 8mm ECO 2835 120 LED/mt",
-    metaTitle: "8mm ECO 2835 Şerit LED 120 LED/mt | İç Mekan Şerit",
+    metaTitle: "8mm ECO 2835 Şerit LED Fiyatı | 120 LED/mt",
     metaDesc:
       "IP20 8mm ECO 2835 şerit LED, 120 LED/mt: 12V iç mekan, yoğun dizilim ve dengeli maliyet. Toptan fiyat, metrede kesim, aynı gün kargo.",
     keywords: ["2835 şerit led", "120 led/mt şerit", "8mm şerit led", "ip20 iç mekan şerit led", "eco şerit led"],
@@ -1120,7 +1120,7 @@ export const items: ItemPage[] = [
     slug: "ip65-8mm-dis-mekan-drop-silikon-serit-led",
     categorySlug: "led-serit",
     name: "IP65 8mm Dış Mekan Drop Silikon Şerit LED",
-    metaTitle: "IP65 Dış Mekan Şerit LED 8mm | Drop Silikon Kaplı",
+    metaTitle: "IP65 Dış Mekan Şerit LED Fiyatı | 8mm Drop",
     metaDesc:
       "IP65 8mm drop silikon şerit LED: 12V, su geçirmez kaplama, saçak altı ve dış cephe için. Toptan fiyat, metrede kesim, aynı gün kargo.",
     keywords: ["ip65 şerit led", "dış mekan şerit led", "su geçirmez şerit led", "drop silikon şerit", "saçak altı led"],
@@ -1181,7 +1181,7 @@ export const items: ItemPage[] = [
     slug: "ip20-rgb-serit-led",
     categorySlug: "led-serit",
     name: "IP20 RGB Şerit LED",
-    metaTitle: "RGB Şerit LED IP20 | Renk Değiştiren İç Mekan Şerit",
+    metaTitle: "RGB Şerit LED Fiyatı | IP20 Renk Değiştiren",
     metaDesc:
       "IP20 RGB şerit LED: 12V, tam renk, kontrol ünitesiyle renk geçişi ve sese tepkili modlar. İç mekan dekoratif aydınlatma için toptan fiyat.",
     keywords: ["rgb şerit led", "renk değiştiren şerit led", "ip20 rgb şerit", "rgb led bant", "dekoratif rgb aydınlatma"],
@@ -1237,7 +1237,7 @@ export const items: ItemPage[] = [
     slug: "ip20-8mm-samsung-ic-mekan-serit-led",
     categorySlug: "led-serit",
     name: "IP20 8mm Samsung İç Mekan Şerit LED",
-    metaTitle: "Samsung Şerit LED 8mm IP20 | Yüksek CRI İç Mekan",
+    metaTitle: "Samsung Şerit LED Fiyatı | 8mm IP20 Yüksek CRI",
     metaDesc:
       "IP20 8mm Samsung şerit LED: 12V, yüksek CRI ve kararlı beyaz. Vitrin, teşhir ve renk doğruluğu gereken iç mekan aydınlatması için.",
     keywords: ["samsung şerit led", "yüksek cri şerit led", "vitrin aydınlatma led", "8mm samsung şerit", "renk doğruluğu led"],
@@ -1293,7 +1293,7 @@ export const items: ItemPage[] = [
     slug: "ip20-pixel-serit-led",
     categorySlug: "led-serit",
     name: "IP20 Pixel Şerit LED",
-    metaTitle: "Pixel Şerit LED IP20 | Adreslenebilir Akan Efekt LED",
+    metaTitle: "Pixel Şerit LED Fiyatı | IP20 Adreslenebilir",
     metaDesc:
       "IP20 pixel şerit LED: 12V, adreslenebilir, her LED ayrı renk alır. Akan, dalgalanan ve animasyonlu efektler için toptan fiyat.",
     keywords: ["pixel şerit led", "adreslenebilir led şerit", "akan led şerit", "ws2812 şerit", "animasyonlu led"],
@@ -1355,7 +1355,7 @@ export const items: ItemPage[] = [
     slug: "ip20-8mm-cob-480-mt",
     categorySlug: "cob-led-serit",
     name: "IP20 8mm COB 480/mt",
-    metaTitle: "COB Şerit LED 8mm 480 LED/mt | Noktasız İç Mekan",
+    metaTitle: "COB Şerit LED Fiyatı | 8mm 480 LED/mt IP20",
     metaDesc:
       "IP20 8mm COB şerit LED, 480 LED/mt: 24V, tek tek nokta görünmeyen kesintisiz ışık hattı. İç mekan dekoratif aydınlatma için toptan fiyat.",
     keywords: ["cob şerit led", "480 led/mt cob", "noktasız şerit led", "kesintisiz led hattı", "24v cob şerit"],
@@ -1416,7 +1416,7 @@ export const items: ItemPage[] = [
     slug: "ip65-10mm-cob-480-mt",
     categorySlug: "cob-led-serit",
     name: "IP65 10mm COB 480/mt",
-    metaTitle: "IP65 COB Şerit LED 10mm | Dış Mekan Noktasız Hat",
+    metaTitle: "IP65 COB Şerit LED Fiyatı | 10mm Dış Mekan",
     metaDesc:
       "IP65 10mm COB şerit LED, 480 LED/mt: 24V, su geçirmez kaplama ile dış mekanda kesintisiz ışık çizgisi. Toptan fiyat, metrede kesim.",
     keywords: ["ip65 cob şerit", "dış mekan cob led", "su geçirmez cob şerit", "10mm cob 480", "cephe çizgi aydınlatma"],
@@ -1486,7 +1486,7 @@ export const items: ItemPage[] = [
     slug: "ip20-rgb-cob-serit-led-576-led-mt",
     categorySlug: "cob-led-serit",
     name: "IP20 RGB COB Şerit LED 576 LED/mt",
-    metaTitle: "RGB COB Şerit LED 576/mt | Noktasız Renk Değiştiren",
+    metaTitle: "RGB COB Şerit LED Fiyatı | 576 LED/mt Noktasız",
     metaDesc:
       "IP20 RGB COB şerit LED, 576 LED/mt: 24V, tam renk ve noktasız hat bir arada. Dekoratif iç mekan aydınlatması için toptan fiyat.",
     keywords: ["rgb cob şerit", "renk değiştiren cob led", "576 led/mt rgb", "noktasız rgb şerit", "24v rgb cob"],
@@ -1547,7 +1547,7 @@ export const items: ItemPage[] = [
     slug: "mor-cob-serit-led",
     categorySlug: "cob-led-serit",
     name: "Mor COB Şerit LED 520/mt",
-    metaTitle: "Mor COB Şerit LED 24V IP20 | 8mm 520 LED/mt",
+    metaTitle: "Mor COB Şerit LED Fiyatı | 24V 520 LED/mt",
     metaDesc:
       "Mor COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız mor ışık hattı — bar, gece kulübü ve dekoratif iç mekan için toptan fiyat.",
     keywords: ["mor cob şerit led", "mor led şerit", "renkli cob şerit", "24v mor şerit led", "noktasız mor led", "425nm mor led"],
@@ -1661,7 +1661,7 @@ export const items: ItemPage[] = [
     slug: "pembe-cob-serit-led",
     categorySlug: "cob-led-serit",
     name: "Pembe COB Şerit LED 520/mt",
-    metaTitle: "Pembe COB Şerit LED 24V IP20 | 8mm 520 LED/mt",
+    metaTitle: "Pembe COB Şerit LED Fiyatı | 24V 520 LED/mt",
     metaDesc:
       "Pembe COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız pembe ışık hattı — tekstil, kozmetik ve vitrin aydınlatması için toptan fiyat.",
     keywords: ["pembe cob şerit led", "pembe led şerit", "renkli cob şerit led", "24v pembe şerit", "vitrin pembe led", "noktasız pembe led"],
@@ -1775,7 +1775,7 @@ export const items: ItemPage[] = [
     slug: "buz-mavisi-cob-serit-led",
     categorySlug: "cob-led-serit",
     name: "Buz Mavisi COB Şerit LED 520/mt",
-    metaTitle: "Buz Mavisi COB Şerit LED 24V IP20 | Açık Mavi",
+    metaTitle: "Buz Mavisi COB Şerit LED Fiyatı | 24V IP20",
     metaDesc:
       "Buz mavisi (açık mavi) COB şerit LED: 24V, IP20, 8mm, 520 LED/mt, 12W. Noktasız açık mavi hat — soğutucu reyon ve teknoloji vitrini için toptan fiyat.",
     keywords: ["buz mavisi cob şerit led", "açık mavi cob şerit", "açık mavi led şerit", "24v buz mavisi led", "soğutucu reyon led", "485nm led şerit"],
@@ -1894,7 +1894,7 @@ export const items: ItemPage[] = [
     slug: "dis-mekan-cob-beyaz-6000k",
     categorySlug: "cob-led-serit",
     name: "IP65 10mm COB 480/mt Beyaz 6000K",
-    metaTitle: "Dış Mekan COB Şerit LED Beyaz 6000K | IP65 24V",
+    metaTitle: "Dış Mekan COB Şerit LED Fiyatı | Beyaz 6000K",
     metaDesc:
       "6000K soğuk beyaz dış mekan COB şerit LED: IP65, 24V, 10mm, 480 LED/mt, 12W. Cephe konturu ve tabela için noktasız hat. Toptan fiyat.",
     keywords: ["dış mekan cob şerit led beyaz", "6000k cob şerit", "soğuk beyaz cob led", "ip65 beyaz cob şerit", "cephe kontur led", "24v beyaz cob"],
@@ -2006,7 +2006,7 @@ export const items: ItemPage[] = [
     slug: "dis-mekan-cob-gunisigi-3000k",
     categorySlug: "cob-led-serit",
     name: "IP65 10mm COB 480/mt Günışığı 3000K",
-    metaTitle: "Dış Mekan COB Şerit LED Günışığı 3000K | IP65 24V",
+    metaTitle: "Dış Mekan COB Şerit LED Fiyatı | Günışığı 3000K",
     metaDesc:
       "3000K gün ışığı dış mekan COB şerit LED: IP65, 24V, 10mm, 480 LED/mt, 12W. Ahşap cephe, teras ve peyzaj için sıcak tonlu noktasız hat. Toptan fiyat.",
     keywords: ["dış mekan cob şerit günışığı", "3000k cob şerit led", "sıcak beyaz cob led", "ip65 günışığı şerit", "ahşap cephe led", "teras aydınlatma led"],
@@ -2116,7 +2116,7 @@ export const items: ItemPage[] = [
     slug: "ultra-slim-ic-mekan-adaptor",
     categorySlug: "trafo-led-surucu",
     name: "Ultra Slim İç Mekan Adaptör",
-    metaTitle: "Ultra Slim LED Adaptör | İnce Kasa İç Mekan Trafo",
+    metaTitle: "Ultra Slim LED Adaptör Fiyatı | İnce Kasa Trafo",
     metaDesc:
       "Ultra slim iç mekan LED adaptör: 220V giriş, 12V/24V çıkış, dar kasalara sığan ince gövde. Kutu harf ve mobilya içi için toptan fiyat.",
     keywords: ["ultra slim adaptör", "ince led trafo", "iç mekan led adaptör", "slim trafo", "kutu harf trafosu"],
@@ -2172,7 +2172,7 @@ export const items: ItemPage[] = [
     slug: "metal-kasa-dis-mekan-adaptor",
     categorySlug: "trafo-led-surucu",
     name: "Metal Kasa Dış Mekan Adaptör",
-    metaTitle: "Metal Kasa Dış Mekan LED Adaptör | Dayanıklı Trafo",
+    metaTitle: "Metal Kasa LED Adaptör Fiyatı | Dış Mekan Trafo",
     metaDesc:
       "Metal kasa dış mekan LED adaptör: 220V giriş, 12V/24V çıkış, dış koşullara dayanıklı gövde. Tabela ve cephe aydınlatması için toptan fiyat.",
     keywords: ["dış mekan led adaptör", "metal kasa trafo", "tabela trafosu", "dış mekan led trafo", "dayanıklı led adaptör"],
@@ -2228,7 +2228,7 @@ export const items: ItemPage[] = [
     slug: "meanwell-dis-mekan-plus-adaptor",
     categorySlug: "trafo-led-surucu",
     name: "Meanwell Dış Mekan Plus+ Adaptör",
-    metaTitle: "Meanwell Dış Mekan LED Adaptör IP67 | Marka Trafo",
+    metaTitle: "Meanwell LED Adaptör Fiyatı | IP67 Dış Mekan",
     metaDesc:
       "Meanwell dış mekan LED adaptör: 220V giriş, IP67 koruma, uzun ömür ve dar tolerans. Kritik tabela ve cephe kurulumları için toptan fiyat.",
     keywords: ["meanwell adaptör", "meanwell led trafo", "ip67 led adaptör", "marka led trafo", "dış mekan meanwell"],
@@ -2284,7 +2284,7 @@ export const items: ItemPage[] = [
     slug: "yagmur-korumali-epoksili-adaptor",
     categorySlug: "trafo-led-surucu",
     name: "Yağmur Korumalı Epoksili Adaptör",
-    metaTitle: "Yağmur Korumalı Epoksili LED Adaptör | Rainproof Trafo",
+    metaTitle: "Yağmur Korumalı LED Adaptör Fiyatı | Epoksili",
     metaDesc:
       "Yağmur korumalı epoksi dolgulu LED adaptör: 220V giriş, nem ve titreşime karşı dolgulu devre. Saçak altı ve yarı dış mekan için toptan fiyat.",
     keywords: ["yağmur korumalı adaptör", "epoksili led trafo", "rainproof adaptör", "yarı dış mekan trafo", "nem korumalı trafo"],
@@ -2341,7 +2341,7 @@ export const items: ItemPage[] = [
     slug: "44-tuslu-rgb-kontrol-cihazi",
     categorySlug: "led-kontrol-uniteleri",
     name: "44 Tuşlu RGB Kontrol Cihazı",
-    metaTitle: "44 Tuşlu RGB Kontrol Cihazı | RF Kumandalı LED Kontrol",
+    metaTitle: "44 Tuşlu RGB Kontrol Cihazı Fiyatı | RF Kumanda",
     metaDesc:
       "44 tuşlu RGB kontrol cihazı: 12-24V, RF uzaktan kumanda, hazır renkler ve geçiş modları. RGB şerit ve modül için toptan fiyat.",
     keywords: ["44 tuşlu rgb kontrol", "rgb kumanda", "led kontrol cihazı", "rf rgb kontrolör", "rgb şerit kumandası"],
@@ -2397,7 +2397,7 @@ export const items: ItemPage[] = [
     slug: "bluetooth-rgb-kontrol-unitesi",
     categorySlug: "led-kontrol-uniteleri",
     name: "Bluetooth RGB Kontrol Ünitesi",
-    metaTitle: "Bluetooth RGB Kontrol Ünitesi | Telefonla LED Kontrol",
+    metaTitle: "Bluetooth RGB Kontrol Ünitesi Fiyatı | Telefonla",
     metaDesc:
       "Bluetooth RGB kontrol ünitesi: 12-24V, telefon uygulamasıyla renk, parlaklık ve zamanlayıcı kontrolü. RGB şerit ve modül için toptan fiyat.",
     keywords: ["bluetooth rgb kontrol", "telefonla led kontrol", "akıllı led kontrolör", "rgb uygulama kontrol", "bluetooth led ünite"],
@@ -2453,7 +2453,7 @@ export const items: ItemPage[] = [
     slug: "pixel-rgb-kontrol-cihazi-sp110e",
     categorySlug: "led-kontrol-uniteleri",
     name: "Pixel RGB Kontrol Cihazı (SP110E)",
-    metaTitle: "SP110E Pixel Kontrol Cihazı | Bluetooth Adreslenebilir LED",
+    metaTitle: "SP110E Pixel Kontrol Cihazı Fiyatı | Bluetooth",
     metaDesc:
       "SP110E pixel RGB kontrol cihazı: 5-24V, Bluetooth, adreslenebilir şeritler için akan ve animasyonlu efektler. Toptan fiyat, aynı gün kargo.",
     keywords: ["sp110e", "pixel kontrol cihazı", "adreslenebilir led kontrolör", "bluetooth pixel kontrol", "ws2812 kontrol"],
@@ -2510,7 +2510,7 @@ export const items: ItemPage[] = [
     slug: "30mm-sapkali-point-led",
     categorySlug: "point-led",
     name: "30mm Şapkalı Point LED",
-    metaTitle: "30mm Şapkalı Point LED | Tabela Nokta Aydınlatma",
+    metaTitle: "30mm Şapkalı Point LED Fiyatı | Tabela Nokta LED",
     metaDesc:
       "30mm şapkalı point LED: 12V, IP65, geniş açılı difüzör şapka ile yumuşak nokta ışığı. Tabela yüzü ve kontur dizilimi için toptan fiyat.",
     keywords: ["point led", "30mm point led", "şapkalı point led", "tabela nokta led", "pikselli tabela"],
@@ -2566,7 +2566,7 @@ export const items: ItemPage[] = [
     slug: "50mm-point-led",
     categorySlug: "point-led",
     name: "50mm Point LED",
-    metaTitle: "50mm Point LED | Yüksek Parlaklık Büyük Nokta LED",
+    metaTitle: "50mm Point LED Fiyatı | Yüksek Parlaklık Nokta",
     metaDesc:
       "50mm point LED: 12V, IP65, büyük çap ve yüksek parlaklık. Uzaktan okunacak kontur ve büyük ölçekli tabelalar için toptan fiyat.",
     keywords: ["50mm point led", "büyük point led", "yüksek parlaklık nokta led", "uzaktan görünen tabela led", "kontur nokta led"],
@@ -2623,7 +2623,7 @@ export const items: ItemPage[] = [
     slug: "ip65-kesitten-aydinlatma-led-bar",
     categorySlug: "kesit-aydinlatma-led",
     name: "IP65 Kesitten Aydınlatma LED Bar",
-    metaTitle: "IP65 Kesit Aydınlatma LED Bar | Kanal Harf Kesit LED",
+    metaTitle: "IP65 Kesit Aydınlatma LED Bar Fiyatı | Kanal Harf",
     metaDesc:
       "IP65 kesitten aydınlatma LED bar: 12V, hazır bar formu, kanal harf kesitini dıştan aydınlatır. Dış mekan tabela için toptan fiyat.",
     keywords: ["kesit aydınlatma led", "kesitten aydınlatma", "led bar kesit", "kanal harf kesit led", "ip65 led bar"],
