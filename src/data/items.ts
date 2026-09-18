@@ -110,7 +110,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-2w-modul-led-fortune-light", "2-4w-cob-modul-led-fortune-plus", "1-08w-samsung-modul-led"],
     img: "/images/products/1-5-watt-modul-led-fortune-light.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "1-2w-modul-led-fortune-light",
@@ -171,7 +171,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-5w-modul-led-fortune-plus", "0-72w-mercekli-ikili-modul-led-fortune-light", "1-08w-samsung-modul-led"],
     img: "/images/products/1-2-watt-modul-led-fortune-light.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "0-72w-mercekli-ikili-modul-led-fortune-light",
@@ -232,7 +232,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-2w-modul-led-fortune-light", "1-5w-modul-led-fortune-plus", "1-5w-eco-mercekli-modul-led"],
     img: "/images/products/0-72w-mercekli-ikili-modul-led.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "1-08w-samsung-modul-led",
@@ -288,7 +288,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-2w-modul-led-fortune-light", "1-5w-modul-led-fortune-plus", "ip20-8mm-samsung-ic-mekan-serit-led"],
     img: "/images/products/1-08-watt-samsung-modul.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "2-4w-cob-modul-led-fortune-plus",
@@ -349,7 +349,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-5w-modul-led-fortune-plus", "ip20-8mm-cob-480-mt", "1-5w-eco-mercekli-modul-led"],
     img: "/images/products/cob-modul-led.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "0-72w-rgb-modul-led-fortune-plus",
@@ -410,7 +410,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-rgb-serit-led", "44-tuslu-rgb-kontrol-cihazi", "bluetooth-rgb-kontrol-unitesi"],
     img: "/images/products/0-72w-rgb-modul-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— Light Box LED ————————————————————————————————————————————
   {
@@ -472,7 +472,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-5w-modul-led-fortune-plus", "2-4w-cob-modul-led-fortune-plus", "ip65-kesitten-aydinlatma-led-bar"],
     img: "/images/products/eco-1-5w-modul-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— Neon LED ————————————————————————————————————————————————
   {
@@ -534,7 +534,7 @@ export const items: ItemPage[] = [
     ],
     related: ["8x16mm-neon-led-24v", "10x10mm-flat-neon", "360-neon-led"],
     img: "/images/products/6x12mm-silikon-neon-led-2-5cm-2.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "8x16mm-neon-led-24v",
@@ -600,7 +600,7 @@ export const items: ItemPage[] = [
     ],
     related: ["6x12mm-silikon-neon-led-1cm", "10x10mm-flat-neon", "meanwell-dis-mekan-plus-adaptor"],
     img: "/images/products/8x16mm-neon-led-24v.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "10x10mm-flat-neon",
@@ -706,7 +706,7 @@ export const items: ItemPage[] = [
     ],
     related: ["10x5mm-flat-neon", "13mm-d-shape-neon-led", "8x16mm-neon-led-24v"],
     img: "/images/products/10x10-flat-neon.webp",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "220v-neon-led",
@@ -762,7 +762,7 @@ export const items: ItemPage[] = [
     ],
     related: ["10x10mm-flat-neon", "8x16mm-neon-led-24v", "6x12mm-silikon-neon-led-1cm"],
     img: "/images/products/220v-neon-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "360-neon-led",
@@ -822,7 +822,7 @@ export const items: ItemPage[] = [
     ],
     related: ["6x12mm-silikon-neon-led-1cm", "10x10mm-flat-neon", "8x16mm-neon-led-24v"],
     img: "/images/products/360-neon-led.webp",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "10x5mm-flat-neon",
@@ -936,7 +936,7 @@ export const items: ItemPage[] = [
     ],
     related: ["10x10mm-flat-neon", "13mm-d-shape-neon-led", "6x12mm-silikon-neon-led-1cm"],
     img: "/images/products/10x5-flat-neon.png",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "13mm-d-shape-neon-led",
@@ -1051,7 +1051,7 @@ export const items: ItemPage[] = [
     ],
     related: ["10x10mm-flat-neon", "10x5mm-flat-neon", "8x16mm-neon-led-24v"],
     img: "/images/products/13mm-d-shape-neon-led.jpg",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   // ——— LED Şerit ————————————————————————————————————————————————
   {
@@ -1114,7 +1114,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-8mm-samsung-ic-mekan-serit-led", "ip65-8mm-dis-mekan-drop-silikon-serit-led", "ip20-8mm-cob-480-mt"],
     img: "/images/products/8mm-eco-2835-120-led-mt.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip65-8mm-dis-mekan-drop-silikon-serit-led",
@@ -1175,7 +1175,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-8mm-eco-2835-120-led-mt", "ip65-10mm-cob-480-mt", "metal-kasa-dis-mekan-adaptor"],
     img: "/images/products/8mm-dis-mekan-drop-silikon-serit-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip20-rgb-serit-led",
@@ -1231,7 +1231,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-pixel-serit-led", "44-tuslu-rgb-kontrol-cihazi", "ip20-rgb-cob-serit-led-576-led-mt"],
     img: "/images/products/rgb-serit-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip20-8mm-samsung-ic-mekan-serit-led",
@@ -1287,7 +1287,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-8mm-eco-2835-120-led-mt", "1-08w-samsung-modul-led", "ip20-8mm-cob-480-mt"],
     img: "/images/products/8mm-samsung-ic-mekan-serit-led.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip20-pixel-serit-led",
@@ -1348,7 +1348,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-rgb-serit-led", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-rgb-cob-serit-led-576-led-mt"],
     img: "/images/products/pixel-serit-led.webp",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— COB LED Şerit ————————————————————————————————————————————
   {
@@ -1410,7 +1410,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip65-10mm-cob-480-mt", "ip20-rgb-cob-serit-led-576-led-mt", "ip20-8mm-eco-2835-120-led-mt"],
     img: "/images/products/ip20-8mm-cob-480-mt.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip65-10mm-cob-480-mt",
@@ -1480,7 +1480,7 @@ export const items: ItemPage[] = [
     ],
     related: ["dis-mekan-cob-beyaz-6000k", "dis-mekan-cob-gunisigi-3000k", "ip20-8mm-cob-480-mt"],
     img: "/images/products/ip65-10mm-cob-480-mt.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "ip20-rgb-cob-serit-led-576-led-mt",
@@ -1541,7 +1541,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-8mm-cob-480-mt", "ip20-rgb-serit-led", "44-tuslu-rgb-kontrol-cihazi"],
     img: "/images/products/rgb-cob-serit-led-576led-mt.webp",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "mor-cob-serit-led",
@@ -1655,7 +1655,7 @@ export const items: ItemPage[] = [
     ],
     related: ["pembe-cob-serit-led", "buz-mavisi-cob-serit-led", "ip20-rgb-cob-serit-led-576-led-mt"],
     img: "/images/products/mor-cob-serit-led-520-mt.jpg",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "pembe-cob-serit-led",
@@ -1769,7 +1769,7 @@ export const items: ItemPage[] = [
     ],
     related: ["mor-cob-serit-led", "buz-mavisi-cob-serit-led", "ip20-8mm-cob-480-mt"],
     img: "/images/products/pembe-cob-serit-led-520-mt.jpg",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "buz-mavisi-cob-serit-led",
@@ -1888,7 +1888,7 @@ export const items: ItemPage[] = [
     ],
     related: ["mor-cob-serit-led", "pembe-cob-serit-led", "ip20-8mm-cob-480-mt"],
     img: "/images/products/buz-mavisi-cob-serit-led-520-mt.jpg",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "dis-mekan-cob-beyaz-6000k",
@@ -2000,7 +2000,7 @@ export const items: ItemPage[] = [
     ],
     related: ["dis-mekan-cob-gunisigi-3000k", "ip65-10mm-cob-480-mt", "metal-kasa-dis-mekan-adaptor"],
     img: "/images/products/ip65-10mm-cob-480-mt.png",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   {
     slug: "dis-mekan-cob-gunisigi-3000k",
@@ -2109,7 +2109,7 @@ export const items: ItemPage[] = [
     ],
     related: ["dis-mekan-cob-beyaz-6000k", "ip65-10mm-cob-480-mt", "metal-kasa-dis-mekan-adaptor"],
     img: "/images/products/ip65-10mm-cob-480-mt.png",
-    updated: "2026-09-08",
+    updated: "2026-09-18",
   },
   // ——— LED Trafo / Adaptör ——————————————————————————————————————
   {
@@ -2166,7 +2166,7 @@ export const items: ItemPage[] = [
     ],
     related: ["metal-kasa-dis-mekan-adaptor", "yagmur-korumali-epoksili-adaptor", "meanwell-dis-mekan-plus-adaptor"],
     img: "/images/products/ultra-slim-ic-mekan-adaptor.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "metal-kasa-dis-mekan-adaptor",
@@ -2222,7 +2222,7 @@ export const items: ItemPage[] = [
     ],
     related: ["meanwell-dis-mekan-plus-adaptor", "yagmur-korumali-epoksili-adaptor", "ultra-slim-ic-mekan-adaptor"],
     img: "/images/products/metal-kasa-dis-mekan-adaptor-dinamo-light.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "meanwell-dis-mekan-plus-adaptor",
@@ -2278,7 +2278,7 @@ export const items: ItemPage[] = [
     ],
     related: ["metal-kasa-dis-mekan-adaptor", "yagmur-korumali-epoksili-adaptor", "ultra-slim-ic-mekan-adaptor"],
     img: "/images/products/meanwell-dis-mekan-adaptor.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "yagmur-korumali-epoksili-adaptor",
@@ -2334,7 +2334,7 @@ export const items: ItemPage[] = [
     ],
     related: ["metal-kasa-dis-mekan-adaptor", "meanwell-dis-mekan-plus-adaptor", "ultra-slim-ic-mekan-adaptor"],
     img: "/images/products/yagmur-korumali-trafo-dinamo-light.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— LED Kontrol Üniteleri ————————————————————————————————————
   {
@@ -2391,7 +2391,7 @@ export const items: ItemPage[] = [
     ],
     related: ["bluetooth-rgb-kontrol-unitesi", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-rgb-serit-led"],
     img: "/images/products/44-tuslu-rgb-kontrol-cihazi.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "bluetooth-rgb-kontrol-unitesi",
@@ -2447,7 +2447,7 @@ export const items: ItemPage[] = [
     ],
     related: ["44-tuslu-rgb-kontrol-cihazi", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-rgb-serit-led"],
     img: "/images/products/bluetooth-rgb-kontrol-unitesi.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "pixel-rgb-kontrol-cihazi-sp110e",
@@ -2503,7 +2503,7 @@ export const items: ItemPage[] = [
     ],
     related: ["ip20-pixel-serit-led", "bluetooth-rgb-kontrol-unitesi", "44-tuslu-rgb-kontrol-cihazi"],
     img: "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— Point LED ————————————————————————————————————————————————
   {
@@ -2560,7 +2560,7 @@ export const items: ItemPage[] = [
     ],
     related: ["50mm-point-led", "1-2w-modul-led-fortune-light", "44-tuslu-rgb-kontrol-cihazi"],
     img: "/images/products/30mm-sapkali-point-led.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "50mm-point-led",
@@ -2616,7 +2616,7 @@ export const items: ItemPage[] = [
     ],
     related: ["30mm-sapkali-point-led", "metal-kasa-dis-mekan-adaptor", "pixel-rgb-kontrol-cihazi-sp110e"],
     img: "/images/products/point-led-50mm.png",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   // ——— Kesit Aydınlatma ————————————————————————————————————————
   {
@@ -2678,7 +2678,7 @@ export const items: ItemPage[] = [
     ],
     related: ["1-5w-eco-mercekli-modul-led", "ip65-8mm-dis-mekan-drop-silikon-serit-led", "metal-kasa-dis-mekan-adaptor"],
     img: "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg",
-    updated: "2026-09-02",
+    updated: "2026-09-18",
   },
   {
     slug: "30a-potansli-dimmer",
