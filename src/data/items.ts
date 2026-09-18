@@ -2680,6 +2680,342 @@ export const items: ItemPage[] = [
     img: "/images/products/led-bar-kesitten-aydinlatma-50cm.jpg",
     updated: "2026-09-02",
   },
+  {
+    slug: "30a-potansli-dimmer",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "30A Potanslı Dimmer",
+    metaTitle: "LED Dimmer 30A Fiyatı | Potanslı Parlaklık Ayarı",
+    metaDesc:
+      "30A potanslı LED dimmer: 12-24V DC, kademesiz parlaklık ayarı, uzun metrajlı şerit ve COB hatları için. Toptan fiyat, aynı gün kargo.",
+    keywords: ["led dimmer", "30a dimmer", "potanslı dimmer", "şerit led dimmer", "led parlaklık ayarı"],
+    h1: "30A Potanslı Dimmer",
+    intro:
+      "12-24V hatlarda ışık seviyesini düğmeyle kademesiz ayarlayan yüksek kapasiteli dimmer. 30A'lik çıkışıyla uzun metrajlı şerit ve COB hatlarını tek cihazdan sürer.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Akım kapasitesi", "30A"],
+      ["Kontrol", "Manuel potansiyometre"],
+      ["Dimleme", "Kademesiz (PWM)"],
+      ["Bağlantı", "Klemens"],
+      ["Ürün kodu", "DGDIMC.FT.030MA"],
+    ],
+    useCases: [
+      "Uzun metrajlı şerit LED hatları",
+      "COB şerit aydınlatmaları",
+      "Tabela ve reklam uygulamalarında ışık dengeleme",
+      "Vitrin ve mağaza içi genel aydınlatma",
+    ],
+    blocks: [
+      { type: "h2", text: "Dimmer amperi nasıl seçilir" },
+      {
+        type: "p",
+        text:
+          "Dimmer seçiminde tek belirleyici, hattın çektiği akımdır. Toplam watt'ı besleme voltajına bölerek amperi bulun: 24V'luk 40 metrelik 14.4W/m şerit 576W çeker, bu da 24A eder — 30A'lik dimmer buraya oturur, 8A'lik cihaz yanar. Hesabı elle yapmak istemezseniz [trafo amper hesaplama aracı](/araclar/trafo-amper-hesaplama/) aynı sayıyı çıkarır.",
+      },
+      { type: "h2", text: "Dimmer trafonun yerine geçmez" },
+      {
+        type: "p",
+        text:
+          "Sık karşılaşılan hata, dimmeri trafo sanmaktır. Dimmer 220V'u dönüştürmez; zaten 12V ya da 24V'a düşmüş hattın üzerine, trafo ile şerit arasına takılır. Sıralama şöyledir: 220V → trafo → dimmer → şerit. Trafonun amperi de dimmerinkinden bağımsız olarak ayrıca hesaplanır ve %20-25 pay bırakılır.",
+      },
+      { type: "h2", text: "Potanslı mı, kumandalı mı" },
+      {
+        type: "p",
+        text:
+          "Potanslı dimmer düğmeyle ayarlanır; bir kez kurulup nadiren değiştirilen işlerde en güvenilir çözümdür, pil ve sinyal derdi yoktur. Kumandalı dimmer erişilmesi zor noktalarda işe yarar ama alıcı-verici arızası bir arıza kalemi daha ekler. Tabela ve vitrin işlerinde ışık seviyesi genellikle bir kez ayarlanıp bırakıldığı için potanslı tip tercih edilir. Hat 30A'i aşıyorsa dimmeri büyütmek yerine hattı bölün ve araya [RGB repeater](/urunler/led-kontrol-uniteleri/24a-rgb-repeater/) mantığında ikinci bir sürücü katın.",
+      },
+    ],
+    faq: [
+      { q: "30A dimmer kaç metre şerit sürer?", a: "Voltaja ve şeridin W/m değerine bağlı. 24V 14.4W/m şeritte yaklaşık 50 metre, 12V 9.6W/m şeritte yaklaşık 37 metre. Hesabı hattın toplam watt'ından yapın." },
+      { q: "Dimmer trafodan önce mi sonra mı bağlanır?", a: "Sonra. Sıralama 220V → trafo → dimmer → şerit şeklindedir." },
+      { q: "RGB şeritte kullanılır mı?", a: "Kullanılmaz. Bu dimmer tek renk hatlar içindir; RGB şerit üç kanallı kontrol cihazı ister." },
+      { q: "Dimmer ısınıyor, normal mi?", a: "Hafif ısınma normaldir. Elle tutulamayacak kadar ısınıyorsa hat kapasitenin üstündedir, akımı yeniden hesaplayın." },
+      { q: "Kademesiz ayar ne demek?", a: "Işık belirli basamaklara atlamadan, sıfırdan tam parlaklığa kadar sürekli olarak değişir." },
+    ],
+    related: ["6a-mini-dimmer-kontrol-cihazi", "24a-rgb-repeater", "ip20-8mm-eco-2835-120-led-mt"],
+    img: "/images/products/30a-potansli-dimmer.png",
+    updated: "2026-09-18",
+  },
+  {
+    slug: "6a-mini-dimmer-kontrol-cihazi",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "6A Mini Dimmer Kontrol Cihazı",
+    metaTitle: "Mini LED Dimmer Fiyatı | 6A Kompakt Kontrol",
+    metaDesc:
+      "6A mini LED dimmer: 12-24V DC, parlaklık ve hız ayarı, farklı ışık modları. Dar montaj alanları ve kısa şerit hatları için. Toptan fiyat.",
+    keywords: ["mini dimmer", "6a dimmer", "led dimmer", "kompakt dimmer", "şerit led dimmer"],
+    h1: "6A Mini Dimmer Kontrol Cihazı",
+    intro:
+      "Dar montaj alanlarına sığan kompakt dimmer. 12-24V kısa şerit hatlarında parlaklık, hız ve ışık modu ayarını tek küçük gövdede toplar.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Akım kapasitesi", "6A"],
+      ["Kontrol", "Parlaklık + hız ayarı"],
+      ["Mod", "Farklı ışık modları"],
+      ["Gövde", "Kompakt — dar alana gizlenir"],
+      ["Ürün kodu", "DGDIMC.FT.006MN"],
+    ],
+    useCases: [
+      "Kısa metrajlı şerit LED hatları",
+      "Vitrin ve raf aydınlatmaları",
+      "Mobilya içi ve dolap LED sistemleri",
+      "Küçük dekoratif uygulamalar",
+    ],
+    blocks: [
+      { type: "h2", text: "6A nereye yeter, nereye yetmez" },
+      {
+        type: "p",
+        text:
+          "6A, 12V hatta 72W, 24V hatta 144W demektir. 12V 9.6W/m şeritte yaklaşık 7 metre, 24V 14.4W/m şeritte yaklaşık 10 metre eder. Vitrin rafı, dolap içi ve tek harflik işler için rahat; tabela cephesi gibi uzun hatlarda yetmez, oraya [30A potanslı dimmer](/urunler/led-kontrol-uniteleri/30a-potansli-dimmer/) gerekir. Kapasiteyi zorlamak cihazı ısıtır ve ömrünü kısaltır.",
+      },
+      { type: "h2", text: "Küçük gövdenin asıl faydası" },
+      {
+        type: "p",
+        text:
+          "Mini dimmerin değeri amperinde değil, sığdığı yerdedir. Kutu harf içine, raf profiline ya da mobilya kenarına gizlenir; ayrı bir kasa açmayı gerektirmez. Montajda tek dikkat edilecek nokta havalandırmadır — cihazı tamamen kapalı ve yalıtımlı bir boşluğa gömmeyin, ısı çıkışına birkaç milimetre boşluk bırakın.",
+      },
+      { type: "h2", text: "Hız ayarı ve ışık modları" },
+      {
+        type: "p",
+        text:
+          "Cihaz sabit parlaklığın yanında yanıp sönme ve geçiş modları da sunar; hız ayarı bu modların temposunu değiştirir. Tabela işlerinde bu modlar genellikle kullanılmaz, sabit parlaklık tercih edilir. Vitrin ve dekoratif işlerde ise dikkat çekmek için işe yarar. Modun hangi tuşla değiştiğini kurulumda müşteriye göstermek, sonradan gelen \"ışık kendi kendine yanıp sönüyor\" çağrılarını önler.",
+      },
+    ],
+    faq: [
+      { q: "6A mini dimmer kaç metre şerit sürer?", a: "12V 9.6W/m şeritte yaklaşık 7 metre, 24V 14.4W/m şeritte yaklaşık 10 metre. Hattın gerçek W/m değerinden hesaplayın." },
+      { q: "RGB şeritte çalışır mı?", a: "Çalışmaz. Tek renk hatlar içindir; RGB şerit üç kanallı kontrol cihazı ister." },
+      { q: "Kapalı kutu içine gömülür mü?", a: "Gömülür ama tamamen sızdırmaz bir boşluğa değil. Isı çıkabilmesi için birkaç milimetre boşluk bırakın." },
+      { q: "Yanıp sönme modunu nasıl kapatırım?", a: "Mod tuşuyla sabit parlaklık konumuna dönülür. Kurulumda müşteriye gösterin." },
+      { q: "Trafo yerine kullanılabilir mi?", a: "Kullanılamaz. Dimmer 220V'u dönüştürmez; trafodan sonra, trafo ile şerit arasına bağlanır." },
+    ],
+    related: ["30a-potansli-dimmer", "ip20-8mm-eco-2835-120-led-mt", "ultra-slim-ic-mekan-adaptor"],
+    img: "/images/products/6a-mini-dimmer-kontrol-cihazi.png",
+    updated: "2026-09-18",
+  },
+  {
+    slug: "pixel-rgb-kontrol-cihazi-sp107e",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "Pixel RGB Kontrol Cihazı (SP107E)",
+    metaTitle: "SP107E Pixel Kontrol Fiyatı | 36A Bluetooth",
+    metaDesc:
+      "SP107E pixel RGB kontrol cihazı: 5-24V, 36A, WS2812B/WS2813/SK6812 uyumlu, 200+ efekt ve müzik senkronizasyonu. Toptan fiyat.",
+    keywords: ["sp107e", "pixel kontrol cihazı", "adreslenebilir led kontrolör", "ws2812b kontrol", "müzik senkron led"],
+    h1: "Pixel RGB Kontrol Cihazı (SP107E)",
+    intro:
+      "5-24V adreslenebilir pixel hatlarını Bluetooth üzerinden yöneten 36A kapasiteli kontrolör. 200'den fazla hazır efekt ve müzik senkronizasyonu taşır.",
+    specs: [
+      ["Besleme", "5-24V DC"],
+      ["Çıkış kapasitesi", "36A"],
+      ["Bağlantı", "Bluetooth"],
+      ["Çip desteği", "WS2811, WS2812B, WS2813, SK6812"],
+      ["Efekt", "200+ mod, müzik senkronizasyonu"],
+      ["Ürün kodu", "DGRGBC.FT.018HC08"],
+    ],
+    useCases: [
+      "Pixel tabela ve cephe uygulamaları",
+      "Vitrin ve mağaza animasyonları",
+      "Sahne, bar ve etkinlik aydınlatması",
+      "Mimari hat aydınlatmalarında efektli işler",
+    ],
+    blocks: [
+      { type: "h2", text: "SP107E'yi SP110E'den ayıran şey" },
+      {
+        type: "p",
+        text:
+          "İki cihaz da Bluetooth üzerinden pixel sürer ve aynı çip ailelerini destekler. Fark kapasitede ve efekt havuzundadır: SP107E 36A çıkışı ve 200'ün üzerinde hazır modu ile büyük kurulumlara ve gösteri işlerine yöneliktir. Kısa bir vitrin hattı için [SP110E](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp110e/) yeterli kalır; uzun cephe ve sahne işlerinde SP107E tercih edilir.",
+      },
+      { type: "h2", text: "Kurulumda üç kritik ayar" },
+      {
+        type: "p",
+        text:
+          "Birincisi çip protokolüdür — uygulamadan şeridin çipi (WS2812B, SK6812 vb.) doğru seçilmezse efektler bozuk çalışır ya da hat hiç yanmaz. İkincisi pixel sayısıdır; gerçek adet girilmezse efekt hattın ortasında kesilir. Üçüncüsü veri yönüdür: şerit üzerindeki oklar kontrolörden uzağa bakmalıdır, ters bağlanan hat ölü kalır.",
+      },
+      { type: "h2", text: "36A kapasite ne anlama gelir" },
+      {
+        type: "p",
+        text:
+          "36A cihazın taşıyabileceği toplam akımdır, ama bu gücü kontrolör üretmez — besleme trafodan gelir ve trafo ayrıca hesaplanır. Uzun hatlarda şeridi yalnızca kontrolör ucundan beslemeyin; ara noktalardan da güç verin, aksi hâlde hattın sonunda parlaklık düşer ve renkler kayar. Beslemeyi doğru boyutlandırmak için [trafo amper hesaplama aracını](/araclar/trafo-amper-hesaplama/) kullanabilirsiniz.",
+      },
+    ],
+    faq: [
+      { q: "SP107E sıradan RGB şerit sürer mi?", a: "Sürmez. Yalnızca adreslenebilir pixel şeritler içindir; sıradan RGB şerit üç kanallı kontrolör ister." },
+      { q: "SP107E mi SP110E mi almalıyım?", a: "Uzun hat, çok efekt ve müzik senkronu gerekiyorsa SP107E. Kısa vitrin hatlarında SP110E yeterlidir." },
+      { q: "Efektler bozuk çalışıyor, sebebi ne?", a: "Neredeyse her zaman uygulamadan yanlış çip protokolü seçilmiştir. Şeridin çip tipini kontrol edip yeniden seçin." },
+      { q: "Müzik senkronizasyonu nasıl çalışır?", a: "Telefonun mikrofonundan gelen sesi kullanır; ortam gürültüsü yüksek yerlerde tepki düzensizleşir." },
+      { q: "İnternet gerekir mi?", a: "Gerekmez, Bluetooth doğrudan bağlanır. Menzil sınırlı olduğu için cihazı ulaşılabilir bir noktaya koyun." },
+    ],
+    related: ["pixel-rgb-kontrol-cihazi-sp110e", "22-tuslu-pixel-rgb-kontrol-cihazi-sp548e", "ip20-pixel-serit-led"],
+    img: "/images/products/pixel-led-kontrol-cihazi.jpg",
+    updated: "2026-09-18",
+  },
+  {
+    slug: "22-tuslu-pixel-rgb-kontrol-cihazi-sp548e",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "22 Tuşlu Pixel RGB Kontrol Cihazı (SP548E)",
+    metaTitle: "SP548E Pixel Kontrol Fiyatı | 22 Tuşlu Kumanda",
+    metaDesc:
+      "SP548E pixel RGB kontrol cihazı: 5-24V, 36A, Bluetooth + 22 tuşlu kumanda, WS2812B/SK6812 uyumlu, 200+ efekt. Toptan fiyat.",
+    keywords: ["sp548e", "22 tuşlu pixel kontrol", "pixel kumanda", "adreslenebilir led kontrolör", "bluetooth pixel kontrol"],
+    h1: "22 Tuşlu Pixel RGB Kontrol Cihazı (SP548E)",
+    intro:
+      "Hem telefondan hem fiziksel kumandadan yönetilen 36A pixel kontrolörü. Telefonu açmadan efekt değiştirmek gereken işlerde 22 tuşlu kumanda fark yaratır.",
+    specs: [
+      ["Besleme", "5-24V DC"],
+      ["Çıkış kapasitesi", "36A"],
+      ["Bağlantı", "Bluetooth + 22 tuşlu uzaktan kumanda"],
+      ["Çip desteği", "WS2811, WS2812B, WS2813, SK6812"],
+      ["Efekt", "200+ animasyon, müzik senkronizasyonu, dahili hafıza"],
+      ["Ürün kodu", "DGRGBC.FT.006HC14"],
+    ],
+    useCases: [
+      "Personelin efekt değiştirdiği mağaza ve bar işleri",
+      "Pixel tabela ve cephe uygulamaları",
+      "Sahne ve etkinlik aydınlatması",
+      "Vitrin animasyonları",
+    ],
+    blocks: [
+      { type: "h2", text: "Kumandanın gerçek faydası" },
+      {
+        type: "p",
+        text:
+          "Telefon uygulaması kurulumu yapan için pratiktir; ama cihazı devraldıktan sonra kullanacak olan mağaza personeli için değildir. Uygulama indirmek, eşleştirmek ve doğru cihazı seçmek her vardiya tekrarlanan bir yük hâline gelir. 22 tuşlu kumanda bu yükü ortadan kaldırır: efekt ve renk tek tuşta değişir. Kurulumdan sonra müşteriye teslim edilen işlerde bu tek fark, destek çağrılarını gözle görülür azaltır.",
+      },
+      { type: "h2", text: "Dahili hafıza neden önemli" },
+      {
+        type: "p",
+        text:
+          "Cihaz son ayarı hafızasında tutar; elektrik kesilip geldiğinde hat en son bırakıldığı efektle yanar. Hafızası olmayan kontrolörlerde her kesintiden sonra ayarı yeniden yapmak gerekir — vitrin ve tabela işlerinde bu, sabah gelip ışığın yanlış modda yandığını görmek demektir.",
+      },
+      { type: "h2", text: "Kurulum ve besleme" },
+      {
+        type: "p",
+        text:
+          "Uygulamadan şeridin çip tipi ve gerçek pixel adedi girilmelidir; yanlış protokol efektleri bozar, yanlış adet efekti hattın ortasında keser. Veri yönü de şerit üzerindeki oklarla kontrol edilir. 36A cihazın taşıma kapasitesidir, gücü trafo verir — uzun hatlarda ara noktalardan besleme yapın. Aynı ailedeki [SP107E](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp107e/) kumandasız çalışır, fark yalnızca fiziksel kumandadadır.",
+      },
+    ],
+    faq: [
+      { q: "SP548E WiFi ile mi çalışır?", a: "Hayır. Bağlantı Bluetooth üzerinden, ayrıca 22 tuşlu RF kumandası vardır. İnternet gerekmez." },
+      { q: "SP107E ile farkı ne?", a: "Teknik kapasite aynı: 5-24V, 36A, aynı çip desteği. Fark SP548E'nin fiziksel 22 tuşlu kumandasıdır." },
+      { q: "Kumanda ve telefon aynı anda kullanılır mı?", a: "Kullanılır. İkisi de aynı cihazı yönetir, son verilen komut geçerlidir." },
+      { q: "Elektrik kesintisinden sonra ayar kaybolur mu?", a: "Kaybolmaz. Dahili hafıza son efekti saklar ve enerji gelince onunla yanar." },
+      { q: "Sıradan RGB şeritte kullanılır mı?", a: "Kullanılmaz. Yalnızca adreslenebilir pixel şeritler içindir." },
+    ],
+    related: ["pixel-rgb-kontrol-cihazi-sp107e", "pixel-rgb-kontrol-cihazi-sp110e", "ip20-pixel-serit-led"],
+    img: "/images/products/22-tuslu-pixel-rgb-kontrol-cihazi-sp548e.png",
+    updated: "2026-09-18",
+  },
+  {
+    slug: "24a-rgb-repeater",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "24A RGB Repeater",
+    metaTitle: "RGB Repeater Fiyatı | 24A LED Sinyal Yükseltici",
+    metaDesc:
+      "24A RGB repeater (sinyal yükseltici): 12-24V DC, uzun RGB hatlarında renk kaymasını ve parlaklık düşüşünü önler. Alüminyum gövde, toptan fiyat.",
+    keywords: ["rgb repeater", "led repeater", "sinyal yükseltici", "rgb amplifier", "led sinyal güçlendirici"],
+    h1: "24A RGB Repeater (Sinyal Yükseltici)",
+    intro:
+      "Uzun RGB hatlarında kontrol sinyalini tazeleyen 24A kapasiteli yükseltici. Hattın sonundaki renk kayması ve parlaklık düşüşünü ortadan kaldırır.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Çıkış kapasitesi", "24A"],
+      ["İşlev", "RGB kontrol sinyali yükseltme"],
+      ["Tip", "RGB amplifier — senkron kontrol"],
+      ["Gövde", "Alüminyum, ısı dağıtımlı"],
+      ["Montaj", "Pano içi ve dar alan"],
+    ],
+    useCases: [
+      "Uzun metrajlı RGB şerit hatları",
+      "Tabela ve cephe RGB uygulamaları",
+      "Mimari aydınlatmada çok bölümlü hatlar",
+      "Otel, restoran ve mağaza RGB sistemleri",
+    ],
+    blocks: [
+      { type: "h2", text: "Repeater ne zaman gerekir" },
+      {
+        type: "p",
+        text:
+          "İki ayrı belirti repeater ihtiyacına işaret eder. Birincisi renk kaymasıdır: hattın başı düzgün mor yanarken sonu maviye çalıyorsa kontrol sinyali zayıflamıştır. İkincisi senkron kaybıdır — hattın bölümleri efektte birbirini geriden takip eder. İkisi de kablo kalınlaştırarak çözülmez; sinyalin yolun ortasında tazelenmesi gerekir.",
+      },
+      { type: "h2", text: "Repeater sinyali yeniler, gücü taşımaz" },
+      {
+        type: "p",
+        text:
+          "En sık yapılan hata repeater'ı tek başına araya takmaktır. Cihaz kontrol cihazından gelen zayıf sinyali okur ve temiz bir kopyasını üretir, ama bu kopyayı sürecek gücü kendi beslemesinden alır. Yani repeater'ın giriş ucuna ayrıca trafodan besleme çekilmelidir. Beslemesiz bağlanan repeater sonrasındaki hattı hiç yakmaz.",
+      },
+      { type: "h2", text: "Hattı nereden bölmeli" },
+      {
+        type: "p",
+        text:
+          "Pratik ölçü, sorunun başladığı noktadan biraz öncesidir — genellikle hattın ortası. Çok uzun cephelerde birden fazla repeater zincirlenebilir; her biri kendi beslemesini alır. Tek renk hatlarda ise RGB değil PWM tipi yükseltici gerekir, ikisi birbirinin yerine geçmez. Hat başındaki toplam yükü [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) çıkarıp besleme noktalarını ona göre planlayın.",
+      },
+    ],
+    faq: [
+      { q: "Repeater ile trafo aynı şey mi?", a: "Değil. Trafo 220V'u düşürür, repeater kontrol sinyalini tazeler. Repeater'ın kendisi de trafodan beslenir." },
+      { q: "Repeater'a ayrı besleme şart mı?", a: "Şart. Beslemesi bağlanmayan repeater sonrasındaki hattı hiç yakmaz." },
+      { q: "Tek renk şeritte kullanılır mı?", a: "Kullanılmaz. Tek renk hatlarda PWM tipi dimmer yükseltici gerekir." },
+      { q: "Kaç metrede bir repeater gerekir?", a: "Sabit bir rakam yok; hattın voltajına, kesitine ve şeridin gücüne bağlı. Renk kayması başladığı noktadan biraz önce takın." },
+      { q: "Birden fazla repeater zincirlenir mi?", a: "Zincirlenir. Her biri kendi beslemesini almak kaydıyla art arda bağlanabilir." },
+    ],
+    related: ["30a-potansli-dimmer", "ip20-rgb-serit-led", "ip20-rgb-cob-serit-led-576-led-mt"],
+    img: "/images/products/24a-rgb-repeater.jpg",
+    updated: "2026-09-18",
+  },
+  {
+    slug: "radar-sensor",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "Radar Sensör",
+    metaTitle: "LED Radar Sensör Fiyatı | Otomatik Yanan Işık",
+    metaDesc:
+      "12-24V LED radar hareket sensörü: geniş algılama alanı, PIR'a göre daha hassas, otomatik açma-kapama. Şerit LED hatları için toptan fiyat.",
+    keywords: ["led radar sensör", "hareket sensörü led", "şerit led sensör", "otomatik led anahtarı", "radar sensör 12v"],
+    h1: "Radar Sensör (LED Hareket Anahtarı)",
+    intro:
+      "12-24V şerit hatlarını hareket algıladığında otomatik yakan, kimse yokken söndüren radar sensörü. PIR sensörlere göre daha geniş ve hassas algılar.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Algılama", "Radar (mikrodalga)"],
+      ["İşlev", "Otomatik açma / kapama"],
+      ["Algılama alanı", "Geniş — PIR'a göre hassas"],
+      ["Uyum", "Düşük voltajlı LED sistemleri"],
+      ["Ürün kodu", "DGSENS.FT.01224IR"],
+    ],
+    useCases: [
+      "Koridor ve merdiven aydınlatmaları",
+      "Dolap içi ve giyinme odası LED sistemleri",
+      "Depo ve arşiv odaları",
+      "Vitrin ve mağaza girişlerinde dikkat çekme",
+    ],
+    blocks: [
+      { type: "h2", text: "Radar ile PIR arasındaki fark" },
+      {
+        type: "p",
+        text:
+          "PIR sensör vücut ısısını görür; bu yüzden ince bir camın, dolap kapağının ya da alçıpanın arkasından çalışmaz ve yaz aylarında ortam sıcaklığı vücut sıcaklığına yaklaştıkça duyarlılığı düşer. Radar sensör mikrodalga yansımasıyla hareketi algılar — ısıya bakmaz, ince yüzeylerin arkasından çalışır ve geniş bir alanı tarar. Gizli montaj gereken işlerde tercih sebebi budur.",
+      },
+      { type: "h2", text: "Sensör trafodan sonra bağlanır" },
+      {
+        type: "p",
+        text:
+          "Bu sensör 220V hat anahtarı değildir; 12-24V DC tarafında, trafo ile şerit arasına takılır. Sıralama 220V → trafo → sensör → şerit şeklindedir. Sensörün akım kapasitesi hattın çektiği amperden büyük olmalıdır; uzun hatlarda sensörü doğrudan yüke bağlamak yerine araya röle koymak daha güvenli bir kurulumdur.",
+      },
+      { type: "h2", text: "Yanlış tetiklemeyi önlemek" },
+      {
+        type: "p",
+        text:
+          "Radar duvarın arkasındaki hareketi de görebildiği için, koridora bakan bir sensör yandaki odadan tetiklenebilir. Çözüm sensörün yönünü ve konumunu ayarlamaktır — algılama alanını asıl geçiş hattına bakacak şekilde daraltın. Dolap içi uygulamalarda ise kapak açıldığında tetiklenmesi istenir; sensörü kapak menteşesine değil, kapağın açıldığı yöne bakacak biçimde yerleştirin. Hattın toplam yükünü [trafo amper hesaplama aracıyla](/araclar/trafo-amper-hesaplama/) çıkarmayı unutmayın.",
+      },
+    ],
+    faq: [
+      { q: "Radar sensör cam veya ahşabın arkasından çalışır mı?", a: "Çalışır. Mikrodalga yansımasını kullandığı için ince yüzeylerin arkasından algılar — PIR sensörün çalışmadığı yer burasıdır." },
+      { q: "220V hatta takılır mı?", a: "Takılmaz. 12-24V DC tarafında, trafo ile şerit arasına bağlanır." },
+      { q: "Yandaki odadan tetikleniyor, ne yapmalı?", a: "Sensörün yönünü asıl geçiş hattına çevirin ve algılama alanını daraltın. Radar duvar arkasını da görebilir." },
+      { q: "Kaç amperlik hattı sürebilir?", a: "Sensörün kapasitesi hattın çektiği amperden büyük olmalı. Uzun hatlarda araya röle koyun." },
+      { q: "Işık ne kadar süre yanık kalır?", a: "Hareket kesildikten sonra sensörün gecikme süresi kadar yanık kalır, ardından söner." },
+    ],
+    related: ["30a-potansli-dimmer", "ip20-8mm-eco-2835-120-led-mt", "ultra-slim-ic-mekan-adaptor"],
+    img: "/images/products/radar-sensor.png",
+    updated: "2026-09-18",
+  },
 ];
 
 /** Bir kategorinin kendi sayfası olan kalemleri. */

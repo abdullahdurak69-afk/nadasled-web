@@ -1824,7 +1824,7 @@
       },
       {
         "name": "Pixel RGB Kontrol Cihazı (SP107E)",
-        "specs": "5-24V, Bluetooth pixel kontrol",
+        "specs": "5-24V, 36A, Bluetooth pixel kontrol",
         "img": "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png"
       },
       {
@@ -1834,7 +1834,7 @@
       },
       {
         "name": "22 Tuşlu Pixel RGB Kontrol Cihazı (SP548E)",
-        "specs": "5-24V, WiFi + RF pixel kontrol",
+        "specs": "5-24V, 36A, Bluetooth + 22 tuşlu kumanda",
         "img": "/images/products/22-tuslu-pixel-rgb-kontrol-cihazi-sp548e.png"
       },
       {
@@ -1849,7 +1849,7 @@
       },
       {
         "name": "30A Dimmer Repeater",
-        "specs": "12-24V, 30A sinyal yükseltici",
+        "specs": "5-24V, 30A PWM sinyal yükseltici",
         "img": "/images/products/30a-dimmer-repeater.jpg"
       },
       {
