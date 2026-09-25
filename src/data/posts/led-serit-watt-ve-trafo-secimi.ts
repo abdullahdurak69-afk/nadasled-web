@@ -9,8 +9,8 @@ export const ledSeritWattVeTrafoSecimi: BlogPost = {
   excerpt:
     "Çip tipine göre watt tablosu ve metraja göre trafo hesabı — tek sayfada.",
   date: "2026-06-03",
-  updated: "2026-08-16",
-  readMins: 8,
+  updated: "2026-09-25",
+  readMins: 9,
   categorySlug: "led-serit",
   categoryName: "LED Şerit",
   blocks: [
@@ -36,6 +36,27 @@ export const ledSeritWattVeTrafoSecimi: BlogPost = {
     {
       type: "p",
       text: "Bu değerler tipik ortalamalardır. Aynı LED sayısına sahip iki şerit arasında bakır kalınlığı ve çip kalitesine bağlı olarak %20'ye varan fark olabilir. Kesin hesap için elinizdeki ürünün etiket değerini kullanın.",
+    },
+
+    { type: "h2", text: "Kataloğumuzdaki hatların etiket değerleri" },
+    {
+      type: "p",
+      text: "Ortalamalar ilk tahmin için yeterlidir ama sipariş öncesi hesap etiket değeriyle yapılır. Aşağıdaki hatların metre başı gücü ürün sayfalarında yazılıdır; neon serileri arasındaki farka özellikle dikkat edin.",
+    },
+    {
+      type: "table",
+      headers: ["Ürün", "Voltaj", "Güç", "10 m hat"],
+      rows: [
+        ["IP65 10 mm COB 480/mt", "24V", "12 W/m", "120 W"],
+        ["Renkli COB 520/mt (mor, pembe, buz mavisi)", "24V", "12 W/m", "120 W"],
+        ["10x10 mm flat neon", "12V / 24V", "10 W/m", "100 W"],
+        ["10x5 mm flat neon", "24V", "11 W/m", "110 W"],
+        ["13 mm D-shape neon", "24V", "18 W/m", "180 W"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Aynı 10 metrelik neon hattı, seçilen seriye göre 100 W da çekebilir 180 W da. Örneğin 15 metre [13 mm D-shape neon](/urunler/neon-led/13mm-d-shape-neon-led/) 270 W eder; %20 payla 324 W'a çıkar. Bu yük tek trafoya verilmez, 2 × 200 W olarak bölünür. Aynı metrajda [10x10 mm flat neon](/urunler/neon-led/10x10mm-flat-neon/) 150 W çeker ve tek bir 200 W trafo yeter. COB tarafında ayrıntılar için [IP65 10 mm COB şerit](/urunler/cob-led-serit/ip65-10mm-cob-480-mt/) sayfasına bakabilirsiniz.",
     },
 
     { type: "h2", text: "Trafo hesabı" },
@@ -132,6 +153,10 @@ export const ledSeritWattVeTrafoSecimi: BlogPost = {
     {
       q: "LED şerit metrede kaç watt çeker?",
       a: "Çip tipine ve LED yoğunluğuna göre değişir: 2835/60 LED yaklaşık 6-8 W/m, 2835/120 LED 10-12 W/m, 5050/60 LED 12-14 W/m, COB 480 çip 10-13 W/m. Kesin değer için ürünün kendi etiketine bakın.",
+    },
+    {
+      q: "Neon LED metrede kaç watt çeker?",
+      a: "Seriye göre belirgin fark vardır. Kataloğumuzda 10x10 mm flat neon 10 W/m, 10x5 mm flat neon 11 W/m, 13 mm D-shape neon ise 18 W/m çeker. Trafo hesabı mutlaka kullanılacak serinin etiket değeriyle yapılmalıdır.",
     },
     {
       q: "10 metre şerit için kaç amper trafo gerekir?",

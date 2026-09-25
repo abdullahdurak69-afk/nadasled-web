@@ -9,8 +9,8 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
   excerpt:
     "Kutu harften totem tabelaya: ışıklı tabela üretiminin tam malzeme listesi.",
   date: "2026-06-01",
-  updated: "2026-08-16",
-  readMins: 9,
+  updated: "2026-09-25",
+  readMins: 10,
   categorySlug: "led-modul",
   categoryName: "LED Modül",
   blocks: [
@@ -25,10 +25,12 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
       items: [
         "[LED modül](/urunler/led-modul): kutu harf ve derin kasalarda standart çözüm (mercekli, 12V, IP65).",
         "[LED şerit](/urunler/led-serit): ince kasa, çerçeve ve lineer hatlarda.",
+        "[COB LED şerit](/urunler/cob-led-serit/): nokta izi istenmeyen, doğrudan görünen lineer hatlarda; 24V çalışır ve profil ister.",
         "[Neon LED](/urunler/neon-led): kontur yazılar ve dekoratif hatlar için.",
         "[Point LED](/urunler/point-led): kontur ve animasyon uygulamaları.",
         "[Kesit aydınlatma LED](/urunler/kesit-aydinlatma-led): kanal harfin kesitinden ışık veren işlerde.",
         "[Light box LED](/urunler/light-box-led): ışıklı kutu ve vitrin panolarında geniş açılı modül ve bar.",
+        "[Zemin aydınlatma LED bar](/urunler/zemin-aydinlatma-led/): uzun ve dar ışıklı kutularda modül matrisi yerine tek parça bar ve perde LED.",
       ],
     },
     {
@@ -41,7 +43,7 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
       type: "ul",
       items: [
         "[Trafo / LED sürücü](/urunler/trafo-led-surucu): toplam watt + %20 pay kuralıyla seçilir, dışarıda IP67 şart.",
-        "[Kontrol üniteleri](/urunler/led-kontrol-uniteleri): RGB, dimmer ve animasyonlu işlerde.",
+        "[Kontrol üniteleri](/urunler/led-kontrol-uniteleri): RGB, dimmer ve animasyonlu işlerde. İşe göre ayrımı aşağıda.",
         "Sigorta ve pano malzemesi: şebeke girişinde koruma.",
         "Fotosel veya zaman saati: tabelanın otomatik açılıp kapanması için.",
       ],
@@ -49,6 +51,24 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
     {
       type: "p",
       text: "Trafo hesabını göz kararı yapmayın; formül ve hazır tablolar için [LED trafo hesaplama rehberimiz](/blog/led-trafo-hesaplama) yeterli olacaktır.",
+    },
+    {
+      type: "p",
+      text: "Kontrol ünitesi, tabelanın ne yapacağına göre seçilir ve yanlış tip seçildiğinde sistem hiç çalışmaz. Karar dört soruya iner:",
+    },
+    {
+      type: "table",
+      headers: ["İstenen", "Gereken cihaz", "Rehber"],
+      rows: [
+        ["Tek renk, parlaklığı ayarlanabilir", "Dimmer (potanslı, dokunmatik, mini)", "LED dimmer seçimi"],
+        ["Tüm hat aynı anda renk değiştirsin", "RGB kontrol ünitesi + gerekirse amplifikatör", "RGB kontrol ünitesi seçimi"],
+        ["Akan yazı, sıralı ve dalgalı efekt", "Pixel şerit veya pixel point + pixel kontrol cihazı", "Pixel LED nedir?"],
+        ["Yaklaşınca yansın", "Radar sensör", "Ürün sayfası"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Tablodaki rehberler: [LED dimmer seçimi](/blog/led-dimmer-secimi/), [RGB kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) ve [pixel LED nedir?](/blog/pixel-led-nedir/). Hareketle çalışan vitrin ve giriş aydınlatmaları için [radar sensör](/urunler/led-kontrol-uniteleri/radar-sensor/) sayfamıza bakabilirsiniz.",
     },
 
     { type: "h2", text: "3. Gövde malzemeleri" },
@@ -155,6 +175,10 @@ export const tabelaYapimindaKullanilanMalzemeler: BlogPost = {
     {
       q: "Arkadan ışıklı (halo) harfte ne değişir?",
       a: "Pleksi yüzey ışık geçirmez hale gelir, modüller harfin arkasına bakacak şekilde yerleştirilir ve harf duvardan 3-5 cm distansla ayrılır. Işık duvardan yansıyarak göründüğü için duvar rengi ve dokusu sonucu doğrudan etkiler.",
+    },
+    {
+      q: "Hareketli (akan ışıklı) tabela için hangi malzemeler gerekir?",
+      a: "Adreslenebilir pixel şerit veya pixel point LED, bu LED'lerin çipini destekleyen bir pixel kontrol cihazı (SP107E, SP110E, SP548E gibi) ve hattın tam gücüne göre seçilmiş trafo. Normal RGB kumanda pixel LED'leri süremez.",
     },
     {
       q: "Malzemeleri tek yerden tedarik etmenin avantajı ne?",

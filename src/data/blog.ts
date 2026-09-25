@@ -19,6 +19,9 @@ import { ip65MiIp67Mi } from "./posts/ip65-mi-ip67-mi-tabela-led";
 import { ledSeritVoltajDusumu } from "./posts/led-serit-voltaj-dusumu";
 import { pointLedNedir } from "./posts/point-led-nedir";
 import { kesitAydinlatmaLedRehberi } from "./posts/kesit-aydinlatma-led-rehberi";
+import { ledDimmerSecimi } from "./posts/led-dimmer-secimi";
+import { pixelLedNedir } from "./posts/pixel-led-nedir";
+import { pergolaAydinlatmasiNasilYapilir } from "./posts/pergola-aydinlatmasi-nasil-yapilir";
 
 // Blok ve SSS tipleri araç sayfalarıyla ortaktır; ./content içinde durur.
 // Mevcut import'lar bozulmasın diye buradan yeniden dışa veriliyor.
@@ -54,14 +57,17 @@ export const posts: BlogPost[] = [
   kutuHarfIcinLedModulSecimi,
   isikliTabelaMaliyeti,
   neonFlexSecimVeMontaj,
+  pergolaAydinlatmasiNasilYapilir,
   ledSeritVoltajDusumu,
   cobVsSmdLedSerit,
+  pixelLedNedir,
   ledSeritWattVeTrafoSecimi,
   lightBoxLedSecimi,
   tabelaYapimindaKullanilanMalzemeler,
   ip65MiIp67Mi,
   onikiVoltMuYirmidortVoltMu,
   rgbLedKontrolUnitesiSecimi,
+  ledDimmerSecimi,
   powerLedSurucuSecimi,
   pointLedNedir,
   kesitAydinlatmaLedRehberi,

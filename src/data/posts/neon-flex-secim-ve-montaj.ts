@@ -9,8 +9,8 @@ export const neonFlexSecimVeMontaj: BlogPost = {
   excerpt:
     "Cam neonun esnek ve dayanıklı alternatifi: neon flex seçimi, kesimi ve montajı.",
   date: "2026-06-07",
-  updated: "2026-08-16",
-  readMins: 9,
+  updated: "2026-09-25",
+  readMins: 10,
   categorySlug: "neon-led",
   categoryName: "Neon LED",
   blocks: [
@@ -52,6 +52,33 @@ export const neonFlexSecimVeMontaj: BlogPost = {
         "Mix ve RGB seriler: renk değişimi gereken dekoratif işlerde; [kontrol ünitesi](/urunler/led-kontrol-uniteleri) ile birlikte çalışır.",
         "220V seriler: doğrudan şebekeye bağlanır, trafo gerektirmez. Uzun düz hatlarda pratiktir ama kesim aralıkları çok uzundur.",
       ],
+    },
+
+    { type: "h2", text: "Seri karşılaştırması: voltaj, IP ve güç" },
+    {
+      type: "p",
+      text: "Profil ailesi belirlendikten sonra seri seçimi voltaj, koruma sınıfı ve metre başı güce göre yapılır. Bu üç değer trafo sayısını, besleme noktalarını ve ürünün dışarıda kullanılıp kullanılamayacağını belirler. Aşağıdaki değerler kataloğumuzdaki serilerin ürün sayfalarından alınmıştır.",
+    },
+    {
+      type: "table",
+      headers: ["Seri", "Voltaj", "Koruma", "Güç", "Öne çıkan"],
+      rows: [
+        ["6x12 mm silikon neon", "12V", "IP65", "Etikete bakın", "1 cm kesim; küçük yazı ve logo"],
+        ["8x16 mm neon", "24V", "IP65", "Etikete bakın", "Yüksek lümen, uzun hat"],
+        ["10x10 mm flat neon", "12V / 24V", "IP67", "10 W/m", "Kare kesit, düz ve geniş yüz"],
+        ["10x5 mm flat neon", "24V", "IP67", "11 W/m", "İnce gövde, dar kanallar"],
+        ["13 mm D-shape neon", "24V", "IP67", "18 W/m", "Yandan montaj, yüksek parlaklık"],
+        ["360° neon", "12V", "IP65", "Etikete bakın", "Her yönden ışık, asılı yazılar"],
+        ["220V neon", "Şebeke", "IP65", "Etikete bakın", "Trafosuz, uzun düz hatlar"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Serilerin teknik detayları: [6x12 mm silikon neon](/urunler/neon-led/6x12mm-silikon-neon-led-1cm/), [8x16 mm 24V neon](/urunler/neon-led/8x16mm-neon-led-24v/), [10x10 mm flat neon](/urunler/neon-led/10x10mm-flat-neon/), [10x5 mm flat neon](/urunler/neon-led/10x5mm-flat-neon/), [13 mm D-shape](/urunler/neon-led/13mm-d-shape-neon-led/), [360° neon](/urunler/neon-led/360-neon-led/) ve [220V neon](/urunler/neon-led/220v-neon-led/). Güç farkı küçük değildir: aynı 10 metrede flat neon 100 W, D-shape 180 W çeker. Trafo hesabı için [LED şerit metrede kaç watt](/blog/led-serit-watt-ve-trafo-secimi/) yazımızdaki tabloya bakabilirsiniz.",
+    },
+    {
+      type: "p",
+      text: "Seri seçilirken aksesuarları da aynı seriden almak gerekir. Başlangıç bağlantı aparatı, orta bağlantı aparatı ve silikon uç kapağı kesite özeldir; 6x12 mm aparatı 10x10 mm flat neona oturmaz. Oturmayan bir aparat, neon hattında su almanın en sık sebebidir.",
     },
 
     { type: "h2", text: "En kritik konu: bükülme yönü" },
@@ -149,6 +176,10 @@ export const neonFlexSecimVeMontaj: BlogPost = {
     {
       q: "Neon LED mi cam neon mu daha ekonomik?",
       a: "Neon flex hem ilk yatırımda hem işletmede daha ekonomiktir: yaklaşık onda bir enerji harcar, montajı çok daha hızlıdır ve arızalanan segment tüm tüpü değiştirmeden onarılabilir. Cam neonun tek üstünlüğü, çok özel tasarımlarda usta işi kıvrım kalitesidir.",
+    },
+    {
+      q: "Neon LED için hangi aksesuarlar gerekir?",
+      a: "Her hat için bir başlangıç bağlantı aparatı (besleme ucu), hattın sonu için silikon uç kapağı ve hat uzatılacaksa orta bağlantı aparatı gerekir. Montajda alüminyum neon kanalı veya klips kullanılır. Aparatlar kesite özeldir; neonla aynı seriden alınmalıdır.",
     },
     {
       q: "220V neon LED için trafo gerekir mi?",

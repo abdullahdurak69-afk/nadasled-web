@@ -9,8 +9,8 @@ export const cobVsSmdLedSerit: BlogPost = {
   excerpt:
     "Noktasız homojen ışık mı, kanıtlanmış klasik mi? Proje tipine göre şerit seçimi.",
   date: "2026-06-05",
-  updated: "2026-08-16",
-  readMins: 8,
+  updated: "2026-09-25",
+  readMins: 9,
   categorySlug: "cob-led-serit",
   categoryName: "COB LED Şerit",
   blocks: [
@@ -56,7 +56,7 @@ export const cobVsSmdLedSerit: BlogPost = {
         "Gizli tavan/karnis içi (ışık kaynağı görünmüyorsa): SMD yeterli ve daha ekonomik.",
         "Tabela içi aydınlatma: SMD 2835 yaygın standart; derinlik yeterliyse fark yaratmaz.",
         "Dar alüminyum profil, vitrin içi ve merdiven basamağı: COB — yakın mesafede tek parça ışık verir.",
-        "RGB ve renk değişimli dekoratif işler: SMD 5050 — renk çeşitliliği ve kontrol ekosistemi daha geniş.",
+        "RGB ve renk değişimli dekoratif işler: şerit gizliyse SMD 5050, şeridin kendisi görünüyorsa RGB COB — ayrıntısı aşağıda.",
         "Uzun cephe hatları: SMD 24V — metre başına maliyet ve güç avantajı belirgin.",
       ],
     },
@@ -90,6 +90,21 @@ export const cobVsSmdLedSerit: BlogPost = {
     {
       type: "p",
       text: "Yoğunluk arttıkça çizgi daha homojen ve daha parlak olur; buna karşılık güç ve ısı da artar. 720 LED/mt seçildiğinde profil kesiti ve trafo kapasitesi yeniden gözden geçirilmelidir.",
+    },
+
+    { type: "h2", text: "Renkli ve RGB işlerde COB" },
+    {
+      type: "p",
+      text: "Uzun süre renkli ve RGB işler SMD'nin alanı sayıldı. Bugün bu işlerde de COB seçeneği var ve karar, tek renk işlerdeki mantıkla aynı: şerit görünüyor mu?",
+    },
+    {
+      type: "ul",
+      items: [
+        "Sabit tek renk (mor, pembe, buz mavisi gibi): renkli COB şeritler 24V çalışır ve metrede 12 W çeker. Kontrol ünitesi gerektirmez, iki damar kablo ve bir trafo yeterlidir. Vitrin, raf ve reyon içinde yıl boyu aynı renkte kalacak işler için [mor](/urunler/cob-led-serit/mor-cob-serit-led/), [pembe](/urunler/cob-led-serit/pembe-cob-serit-led/) ve [buz mavisi](/urunler/cob-led-serit/buz-mavisi-cob-serit-led/) COB sayfalarımıza bakabilirsiniz.",
+        "Renk değişimli: [RGB COB şerit (576 LED/mt)](/urunler/cob-led-serit/ip20-rgb-cob-serit-led-576-led-mt/) renkleri boydan boya karıştırır; difüzörsüz bakıldığında SMD RGB'deki kırmızı, yeşil ve mavi noktalar görünmez. RGB kontrol ünitesiyle sürülür.",
+        "Hareketli efekt: noktasız görüntü ile akan efekt birlikte isteniyorsa pixel COB seriler kullanılır. Pixel sistemin kuralları farklıdır, bkz. [pixel LED nedir?](/blog/pixel-led-nedir/)",
+        "Dış mekan: [IP65 10 mm COB](/urunler/cob-led-serit/ip65-10mm-cob-480-mt/) silikon dolgulu gövdesiyle cephe ve pergola gibi yağmur alan yerlerde kullanılır.",
+      ],
     },
 
     { type: "h2", text: "Sık yapılan hatalar" },
@@ -132,7 +147,7 @@ export const cobVsSmdLedSerit: BlogPost = {
     },
     {
       q: "COB şeritte RGB seçeneği var mı?",
-      a: "Var; RGB ve adreslenebilir (pixel) COB seriler üretiliyor. Renk çeşitliliği ve kontrol cihazı ekosistemi açısından SMD 5050 hâlâ daha geniş bir yelpaze sunar, ancak noktasız RGB efekti isteniyorsa COB tek seçenektir.",
+      a: "Var; RGB ve adreslenebilir (pixel) COB seriler üretiliyor. Kataloğumuzdaki RGB COB şerit 24V, metrede 576 LED'dir ve standart RGB kontrol ünitesiyle sürülür. Şerit gizli bir kanalda kalıyorsa SMD 5050 RGB daha ekonomiktir; noktasız RGB görüntü isteniyorsa COB tek seçenektir.",
     },
   ],
 };

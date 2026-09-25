@@ -9,8 +9,8 @@ export const onikiVoltMuYirmidortVoltMu: BlogPost = {
   excerpt:
     "Voltaj düşümü, kablo kesiti ve verim: iki sistemin gerçek farkları.",
   date: "2026-05-29",
-  updated: "2026-08-16",
-  readMins: 8,
+  updated: "2026-09-25",
+  readMins: 9,
   categorySlug: "trafo-led-surucu",
   categoryName: "Trafo & LED Sürücü",
   blocks: [
@@ -92,6 +92,35 @@ export const onikiVoltMuYirmidortVoltMu: BlogPost = {
       text: "12V bir ürünü 24V trafoya bağlamak, LED'lerin saniyeler içinde yanması demektir ve bu hasar geri döndürülemez. Tersi durumda (24V ürün, 12V trafo) ürün yanmaz ama çok sönük yanar veya hiç yanmaz.",
     },
 
+    { type: "h2", text: "Ürün bazında: hangi ürün hangi voltajda?" },
+    {
+      type: "p",
+      text: "Voltaj çoğu zaman proje başında seçilmez, kullanılacak ürün tarafından belirlenir. Aşağıdaki tablo, kataloğumuzdaki ürün ailelerinin hangi sistemde çalıştığını gösteriyor. Aynı projede iki sütundan ürün varsa iki ayrı devre kurulur.",
+    },
+    {
+      type: "table",
+      headers: ["Ürün ailesi", "Voltaj", "Not"],
+      rows: [
+        ["Tabela LED modülleri (Fortune, Samsung, COB modül)", "12V", "Kutu harf ve light box standardı"],
+        ["Point LED (30 mm, 50 mm)", "12V", "Uzun konturlarda hat bölünerek beslenir"],
+        ["SMD şerit (ECO 2835, Samsung, drop silikon)", "12V", "Kesim aralığı kısa, ölçü tutturmak kolay"],
+        ["Pixel şerit", "12V", "Veri hattı ayrı, güç ara noktalardan beslenir"],
+        ["COB şerit (iç ve dış mekan, renkli)", "24V", "Metrede 12 W; uzun ve noktasız hatlar"],
+        ["Neon LED (8x16, ince flat seriler, D-shape)", "24V", "Cephe ve uzun kontur işleri"],
+        ["Neon LED (6x12 silikon, 20x14 flat, 360°)", "12V", "Yazı ve kısa kontur işleri; 1 cm kesim seçeneği"],
+        ["10x10 flat neon", "12V veya 24V", "Hat uzunluğuna göre seçilir"],
+        ["220V neon", "Şebeke", "Trafo gerekmez, kesim aralığı uzun"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Tablodaki ürünlerin ayrıntıları ürün sayfalarında: [IP65 10 mm COB şerit](/urunler/cob-led-serit/ip65-10mm-cob-480-mt/), [8x16 mm 24V neon](/urunler/neon-led/8x16mm-neon-led-24v/), [10x10 mm flat neon](/urunler/neon-led/10x10mm-flat-neon/), [30 mm şapkalı point LED](/urunler/point-led/30mm-sapkali-point-led/) ve [IP65 drop silikon şerit](/urunler/led-serit/ip65-8mm-dis-mekan-drop-silikon-serit-led/).",
+    },
+    {
+      type: "p",
+      text: "Kontrol tarafında voltaj ayrımı yoktur: kataloğumuzdaki dimmer, RGB kumanda ve repeater modelleri 12-24V aralığında, pixel kontrol cihazları 5-24V aralığında çalışır. Voltaj değiştiğinde cihaz değişmez, yalnızca hattın çektiği amper değişir. Dimmer boyutlandırması için [LED dimmer seçimi](/blog/led-dimmer-secimi/) yazımıza bakabilirsiniz.",
+    },
+
     { type: "h2", text: "Sık yapılan hatalar" },
     {
       type: "ul",
@@ -129,6 +158,10 @@ export const onikiVoltMuYirmidortVoltMu: BlogPost = {
     {
       q: "Aynı tabelada hem 12V hem 24V kullanabilir miyim?",
       a: "Evet, ancak tamamen ayrı devreler olarak kurulmalıdır: ayrı trafo, ayrı kablo ve mutlaka etiketleme. Karışık bağlantı, servis sırasında yanlış hatta müdahale riskini doğurur.",
+    },
+    {
+      q: "12V'tan 24V'a geçince dimmer veya kumanda değiştirmek gerekir mi?",
+      a: "Genellikle hayır. Dimmer, RGB kumanda ve repeater modellerinin çoğu 12-24V aralığında çalışır. Değişen, hattın çektiği akımdır: aynı güçte 24V hat yarı akım çeker, bu yüzden aynı cihaz daha uzun bir hattı sürebilir.",
     },
     {
       q: "Kutu harf için hangi voltaj standart?",
