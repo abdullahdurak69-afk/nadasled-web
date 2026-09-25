@@ -2,13 +2,14 @@ import type { BlogPost } from "../blog";
 
 export const isikliTabelaMaliyeti: BlogPost = {
   slug: "isikli-tabela-maliyeti",
-  title: "Işıklı Tabela Maliyeti: Malzeme Listesi Nasıl Çıkarılır?",
-  metaTitle: "Işıklı Tabela Maliyeti — Malzeme Listesi Nasıl Çıkarılır?",
+  title: "Işıklı Tabela Maliyeti Nelerden Oluşur? Kalem Kalem Rehber",
+  metaTitle: "Işıklı Tabela Maliyeti Nelerden Oluşur?",
   metaDesc:
     "Işıklı tabelada maliyeti oluşturan kalemler, ölçüden malzeme miktarı çıkarma yöntemi ve teklif hazırlarken en sık atlanan gizli maliyetler.",
   excerpt:
     "Kutu harf, ışıklı kutu ve neon cephede maliyeti oluşturan kalemler ve miktarların ölçüden nasıl çıkarıldığı.",
   date: "2026-08-16",
+  updated: "2026-09-25",
   readMins: 9,
   categorySlug: "led-modul",
   categoryName: "LED Modül",

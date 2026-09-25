@@ -3,11 +3,12 @@ import type { BlogPost } from "../blog";
 export const rgbLedKontrolUnitesiSecimi: BlogPost = {
   slug: "rgb-led-kontrol-unitesi-secimi",
   title: "RGB LED Kontrol Ünitesi Seçimi: Kumanda, Amplifikatör, Bağlantı",
-  metaTitle: "RGB LED Kontrol Ünitesi Seçimi — Kumanda ve Amplifikatör",
+  metaTitle: "RGB LED Kontrol Ünitesi Seçimi ve Bağlantısı",
   metaDesc:
     "RGB kontrol ünitesi amperi nasıl seçilir, amplifikatör ne zaman gerekir, RF ile IR kumanda farkı ve en sık yapılan bağlantı hataları.",
   excerpt: "Kontrol ünitesi amperi, amplifikatör ihtiyacı ve RF/IR kumanda farkı — bağlantı sırası dahil.",
   date: "2026-08-16",
+  updated: "2026-09-25",
   readMins: 8,
   categorySlug: "led-kontrol-uniteleri",
   categoryName: "LED Kontrol Üniteleri",

@@ -6,6 +6,9 @@ import { getPostsForCategory } from "@/data/blog";
 import { getToolsForCategory } from "@/data/tools";
 import { getItemByName } from "@/data/items";
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
+import { SITE } from "@/lib/schema";
+import { productHref } from "@/lib/site-links";
 
 const PHONE_HREF = "tel:+905414696966";
 
@@ -53,12 +56,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: product.metaDesc,
     keywords: product.keywords,
     alternates: { canonical: url },
-    openGraph: {
+    openGraph: openGraph({
       title: product.metaTitle,
       description: product.metaDesc,
       url,
       images: [{ url: product.image, alt: product.name }],
-    },
+    }),
   };
 }
 
@@ -81,12 +84,19 @@ export default async function UrunKategoriPage({ params }: Props) {
     description: product.metaDesc,
     // "Product" tipi kullanılmıyor: fiyat/yorum verisi olmadığından Google'ın
     // zorunlu tuttuğu offers/review/aggregateRating alanları sağlanamıyor.
-    itemListElement: product.products.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: item.name,
-      description: item.specs,
-    })),
+    // Kendi sayfası olan kalemlerde url veriliyor; kartta gösterilen link de
+    // aynı eşleşmeden geliyor (aşağıda getItemByName). Sayfası olmayanlarda
+    // alan bilerek yok — kategori sayfasının kendisini göstermek yanlış olur.
+    itemListElement: product.products.map((item, i) => {
+      const page = getItemByName(product.slug, item.name);
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.name,
+        description: item.specs,
+        ...(page ? { url: `${SITE}${productHref(product.slug, page.slug)}` } : {}),
+      };
+    }),
   };
 
   const faqs = (product as { faq?: { q: string; a: string }[] }).faq ?? [];

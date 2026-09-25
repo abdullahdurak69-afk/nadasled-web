@@ -8,6 +8,7 @@ import FloatWhatsapp from "@/components/FloatWhatsapp";
 import ClickTracker from "@/components/ClickTracker";
 import LlmSourceTag from "@/components/LlmSourceTag";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
+import { openGraph } from "@/lib/metadata";
 
 // Display: Clash Display (Fontshare) — self-hosted for a distinctive, premium feel.
 const clashDisplay = localFont({
@@ -15,7 +16,9 @@ const clashDisplay = localFont({
     { path: "./fonts/ClashDisplay-400.woff2", weight: "400", style: "normal" },
     { path: "./fonts/ClashDisplay-500.woff2", weight: "500", style: "normal" },
     { path: "./fonts/ClashDisplay-600.woff2", weight: "600", style: "normal" },
-    { path: "./fonts/ClashDisplay-700.woff2", weight: "700", style: "normal" },
+    // 700 kaldırıldı: 83 sayfanın hiçbirinde kullanılmıyordu ama her sayfada
+    // preload ediliyordu. next/font preload'u aile bazında açıp kapattığı için
+    // kullanılmayan her ağırlık her sayfaya bir istek ekler.
   ],
   variable: "--font-display",
   display: "swap",
@@ -42,14 +45,14 @@ export const metadata: Metadata = {
   },
   description: "LED modül, LED şerit, trafo, kablo ve tabela malzemelerinin toptan tedarikçisi. Türkiye geneli hızlı kargo. Tabelacılara özel toptan fiyatlar.",
   keywords: ["led modül", "led şerit", "tabela malzemeleri", "led trafo", "kablo toptan", "tabelacı malzemesi"],
-  openGraph: {
-    type: "website",
-    locale: "tr_TR",
-    siteName: "Nadasled",
-    images: [{ url: "/images/og.jpg", width: 1200, height: 630, alt: "Nadasled — Tabela Malzemeleri Toptan Tedarikçisi" }],
-  },
-  twitter: { card: "summary_large_image", images: ["/images/og.jpg"] },
-  robots: { index: true, follow: true },
+  openGraph: openGraph(),
+  // twitter.images bilerek yok: burada sabit og.jpg verildiğinde ürün
+  // sayfalarında da twitter:image og.jpg kalıyordu. Next, twitter görselini
+  // yazılmadığında sayfanın og:image'ından türetiyor.
+  twitter: { card: "summary_large_image" },
+  // robots da yok: index/follow zaten varsayılan. Burada yazıldığında 404
+  // sayfasına Next'in kendi noindex'inin yanına ikinci, çelişen bir etiket
+  // olarak düşüyordu.
 };
 
 const GA_ID = "G-4VYW0MWY61";

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import { HOME_URL } from "@/lib/site-links";
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
@@ -14,12 +15,12 @@ import { orgRef } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Nadasled | LED Modül, LED Şerit ve Tabela Malzemeleri Toptan",
   description: "Tabela yapımı için LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Türkiye geneli hızlı kargo. Tabelacılara özel fiyatlar için hemen arayın.",
-  openGraph: {
+  openGraph: openGraph({
     title: "Nadasled | Tabela Malzemeleri Toptan Tedarikçisi",
     description: "LED modül, LED şerit, trafo ve kablo toptan tedarikçisi. Tabelacılara özel fiyatlar.",
     url: HOME_URL,
     images: [{ url: "https://www.nadasled.com.tr/images/led-modul.webp", width: 800, height: 600, alt: "Nadasled Tabela Malzemeleri" }],
-  },
+  }),
   alternates: { canonical: HOME_URL },
 };
 

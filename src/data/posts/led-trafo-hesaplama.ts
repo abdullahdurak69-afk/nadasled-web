@@ -2,14 +2,14 @@ import type { BlogPost } from "../blog";
 
 export const ledTrafoHesaplama: BlogPost = {
   slug: "led-trafo-hesaplama",
-  title: "LED Trafo Hesaplama: Tabela İçin Kaç Amper Trafo Gerekir?",
-  metaTitle: "LED Trafo Hesaplama — Kaç Amper Trafo Gerekir?",
+  title: "LED Trafo Hesaplama: Formül, %20 Güvenlik Payı ve Hazır Tablolar",
+  metaTitle: "LED Trafo Hesaplama — Formül ve Hazır Tablolar",
   metaDesc:
     "LED trafo hesabı adım adım: watt/amper formülü, %20 güvenlik payı, hazır tablolar ve sık yapılan hatalar. Tabelanız için doğru trafoyu seçin.",
   excerpt:
     "Modül sayısından amper değerine: tabelanız için doğru trafoyu 2 dakikada hesaplayın.",
   date: "2026-06-10",
-  updated: "2026-08-16",
+  updated: "2026-09-25",
   readMins: 9,
   categorySlug: "trafo-led-surucu",
   categoryName: "Trafo & LED Sürücü",

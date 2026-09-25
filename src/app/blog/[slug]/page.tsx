@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import { posts, getPost, getRelatedPosts } from "@/data/blog";
 import { getToolsForPost } from "@/data/tools";
 import { Prose, FaqList } from "@/components/Prose";
@@ -23,13 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.metaTitle,
     description: post.metaDesc,
     alternates: { canonical: url },
-    openGraph: {
+    openGraph: openGraph({
       type: "article",
       title: post.metaTitle,
       description: post.metaDesc,
       url,
       images: [{ url: "https://www.nadasled.com.tr/images/og.jpg", width: 1200, height: 630, alt: post.title }],
-    },
+    }),
   };
 }
 
