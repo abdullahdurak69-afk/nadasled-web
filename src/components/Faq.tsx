@@ -1,14 +1,9 @@
 "use client";
 import { useState } from "react";
-
-const faqs = [
-  { q: "Minimum sipariş tutarı var mı?", a: "Net minimum tutarımız yok — ancak toptan fiyatlardan yararlanmak için belirli adet eşiklerinin üzerinde sipariş verilmesi avantajlıdır. WhatsApp üzerinden talebinizi iletin, size özel fiyat çıkartalım." },
-  { q: "Aynı gün kargo yapıyor musunuz?", a: "Evet. Hafta içi 15:00'a kadar onaylanan siparişler aynı gün kargoya verilir. İstanbul içi kurye / elden teslim seçenekleri de mevcuttur." },
-  { q: "Ürünlerin garantisi var mı?", a: "Tüm LED modül, şerit ve trafolarımız CE / RoHS sertifikalıdır. Ürün kategorisine göre 1 ila 2 yıl üretici garantisi sunulmaktadır." },
-  { q: "Faturalı satış yapıyor musunuz?", a: "Tüm satışlarımız e-fatura / e-arşiv fatura ile belgelendirilir. Kurumsal müşteriler için cari hesap açılışı da mümkündür." },
-  { q: "Hangi ödeme yöntemlerini kabul ediyorsunuz?", a: "Havale / EFT, kredi kartı, kapıda ödeme ve kurumsal müşteriler için vadeli cari ödeme seçenekleri mevcuttur." },
-  { q: "Teknik destek veriyor musunuz?", a: "Evet. Trafo seçimi, voltaj hesaplaması, bağlantı şemaları ve montaj konularında WhatsApp veya telefon üzerinden ücretsiz teknik destek sunuyoruz." },
-];
+// Ana sayfanın FAQPage şeması da bu dosyadan üretiliyor (app/page.tsx).
+// Google şemadaki soruların sayfada görünmesini şart koşuyor; liste burada
+// ayrıca elle yazıldığında ikisi birbirinden koptu, o yüzden kaynak tek.
+import faqs from "@/data/faq.json";
 
 export default function Faq() {
   const [open, setOpen] = useState<number | null>(null);
@@ -33,7 +28,7 @@ export default function Faq() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
           {faqs.map((f, i) => (
             <div
-              key={i}
+              key={f.q}
               className="cursor-pointer"
               style={{ padding: "24px 0", borderBottom: "1px solid var(--nadas-line2)" }}
               onClick={() => setOpen(open === i ? null : i)}

@@ -8,6 +8,7 @@ import { getToolsForCategory } from "@/data/tools";
 import { BlockView } from "@/components/Prose";
 import { SITE } from "@/lib/schema";
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 
 const PHONE_HREF = "tel:+905414696966";
 
@@ -29,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: item.metaDesc,
     keywords: item.keywords,
     alternates: { canonical: url },
-    openGraph: {
+    openGraph: openGraph({
       title: item.metaTitle,
       description: item.metaDesc,
       url,
       ...(item.img ? { images: [{ url: item.img, alt: item.name }] } : {}),
-    },
+    }),
   };
 }
 

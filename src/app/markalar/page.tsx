@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     "Samsung, OSRAM, MEAN WELL, Inventronics ve WAGO orijinal LED çip, sürücü, trafo ve bağlantı ürünleri — toptan tedarik, faturalı satış, aynı gün kargo.",
   keywords: ["samsung led", "osram led", "mean well trafo", "inventronics adaptör", "wago konnektör", "led markaları", "orijinal led ürünleri"],
   alternates: { canonical: "https://www.nadasled.com.tr/markalar/" },
+  openGraph: openGraph({ url: "https://www.nadasled.com.tr/markalar/" }),
 };
 
 const brands = [

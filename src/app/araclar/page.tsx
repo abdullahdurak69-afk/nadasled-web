@@ -1,12 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "Tabela Hesaplama Araçları — Trafo, Modül, Şerit, Maliyet",
+  title: "Tabela Hesaplama Araçları — Trafo, LED ve Maliyet",
   description:
     "Tabelacılar için ücretsiz hesaplama araçları: trafo amper hesabı, kutu harf modül adedi, LED şerit güç ve metrajı, tabela malzeme maliyeti.",
   alternates: { canonical: "https://www.nadasled.com.tr/araclar/" },
+  openGraph: openGraph({ url: "https://www.nadasled.com.tr/araclar/" }),
 };
 
 export default function AraclarPage() {

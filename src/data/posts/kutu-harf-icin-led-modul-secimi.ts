@@ -2,14 +2,14 @@ import type { BlogPost } from "../blog";
 
 export const kutuHarfIcinLedModulSecimi: BlogPost = {
   slug: "kutu-harf-icin-led-modul-secimi",
-  title: "Kutu Harf İçin LED Modül Seçimi: Hangi Modül, Kaç Adet?",
-  metaTitle: "Kutu Harf LED Modül Seçimi ve Adet Hesabı",
+  title: "Kutu Harf İçin LED Modül Seçimi: Mercek, Derinlik ve Yerleşim",
+  metaTitle: "Kutu Harf LED Modül Seçimi — Mercek, Derinlik, Marka",
   metaDesc:
     "Kutu harf LED modül seçim rehberi: harf derinliğine göre mercek açısı, 10x10 kuralıyla adet hesabı, Samsung/Osram/Fortune farkı ve montaj hataları.",
   excerpt:
     "Harf derinliğine göre doğru modül tipi ve 10x10 kuralıyla adet hesabı.",
   date: "2026-06-09",
-  updated: "2026-08-16",
+  updated: "2026-09-25",
   readMins: 9,
   categorySlug: "led-modul",
   categoryName: "LED Modül",

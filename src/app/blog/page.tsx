@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import { posts } from "@/data/blog";
 
 export const metadata: Metadata = {
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   description:
     "Tabelacılar için pratik rehberler: LED trafo hesaplama, modül seçimi, neon flex montajı, COB vs SMD karşılaştırması ve daha fazlası.",
   alternates: { canonical: "https://www.nadasled.com.tr/blog/" },
+  openGraph: openGraph({ url: "https://www.nadasled.com.tr/blog/" }),
 };
 
 export default function BlogPage() {

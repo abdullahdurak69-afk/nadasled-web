@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import { orgRef } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Nadasled iletişim: Ümraniye / İstanbul. Telefon, WhatsApp veya e-posta ile ulaşın, tabela malzemeleri için toptan fiyat teklifi alın. Türkiye geneli kargo.",
   alternates: { canonical: "https://www.nadasled.com.tr/iletisim/" },
+  openGraph: openGraph({ url: "https://www.nadasled.com.tr/iletisim/" }),
 };
 
 // Adres, telefon ve çalışma saatleri artık root layout'taki tek işletme

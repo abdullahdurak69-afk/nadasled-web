@@ -27,16 +27,22 @@ module.exports = {
   outDir: "./out",
   changefreq: "weekly",
   priority: 0.7,
-  transform: async (config, path) => {
-    const lastmod = lastmodFor(path);
+  transform: async (config, rawPath) => {
+    const lastmod = lastmodFor(rawPath);
 
     // changefreq/priority sayfa tipine göre; lastmod her dalda aynı kaynaktan.
     const entry = (changefreq, priority) => ({
-      loc: path,
+      loc: rawPath,
       changefreq,
       priority,
       ...(lastmod ? { lastmod } : {}),
     });
+
+    // next-sitemap liste sayfalarını "/urunler" gibi slash'sız veriyor; loc'a
+    // slash'ı trailingSlash ayarından kendisi ekliyor. Karşılaştırmalar
+    // slash'lı yazıldığı için "/urunler/", "/blog/", "/araclar/" dalları hiç
+    // eşleşmiyor ve bu üç sayfa varsayılan 0.7'ye düşüyordu.
+    const path = rawPath.endsWith("/") ? rawPath : `${rawPath}/`;
 
     if (path === "/") return entry("daily", 1.0);
     if (path === "/urunler/") return entry("weekly", 0.85);

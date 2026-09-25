@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { openGraph } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Nadasled olarak tabela sektörüne LED modül, şerit, trafo ve kablo tedarik ediyoruz. Tabelacılara özel toptan fiyatlar, Türkiye geneli hızlı kargo.",
   alternates: { canonical: "https://www.nadasled.com.tr/hakkimizda/" },
+  openGraph: openGraph({ url: "https://www.nadasled.com.tr/hakkimizda/" }),
 };
 
 const WA_HREF = "https://wa.me/905414696966";
