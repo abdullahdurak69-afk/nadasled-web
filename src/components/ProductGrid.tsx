@@ -29,14 +29,13 @@ export default function ProductGrid() {
           Tabela için ihtiyacınız olan<br />her şey — tek çatıda.
         </h2>
         <p style={{ fontSize: "17px", color: "var(--nadas-ink2)", maxWidth: "640px", marginBottom: "clamp(40px, 6vw, 72px)" }}>
-          12 ana kategori, 150&apos;den fazla ürün çeşidi. Stoktan aynı gün sevkiyat, toptan fiyat avantajı.
+          {`${catalog.length} ana kategori`}, 150&apos;den fazla ürün çeşidi. Stoktan aynı gün sevkiyat, toptan fiyat avantajı.
         </p>
 
-        {/* Grid */}
+        {/* Grid — telefonda iki sütun, açıklamasız kompakt kart */}
         <div
-          className="grid"
+          className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fill,minmax(280px,1fr))]"
           style={{
-            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
             borderTop: "1px solid var(--nadas-line2)",
             borderLeft: "1px solid var(--nadas-line2)",
           }}
@@ -45,9 +44,8 @@ export default function ProductGrid() {
             <Link
               key={p.slug}
               href={`/urunler/${p.slug}/`}
-              className="nadas-product-card group block relative overflow-hidden transition-colors duration-300"
+              className="nadas-product-card group block relative overflow-hidden transition-colors duration-300 px-3 py-5 sm:px-8 sm:py-10"
               style={{
-                padding: "40px 32px",
                 borderRight: "1px solid var(--nadas-line2)",
                 borderBottom: "1px solid var(--nadas-line2)",
                 background: "var(--nadas-bg)",
@@ -57,9 +55,8 @@ export default function ProductGrid() {
             >
               {/* Product image — light plate so white-background photos look intentional */}
               <div
-                className="relative overflow-hidden mb-7"
+                className="relative overflow-hidden mb-4 sm:mb-7 h-[100px] sm:h-[160px]"
                 style={{
-                  height: "160px",
                   borderRadius: "8px",
                   background: "#ffffff",
                   border: "1px solid var(--nadas-line2)",
@@ -70,14 +67,14 @@ export default function ProductGrid() {
                   src={p.img}
                   alt={p.title}
                   fill
-                  className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                  className="object-contain p-3 sm:p-5 transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 280px"
                 />
               </div>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: "28px", letterSpacing: "0.04em", marginBottom: "10px" }}>
+              <div className="text-[18px] max-sm:leading-[1.15] sm:text-[28px] sm:mb-2.5" style={{ fontFamily: "var(--font-display)", letterSpacing: "0.04em" }}>
                 {p.title}
               </div>
-              <div style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.5 }}>
+              <div className="hidden sm:block" style={{ fontSize: "14px", color: "var(--nadas-ink2)", lineHeight: 1.5 }}>
                 {p.desc}
               </div>
               {/* Arrow */}
