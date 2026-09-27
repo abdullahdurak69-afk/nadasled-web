@@ -1764,7 +1764,7 @@
       },
       {
         "name": "20 Tuşlu Sese Duyarlı RGB Kontrol Cihazı",
-        "specs": "12-24V, müzik / sese tepkili",
+        "specs": "12-24V, 6A, müziğe duyarlı, 20 tuşlu kumanda",
         "img": "/images/products/20-tuslu-sese-duyarli-rgb-kontrol-cihazi.jpg"
       },
       {
@@ -1809,12 +1809,12 @@
       },
       {
         "name": "Dokunmatik Dimmer Kontrol Cihazı",
-        "specs": "12-24V, dokunmatik, tek renk",
+        "specs": "12-24V, 3A (36W), dokunmatik, kademesiz",
         "img": "/images/products/dokunmatik-dimmer-kontrol-cihazi-2.jpg"
       },
       {
         "name": "Kablo Dimmer Kontrol Cihazı",
-        "specs": "12-24V, hat üzeri ara dimmer",
+        "specs": "12-24V, 3A, tuşlu kablo arası dimmer, 1.5m kablo",
         "img": "/images/products/kablo-dimmer-kontrol-cihazi.jpg"
       },
       {
@@ -1859,7 +1859,7 @@
       },
       {
         "name": "Siyah Dokunmatik Anahtar",
-        "specs": "Dokunmatik aç / kapa anahtarı",
+        "specs": "12-24V, 3A, dokunmatik aç / kapa",
         "img": "/images/products/siyah-dokunmatik-anahtar.png"
       },
       {

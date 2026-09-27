@@ -2736,6 +2736,269 @@ export const items: ItemPage[] = [
     img: "/images/products/pixel-rgb-kontrol-cihazi-sp110e.png",
     updated: "2026-09-18",
   },
+  {
+    slug: "20-tuslu-sese-duyarli-rgb-kontrol-cihazi",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "20 Tuşlu Sese Duyarlı RGB Kontrol Cihazı",
+    metaTitle: "Sese Duyarlı RGB Kontrol Cihazı | 20 Tuş 6A",
+    metaDesc:
+      "Sese duyarlı RGB LED kontrol cihazı: müziğin ritmine göre renk değiştirir, 20 tuşlu kumanda, 12-24V, 6A, hafıza fonksiyonu. RGB şerit için toptan fiyat.",
+    keywords: ["sese duyarlı rgb", "müziğe duyarlı led", "sese duyarlı rgb şerit led", "müzikli rgb kontrol", "20 tuşlu rgb kumanda"],
+    h1: "20 Tuşlu Sese Duyarlı RGB Kontrol Cihazı",
+    intro:
+      "Dahili mikrofonuyla ortamdaki müziği dinleyip RGB şeridin rengini ritme göre değiştiren kontrol ünitesi. Müzik yokken sıradan bir RGB kumanda gibi sabit renk ve geçiş modlarıyla çalışır.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Çıkış kapasitesi", "6A"],
+      ["Çıkış", "RGB — 3 kanal"],
+      ["Kumanda", "20 tuşlu uzaktan kumanda"],
+      ["Ses algılama", "Dahili mikrofon, müziğe duyarlı modlar"],
+      ["Modlar", "Sabit renk, geçiş efektleri, hız ve parlaklık ayarı"],
+      ["Hafıza", "Elektrik kesilince son ayarı saklar"],
+      ["Bağlantı", "Trafo ile RGB şerit arasına"],
+      ["Ürün kodu", "DGRGBC.FT.006SD20"],
+    ],
+    useCases: [
+      "Kafe, bar ve eğlence mekanlarında müzikle senkron ışık",
+      "Oyun odası ve TV arkası RGB aydınlatma",
+      "Fuar standı ve etkinlik dekorasyonu",
+      "DJ kabini ve sahne önü dekoratif hatlar",
+    ],
+    blocks: [
+      { type: "h2", text: "Ses algılama nasıl çalışır" },
+      {
+        type: "p",
+        text:
+          "Ünitenin üzerindeki mikrofon ortam sesini ölçer ve ses seviyesindeki ani artışları, yani vuruşları, renk ya da parlaklık değişimine çevirir. Müziği kablo ile almaz; hoparlörden çıkan sesi dinler. Bu yüzden sonucu belirleyen iki şey vardır: ses seviyesi ve ünitenin nereye takıldığı.",
+      },
+      { type: "h2", text: "Montaj yeri sonucu belirler" },
+      {
+        type: "p",
+        text:
+          "Sıradan bir RGB kontrolör tavan boşluğuna ya da kapalı bir kasaya gizlenebilir. Sese duyarlı ünitede bu yapılmaz: mikrofon kapalı bir kutunun içinde sesi zayıf duyar ve ışık ritmi kaçırır. Üniteyi ortam sesine açık, hoparlöre çok yakın olmayan bir noktaya yerleştirin. Hoparlörün hemen yanındaki ünite her sese tepki verir ve efekt sürekli yanıp sönen bir ışığa dönüşür; uzakta kalan ünite ise yalnızca yüksek vuruşlarda hareket eder.",
+      },
+      { type: "h2", text: "Kaç metre şerit sürer" },
+      {
+        type: "p",
+        text:
+          "6A çıkış, 12V'ta 72W, 24V'ta 144W eder. Üniteyi tepe yükte çalıştırmamak için yükü bunun %80'inde tutun: 14.4 W/m RGB şeritte bu 12V'ta yaklaşık 4 metre, 24V'ta yaklaşık 8 metredir. Daha uzun hatlarda şeridi bölüp araya [24A RGB repeater](/urunler/led-kontrol-uniteleri/24a-rgb-repeater/) eklenir; repeater ana ünitenin sinyalini kopyaladığı için müzik efekti tüm hatta aynı anda görünür.",
+      },
+      {
+        type: "p",
+        text:
+          "Müzik efekti gerekmeyen, yalnızca renk seçilecek işlerde [44 tuşlu RGB kontrol cihazı](/urunler/led-kontrol-uniteleri/44-tuslu-rgb-kontrol-cihazi/) ya da telefondan yönetilen [Bluetooth RGB kontrol ünitesi](/urunler/led-kontrol-uniteleri/bluetooth-rgb-kontrol-unitesi/) daha doğru seçimdir. Kontrolör türlerinin karşılaştırması [RGB LED kontrol ünitesi seçimi](/blog/rgb-led-kontrol-unitesi-secimi/) yazısında.",
+      },
+    ],
+    faq: [
+      { q: "Müziği telefondan ya da kablodan mı alıyor?", a: "Hayır. Dahili mikrofonla ortam sesini dinler; hoparlörden çıkan müziğe tepki verir." },
+      { q: "Müzik yokken kullanılabilir mi?", a: "Evet. Ses modu kapatıldığında sabit renk ve hazır geçiş efektleriyle normal RGB kumanda gibi çalışır." },
+      { q: "Üniteyi tavana gizleyebilir miyim?", a: "Önerilmez. Kapalı alanda mikrofon sesi zayıf duyar ve ışık ritmi kaçırır. Ortam sesine açık bir noktaya takın." },
+      { q: "Kaç metre RGB şerit bağlanır?", a: "%80 kuralıyla 14.4 W/m RGB şeritte 12V'ta yaklaşık 4 metre, 24V'ta yaklaşık 8 metre. Fazlası için RGB repeater ekleyin." },
+      { q: "Elektrik kesilince ayarlar gider mi?", a: "Gitmez. Hafıza fonksiyonu son kullanılan modu saklar." },
+      { q: "Pixel (adreslenebilir) şeritte çalışır mı?", a: "Çalışmaz. Bu ünite 3 kanallı standart RGB şerit içindir; pixel şerit için [SP107E](/urunler/led-kontrol-uniteleri/pixel-rgb-kontrol-cihazi-sp107e/) gibi pixel kontrolör gerekir." },
+      { q: "Tek renk şeritte kullanılır mı?", a: "Kullanılmaz; RGB çıkışlıdır. Tek renk şeritte parlaklık için dimmer kullanın." },
+    ],
+    related: ["44-tuslu-rgb-kontrol-cihazi", "bluetooth-rgb-kontrol-unitesi", "24a-rgb-repeater"],
+    img: "/images/products/20-tuslu-sese-duyarli-rgb-kontrol-cihazi.jpg",
+    updated: "2026-09-27",
+  },
+  {
+    slug: "kablo-dimmer-kontrol-cihazi",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "Kablo Dimmer Kontrol Cihazı",
+    metaTitle: "Kablo Dimmer Fiyatı | 12-24V 3A Kablo Arası",
+    metaDesc:
+      "Kablo arası LED dimmer: 12-24V, 3A, aç-kapa ve parlaklık artır-azalt tuşları, 1.5 metre kablo. Mobilya, dolap ve raf şeritleri için toptan fiyat.",
+    keywords: ["kablo dimmer", "kablo arası dimmer", "dimmerli kablo", "12v kablo dimmer", "şerit led dimmer anahtar"],
+    h1: "Kablo Dimmer Kontrol Cihazı — 12-24V, 3A",
+    intro:
+      "Trafo ile şerit arasındaki kablonun üzerinde duran, tuşlu küçük dimmer. Işığı açıp kapatır ve parlaklığı kademeli olarak artırıp azaltır. 1.5 metrelik kablosu sayesinde tuşlar, kullanıcının eline yakın bir noktaya getirilir.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Akım kapasitesi", "3A"],
+      ["Kontrol", "Aç-kapa, parlaklık artır ve azalt tuşları"],
+      ["Dimleme", "Kademeli"],
+      ["Kablo", "1.5 metre"],
+      ["Kullanım", "Tek renk şerit LED"],
+      ["Ürün kodu", "DGKBL003"],
+    ],
+    useCases: [
+      "Mutfak dolabı ve tezgah altı şerit aydınlatması",
+      "Raf, vitrin ve dolap içi LED",
+      "Yatak başı ve mobilya içi dekoratif ışık",
+      "Duvar anahtarı çekilmesi istenmeyen düşük voltaj hatlar",
+    ],
+    blocks: [
+      { type: "h2", text: "Kablo dimmer nerede mantıklı" },
+      {
+        type: "p",
+        text:
+          "Mobilya içi aydınlatmada en sık sorun, anahtarın yeridir. Trafo dolabın arkasında ya da tezgahın altında kalır, ışığı kapatmak için duvara ayrı bir 220V anahtar hattı çekmek gerekir. Kablo dimmer bu işi düşük voltaj tarafında çözer: trafonun çıkışı ile şerit arasına girer, tuşlar kablo boyunca istenen noktaya uzatılır. Elektrikçi gerektirmez, duvar kırılmaz.",
+      },
+      { type: "h2", text: "3A ne kadar şerit demek" },
+      {
+        type: "p",
+        text:
+          "3A, 12V'ta 36W, 24V'ta 72W eder. Dimmeri tepe yükte çalıştırmamak için yükü %80'de tutun: 12V 9.6 W/m şeritte yaklaşık 3 metre, 24V 14.4 W/m şeritte yaklaşık 4 metre. Bu, bir mutfak tezgahı ya da iki-üç raf için yeterlidir. Daha uzun ve güçlü hatlarda kablo dimmer yerine [30A potanslı dimmer](/urunler/led-kontrol-uniteleri/30a-potansli-dimmer/) ya da [6A mini dimmer](/urunler/led-kontrol-uniteleri/6a-mini-dimmer-kontrol-cihazi/) kullanılır. Dimmer seçiminin genel mantığı [LED dimmer seçimi](/blog/led-dimmer-secimi/) yazısında.",
+      },
+      { type: "h2", text: "Bağlantı sırası" },
+      {
+        type: "p",
+        text:
+          "Kablo dimmer 220V'u dönüştürmez; zaten 12V ya da 24V'a düşürülmüş hattın üzerine takılır. Sıra şöyledir: 220V → trafo → kablo dimmer → şerit. Trafo, dimmer ve şerit aynı voltajda olmalıdır. Trafonun gücü de dimmerden bağımsız olarak şeridin toplam yüküne göre seçilir.",
+      },
+      {
+        type: "p",
+        text:
+          "Tuşlu kablo dimmer ile [dokunmatik dimmer](/urunler/led-kontrol-uniteleri/dokunmatik-dimmer-kontrol-cihazi/) aynı yükü taşır. Fark kullanımda: tuşlar karanlıkta el yordamıyla bulunur, dokunmatik panel ise daha temiz görünür ve kademesiz ayar verir. Yalnızca açıp kapatmak yetiyorsa [dokunmatik anahtar](/urunler/led-kontrol-uniteleri/siyah-dokunmatik-anahtar/) daha sade bir çözümdür.",
+      },
+    ],
+    faq: [
+      { q: "Kablo dimmer kaç metre şerit taşır?", a: "%80 kuralıyla 12V 9.6 W/m şeritte yaklaşık 3 metre, 24V 14.4 W/m şeritte yaklaşık 4 metre." },
+      { q: "220V'a doğrudan takılır mı?", a: "Hayır. Trafo çıkışına, yani 12V ya da 24V hatta takılır. 220V'a bağlanırsa cihaz yanar." },
+      { q: "RGB şeritte çalışır mı?", a: "Çalışmaz. Tek renk şerit içindir; RGB için RGB kontrol cihazı gerekir." },
+      { q: "Parlaklık kademeli mi kademesiz mi?", a: "Kademeli. Artır ve azalt tuşlarıyla basamak basamak ayarlanır." },
+      { q: "Kabloyu uzatabilir miyim?", a: "Uzatılabilir ama 12V hatta her ek metre gerilim kaybı demektir. Uzatma gerekiyorsa kesiti büyük kablo kullanın." },
+      { q: "Kablo dimmer ısınıyor, normal mi?", a: "Hafif ılıklık normaldir. Belirgin ısınma, yükün 3A sınırına yaklaştığını gösterir." },
+    ],
+    related: ["dokunmatik-dimmer-kontrol-cihazi", "siyah-dokunmatik-anahtar", "6a-mini-dimmer-kontrol-cihazi"],
+    img: "/images/products/kablo-dimmer-kontrol-cihazi.jpg",
+    updated: "2026-09-27",
+  },
+  {
+    slug: "dokunmatik-dimmer-kontrol-cihazi",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "Dokunmatik Dimmer Kontrol Cihazı",
+    metaTitle: "Dokunmatik Dimmer Fiyatı | 12-24V LED 3A",
+    metaDesc:
+      "Dokunmatik LED dimmer: 12-24V, 3A (36W), kademesiz parlaklık ayarı, farklı modlar, 1.5 metre kablo. Dolap, raf ve vitrin şeritleri için toptan fiyat.",
+    keywords: ["dokunmatik dimmer", "dokunmatik led dimmer", "dokunmatik dimmer modülü", "12v dokunmatik dimmer", "şerit led dokunmatik dimmer"],
+    h1: "Dokunmatik Dimmer Kontrol Cihazı — 12-24V, 3A",
+    intro:
+      "Tuş yerine dokunmatik yüzeyle çalışan küçük LED dimmer. Dokunarak açıp kapatır, parlaklığı kademesiz ayarlar. Görünür bir noktaya monte edilen, sade görünmesi istenen mobilya ve vitrin aydınlatmaları için.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Akım kapasitesi", "3A"],
+      ["Güç", "36W (12V'ta)"],
+      ["Kontrol", "Dokunmatik panel"],
+      ["Dimleme", "Kademesiz"],
+      ["Modlar", "Farklı aydınlatma modları"],
+      ["Kablo", "1.5 metre"],
+      ["Ürün kodu", "DGDIMC.FT.003DK"],
+    ],
+    useCases: [
+      "Mutfak dolabı ve tezgah altı aydınlatma",
+      "Vitrin ve teşhir rafları",
+      "Banyo dolabı ve ayna çevresi (nem almayan konumda)",
+      "Ofis ve mağaza mobilyası içi şerit",
+    ],
+    blocks: [
+      { type: "h2", text: "Üç küçük kontrol arasındaki fark" },
+      {
+        type: "p",
+        text:
+          "Katalogda aynı akım sınıfında üç düşük voltaj kontrolü var. Üçü de 3A'dir, trafo ile şerit arasına girer ve 12-24V tek renk şerit içindir; aralarındaki fark nasıl kullanıldıklarıdır.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Dokunmatik dimmer — dokunmatik panel, kademesiz parlaklık ayarı.",
+          "Kablo dimmer — tuşlu, kademeli parlaklık ayarı.",
+          "Dokunmatik anahtar — dokunmatik, yalnızca aç / kapa.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Işık seviyesi gün içinde değişecekse, örneğin akşam mutfakta kısık bir ışık isteniyorsa, dimmer gerekir. Işık hep aynı seviyede yanacak ve sadece açılıp kapanacaksa [dokunmatik anahtar](/urunler/led-kontrol-uniteleri/siyah-dokunmatik-anahtar/) yeterlidir. Kontrolün görünmeyeceği, el yordamıyla bulunacağı yerlerde [kablo dimmer](/urunler/led-kontrol-uniteleri/kablo-dimmer-kontrol-cihazi/) daha pratiktir.",
+      },
+      { type: "h2", text: "36W sınırını aşmamak" },
+      {
+        type: "p",
+        text:
+          "3A, 12V'ta 36W, 24V'ta 72W eder. Tepe yükte çalıştırmamak için %80 kuralını uygulayın: 12V 9.6 W/m şeritte yaklaşık 3 metre, 24V 14.4 W/m şeritte yaklaşık 4 metre. Birden fazla dolabı tek dimmerden sürmek istiyorsanız önce toplam metrajı toplayın; sınırı aşan işlerde [6A mini dimmer](/urunler/led-kontrol-uniteleri/6a-mini-dimmer-kontrol-cihazi/) ya da [30A potanslı dimmer](/urunler/led-kontrol-uniteleri/30a-potansli-dimmer/) kullanılır.",
+      },
+      { type: "h2", text: "Montaj notları" },
+      {
+        type: "p",
+        text:
+          "Dokunmatik yüzey metal bir levhanın arkasına ya da doğrudan üstüne monte edilirse hassasiyeti değişebilir; paneli ahşap, pleksi ya da plastik bir yüzeye yerleştirin. Islak zemine ve su sıçrayan noktaya takmayın. Kurulumdan önce panele erişilecek yüksekliği ve kablonun trafoya ulaşıp ulaşmadığını ölçün; 1.5 metrelik kablo çoğu dolap içi iş için yeterlidir.",
+      },
+    ],
+    faq: [
+      { q: "Dokunmatik dimmer kaç watt yük taşır?", a: "12V'ta 36W, 24V'ta 72W. Güvenli kullanım için yükü bunun %80'inde tutun." },
+      { q: "Kademesiz ayar ne demek?", a: "Parlaklık belirli basamaklara atlamadan, en kısıktan tam parlaklığa kadar sürekli değişir." },
+      { q: "220V'a bağlanır mı?", a: "Hayır. Trafonun 12V ya da 24V çıkışına bağlanır." },
+      { q: "RGB şeritte kullanılır mı?", a: "Kullanılmaz; tek renk şerit içindir." },
+      { q: "Metal dolaba monte edilir mi?", a: "Paneli doğrudan metale yerleştirmeyin; dokunma algısı bozulabilir. Ahşap ya da plastik bir ara yüzey kullanın." },
+    ],
+    related: ["kablo-dimmer-kontrol-cihazi", "siyah-dokunmatik-anahtar", "6a-mini-dimmer-kontrol-cihazi"],
+    img: "/images/products/dokunmatik-dimmer-kontrol-cihazi-2.jpg",
+    updated: "2026-09-27",
+  },
+  {
+    slug: "siyah-dokunmatik-anahtar",
+    categorySlug: "led-kontrol-uniteleri",
+    name: "Siyah Dokunmatik Anahtar",
+    metaTitle: "LED Dokunmatik Anahtar | Şerit LED Aç Kapa 3A",
+    metaDesc:
+      "Şerit LED için dokunmatik aç-kapa anahtarı: 12-24V, 3A, siyah gövde, tak-çalıştır bağlantı. Dolap, tezgah altı ve vitrin aydınlatması için toptan fiyat.",
+    keywords: ["led dokunmatik anahtar", "şerit led anahtar", "dokunmatik led anahtarı", "12v dokunmatik anahtar", "şerit led aç kapa"],
+    h1: "Siyah Dokunmatik LED Anahtar — 12-24V, 3A",
+    intro:
+      "Şerit LED'i tek dokunuşla açıp kapatan düşük voltaj anahtarı. Dimleme yapmaz, yalnızca aç-kapa; bu sadeliği sayesinde dolap ve tezgah altı gibi ışığın hep aynı seviyede yandığı yerlerde en pratik kontrol budur.",
+    specs: [
+      ["Besleme", "12-24V DC"],
+      ["Akım kapasitesi", "3A"],
+      ["Kontrol", "Dokunmatik sensör — aç / kapa"],
+      ["Dimleme", "Yok"],
+      ["Bağlantı", "Tak-çalıştır"],
+      ["Gövde", "Siyah"],
+      ["Ürün kodu", "DGKBL004"],
+    ],
+    useCases: [
+      "Mutfak dolabı ve tezgah altı şerit",
+      "Gardırop ve dolap içi aydınlatma",
+      "Vitrin ve raf ışığı",
+      "Ayna çevresi dekoratif şerit (nem almayan konumda)",
+    ],
+    blocks: [
+      { type: "h2", text: "Neden 220V anahtar değil" },
+      {
+        type: "p",
+        text:
+          "Şerit LED'i duvardaki 220V anahtarla kontrol etmek için trafonun beslemesini anahtardan geçirmek gerekir; bu da duvar içinden yeni hat, elektrikçi ve çoğu zaman kırılan fayans demektir. Dokunmatik anahtar trafodan sonra, 12V ya da 24V tarafta çalışır. Trafo prize takılı kalır, ışık anahtarın olduğu noktadan açılıp kapanır. Düşük voltaj olduğu için mobilyanın içinde güvenle taşınır.",
+      },
+      { type: "h2", text: "Kapasite: 3A" },
+      {
+        type: "p",
+        text:
+          "3A, 12V'ta 36W, 24V'ta 72W eder. %80 kuralıyla 12V 9.6 W/m şeritte yaklaşık 3 metre, 24V 14.4 W/m şeritte yaklaşık 4 metre şerit bağlanır. Mutfak dolabı ve birkaç raf için yeterlidir. Tüm mutfağı tek anahtardan açmak istiyorsanız toplam metrajı hesaplayın; sınırı aşan hatlarda anahtar trafonun 220V tarafına alınır.",
+      },
+      { type: "h2", text: "Anahtar mı dimmer mı" },
+      {
+        type: "p",
+        text:
+          "Işık seviyesini değiştirmek istemiyorsanız dimmere gerek yoktur; anahtar daha ucuz, daha sade ve kullanımı herkes için açıktır. Akşamları kısık ışık isteniyorsa aynı akım sınıfındaki [dokunmatik dimmer](/urunler/led-kontrol-uniteleri/dokunmatik-dimmer-kontrol-cihazi/) ya da tuşlu [kablo dimmer](/urunler/led-kontrol-uniteleri/kablo-dimmer-kontrol-cihazi/) seçilir. Hareket algılandığında kendiliğinden yanması istenen dolaplarda ise [radar sensör](/urunler/led-kontrol-uniteleri/radar-sensor/) anahtarın yerini alır.",
+      },
+      {
+        type: "p",
+        text:
+          "Anahtarı metal yüzeye doğrudan yerleştirmeyin; dokunma algısı bozulabilir. Su sıçrayan evye kenarı gibi noktalardan uzak, elin doğal olarak uzandığı bir yere monte edin.",
+      },
+    ],
+    faq: [
+      { q: "Şerit LED'e anahtar nasıl bağlanır?", a: "Trafo ile şerit arasına takılır: 220V → trafo → dokunmatik anahtar → şerit. Trafo, anahtar ve şerit aynı voltajda olmalıdır." },
+      { q: "Parlaklık ayarı yapar mı?", a: "Yapmaz, yalnızca açıp kapatır. Parlaklık için dokunmatik dimmer kullanın." },
+      { q: "Kaç metre şerit bağlanır?", a: "%80 kuralıyla 12V 9.6 W/m şeritte yaklaşık 3 metre, 24V 14.4 W/m şeritte yaklaşık 4 metre." },
+      { q: "12V ve 24V'ta aynı anahtar mı kullanılır?", a: "Evet, 12-24V DC aralığında çalışır." },
+      { q: "220V lambada kullanılır mı?", a: "Hayır. Yalnızca 12-24V DC LED hatlar içindir." },
+      { q: "RGB şeritte kullanılır mı?", a: "RGB hatlarda aç-kapa genellikle RGB kontrol cihazının kumandasından yapılır; ayrı anahtar gerekmez." },
+    ],
+    related: ["dokunmatik-dimmer-kontrol-cihazi", "kablo-dimmer-kontrol-cihazi", "radar-sensor"],
+    img: "/images/products/siyah-dokunmatik-anahtar.png",
+    updated: "2026-09-27",
+  },
   // ——— Point LED ————————————————————————————————————————————————
   {
     slug: "30mm-sapkali-point-led",
