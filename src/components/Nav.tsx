@@ -40,7 +40,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-9 list-none">
+        <ul className="hidden lg:flex items-center gap-9 list-none">
           {/* Ürünler dropdown */}
           <li
             className="relative"
@@ -110,7 +110,7 @@ export default function Nav() {
           target="_blank"
           rel="noopener noreferrer"
           data-track="nav"
-          className="hidden md:inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-px"
+          className="hidden lg:inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-px"
           style={{
             background: "var(--nadas-orange)",
             color: "var(--nadas-orange-ink)",
@@ -126,7 +126,7 @@ export default function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 transition-colors"
+          className="lg:hidden p-2 transition-colors"
           style={{ background: "transparent", border: "1px solid var(--nadas-line2)", borderRadius: "2px", color: "var(--nadas-ink)" }}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menü"
@@ -143,8 +143,8 @@ export default function Nav() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div
-          style={{ width: "min(1240px, 92vw)", margin: "0 auto", borderTop: "1px solid var(--nadas-line2)", paddingTop: "20px", marginTop: "12px" }}
-          className="flex flex-col gap-4 md:hidden"
+          style={{ width: "min(1240px, 92vw)", margin: "0 auto", borderTop: "1px solid var(--nadas-line2)", paddingTop: "20px", paddingBottom: "20px", marginTop: "12px", maxHeight: "calc(100dvh - 88px)", overflowY: "auto", overscrollBehavior: "contain" }}
+          className="flex flex-col gap-4 lg:hidden"
         >
           <Link
             href={ROUTES.urunler}
@@ -154,13 +154,13 @@ export default function Nav() {
           >
             Ürünler
           </Link>
-          <div className="flex flex-col gap-1 pl-3" style={{ borderLeft: "1px solid var(--nadas-line2)" }}>
+          <div className="flex flex-col pl-3" style={{ borderLeft: "1px solid var(--nadas-line2)" }}>
             {categories.map((c) => (
               <Link
                 key={c.slug}
                 href={categoryHref(c.slug)}
-                className="text-sm transition-colors"
-                style={{ color: "var(--nadas-ink3)" }}
+                className="text-sm py-2 transition-colors"
+                style={{ color: "var(--nadas-ink2)" }}
                 onClick={() => setMobileOpen(false)}
               >
                 {c.name}
