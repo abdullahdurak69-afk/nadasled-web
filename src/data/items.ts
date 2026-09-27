@@ -2336,6 +2336,237 @@ export const items: ItemPage[] = [
     img: "/images/products/yagmur-korumali-trafo-dinamo-light.png",
     updated: "2026-09-18",
   },
+  {
+    slug: "meanwell-lrs-ic-mekan-adaptor",
+    categorySlug: "trafo-led-surucu",
+    name: "Meanwell İç Mekan Plus+ Adaptör",
+    metaTitle: "Meanwell LRS Adaptör Fiyatı | 15-350W 12V/24V",
+    metaDesc:
+      "Meanwell RS/LRS iç mekan LED adaptör: 15W'tan 350W'a, 12V ve 24V, IP20 metal kasa. LRS-350-12, LRS-350-24 dahil tüm modeller. Toptan fiyat, aynı gün kargo.",
+    keywords: ["meanwell lrs", "meanwell led driver", "lrs-350-24", "lrs-350-12", "meanwell adaptör 12v", "meanwell 24v adaptör"],
+    h1: "Meanwell İç Mekan Adaptör — RS / LRS Serisi 15-350W",
+    intro:
+      "Meanwell'in delikli metal kasalı RS ve LRS serisi: 15W'tan 350W'a dokuz güç kademesi, 12V ve 24V çıkış. Işıklı kutunun, panonun ya da tabela arkasındaki kapalı bölmenin içine yerleşen, kuru ortam için tasarlanmış sabit voltaj güç kaynağı.",
+    specs: [
+      ["Marka / seri", "Meanwell RS (15-25W), LRS (35-350W)"],
+      ["Güç kademeleri", "15, 25, 35, 50, 75, 100, 150, 200, 350 W"],
+      ["Çıkış", "12V DC veya 24V DC — sabit voltaj"],
+      ["Giriş", "220V AC şebeke"],
+      ["Koruma sınıfı", "IP20 — yalnızca kuru iç mekan"],
+      ["Kasa", "Delikli metal kasa, fansız doğal soğutma"],
+      ["Koruma devreleri", "Kısa devre, aşırı yük, aşırı gerilim, aşırı sıcaklık"],
+      ["En büyük model", "LRS-350-12 (29A) / LRS-350-24 (14.6A)"],
+      ["Ürün kodu", "TRMW-RS / TRMW-LRS + güç + voltaj (ör. TRMW-LRS35024)"],
+    ],
+    useCases: [
+      "Işıklı kutu (light box) ve kutu harf içi besleme",
+      "Tabela arkasında kapalı, kuru bölmeye monte edilen merkezi trafo",
+      "Pano içi LED besleme — birden çok hattı tek noktadan sürmek",
+      "Mağaza içi şerit ve COB şerit hatları",
+    ],
+    blocks: [
+      { type: "h2", text: "Hangi model hangi yükü taşır" },
+      {
+        type: "p",
+        text:
+          "Adaptörü etiket gücünün tamamında çalıştırmayın; sürekli tepe yükte çalışan sürücü ısınır ve erken yaşlanır. Pratik kural, yükü adaptör gücünün yaklaşık %80'inde tutmaktır. Aşağıdaki tabloda her modelin 12V ve 24V çıkış akımı (amper) ile bu kurala göre bağlanabilecek en fazla LED yükü (watt) var.",
+      },
+      {
+        type: "table",
+        headers: ["Model", "12V · A", "24V · A", "%80 · W"],
+        rows: [
+          ["RS-15", "1.3", "0.63", "12"],
+          ["RS-25", "2.1", "1.04", "20"],
+          ["LRS-35", "3", "1.45", "28"],
+          ["LRS-50", "4.2", "2.08", "40"],
+          ["LRS-75", "6", "3.12", "60"],
+          ["LRS-100", "8.5", "4.5", "80"],
+          ["LRS-150", "12.5", "6.5", "120"],
+          ["LRS-200", "17", "8.5", "160"],
+          ["LRS-350", "29", "14.6", "280"],
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Örnek: 24V, 14.4 W/m şeritten 15 metre 216W eder. %80 kuralıyla 216 / 0.8 = 270W gerekir; LRS-200 yetmez, LRS-350 oturur. Hesabı elle yapmak istemezseniz [trafo amper hesaplama aracı](/araclar/trafo-amper-hesaplama/) aynı sonucu verir.",
+      },
+      { type: "h2", text: "12V mi 24V mi" },
+      {
+        type: "p",
+        text:
+          "Aynı güçte 24V model yarı akım taşır. Bu, kabloda ve şeritte gerilim düşümünü azaltır; uzun hatlarda şeridin sonu başı kadar parlak kalır. Kısa hatlı kutu harf ve modül işlerinde 12V yaygındır, 5 metreyi aşan şerit hatlarında 24V'a geçmek daha temiz sonuç verir. Karar şeride göre verilir: 12V şeride 24V adaptör bağlanmaz. Ayrıntısı [12V mu 24V mu](/blog/12v-mu-24v-mu-tabela-aydinlatma/) yazısında.",
+      },
+      { type: "h2", text: "IP20 nereye takılmaz" },
+      {
+        type: "p",
+        text:
+          "Delikli metal kasa ısıyı iyi atar ama suya ve toza kapalı değildir. Tabela arkasında, çatı altında ya da yağmurun ulaşabildiği herhangi bir noktada kullanılmaz; orada [Meanwell dış mekan IP67 modeli](/urunler/trafo-led-surucu/meanwell-dis-mekan-plus-adaptor/) ya da [Inventronics EBV](/urunler/trafo-led-surucu/inventronics-ebv-dis-mekan-adaptor/) gerekir. İç mekanda da kasanın çevresinde hava dolaşımı için boşluk bırakın; kapalı bir kutunun içine sıkıştırılan 350W'lık sürücü, fansız soğutmanın tüm avantajını kaybeder.",
+      },
+    ],
+    faq: [
+      { q: "LRS-350-24 kaç metre şerit LED çeker?", a: "%80 kuralıyla 280W. 24V 14.4 W/m şeritte yaklaşık 19 metre, 9.6 W/m şeritte yaklaşık 29 metre." },
+      { q: "LRS-350-12 ile LRS-350-24 arasındaki fark nedir?", a: "Güç aynı, çıkış voltajı farklı. 12V model 29A, 24V model 14.6A verir. Şeridinizin voltajına göre seçin." },
+      { q: "Dış mekanda kullanabilir miyim?", a: "Hayır. IP20 kasa yalnızca kuru iç mekan içindir. Dış mekan için IP67 model kullanın." },
+      { q: "Fan sesi yapar mı?", a: "Hayır. Bu seri fansızdır, doğal hava dolaşımıyla soğur ve sessiz çalışır." },
+      { q: "Adaptör ısınıyor, normal mi?", a: "Kasanın ılık olması normaldir. Elle tutulamayacak kadar ısınıyorsa yük %80'i aşmış ya da kasanın etrafında hava kalmamıştır." },
+      { q: "Meanwell ile isimsiz adaptör arasında ne fark var?", a: "Etiketteki güce gerçekten ulaşması, koruma devrelerinin çalışması ve uzun ömür. Servisi zor noktalarda fiyat farkı tek bir arıza ziyaretinden küçüktür." },
+      { q: "Dimlenebilir mi?", a: "RS/LRS serisi sabit voltaj adaptördür, kendisi kısılmaz. Parlaklık ayarı için adaptörle şerit arasına [LED dimmer](/urunler/led-kontrol-uniteleri/30a-potansli-dimmer/) eklenir." },
+    ],
+    related: ["osram-element-ic-mekan-adaptor", "ultra-slim-ic-mekan-adaptor", "meanwell-dis-mekan-plus-adaptor"],
+    img: "/images/products/meanwell-ic-mekan-adaptor.png",
+    updated: "2026-09-27",
+  },
+  {
+    slug: "osram-element-ic-mekan-adaptor",
+    categorySlug: "trafo-led-surucu",
+    name: "Osram Element Serisi İç Mekan Plus+ Adaptör",
+    metaTitle: "Osram Element Adaptör Fiyatı | 30-250W 12V/24V",
+    metaDesc:
+      "Osram Element G2 iç mekan LED adaptör: 30, 60, 120, 180 ve 250W; 12V ve 24V çıkış, IP20, 3 yıl garanti. Model tablosu ve seçim rehberi. Toptan fiyat.",
+    keywords: ["osram element", "osram element driver", "osram led adaptör", "osram element 120w", "osram led sürücü"],
+    h1: "Osram Element Serisi İç Mekan Adaptör — 30-250W",
+    intro:
+      "Osram'ın Element G2 serisi sabit voltaj LED sürücüleri. Beş güç kademesi, 12V ve 24V çıkış, 3 yıl garanti. Mağaza, vitrin ve mimari iç mekan işlerinde marka sürücü isteyen projeler için.",
+    specs: [
+      ["Marka / seri", "Osram Element G2"],
+      ["Güç kademeleri", "30, 60, 120, 180, 250 W"],
+      ["Çıkış", "12V DC veya 24V DC — sabit voltaj"],
+      ["Giriş", "220-240V AC"],
+      ["Koruma sınıfı", "IP20 — iç mekan"],
+      ["Koruma devreleri", "Kısa devre, aşırı akım, yüksek gerilim"],
+      ["Garanti", "3 yıl"],
+      ["Ürün kodu", "ELEMENT<güç>/220-240/<voltaj> G2 (ör. ELEMENT120/220-240/24 G2)"],
+    ],
+    useCases: [
+      "Mağaza içi şerit ve COB şerit aydınlatmaları",
+      "Vitrin ve raf aydınlatması",
+      "Mimari gizli ışık (kartonpiyer, asma tavan boşluğu)",
+      "Marka sürücü şartı olan kurumsal iç mekan projeleri",
+    ],
+    blocks: [
+      { type: "h2", text: "Model tablosu" },
+      {
+        type: "p",
+        text:
+          "Her güç kademesi 12V ve 24V olarak ayrı üretilir; model kodundaki son sayı çıkış voltajıdır. Akım değerleri (amper) güç / voltaj ile hesaplanmıştır. Son sütun, sürücüyü tepe yükte çalıştırmamak için önerilen en fazla LED yüküdür (watt).",
+      },
+      {
+        type: "table",
+        headers: ["Element · W", "12V · A", "24V · A", "%80 · W"],
+        rows: [
+          ["30", "2.5", "1.25", "24"],
+          ["60", "5", "2.5", "48"],
+          ["120", "10", "5", "96"],
+          ["180", "15", "7.5", "144"],
+          ["250", "20.8", "10.4", "200"],
+        ],
+      },
+      { type: "h2", text: "Element mi Meanwell LRS mi" },
+      {
+        type: "p",
+        text:
+          "İkisi de iç mekan, sabit voltaj ve IP20. Fark kullanım alanında: [Meanwell LRS](/urunler/trafo-led-surucu/meanwell-lrs-ic-mekan-adaptor/) delikli metal kasalıdır, 350W'a kadar çıkar ve pano içi ya da tabela arkası gibi teknik bölmeler için uygundur. Element serisi 250W'ta durur ve 3 yıl garantisiyle mağaza ve mimari iç mekan projelerinde öne çıkar. Projede sürücü markası şartname ile belirlenmişse seçim zaten oradan gelir; belirlenmemişse güç ihtiyacına ve montaj yerine bakın.",
+      },
+      { type: "h2", text: "Tek büyük sürücü mü, birkaç küçük mü" },
+      {
+        type: "p",
+        text:
+          "180W'lık bir yükü tek ELEMENT 250 ile beslemek mümkündür, ama hat uzunsa iki ELEMENT 120'ye bölmek çoğu zaman daha iyidir. Her sürücü kendi hattına yakın durur, kablolar kısalır, gerilim düşümü azalır ve bir sürücü arızalandığında mekanın tamamı değil yarısı karanlıkta kalır. Uzun şerit hatlarında bu hesap için [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısına bakın.",
+      },
+      {
+        type: "p",
+        text:
+          "Sürücüyü yükten uzağa koymanız gerekiyorsa kablo kesitini artırın; 12V hatta birkaç metrelik ince kablo, sürücü ne kadar kaliteli olursa olsun şeridin sonunda ışığı düşürür. Doğru kesit için [NYAF bakır kablo](/urunler/yardimci-urunler/nyaf-bakir-kablo/) sayfasındaki tabloyu kullanabilirsiniz.",
+      },
+    ],
+    faq: [
+      { q: "Osram Element 120W kaç metre şerit taşır?", a: "%80 kuralıyla 96W. 24V 14.4 W/m şeritte yaklaşık 6.5 metre, 9.6 W/m şeritte yaklaşık 10 metre." },
+      { q: "12V ve 24V modeli nasıl ayırt ederim?", a: "Model kodunun sonundaki sayıya bakın: ELEMENT120/220-240/12 G2 12V, ELEMENT120/220-240/24 G2 24V'tur." },
+      { q: "Garanti süresi ne kadar?", a: "Element serisi 3 yıl garantilidir." },
+      { q: "Dış mekanda kullanılır mı?", a: "Hayır. IP20 sınıfı yalnızca iç mekan içindir. Dış mekanda IP67 sürücü kullanın." },
+      { q: "Dimlenebilir mi?", a: "Sabit voltaj sürücüdür, kendisi kısılmaz. Kısma için sürücüyle şerit arasına LED dimmer eklenir." },
+      { q: "Power LED ya da sabit akım modül sürebilir mi?", a: "Hayır. Element sabit voltaj verir; 12V/24V şerit, modül ve bar içindir. Sabit akım isteyen çipler ayrı sürücü ister." },
+    ],
+    related: ["meanwell-lrs-ic-mekan-adaptor", "ultra-slim-ic-mekan-adaptor", "inventronics-ebv-dis-mekan-adaptor"],
+    img: "/images/products/osram-ic-mekan-adaptor-element-serisi.jpg",
+    updated: "2026-09-27",
+  },
+  {
+    slug: "inventronics-ebv-dis-mekan-adaptor",
+    categorySlug: "trafo-led-surucu",
+    name: "İnventronics Dış Mekan Adaptör (EBV Serisi)",
+    metaTitle: "Inventronics EBV LED Driver | IP67 60-400W",
+    metaDesc:
+      "Inventronics EBV serisi IP67 dış mekan LED sürücü: 60-400W, 12V ve 24V, model tablosu ve ölçüleri. Cephe ve çatı tabelaları için toptan fiyat, aynı gün kargo.",
+    keywords: ["inventronics", "inventronics led driver", "inventronics ebv", "ip67 led driver", "dış mekan led adaptör"],
+    h1: "Inventronics EBV Serisi IP67 Dış Mekan Adaptör",
+    intro:
+      "Inventronics'in EBV serisi, tamamen kapalı IP67 kasalı sabit voltaj LED sürücüsü. 60W'tan 400W'a beş kademe, 12V ve 24V çıkış. Yağmur, toz ve sıcaklık farkının sürekli olduğu cephe ve çatı tabelaları için.",
+    specs: [
+      ["Marka / seri", "Inventronics EBV"],
+      ["Güç kademeleri", "60, 100, 150, 200, 400 W sınıfı"],
+      ["Çıkış", "12V DC veya 24V DC — sabit voltaj"],
+      ["Giriş", "220V AC"],
+      ["Koruma sınıfı", "IP67 — dış mekan"],
+      ["Kasa", "Kapalı metal kasa"],
+      ["Ölçü aralığı", "95×67.5×36.5 mm (60W) — 200×80×42 mm (400W)"],
+      ["Ürün kodu", "EBV-<güç>S<voltaj>SV (ör. EBV-200S024SV)"],
+    ],
+    useCases: [
+      "Cephe üstü kutu harf ve ışıklı tabelalar",
+      "Çatı tabelaları ve totemler",
+      "Yağmur alan saçak altı ve açık otopark aydınlatmaları",
+      "Servisi vinç ya da iskele gerektiren kurulumlar",
+    ],
+    blocks: [
+      { type: "h2", text: "Model tablosu ve ölçüler" },
+      {
+        type: "p",
+        text:
+          "Model kodundaki sayı güç sınıfını, S'den sonraki üç hane çıkış voltajını gösterir: EBV-200S024SV, 200W sınıfı 24V modeldir. Ölçüler montaj yerini planlamak için önemlidir; 400W model belirgin şekilde büyüktür.",
+      },
+      {
+        type: "table",
+        headers: ["Sınıf", "12V · A", "24V · A", "Ölçü · mm"],
+        rows: [
+          ["EBV-060", "5", "2.5", "95 × 67.5 × 36.5"],
+          ["EBV-100", "8.4", "4.2", "145 × 67.5 × 36.5"],
+          ["EBV-150", "10", "6.3", "145 × 67.5 × 39.7"],
+          ["EBV-200", "16.7", "8.4", "169 × 67.5 × 39.7"],
+          ["EBV-400", "28.4", "16.7", "200 × 80 × 42"],
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Dikkat: 12V'ta iki modelin gerçek gücü sınıf adından düşüktür. EBV-150S012SV 10A ile 120W, EBV-400S012SV 28.4A ile yaklaşık 340W verir. 24V modellerde güç sınıf adıyla aynıdır. Büyük yüklerde 24V'u tercih etmenin bir nedeni de bu.",
+      },
+      { type: "h2", text: "IP67 neyi çözer, neyi çözmez" },
+      {
+        type: "p",
+        text:
+          "IP67, kasanın toza tamamen kapalı olduğunu ve geçici olarak suya batmaya dayandığını söyler. Yağmur, kar ve yıkama suyu sorun değildir. Ama kasanın dışındaki bağlantı noktaları IP67 değildir: kablonun şerit ya da modül hattıyla birleştiği ek, sürücünün kendisinden önce arızalanır. Ekleri su almayacak bir kutuda yapın ya da sürücüyü kablo ağzı aşağı bakacak şekilde monte edin ki su kablo boyunca içeri yürümesin. Sınıfların farkı [IP65 mi IP67 mi](/blog/ip65-mi-ip67-mi-tabela-led/) yazısında.",
+      },
+      { type: "h2", text: "Ne zaman EBV, ne zaman Meanwell dış mekan" },
+      {
+        type: "p",
+        text:
+          "İkisi de IP67 marka sürücüdür ve aynı işi görür. Seçimi çoğunlukla güç ve bulunabilirlik belirler: EBV 400W sınıfına kadar çıkar ve kompakt ölçüleriyle dar tabela kasalarına sığar. [Meanwell dış mekan](/urunler/trafo-led-surucu/meanwell-dis-mekan-plus-adaptor/) ise sahada en çok bilinen marka olduğu için yedek parça ve değişim kolaylığı sağlar.",
+      },
+    ],
+    faq: [
+      { q: "EBV-200S024SV kaç metre şerit taşır?", a: "%80 kuralıyla 160W. 24V 14.4 W/m şeritte yaklaşık 11 metre, 9.6 W/m şeritte yaklaşık 16 metre." },
+      { q: "EBV-400S012SV neden 400W vermiyor?", a: "12V'ta akım sınırı 28.4A'dir; 12 × 28.4 yaklaşık 340W eder. 400W tam güç için 24V modeli (EBV-400S024SV) seçin." },
+      { q: "Suya batırılabilir mi?", a: "IP67 geçici batmaya dayanır, sürekli su altı kullanım için değildir. Suyun biriktiği çukur noktalara monte etmeyin." },
+      { q: "İç mekanda kullanılır mı?", a: "Kullanılır. Nemli iç mekanlarda (otopark, depo, yıkama alanı) özellikle uygundur." },
+      { q: "Adaptör çok ısınıyor, arızalı mı?", a: "Kapalı kasalı sürücülerin ılık-sıcak olması normaldir. Elle tutulamayacak sıcaklık yük fazlalığına işaret eder." },
+      { q: "Katalogdaki Inventronics Plus+ ile EBV arasında nasıl seçerim?", a: "Güç, voltaj ve montaj yerini WhatsApp'tan yazın; stoktaki iki seri arasından yükünüze uyan modeli iletelim." },
+    ],
+    related: ["meanwell-dis-mekan-plus-adaptor", "metal-kasa-dis-mekan-adaptor", "yagmur-korumali-epoksili-adaptor"],
+    img: "/images/products/inventronics-dis-mekan-adaptor-ebv-serisi.webp",
+    updated: "2026-09-27",
+  },
   // ——— LED Kontrol Üniteleri ————————————————————————————————————
   {
     slug: "44-tuslu-rgb-kontrol-cihazi",
@@ -3015,6 +3246,176 @@ export const items: ItemPage[] = [
     related: ["30a-potansli-dimmer", "ip20-8mm-eco-2835-120-led-mt", "ultra-slim-ic-mekan-adaptor"],
     img: "/images/products/radar-sensor.png",
     updated: "2026-09-18",
+  },
+  // ——— Reklam Araçları ——————————————————————————————————————————
+  {
+    slug: "logo-projektor-100w",
+    categorySlug: "reklam-araclari",
+    name: "Tek Görsel Projektör Lamba",
+    metaTitle: "Logo Projektör Fiyatı | 100W IP65 Dış Mekan",
+    metaDesc:
+      "100W Osram LED logo projektör: IP65, 15°/20°/30° lens, karanlıkta 20 metreye kadar yansıtma. Mağaza girişi, cephe ve zemin logosu için toptan fiyat.",
+    keywords: ["logo projektör", "gobo projektör", "led logo projektör", "logo yansıtma", "dış mekan logo projektör"],
+    h1: "Logo Projektör — 100W Tek Görselli, IP65",
+    intro:
+      "Logoyu, yön okunu ya da kısa bir yazıyı zemine veya duvara ışıkla yansıtan 100W dış mekan projektörü. Osram LED ışık kaynağı, IP65 alüminyum gövde ve üç lens seçeneği; boya ya da tabela gerektirmeden girişi işaretler.",
+    specs: [
+      ["Güç", "100 W"],
+      ["Işık kaynağı", "Osram LED"],
+      ["Besleme", "24V DC (harici sürücüyle 220V şebekeden)"],
+      ["Koruma sınıfı", "IP65 — dış mekan"],
+      ["Renk sıcaklığı", "8500-11000K"],
+      ["Lens açısı", "15°, 20° veya 30°"],
+      ["Yansıtma mesafesi", "Karanlıkta 1-20 m, aydınlık ortamda 1-8 m"],
+      ["Ömür", "30.000 saat"],
+      ["Gövde", "Soğuk dövme alüminyum, entegre soğutucu"],
+      ["Görsel", "Tek sabit görsel (logo / yön / yazı)"],
+      ["Ürün kodu", "DGCHZ.PRJ.QX0001"],
+    ],
+    useCases: [
+      "Mağaza, restoran ve otel girişinde zemine logo",
+      "AVM ve otoparkta yön oku ve kat yönlendirmesi",
+      "Cephe duvarına gece kurumsal logo",
+      "Fuar, açılış ve etkinlik alanında marka görünürlüğü",
+    ],
+    blocks: [
+      { type: "h2", text: "Nasıl çalışır" },
+      {
+        type: "p",
+        text:
+          "Projektörün içinde logonun işlendiği küçük bir görsel diski bulunur. LED'in ışığı bu diskten geçer, lens görüntüyü büyütüp yüzeye düşürür. Görsel sabittir: bir projektör tek logo taşır. Logo değişirse yalnızca görsel diski değişir, cihaz aynı kalır. Birden fazla görsel gerekiyorsa katalogdaki 4 görselli projektör dört farklı görseli tek cihazda taşır.",
+      },
+      { type: "h2", text: "Lens açısı ve görüntü boyu" },
+      {
+        type: "p",
+        text:
+          "Görüntünün büyüklüğünü mesafe ve lens açısı belirler. Aşağıdaki değerler görüntü çapının geometrik hesabıdır, yaklaşıktır; montaj açısı eğikse görüntü bir yönde uzar.",
+      },
+      {
+        type: "table",
+        headers: ["Lens", "3 m", "5 m", "8 m"],
+        rows: [
+          ["15°", "0.8 m", "1.3 m", "2.1 m"],
+          ["20°", "1.1 m", "1.8 m", "2.8 m"],
+          ["30°", "1.6 m", "2.7 m", "4.3 m"],
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Pratik seçim: saçak altından zemine, 3-4 metreden yansıtılan giriş logosu için 30° lens yeterince büyük görüntü verir. Karşı binadan ya da direkten uzun mesafeli cephe yansıtmasında 15° lens görüntüyü toplu ve parlak tutar. Görüntü büyüdükçe aynı ışık daha geniş alana yayıldığı için parlaklık düşer; büyük logo istiyorsanız ortamın karanlık olması daha da önemlidir.",
+      },
+      { type: "h2", text: "Ortam ışığı sonucu belirler" },
+      {
+        type: "p",
+        text:
+          "Projektör yüzeye ışık ekler; yüzey zaten aydınlıksa logo silik görünür. Karanlık bir otopark girişinde 20 metreden okunan logo, vitrin ışıklarıyla yıkanan bir kaldırımda 8 metrede sınıra dayanır. Kurulumdan önce yüzeyin gece ne kadar aydınlık olduğuna bakın, gerekiyorsa o noktadaki genel aydınlatmayı projektörün alanından uzaklaştırın. Koyu ve mat zeminler, parlak seramiğe göre daha net görüntü verir.",
+      },
+      { type: "h2", text: "Logo nasıl hazırlanır" },
+      {
+        type: "p",
+        text:
+          "Logoyu vektörel (AI, PDF ya da SVG) göndermeniz en temiz sonucu verir. İnce çizgiler ve küçük yazılar büyütüldüğünde dağılır; zeminde okunacak yazıyı kalın ve kısa tutun. Logonuzu ve kurulum mesafesini WhatsApp'tan iletin, lens açısını ve görsel hazırlığını birlikte netleştirelim.",
+      },
+    ],
+    faq: [
+      { q: "Logo projektör kaç metreye yansıtır?", a: "Karanlık ortamda 1-20 metre, aydınlık ortamda 1-8 metre arası etkili yansıtma yapar." },
+      { q: "Yağmurda çalışır mı?", a: "Evet. Gövde IP65'tir; yağmur ve toza dayanıklıdır. Sürücü ve bağlantıları da su almayacak şekilde monte edin." },
+      { q: "Logoyu sonradan değiştirebilir miyim?", a: "Evet, cihaz aynı kalır, yalnızca görsel diski değişir." },
+      { q: "Renkli logo yansıtabilir mi?", a: "Logonuzun renklerine ve ayrıntısına bağlı. Uygunluğunu görmek için logonuzu gönderin." },
+      { q: "Gündüz görünür mü?", a: "Doğrudan gün ışığında görünmez. Projektör alacakaranlık ve gece için tasarlanmıştır." },
+      { q: "Hangi lensi seçmeliyim?", a: "Kısa mesafeden büyük görüntü için 30°, uzak mesafeden toplu ve parlak görüntü için 15°. Ara durumlar için 20°." },
+      { q: "Elektrik bağlantısı nasıl yapılır?", a: "Cihaz 24V DC ile çalışır; şebekeye 220V/24V harici sürücüyle bağlanır." },
+    ],
+    related: [],
+    img: "/images/products/doner-projeksiyon.png",
+    updated: "2026-09-27",
+  },
+  // ——— Yardımcı Ürünler —————————————————————————————————————————
+  {
+    slug: "nyaf-bakir-kablo",
+    categorySlug: "yardimci-urunler",
+    name: "NYAF Bakır Kablo",
+    metaTitle: "NYAF Kablo Fiyatı | LED İçin Kesit Seçimi",
+    metaDesc:
+      "NYAF çok telli esnek bakır kablo: 2x0.22'den 2x2.5'e, RGB seçenekleri, 100 metre rulo. 12V ve 24V LED hatları için kesit ve gerilim düşümü tablosu.",
+    keywords: ["nyaf kablo", "nyaf kablo nedir", "2x0.75 nyaf kablo", "led kablosu", "12v led kablo kesiti"],
+    h1: "NYAF Bakır Kablo — LED Hatları İçin Kesit Seçimi",
+    intro:
+      "Çok telli, esnek bakır iletkenli, PVC yalıtımlı besleme kablosu. Adaptörden şeride, modül zincirinden kutu harfe kadar LED tesisatının düşük voltaj tarafında kullanılır. 100 metre rulo; 0.22 mm²'den 2.5 mm²'ye kadar kesit.",
+    specs: [
+      ["İletken", "Çok telli esnek bakır"],
+      ["Yalıtım", "PVC"],
+      ["Rulo", "100 metre"],
+      ["2 × 0.22", "İkili, şeffaf"],
+      ["2 × 0.50", "Kordon, şeffaf / beyaz"],
+      ["2 × 0.75", "Kordon, şeffaf / beyaz"],
+      ["2 × 1.5", "Kordon, şeffaf / beyaz"],
+      ["2 × 2.5", "TTR, beyaz"],
+      ["RGB", "1.5 mm² bant ve 2.5 mm² TTR seçenekleri"],
+    ],
+    useCases: [
+      "Adaptörden şerit LED ve COB şeride besleme hattı",
+      "Modül LED zincirlerinin kutu harfler arası bağlantısı",
+      "RGB ve pixel LED hatlarında kontrol cihazı çıkışı",
+      "Pano içi düşük voltaj dağıtımı",
+    ],
+    blocks: [
+      { type: "h2", text: "NYAF kablo nedir" },
+      {
+        type: "p",
+        text:
+          "NYAF, iletkeni tek kalın tel yerine çok sayıda ince bakır telden oluşan, bu yüzden kolay bükülen PVC yalıtımlı kablodur. Tesisat dilinde çok telli esnek kabloların genel adı olarak da kullanılır. LED işlerinde tercih edilmesinin nedeni esnekliğidir: kutu harfin içinde kıvrılır, dar kanallardan geçer ve titreşimde kopmaz.",
+      },
+      { type: "h2", text: "Kesit neden LED'de daha önemli" },
+      {
+        type: "p",
+        text:
+          "220V tesisatta birkaç metrelik kablonun yarattığı gerilim kaybı fark edilmez. 12V hatta aynı kayıp, şeridin sonunda gözle görülen kararma ve renk kaymasıdır; çünkü aynı güç için 12V'ta akım 220V'a göre yaklaşık 18 kat büyüktür. Kablonun kalınlığını amper değil, gerilim düşümü belirler. Aşağıdaki tablo 12V hatta 5A (60W) yük için adaptörden yüke kablo boyuna göre gerilim kaybını yüzde olarak gösterir; gidiş ve dönüş iletkeni hesaba katılmıştır. %9.7, 12V'un yaklaşık 1.2V'unun kabloda kaldığı demektir.",
+      },
+      {
+        type: "table",
+        headers: ["Kesit", "2 m", "5 m", "10 m"],
+        rows: [
+          ["2 × 0.75", "%3.9", "%9.7", "%19"],
+          ["2 × 1.5", "%1.9", "%4.9", "%9.7"],
+          ["2 × 2.5", "%1.2", "%2.9", "%5.8"],
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Hedef, kaybı %3 civarında tutmaktır. Tabloya göre 5 metrelik 60W'lık besleme hattında 2 × 0.75 yetersiz, 2 × 2.5 doğru seçimdir. Aynı yük 24V'ta yarı akım çeker ve yüzde kayıp dörtte bire iner; uzun besleme hattı olan işlerde 24V'a geçmek kabloyu da inceltir. Ayrıntılı hesap [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında.",
+      },
+      { type: "h2", text: "Hangi kesit nerede" },
+      {
+        type: "ul",
+        items: [
+          "2 × 0.22 — modül zinciri içi, 1A'in altındaki kısa bağlantılar.",
+          "2 × 0.50 — tek kutu harf içi besleme, kısa şerit parçaları.",
+          "2 × 0.75 — 1-2 metrelik, birkaç amperlik bağlantılar.",
+          "2 × 1.5 — 60W civarı yükte 2-3 metreye kadar ana besleme.",
+          "2 × 2.5 — 60W yükte 5 metre ve üstü, ya da daha yüksek akımlı hatlar.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Adaptörü ışığa yakın yerleştirmek çoğu zaman kalın kablodan ucuzdur. Tek büyük adaptörden uzun kablo çekmek yerine yükü iki [iç mekan adaptöre](/urunler/trafo-led-surucu/meanwell-lrs-ic-mekan-adaptor/) bölmek, kesiti de gerilim düşümünü de küçültür.",
+      },
+    ],
+    faq: [
+      { q: "NYAF kablo nedir?", a: "Çok telli, esnek bakır iletkenli, PVC yalıtımlı kablodur. İnce tellerden oluştuğu için kolay bükülür ve titreşimde kopmaz." },
+      { q: "12V LED için hangi kablo kesiti gerekir?", a: "Yüke ve kablo boyuna bağlı. 60W yük, 5 metre için 2 × 2.5; 2 metre için 2 × 1.5 yeterlidir. Kaybı %3 civarında tutun." },
+      { q: "2 × 0.75 NYAF kaç amper taşır?", a: "LED'de sınır amperden önce gerilim düşümüdür. 12V'ta 5A'i 2 metreden uzağa taşırsanız kayıp %4'ü geçer; uzun hatta kesiti büyütün." },
+      { q: "Kablo neden ısınıyor?", a: "Kesit akıma göre ince demektir. Isınan kablo aynı zamanda gerilim kaybettiriyordur; bir üst kesite geçin." },
+      { q: "Kablo rulo olarak mı satılıyor?", a: "Evet, tüm kesitler 100 metrelik rulodur." },
+      { q: "RGB şerit için hangi kablo?", a: "RGB hatlar için ayrı RGB kablo seçenekleri var: 1.5 mm² bant ve 2.5 mm² TTR." },
+      { q: "220V tesisatta kullanılır mı?", a: "Bu sayfa LED'in düşük voltaj tarafı içindir. 220V tesisat kablosu seçimi bina elektrik yönetmeliğine göre yapılmalıdır; bir elektrikçiye danışın." },
+    ],
+    related: ["meanwell-lrs-ic-mekan-adaptor", "osram-element-ic-mekan-adaptor"],
+    img: "/images/products/nyaf-bakir-kablo.jpg",
+    updated: "2026-09-27",
   },
 ];
 

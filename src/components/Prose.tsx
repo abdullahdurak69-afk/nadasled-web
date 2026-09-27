@@ -64,7 +64,8 @@ export function BlockView({ block }: { block: Block }) {
                 {block.headers.map((h) => (
                   <th
                     key={h}
-                    style={{ textAlign: "left", padding: "12px 16px", fontFamily: "var(--font-mono)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--nadas-orange)", borderBottom: "1px solid var(--nadas-line2)" }}
+                    className="px-3 sm:px-4"
+                    style={{ textAlign: "left", paddingTop: "12px", paddingBottom: "12px", fontFamily: "var(--font-mono)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--nadas-orange)", borderBottom: "1px solid var(--nadas-line2)" }}
                   >
                     {h}
                   </th>
@@ -77,7 +78,8 @@ export function BlockView({ block }: { block: Block }) {
                   {row.map((cell, j) => (
                     <td
                       key={j}
-                      style={{ padding: "12px 16px", color: j === 0 ? "var(--nadas-ink)" : "var(--nadas-ink2)", fontWeight: j === 0 ? 600 : 400, borderBottom: i < block.rows.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
+                      className="px-3 sm:px-4"
+                      style={{ paddingTop: "12px", paddingBottom: "12px", color: j === 0 ? "var(--nadas-ink)" : "var(--nadas-ink2)", fontWeight: j === 0 ? 600 : 400, whiteSpace: j === 0 && cell.length <= 12 ? "nowrap" : undefined, borderBottom: i < block.rows.length - 1 ? "1px solid var(--nadas-line2)" : "none" }}
                     >
                       {cell}
                     </td>

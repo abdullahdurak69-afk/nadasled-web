@@ -1017,12 +1017,12 @@
       },
       {
         "name": "Meanwell İç Mekan Plus+ Adaptör",
-        "specs": "220V AC giriş, Meanwell kalitesi, iç mekan",
+        "specs": "Meanwell RS/LRS, 15-350W, 12V/24V, IP20 metal kasa",
         "img": "/images/products/meanwell-ic-mekan-adaptor.png"
       },
       {
         "name": "Osram Element Serisi İç Mekan Plus+ Adaptör",
-        "specs": "220V AC giriş, Osram Element, iç mekan",
+        "specs": "Osram Element G2, 30-250W, 12V/24V, IP20, 3 yıl garanti",
         "img": "/images/products/osram-ic-mekan-adaptor-element-serisi.jpg"
       },
       {
@@ -1062,7 +1062,7 @@
       },
       {
         "name": "İnventronics Dış Mekan Adaptör (EBV Serisi)",
-        "specs": "220V AC giriş, EBV serisi, ağır dış mekan",
+        "specs": "EBV serisi, 60-400W, 12V/24V, IP67 dış mekan",
         "img": "/images/products/inventronics-dis-mekan-adaptor-ebv-serisi.webp"
       }
     ],
@@ -1952,12 +1952,12 @@
     "products": [
       {
         "name": "Tek Görsel Projektör Lamba",
-        "specs": "Tek görsel slotu, logo yansıtma",
+        "specs": "100W Osram LED, IP65, 15°/20°/30° lens, logo yansıtma",
         "img": "/images/products/doner-projeksiyon.png"
       },
       {
         "name": "4 Görsel Projektör Lamba",
-        "specs": "4 görsel slotu, çoklu yansıtma",
+        "specs": "100W Osram LED, IP65, 4 görsel, RF kumanda",
         "img": "/images/products/4-gorsel-projektor-lamba.png"
       }
     ],
@@ -2041,7 +2041,7 @@
     "products": [
       {
         "name": "NYAF Bakır Kablo",
-        "specs": "Çok telli esnek bakır besleme kablosu",
+        "specs": "Çok telli esnek bakır, 0.22-2.5 mm², 100 m rulo",
         "img": "/images/products/nyaf-bakir-kablo.jpg"
       },
       {
