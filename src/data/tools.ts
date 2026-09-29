@@ -49,6 +49,7 @@ export const tools: Tool[] = [
       "led-serit-watt-ve-trafo-secimi",
       "power-led-surucu-secimi",
       "point-led-nedir",
+      "led-kablo-kesiti-hesaplama",
     ],
     blocks: [
       { type: "h2", text: "Araç hangi formülü kullanıyor?" },
@@ -242,6 +243,7 @@ export const tools: Tool[] = [
     categoryName: "LED Şerit",
     relatedPosts: [
       "led-serit-voltaj-dusumu",
+      "led-kablo-kesiti-hesaplama",
       "led-serit-watt-ve-trafo-secimi",
       "cob-vs-smd-led-serit",
       "neon-flex-secim-ve-montaj",

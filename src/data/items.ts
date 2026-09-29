@@ -3648,7 +3648,7 @@ export const items: ItemPage[] = [
       {
         type: "p",
         text:
-          "Hedef, kaybı %3 civarında tutmaktır. Tabloya göre 5 metrelik 60W'lık besleme hattında 2 × 0.75 yetersiz, 2 × 2.5 doğru seçimdir. Aynı yük 24V'ta yarı akım çeker ve yüzde kayıp dörtte bire iner; uzun besleme hattı olan işlerde 24V'a geçmek kabloyu da inceltir. Ayrıntılı hesap [LED şerit voltaj düşümü](/blog/led-serit-voltaj-dusumu/) yazısında.",
+          "Hedef, kaybı %3 civarında tutmaktır. Tabloya göre 5 metrelik 60W'lık besleme hattında 2 × 0.75 yetersiz, 2 × 2.5 doğru seçimdir. Aynı yük 24V'ta yarı akım çeker ve yüzde kayıp dörtte bire iner; uzun besleme hattı olan işlerde 24V'a geçmek kabloyu da inceltir. Formül ve 12V/24V için mesafe tabloları [LED kablo kesiti hesaplama](/blog/led-kablo-kesiti-hesaplama/) yazısında.",
       },
       { type: "h2", text: "Hangi kesit nerede" },
       {

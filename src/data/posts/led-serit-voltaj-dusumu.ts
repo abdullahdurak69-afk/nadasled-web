@@ -59,7 +59,7 @@ export const ledSeritVoltajDusumu: BlogPost = {
     },
     {
       type: "p",
-      text: "Bunların hiçbiri işe yaramıyorsa suçlu besleme kablosudur. Düşük voltajlı sistemlerde akım yüksektir; ince kablo hem ısınır hem kendi üzerinde gerilim düşürür. Pratik yaklaşım 5 ampere kadar 0,75 mm², 10 ampere kadar 1 mm², üzerinde 1,5 mm² ve daha kalın kesittir; mesafe 10 metreyi aştıkça bir kademe artırın.",
+      text: "Bunların hiçbiri işe yaramıyorsa suçlu besleme kablosudur. Düşük voltajlı sistemlerde akım yüksektir; ince kablo hem ısınır hem kendi üzerinde gerilim düşürür. Pratik yaklaşım 5 ampere kadar 0,75 mm², 10 ampere kadar 1 mm², üzerinde 1,5 mm² ve daha kalın kesittir; mesafe 10 metreyi aştıkça bir kademe artırın. Mesafeye göre kesit hesabı [LED kablo kesiti hesaplama](/blog/led-kablo-kesiti-hesaplama/) yazısında.",
     },
 
     { type: "h2", text: "Ana hat yöntemi nasıl uygulanır?" },

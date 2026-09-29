@@ -22,6 +22,7 @@ import { kesitAydinlatmaLedRehberi } from "./posts/kesit-aydinlatma-led-rehberi"
 import { ledDimmerSecimi } from "./posts/led-dimmer-secimi";
 import { pixelLedNedir } from "./posts/pixel-led-nedir";
 import { pergolaAydinlatmasiNasilYapilir } from "./posts/pergola-aydinlatmasi-nasil-yapilir";
+import { ledKabloKesitiHesaplama } from "./posts/led-kablo-kesiti-hesaplama";
 
 // Blok ve SSS tipleri araç sayfalarıyla ortaktır; ./content içinde durur.
 // Mevcut import'lar bozulmasın diye buradan yeniden dışa veriliyor.
@@ -59,6 +60,7 @@ export const posts: BlogPost[] = [
   neonFlexSecimVeMontaj,
   pergolaAydinlatmasiNasilYapilir,
   ledSeritVoltajDusumu,
+  ledKabloKesitiHesaplama,
   cobVsSmdLedSerit,
   pixelLedNedir,
   ledSeritWattVeTrafoSecimi,
