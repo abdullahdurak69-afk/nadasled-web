@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 85 800 485" role="img" aria-label="Nadas LED">
+  <defs>
+    <linearGradient id="nadas-n" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A3D"/>
+      <stop offset="0.45" stop-color="#F57012"/>
+      <stop offset="1" stop-color="#E85D0C"/>
+    </linearGradient>
+    <linearGradient id="nadas-led" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="0.2" stop-color="#F2B01E"/>
+      <stop offset="0.4" stop-color="#2FC84A"/>
+      <stop offset="0.62" stop-color="#2E50E0"/>
+      <stop offset="1" stop-color="#2E50E0"/>
+    </linearGradient>
+    <!-- Yazı bandı N'yi keser; beyaz dolgu yerine boşluk olduğu için her zeminde çalışır. -->
+    <mask id="nadas-band" maskUnits="userSpaceOnUse" x="150" y="85" width="800" height="485">
+      <rect x="150" y="85" width="800" height="485" fill="#fff"/>
+      <rect x="150" y="256" width="620" height="132" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- N: sol gövde yukarı, kemer, çapraz iniş, alttan dönüp sağ gövdeye çıkan tek çizgi -->
+  <path mask="url(#nadas-band)" fill="none" stroke="url(#nadas-n)" stroke-width="84" stroke-linejoin="round"
+    d="M204,554 L204,240 C204,165 245,140 285,140 C328,140 358,163 385,200 L540,440 C565,480 590,512 630,512 C675,512 697,485 697,445 L697,98"/>
+
+  <!-- NADAS: geniş, dik, ayrı harfler; çizgi kalınlığı 18, köşeler hafif yuvarlak -->
+  <g fill="#2E50E0">
+    <!-- N -->
+    <path d="M165,370 V272 H183 V370 Z"/>
+    <path d="M243,370 V272 H261 V370 Z"/>
+    <path d="M165,272 H187.5 L261,370 H238.5 Z"/>
+    <!-- A -->
+    <path d="M283,370 L322,272 H340 L379,370 H359.63 L331,298.07 L302.37,370 Z"/>
+    <path d="M292.15,347 L298.6,330.8 H363.4 L369.85,347 Z"/>
+    <!-- D -->
+    <path fill-rule="evenodd" d="M401,272 H471 A26,26 0 0 1 497,298 V344 A26,26 0 0 1 471,370 H401 Z M419,290 V352 H471 A8,8 0 0 0 479,344 V298 A8,8 0 0 0 471,290 Z"/>
+    <!-- A -->
+    <path d="M519,370 L558,272 H576 L615,370 H595.63 L567,298.07 L538.37,370 Z"/>
+    <path d="M528.15,347 L534.6,330.8 H599.4 L605.85,347 Z"/>
+    <!-- S -->
+    <path fill="none" stroke="#2E50E0" stroke-width="18"
+      d="M733,281 H658 A12,12 0 0 0 646,293 V309 A12,12 0 0 0 658,321 H712 A12,12 0 0 1 724,333 V349 A12,12 0 0 1 712,361 H637"/>
+  </g>
+
+  <!-- LED kutusu: RGB geçişli zemin, aynı yapıda beyaz harfler -->
+  <rect x="764" y="272" width="180" height="98" rx="10" fill="url(#nadas-led)"/>
+  <g fill="#fff">
+    <path d="M786,294 H798 V336 H830 V348 H786 Z"/>
+    <path d="M842,294 H882 V306 H854 V315 H876 V327 H854 V336 H882 V348 H842 Z"/>
+    <path fill-rule="evenodd" d="M894,294 H910 A14,14 0 0 1 924,308 V334 A14,14 0 0 1 910,348 H894 Z M906,306 V336 H910 A2,2 0 0 0 912,334 V308 A2,2 0 0 0 910,306 Z"/>
+  </g>
+</svg>

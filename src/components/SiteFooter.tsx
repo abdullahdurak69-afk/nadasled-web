@@ -29,7 +29,7 @@ export default function SiteFooter() {
           {/* Brand */}
           <div style={{ gridColumn: "span 1" }}>
             <div className="mb-5">
-              <Logo size={26} dot={false} />
+              <Logo height={60} />
             </div>
             <p style={{ fontSize: "14px", color: "var(--nadas-ink2)", maxWidth: "280px", lineHeight: 1.6 }}>
               Tabela aydınlatma malzemeleri toptan tedarikçisi. Ümraniye, İstanbul merkezli — Türkiye geneli kargo.

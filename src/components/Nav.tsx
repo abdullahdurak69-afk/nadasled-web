@@ -26,7 +26,7 @@ export default function Nav() {
     <nav
       className="fixed top-0 left-0 right-0 z-[100] transition-all duration-300"
       style={{
-        padding: scrolled ? "12px 0" : "18px 0",
+        padding: scrolled ? "6px 0" : "10px 0",
         background: "rgba(255, 255, 255, 0.78)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
@@ -36,7 +36,7 @@ export default function Nav() {
       <div style={{ width: "min(1240px, 92vw)", margin: "0 auto" }} className="flex items-center justify-between gap-6">
         {/* Logo */}
         <Link href="/" className="flex items-center" aria-label="Nadasled ana sayfa">
-          <Logo size={24} />
+          <Logo height={52} priority />
         </Link>
 
         {/* Desktop links */}

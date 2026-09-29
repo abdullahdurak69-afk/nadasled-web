@@ -1,10 +1,12 @@
-<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<svg width="64" height="64" viewBox="150.5 26 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- public/logo.svg'deki N; küçük boyda parçalanmasın diye yazı bandı boşluğu yok, çizgi biraz kalın. -->
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FF8A44"/>
-      <stop offset="1" stop-color="#F2600F"/>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A3D"/>
+      <stop offset="0.45" stop-color="#F57012"/>
+      <stop offset="1" stop-color="#E85D0C"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#g)"/>
-  <path d="M16 50 L16 14 L24 14 L40 40 L40 14 L48 14 L48 50 L40 50 L24 24 L24 50 Z" fill="#FFFFFF"/>
+  <path fill="none" stroke="url(#g)" stroke-width="96" stroke-linejoin="round"
+    d="M204,554 L204,240 C204,165 245,140 285,140 C328,140 358,163 385,200 L540,440 C565,480 590,512 630,512 C675,512 697,485 697,445 L697,98"/>
 </svg>
