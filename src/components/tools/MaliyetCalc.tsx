@@ -12,7 +12,21 @@
 
 import { useState } from "react";
 import { moduleCount, moduleDensity, nf, parseNum, pickPsu, STRIP_PRESETS, STROKE_RATIOS } from "@/lib/led-calc";
-import { EmptyState, Grid, Kicker, Note, NumberField, Panel, Result, Results, Segmented, SelectField, WhatsappResult } from "./CalcUI";
+import { seritUrunleri } from "@/lib/tool-products";
+import {
+  EmptyState,
+  Grid,
+  Kicker,
+  Note,
+  NumberField,
+  Panel,
+  ProductPicks,
+  Result,
+  Results,
+  Segmented,
+  SelectField,
+  WhatsappResult,
+} from "./CalcUI";
 
 type Tip = "kutu-harf" | "light-box" | "neon";
 
@@ -131,6 +145,30 @@ export default function MaliyetCalc() {
   };
   const toplam = rows.reduce((n, r) => n + satirTutar(r), 0);
   const fiyatliSatir = rows.filter((r) => satirTutar(r) > 0).length;
+
+  // Listede Nadasled'in sattığı kalemler: ışık kaynağı, trafo, kablo, konnektör.
+  // Profil, pleksi, vinil gibi kalemler katalogda olmadığı için kart almıyor.
+  const satir = (id: string) => rows.find((r) => r.id === id);
+  const urunler = gecerli
+    ? [
+        ...(tip === "kutu-harf"
+          ? [{ href: "/urunler/led-modul/1-5w-modul-led-fortune-plus/", name: "Fortune Plus 1,5 W modül", note: "Hesaptaki 1,5 W · 12V · IP65", qty: satir("modul") }]
+          : tip === "light-box"
+            ? [{ href: "/urunler/light-box-led/1-5w-eco-mercekli-modul-led/", name: "ECO 1,5 W mercekli modül", note: "Işıklı kutu için geniş açı · 12V · IP65", qty: satir("modul") }]
+            : (seritUrunleri(seritPreset, false)?.items.slice(0, 1) ?? []).map((u) => ({ ...u, qty: satir("serit") }))),
+        { href: "/urunler/trafo-led-surucu/", name: "LED trafo", note: "Meanwell, Osram, Inventronics · iç ve dış mekan", qty: satir("trafo") },
+        { href: "/urunler/yardimci-urunler/nyaf-bakir-kablo/", name: "NYAF bakır kablo", note: "Çok telli esnek bakır · 100 m rulo", qty: satir("kablo") },
+        { href: "/urunler/yardimci-urunler/", name: "Konnektör ve WAGO", note: "Lehimsiz hızlı bağlantı", qty: satir("konnektor") },
+      ]
+        .filter((u) => u.qty)
+        .map(({ qty, ...u }) => ({
+          ...u,
+          model:
+            qty!.id === "trafo"
+              ? `${nf(qty!.qty, 0)} × ${qty!.name.replace("LED trafo ", "")}`
+              : `${nf(qty!.qty, 1)} ${qty!.unit}`,
+        }))
+    : [];
 
   const waMesaj = gecerli
     ? `Merhaba, tabela malzeme listemi çıkardım:\n` +
@@ -286,6 +324,16 @@ export default function MaliyetCalc() {
             <Result label="KDV dahil (%20)" value={toplam > 0 ? `${nf(toplam * 1.2, 2)} ₺` : "—"} />
           </Results>
 
+          <ProductPicks
+            title="Listedeki malzemeler bizde"
+            subtitle="Toptan fiyat için listeyi gönderin"
+            items={urunler}
+            allHref="/urunler/"
+            allLabel="Tüm ürünler"
+          >
+            <WhatsappResult message={waMesaj} label="Bu liste için WhatsApp'tan teklif al" track="arac_maliyet_teklif" />
+          </ProductPicks>
+
           <Note>
             Birim fiyatlar bilerek boş geliyor. Nadasled liste fiyatı yayınlamaz — fiyat proje ve miktara göre
             verilir. Kendi alış fiyatlarınızı yazarak maliyeti çıkarabilir, güncel toptan fiyat için listeyi
@@ -297,7 +345,6 @@ export default function MaliyetCalc() {
             Sipariş öncesi modül ve şeritte %10 yedek eklemek yaygın pratiktir.
           </Note>
 
-          <WhatsappResult message={waMesaj} />
         </>
       ) : (
         <EmptyState>Tabela ölçülerini girin, malzeme listesi burada çıksın.</EmptyState>
