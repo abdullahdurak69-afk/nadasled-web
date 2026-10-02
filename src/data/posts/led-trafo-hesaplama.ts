@@ -147,7 +147,7 @@ export const ledTrafoHesaplama: BlogPost = {
 
     {
       type: "p",
-      text: "Stoklarımızdaki [IP67, ultra slim ve yağmur korumalı trafo çeşitlerine](/urunler/trafo-led-surucu) göz atabilir, tabela ölçünüzü ve modül adedinizi WhatsApp'tan göndererek ücretsiz trafo hesabı isteyebilirsiniz.",
+      text: "Stoklarımızdaki [IP67, ultra slim ve yağmur korumalı trafo çeşitlerine](/urunler/trafo-led-surucu) göz atabilir, tabela ölçünüzü ve modül adedinizi WhatsApp'tan göndererek ücretsiz trafo hesabı isteyebilirsiniz. Çalışan bir tabelada arıza arıyorsanız [LED tabela arıza rehberi](/blog/led-tabela-ariza-rehberi/) belirtiden sebebe gitmenin sırasını veriyor.",
     },
   ],
   faq: [

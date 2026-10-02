@@ -23,6 +23,7 @@ import { ledDimmerSecimi } from "./posts/led-dimmer-secimi";
 import { pixelLedNedir } from "./posts/pixel-led-nedir";
 import { pergolaAydinlatmasiNasilYapilir } from "./posts/pergola-aydinlatmasi-nasil-yapilir";
 import { ledKabloKesitiHesaplama } from "./posts/led-kablo-kesiti-hesaplama";
+import { ledTabelaArizaRehberi } from "./posts/led-tabela-ariza-rehberi";
 
 // Blok ve SSS tipleri araç sayfalarıyla ortaktır; ./content içinde durur.
 // Mevcut import'lar bozulmasın diye buradan yeniden dışa veriliyor.
@@ -67,6 +68,7 @@ export const posts: BlogPost[] = [
   lightBoxLedSecimi,
   tabelaYapimindaKullanilanMalzemeler,
   ip65MiIp67Mi,
+  ledTabelaArizaRehberi,
   onikiVoltMuYirmidortVoltMu,
   rgbLedKontrolUnitesiSecimi,
   ledDimmerSecimi,

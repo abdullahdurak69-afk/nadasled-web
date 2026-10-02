@@ -50,6 +50,7 @@ export const tools: Tool[] = [
       "power-led-surucu-secimi",
       "point-led-nedir",
       "led-kablo-kesiti-hesaplama",
+      "led-tabela-ariza-rehberi",
     ],
     blocks: [
       { type: "h2", text: "Araç hangi formülü kullanıyor?" },
