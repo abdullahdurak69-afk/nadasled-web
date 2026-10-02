@@ -27,6 +27,7 @@ import {
   Note,
   NumberField,
   Panel,
+  ProductPicks,
   Result,
   Results,
   Segmented,
@@ -36,6 +37,16 @@ import {
 } from "./CalcUI";
 
 const CUSTOM = "ozel";
+
+// Katalogdaki tek renk modüller (RGB ayrı bir iş olduğu için dışarıda).
+// Sonuçta seçilen güce en yakın ikisi önerilir.
+const MODUL_URUNLERI = [
+  { slug: "0-72w-mercekli-ikili-modul-led-fortune-light", name: "Fortune Light 0,72 W", w: 0.72, note: "Mercekli, 2 çip · 12V · IP65" },
+  { slug: "1-08w-samsung-modul-led", name: "Samsung 1,08 W", w: 1.08, note: "Samsung 2835, yüksek CRI · 12V · IP65" },
+  { slug: "1-2w-modul-led-fortune-light", name: "Fortune Light 1,2 W", w: 1.2, note: "Mercekli, yüksek lümen · 12V · IP65" },
+  { slug: "1-5w-modul-led-fortune-plus", name: "Fortune Plus 1,5 W", w: 1.5, note: "Premium seri, geniş açı · 12V · IP65" },
+  { slug: "2-4w-cob-modul-led-fortune-plus", name: "Fortune Plus 2,4 W COB", w: 2.4, note: "Noktasız yüzey · 12V · IP65" },
+];
 
 export default function KutuHarfCalc() {
   const [yukseklik, setYukseklik] = useState("50");
@@ -79,6 +90,19 @@ export default function KutuHarfCalc() {
           `3 · ${est.total} × ${nf(modulW, 2)} W = ${nf(hamW, 1)} W ham güç`,
           `4 · ${nf(hamW, 1)} W × 1,2 (%20 pay) = ${nf(payliW, 1)} W → ${nf(amper, 2)} A`,
         ]
+      : [];
+
+  const urunler =
+    gecerli && est
+      ? [...MODUL_URUNLERI]
+          .sort((a, b) => Math.abs(a.w - modulW) - Math.abs(b.w - modulW))
+          .slice(0, 2)
+          .map((u) => ({
+            href: `/urunler/led-modul/${u.slug}/`,
+            name: u.name,
+            model: `${nf(est.total, 0)} adet · ${nf(est.total * u.w * 1.2, 0)} W toplam`,
+            note: u.note,
+          }))
       : [];
 
   const waMesaj =
@@ -177,6 +201,16 @@ export default function KutuHarfCalc() {
             <Result label="Önerilen trafo" value={oneriMetni} />
           </Results>
 
+          <ProductPicks
+            title="Bu harfler için modüller"
+            subtitle={`Seçtiğiniz ${nf(modulW, 2)} W'a en yakın`}
+            items={urunler}
+            allHref="/urunler/led-modul/"
+            allLabel="Tüm LED modüller"
+          >
+            <WhatsappResult message={waMesaj} label="Bu liste için WhatsApp'tan teklif al" track="arac_kutuharf_teklif" />
+          </ProductPicks>
+
           <Steps items={steps} />
 
           {lens && (
@@ -197,7 +231,6 @@ export default function KutuHarfCalc() {
             kesin adet dizilim çiziminde belli olur. Sipariş öncesi %10 yedek modül eklemek yaygın pratiktir.
           </Note>
 
-          <WhatsappResult message={waMesaj} />
         </>
       ) : (
         <EmptyState>Harf ölçülerini girin, modül adedi ve trafo önerisi burada çıksın.</EmptyState>
