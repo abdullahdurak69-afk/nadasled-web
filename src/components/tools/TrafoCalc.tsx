@@ -25,6 +25,7 @@ import {
   Note,
   NumberField,
   Panel,
+  ProductPicks,
   Result,
   Results,
   Segmented,
@@ -34,6 +35,20 @@ import {
 } from "./CalcUI";
 
 const CUSTOM = "ozel";
+
+// Sonucun altında önerilen trafolar. Güvenlik payı seçimi ortamı da belirliyor:
+// %20 iç mekan → IP20 seriler, %30 dış / kapalı kasa → IP67 seriler.
+// kademe: ürün sayfasındaki güç kademeleri; yoksa yalnızca alt sınır yazılır.
+const TRAFO_URUNLERI: Record<"20" | "30", { slug: string; name: string; note: string; kademe?: number[] }[]> = {
+  "20": [
+    { slug: "meanwell-lrs-ic-mekan-adaptor", name: "Meanwell LRS", note: "IP20 · fansız metal kasa", kademe: [15, 25, 35, 50, 75, 100, 150, 200, 350] },
+    { slug: "osram-element-ic-mekan-adaptor", name: "Osram Element G2", note: "IP20 · 3 yıl garanti", kademe: [30, 60, 120, 180, 250] },
+  ],
+  "30": [
+    { slug: "inventronics-ebv-dis-mekan-adaptor", name: "Inventronics EBV", note: "IP67 · kapalı metal kasa", kademe: [60, 100, 150, 200, 400] },
+    { slug: "meanwell-dis-mekan-plus-adaptor", name: "Meanwell Dış Mekan Plus+", note: "IP67 · ağır dış mekan koşulları" },
+  ],
+};
 
 export default function TrafoCalc() {
   const [mode, setMode] = useState<"modul" | "serit">("modul");
@@ -87,6 +102,19 @@ export default function TrafoCalc() {
       ? `${volt}V ${nf(psu.watt, 0)}W (${nf(psu.amper, 1)}A)`
       : `${psu.count} × ${volt}V ${nf(psu.watt, 0)}W (${nf(psu.amper, 1)}A)`
     : "—";
+
+  const urunler = psu
+    ? TRAFO_URUNLERI[pay as "20" | "30"].map((u) => {
+        const k = u.kademe?.find((w) => w >= psu.watt);
+        const adet = psu.count > 1 ? `${psu.count} × ` : "";
+        return {
+          href: `/urunler/trafo-led-surucu/${u.slug}/`,
+          name: u.name,
+          model: k ? `${adet}${volt}V ${k} W modeli` : `${adet}${volt}V, en az ${nf(psu.watt, 0)} W`,
+          note: u.note,
+        };
+      })
+    : [];
 
   const waMesaj = gecerli
     ? `Merhaba, trafo hesabı yaptım:\n` +
@@ -199,6 +227,16 @@ export default function TrafoCalc() {
             <Result label="Önerilen trafo" value={oneriMetni} />
           </Results>
 
+          <ProductPicks
+            title="Bu hesaba uygun trafolar"
+            subtitle={pay === "30" ? "Dış mekan / kapalı kasa — IP67" : "İç mekan — IP20"}
+            items={urunler}
+            allHref="/urunler/trafo-led-surucu/"
+            allLabel="Tüm trafo ve LED sürücüler"
+          >
+            <WhatsappResult message={waMesaj} label="Bu trafo için WhatsApp'tan teklif al" track="arac_trafo_teklif" />
+          </ProductPicks>
+
           <Steps items={steps} />
 
           {psu && psu.count > 1 && (
@@ -223,7 +261,6 @@ export default function TrafoCalc() {
             </Note>
           )}
 
-          <WhatsappResult message={waMesaj} />
         </>
       ) : (
         <EmptyState>Hesap için miktar ve güç değerlerini girin.</EmptyState>
